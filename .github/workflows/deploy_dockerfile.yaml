@@ -30,12 +30,6 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@v4
-        with:
-          images: ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}
-
       - name: Build and push Docker image
         uses: docker/build-push-action@v6
         with:
@@ -43,5 +37,5 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ${{ steps.meta.outputs.tags }}:latest
-            ${{ vars.REGISTRY }}/${{ steps.meta.outputs.tags }}:1.0.0
+            ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
+            ${{ vars.REGISTRY }}/${{ github.repository_owner }}/${{ github.event.repository.name }}:1.0.0
