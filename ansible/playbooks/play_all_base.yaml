@@ -1,6 +1,0 @@
-# play_all_base.yaml
----
-- import_playbook: ping.yaml
-- import_playbook: configure.yaml
-- import_playbook: docker.yaml
-- import_playbook: java.yaml

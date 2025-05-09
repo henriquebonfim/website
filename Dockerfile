@@ -5,14 +5,15 @@ FROM node:lts-slim AS build
 WORKDIR /website
 
 # Install dependencies
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package.json pnpm-lock.yaml ./
+
+RUN npm install -g pnpm && pnpm install --frozen-lockfile
 
 # Copy source files
 COPY . .
 
 # Build project
-RUN npm run build
+RUN pnpm run build
 
 # Stage 2: Serve build artifacts with Nginx
 FROM nginx:alpine-slim
