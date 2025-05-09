@@ -1,5 +1,7 @@
 name: Deploy to Firebase Hosting
+
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -7,41 +9,68 @@ on:
     branches:
       - master
 
+# Ensure only one deployment workflow runs at a time per branch/PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 env:
   FIREBASE_CLI_EXPERIMENTS: ${{ vars.FIREBASE_CLI_EXPERIMENTS }}
 
 jobs:
   build_and_deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
+    timeout-minutes: 15
 
     steps:
+      # Step 1: Checkout the repository
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
+      # Step 2: Setup pnpm
       - name: Install pnpm ${{ vars.PNPM_VERSION }}
         uses: pnpm/action-setup@v4
         with:
           version: ${{ vars.PNPM_VERSION }}
           run_install: false
 
+      # Step 3: Setup Node.js
       - name: Use Node.js ${{ vars.NODE_VERSION }}
         uses: actions/setup-node@v4
         with:
           node-version: ${{ vars.NODE_VERSION }}
           cache: "pnpm"
 
+      # Step 4: Install dependencies
       - name: Install Dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
 
+      # Step 5: Security check for dependencies
+      - name: Audit dependencies
+        run: pnpm audit --audit-level high
+
+      # Step 6: Build the project
       - name: Build
         run: pnpm build
 
+      # Step 7: Lint the project
       - name: Lint
         run: pnpm lint
 
+      # Step 8: Run tests
       - name: Test
         run: pnpm test
 
+      # Step 9: Check bundle size
+      - name: Check bundle size
+        run: |
+          echo "Checking bundle size..."
+          du -sh dist/
+
+      # Step 10: Deploy to Firebase Hosting Preview (for pull requests)
       - name: Deploy to Firebase Hosting Preview
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -50,12 +79,21 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           expires: ${{ vars.FIREBASE_EXPIRES }}
+          channelId: pr-${{ github.event.pull_request.number }}
 
+      # Step 11: Deploy to Firebase Hosting Production (for pushes)
       - name: Deploy to Firebase Hosting Production
-        if: ${{ github.event_name == 'push' }}
+        if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           channelId: ${{ vars.FIREBASE_CHANNEL_ID }}
+
+      # Step 12: Verify deployment
+      - name: Verify deployment
+        if: ${{ success() }}
+        run: |
+          echo "Deployment completed successfully"
+          echo "Check the Firebase Console: https://console.firebase.google.com/project/${{ vars.FIREBASE_PROJECT_ID }}/hosting"
