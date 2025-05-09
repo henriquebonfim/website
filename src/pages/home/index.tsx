@@ -9,15 +9,21 @@ import { useEffect } from 'react'
 import { dynamicLoadMessages, LOCALES } from '../../i18n'
 
 const SelectComponent = () => {
-  function changeLanguage(event: React.ChangeEvent<HTMLSelectElement>) {
-    dynamicLoadMessages(event.target.value as keyof typeof LOCALES)
+  function changeLanguage(key: keyof typeof LOCALES) {
+    dynamicLoadMessages(key)
   }
 
   return (
-    <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'end', margin: '10px' }}>
-      <select onChange={changeLanguage} >
-        {Object.entries(LOCALES).map(([key, value]) => (<option key={key} value={key}>{value}</option>))}
-      </select>
+    <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'end', margin: '10px', gap: '5px' }}>
+      {Object.entries(LOCALES).map(([key]) => (
+        <img
+          style={{ background: 'none', border: 'none', cursor: 'pointer', width: '40px' }}
+          key={key}
+          onClick={() => changeLanguage(key as keyof typeof LOCALES)}
+          src={`/${key}.png`}
+          alt={key}
+        />
+      ))}
     </div>
   )
 }

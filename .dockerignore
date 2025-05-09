@@ -1,0 +1,42 @@
+
+
+# Node modules
+node_modules
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+bower_components
+
+# Build output
+dist
+build
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker files
+Dockerfile*
+docker-compose*
+
+# Git files
+.github
+.git
+.gitignore
+
+# Environment files
+.env
+.env.*
+
+# Misc
+*.swp
+*.swo
+.idea
+.vscode
+*.tgz
+.eslintrc.cjs
+firebase.json

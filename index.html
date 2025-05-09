@@ -6,7 +6,7 @@
   <title>Henrique Bonfim</title>
   <meta name="author" content="Henrique Bonfim" />
   <meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; connect-src 'self' https://*.google.com https://*.doubleclick.net; script-src 'self' https://www.googletagmanager.com 'nonce-1234567890' 'sha256-oNrZ7nOOn8m02x5nI0goaMfMi6zPIAZBZ9yZF6dTHrI='; img-src 'self' https://avatars3.githubusercontent.com https://www.google.com.br; style-src 'self' 'unsafe-inline';">
+    content="default-src 'self'; connect-src 'self' https://csi.gstatic.com/ https://ep1.adtrafficquality.google/ https://googleads.g.doubleclick.net/ https://*.google.com https://*.doubleclick.net; script-src 'self' https://www.googletagmanager.com https://pagead2.googlesyndication.com 'nonce-1234567890' 'sha256-oNrZ7nOOn8m02x5nI0goaMfMi6zPIAZBZ9yZF6dTHrI='; img-src 'self' https://ep1.adtrafficquality.google https://avatars3.githubusercontent.com https://www.google.com.br; style-src 'self' 'unsafe-inline'; frame-src 'self' https://ep2.adtrafficquality.google/ https://www.google.com/ https://googleads.g.doubleclick.net/;">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="My simple website with full CI/CD">
   <meta name="theme-color" content="#ffffff">
@@ -44,6 +44,10 @@
           'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f)
     })(window, document, 'script', 'dataLayer', 'GTM-WN5RQK9');</script>
   <!-- End Google Tag Manager -->
+  
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7185594161758734" crossorigin="anonymous"></script>
+  <!-- End Google AdSense -->
 </head>
 
 <body>
