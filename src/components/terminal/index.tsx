@@ -25,7 +25,7 @@ export const Terminal = () => {
           &nbsp;
           <picture>
             <span className="white-cloud">&#9729;</span>
-            <img src='logo.webp' width={40} height={40} alt="logo" />
+            <img loading="lazy" src='logo.webp' width={40} height={40} alt="logo" />
           </picture>
         </p>
       </div>

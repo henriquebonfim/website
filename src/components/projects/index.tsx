@@ -18,7 +18,7 @@ const ProjectCard = ({ project }: { project: ProjectData<string> }) => (
   <div key={project.id} className="card-list">
     <button className="card-header"
       onClick={() => window.open(project.link, '_blank')}>
-      <img
+      <img loading="lazy"
         className="card-header-image"
         src={project.image}
         alt={project.title}
@@ -67,7 +67,7 @@ export const Projects = () => {
             <div className="card-list">
 
               <header className="card-header">
-                <img className="card-header-image" src={PROJECTS_IMAGE_URL} alt="projects" />
+                <img loading="lazy" className="card-header-image" src={PROJECTS_IMAGE_URL} alt="projects" />
               </header>
 
               <div className="card-footer">

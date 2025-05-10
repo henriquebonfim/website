@@ -38,5 +38,4 @@ docker-compose*
 .idea
 .vscode
 *.tgz
-.eslintrc.cjs
 firebase.json

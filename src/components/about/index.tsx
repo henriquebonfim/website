@@ -7,7 +7,7 @@ import { Trans } from "@lingui/macro"
 
 const SocialLink = ({ url, className, id, icon }: SocialLinkProps) => (
   <a href={url} rel="noopener noreferrer" target="_blank" className={className} id={id}>
-    <img src={icon} alt={className} width={30} height={30} />
+    <img loading="lazy" src={icon} alt={className} width={30} height={30} />
   </a>
 );
 
@@ -24,7 +24,7 @@ export const About = () => {
           </Trans>
 
           <a id="clicked_photo" href={PROFILE_IMAGE_URI} target="_blank">
-            <img className="perfil" src={PROFILE_IMAGE_URI} alt="Minha Foto" width={100} height={100} />
+            <img loading="lazy" className="perfil" src={PROFILE_IMAGE_URI} alt="Minha Foto" width={100} height={100} />
           </a>
 
           <p>

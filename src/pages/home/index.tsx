@@ -16,7 +16,7 @@ const SelectComponent = () => {
   return (
     <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'end', margin: '10px', gap: '5px' }}>
       {Object.entries(LOCALES).map(([key]) => (
-        <img
+        <img loading="lazy"
           style={{ background: 'none', border: 'none', cursor: 'pointer', width: '40px' }}
           key={key}
           onClick={() => changeLanguage(key as keyof typeof LOCALES)}
