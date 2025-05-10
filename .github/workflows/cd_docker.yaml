@@ -1,4 +1,4 @@
-name: Deploy Docker Image
+name: Deploy to Docker Image
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
 
 jobs:
   build_and_deploy:
-    name: Job - Build and Deploy Docker Image
+    name: Job - Build and Deploy to Docker Image
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
