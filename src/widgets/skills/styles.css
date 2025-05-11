@@ -1,0 +1,63 @@
+.mac-card {
+  max-width: 90vw;
+  height: 600px;
+  background: rgba(15, 15, 16, 0.9);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mac-topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(15, 15, 16, 0.9);
+}
+
+.mac-title {
+  font-size: 20px;
+  color: #c2c3c4;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
+}
+
+.buttons div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.close {
+  background: #fc6058;
+}
+
+.minimize {
+  background: #fecb2e;
+}
+
+.maximize {
+  background: #2aca3e;
+}
+
+.mac-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.badge {
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  font-weight: bold;
+}

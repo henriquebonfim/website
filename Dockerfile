@@ -1,4 +1,4 @@
-FROM node:lts-slim AS artefacts
+FROM node:lts-slim AS artifacts
 WORKDIR /website
 COPY package.json pnpm-lock.yaml ./
 RUN npm install -g pnpm && \
@@ -10,7 +10,7 @@ RUN pnpm lint && \
   pnpm build
 
 FROM nginx:alpine-slim
-COPY --from=artefacts /website/dist /usr/share/nginx/html
+COPY --from=artifacts /website/dist /usr/share/nginx/html
 COPY nginx/nginx.conf /etc/nginx/nginx.conf
 COPY nginx/mime.types /etc/nginx/mime.types
 EXPOSE 80

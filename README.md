@@ -1,4 +1,3 @@
-
 <p align="center">
     <a href="https://henriquebonfim.web.app">
         <img loading="lazy" src="public/logo.webp" width="10%" />

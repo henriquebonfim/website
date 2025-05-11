@@ -1,14 +1,12 @@
-import type { LinguiConfig } from "@lingui/conf";
+import { defineConfig } from "@lingui/cli";
 
-const config: LinguiConfig = {
+export default defineConfig({
+  sourceLocale: "en",
   locales: ["en", "pt", "es"],
   catalogs: [
     {
-      path: "<rootDir>/src/locales/{locale}",
+      path: "<rootDir>/src/shared/i18n/locales/{locale}",
       include: ["src"],
     },
   ],
-  compileNamespace: "en"
-};
-
-export default config;
+});
