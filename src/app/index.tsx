@@ -3,7 +3,7 @@ import { Homepage } from "#/pages/homepage";
 import { Providers } from "./providers";
 import Layout from "./layout";
 
-const App = () => {
+export function App() {
   return (
     <Providers>
       <Layout>
@@ -11,6 +11,4 @@ const App = () => {
       </Layout>
     </Providers>
   );
-};
-
-export default App;
+}

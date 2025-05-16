@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+.terminal-card {
+  background: rgba(13, 13, 13, 0.8);
+  border-radius: 13px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.terminal-topnav {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(13, 13, 13, 1);
+  border-radius: 13px;
+}
+
+.terminal-titlebar {
+  @apply flex w-full items-center justify-end md:justify-center;
+}
+
+.terminal-title {
+  color: #c3c3c3;
+  font-weight: bolder;
+  font-family: "Fira Mono", "Menlo", "Monaco", "Consolas", monospace;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
+.terminal-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  justify-content: space-between;
+  width: 60px;
+  gap: 3px;
+  position: absolute;
+}
+
+.terminal-buttons div {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.terminal-close {
+  background: #fc6058;
+}
+
+.terminal-minimize {
+  background: #fecb2e;
+}
+
+.terminal-maximize {
+  background: #2aca3e;
+}
+
+.terminal-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}

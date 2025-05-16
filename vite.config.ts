@@ -15,6 +15,14 @@ export default defineConfig({
   },
   test: {
     exclude: [...configDefaults.exclude, "nginx", ".firebase", ".husky"],
+    environment: "jsdom",
+    globals: true,
+    setupFiles: ["./test/setup.ts"],
+    coverage: {
+      provider: "v8",
+      reporter: ["text", "lcov", "html"],
+      exclude: ["**/node_modules/**", "**/test/**", "**/*.d.ts"],
+    },
   },
   plugins: [
     lingui(),
