@@ -1,12 +1,256 @@
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
-body {
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-base-100: oklch(0.61 0 0);
+  --color-base-200: oklch(0.49 0 0);
+  --color-base-300: oklch(0.36 0 0);
+
+  --color-base-content: oklch(0.36 0 0);
+
+  --color-neutral: oklch(0.98 0.0095 299.24);
+  --color-neutral-content: oklch(0.23 0.0243 248.92 / 80%);
+
+  --color-primary: oklch(0.98 0.0095 299.24);
+  --color-primary-content: oklch(0.58 0.1257 162.52);
+
+  --color-secondary: oklch(0.88 0.0246 290.99);
+  --color-secondary-content: oklch(0.39 0.0306 199.13);
+
+  --color-accent: oklch(0.65 0.3 140);
+  --color-accent-content: oklch(0.98 0.01 160);
+
+  --color-info: oklch(0.71 0.13259704183405788 223.513767805228);
+  --color-info-content: oklch(0.92 0.07459779954933268 210.17892726338243);
+
+  --color-success: oklch(0.65 0.22058546199439297 142.2511185189919);
+  --color-success-content: oklch(0.91 0.18841659380910436 142.18310611314928);
+
+  --color-warning: oklch(0.8 0.16818056236559756 76.37939729621205);
+  --color-warning-content: oklch(0.98 0.0703437778932297 103.8691179423995);
+
+  --color-error: oklch(0.63 0.2541703143441615 29.888064087352454);
+  --color-error-content: oklch(0.85 0.08353092985143251 31.600984397014347);
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: false;
+  --color-base-100: oklch(0.61 0 0);
+  --color-base-200: oklch(0.74 0 0);
+  --color-base-300: oklch(0.87 0 0);
+
+  --color-base-content: oklch(0.87 0 0);
+
+  --color-neutral: oklch(0.21 0.0059 285.89);
+  --color-neutral-content: oklch(0.27 0.0142 261.68);
+
+  --color-primary: oklch(0.36 0 0);
+  --color-primary-content: oklch(0.98 0.0095 299.24);
+
+  --color-secondary: oklch(0.23 0.0243 248.92 / 80%);
+  --color-secondary-content: oklch(0.88 0.0246 290.99);
+
+  --color-accent: oklch(0.65 0.25 160);
+  --color-accent-content: oklch(0.98 0.01 160);
+
+  --color-info: oklch(0.71 0.13259704183405788 223.513767805228);
+  --color-info-content: oklch(0.92 0.07459779954933268 210.17892726338243);
+
+  --color-success: oklch(0.65 0.22058546199439297 142.2511185189919);
+  --color-success-content: oklch(0.91 0.18841659380910436 142.18310611314928);
+
+  --color-warning: oklch(0.8 0.16818056236559756 76.37939729621205);
+  --color-warning-content: oklch(0.98 0.0703437778932297 103.8691179423995);
+
+  --color-error: oklch(0.63 0.2541703143441615 29.888064087352454);
+  --color-error-content: oklch(0.85 0.08353092985143251 31.600984397014347);
+}
+
+html {
   background: url("/background.webp") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+@keyframes alien-float {
+  0% {
+    transform: translate3d(3px, 3px, 0px) rotateY(180deg);
+  }
+  50% {
+    transform: translate3d(6px, 6px, 0px) rotateY(180deg);
+  }
+  100% {
+    transform: translate3d(3px, 3px, 0px) rotateY(180deg);
+  }
+}
+
+.alien-float {
+  animation: alien-float 2s ease-in-out infinite;
+}
+
+@keyframes alien-disappear {
+  0% {
+    transform: scale(1) rotateY(180deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  60% {
+    transform: scale(1.5) rotateY(180deg);
+    opacity: 0.7;
+    filter: blur(2px);
+  }
+
+  100% {
+    transform: scale(3) rotateY(180deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+}
+
+@keyframes alien-disappear-wrapper {
+  0% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+  60% {
+    opacity: 0.7;
+    transform: translateX(-60px) scale(1.2);
+    filter: blur(2px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-120px) scale(1.5);
+    filter: blur(8px);
+  }
+}
+
+.alien-disappear {
+  animation: alien-disappear-wrapper 0.7s cubic-bezier(0.7, 0.1, 1, 0.9)
+    forwards;
+}
+
+/* Alien reappear animation */
+@keyframes alien-reappear {
+  0% {
+    transform: translateX(-120%) scale(1) rotateY(180deg);
+    opacity: 0;
+    filter: blur(8px);
+  }
+
+  80% {
+    transform: translateX(10%) scale(1.1) rotateY(180deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+
+  100% {
+    transform: translateX(0) scale(1) rotateY(180deg);
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+@keyframes alien-reappear-wrapper {
+  0% {
+    opacity: 0;
+    transform: translateX(-120px) scale(1.5);
+    filter: blur(8px);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(10px) scale(1.1);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.alien-reappear {
+  animation: alien-reappear-wrapper 0.7s cubic-bezier(0.7, 0.1, 1, 0.9) forwards;
+}
+
+@keyframes blink-cursor {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-blink-cursor {
+  animation: blink-cursor 1s steps(1) infinite;
+}
+
+/* JSON color support */
+.terminal-json-key {
+  color: #64b5f6;
+} /* blue */
+.terminal-json-string {
+  color: #81c784;
+} /* green */
+.terminal-json-number {
+  color: #ffd54f;
+} /* yellow */
+.terminal-json-boolean {
+  color: #f06292;
+} /* pink */
+.terminal-json-null {
+  color: #b0b3b8;
+  font-style: italic;
+} /* gray/italic */
+.terminal-json-brace {
+  color: #fff;
+}
+
+.tools-carousel-wrapper {
+  width: fit-content;
+  white-space: nowrap;
+}
+
+.tools-carousel {
+  animation: scroll-x 30s linear infinite;
+  position: relative;
+  display: inline-flex;
+  min-width: max-content;
+}
+
+.fade-mask {
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+@keyframes scroll-x {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }

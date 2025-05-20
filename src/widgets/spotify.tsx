@@ -1,6 +1,8 @@
+import { API } from "#/shared/constants";
+
 export const SpotifyWidget = () => (
   <iframe
-    src="https://open.spotify.com/embed/playlist/4x4izj9nqd1HaNJb1PFKOe?utm_source=generator"
+    src={API.SPOTIFY_EMBED}
     width="100%"
     height="600"
     frameBorder="0"

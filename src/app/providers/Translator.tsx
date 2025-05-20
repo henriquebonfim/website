@@ -2,7 +2,7 @@ import { type JSX, type ReactNode, useEffect, useState } from "react";
 import { I18nProvider } from "@lingui/react";
 import { i18n } from "@lingui/core";
 import { dynamicLoadMessages } from "#/shared/i18n";
-import LoadingSpinner from "#/shared/components/LoadingSpinner";
+import { Loading } from "#/widgets/loading-spinner";
 import { useRootContext } from "#/shared/hooks";
 
 /**
@@ -23,7 +23,7 @@ function TranslatorProvider({
   const { locale } = useRootContext();
 
   useEffect(() => {
-    async function setup() {
+    (async () => {
       try {
         setIsLoading(true);
         setHasError(false);
@@ -35,22 +35,24 @@ function TranslatorProvider({
       } finally {
         setIsLoading(false);
       }
-    }
-    setup();
+    })();
   }, [locale]);
 
   if (hasError) {
     return (
-      <article className="flex h-screen w-full flex-col items-center justify-center prose">
+      <article className="prose flex h-screen w-full flex-col items-center justify-center">
         <p>Failed to load translations</p>
-        <button onClick={() => window.location.reload()} className="btn btn-primary">
+        <button
+          onClick={() => window.location.reload()}
+          className="btn btn-primary"
+        >
           Retry
         </button>
       </article>
     );
   }
 
-  if (isLoading && !isReady) return <LoadingSpinner overlay size="md" />;
+  if (isLoading && !isReady) return <Loading overlay size="md" />;
 
   return <I18nProvider i18n={i18n}>{children}</I18nProvider>;
 }

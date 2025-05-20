@@ -1,10 +1,11 @@
+import { LOCALES } from "#/shared/constants";
 import { useRootContext } from "#/shared/hooks";
-import { LOCALES } from "#/shared/i18n";
+import type { LocaleType } from "#/shared/types";
 
 export function SwitchLanguage() {
   const { setLocale } = useRootContext();
 
-  function changeLanguage(key: keyof typeof LOCALES) {
+  function changeLanguage(key: LocaleType) {
     setLocale(key);
   }
 
@@ -15,7 +16,7 @@ export function SwitchLanguage() {
           loading="lazy"
           className="h-9 w-9 cursor-pointer transition-all duration-300 hover:scale-130 active:scale-90"
           key={key}
-          onClick={() => changeLanguage(key as keyof typeof LOCALES)}
+          onClick={() => changeLanguage(key as LocaleType)}
           src={`/${key}.png`}
           alt={value}
           title={value}

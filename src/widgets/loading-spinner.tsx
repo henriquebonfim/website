@@ -102,4 +102,6 @@ function LoadingSpinner({
   return spinnerElement;
 }
 
-export default memo(LoadingSpinner);
+const Loading = memo(LoadingSpinner);
+
+export { Loading };

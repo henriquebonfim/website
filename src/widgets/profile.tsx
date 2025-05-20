@@ -1,31 +1,30 @@
+import { SOCIAL_LINKS } from "#/shared/constants";
 import { SocialMedia } from "./social-media";
-import { UbuntuTerminal } from "./terminal/ubuntu";
+import { Terminal } from "./terminal";
 import { ToolsCarrousel } from "./tools-carousel";
 
 export function Profile() {
   return (
-    <UbuntuTerminal title="Henrique's Workspace">
-      <div className="flex flex-col items-center justify-center text-center">
-        <img
-          src="https://avatars.githubusercontent.com/u/40275173"
-          alt="Henrique's photo"
-          title="This is me!"
-          className="h-33 w-33 rounded-full"
-        />
-        <h1>Henrique Bonfim</h1>
-        <h2>Senior Software Engineer</h2>
-        <SocialMedia />
-        <hr />
-        <p>
-          I'm Henrique, a Senior Software Engineer with over 10 years of
-          experience.
-        </p>
+    <Terminal>
+      <section className="flex h-full w-full flex-col items-center justify-center text-center">
+        <article className="prose prose-img:m-1 prose-h1:m-0 prose-h3:m-0 prose-sm md:prose-base justify-cente flex flex-col items-center font-serif">
+          <img
+            src={SOCIAL_LINKS.IMAGE}
+            alt="Henrique's photo"
+            title="This is me!"
+            className="h-33 w-33 transition-all duration-300 hover:scale-105"
+          />
+          <h1>Henrique Bonfim</h1>
+          <h3>Senior Software Engineer</h3>
+          <div className="not-prose m-3">
+            <SocialMedia />
+          </div>
+          <h5>
+            Leveraging <i>GenAI</i> to drive <b>next-generation solutions.</b>
+          </h5>
+        </article>
         <ToolsCarrousel />
-        <p>
-          Passionate about leveraging generative AI to drive next-generation
-          solutions.
-        </p>
-      </div>
-    </UbuntuTerminal>
+      </section>
+    </Terminal>
   );
 }

@@ -1,42 +1,41 @@
-/**
- * Application-wide constants
- */
+import type { LocaleType, ThemeType } from "../types";
 
-/**
- * Social media links
- */
 export const SOCIAL_LINKS = {
-  GITHUB: "https://github.com/hpbonfim",
+  GITHUB: "https://github.com/henriquebonfim",
   LINKEDIN: "https://linkedin.com/in/henriquebonfim",
-  TWITTER: "https://twitter.com",
-  // Add more social media links as needed
+  IMAGE: "https://avatars.githubusercontent.com/u/40275173",
+  RESUME: "https://henriquebonfim.com/resume.pdf",
 };
 
-/**
- * API endpoints
- */
 export const API = {
-  SPOTIFY: "https://api.spotify.com/v1",
-  GITHUB: "https://api.github.com",
-  // Add more API endpoints as needed
+  SPOTIFY_EMBED:
+    "https://open.spotify.com/embed/playlist/4x4izj9nqd1HaNJb1PFKOe?utm_source=generator",
+  YOUTUBE_EMBED:
+    "https://www.youtube.com/embed/ogoZCRLjRgA?enablejsapi=1&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3",
 };
 
-/**
- * Application routes
- */
 export const ROUTES = {
   HOME: "/",
   RESUME: "/resume",
-  // Add more routes as needed
 };
 
-/**
- * Time constants in milliseconds
- */
-export const TIME = {
-  SECOND: 1000,
-  MINUTE: 60 * 1000,
-  HOUR: 60 * 60 * 1000,
-  DAY: 24 * 60 * 60 * 1000,
-  // Add more time constants as needed
+export const LOCALES: Record<LocaleType, string> = {
+  en: "English",
+  es: "Español",
+  pt: "Português",
 };
+
+export const TERMINAL_USERNAME = "henriquebonfim@website:~";
+
+export const THEMES: Record<ThemeType, ThemeType> = {
+  light: "light",
+  dark: "dark",
+};
+
+export const THEME_ATTRIBUTE = "data-theme";
+export const LANG_ATTRIBUTE = "lang";
+
+export const DEFAULT_LOCALE = Object.keys(LOCALES)[0] as keyof typeof LOCALES;
+export const DEFAULT_THEME = THEMES.dark;
+export const LOCALE_STORAGE_KEY = "locale";
+export const THEME_STORAGE_KEY = "theme";

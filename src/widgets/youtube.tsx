@@ -1,3 +1,5 @@
+import { API } from "#/shared/constants";
+
 export function YoutubeWidget() {
   return (
     <iframe
@@ -5,7 +7,7 @@ export function YoutubeWidget() {
       id="ytplayer"
       width="100%"
       height="500"
-      src="https://www.youtube.com/embed/ogoZCRLjRgA?enablejsapi=1&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3"
+      src={API.YOUTUBE_EMBED}
       allowFullScreen
     />
   );

@@ -1,3 +1,4 @@
+import { THEME_ATTRIBUTE } from "#/shared/constants";
 import { useRootContext } from "#/shared/hooks";
 import { Footer } from "#/widgets/footer";
 import { Header } from "#/widgets/header";
@@ -14,13 +15,13 @@ function Layout({ children }: { children: ReactNode }): JSX.Element {
   const { theme } = useRootContext();
 
   useEffect(() => {
-     document.documentElement.setAttribute("data-theme", theme);
+    document.documentElement.setAttribute(THEME_ATTRIBUTE, theme);
   }, [theme]);
-  
+
   return (
     <>
       <Header />
-      <main className="container mx-auto flex min-h-screen flex-col items-center justify-center pt-16">
+      <main className="container mx-auto flex min-h-screen scale-95 flex-col items-center justify-center gap-3 pt-16 2xl:scale-100">
         {children}
       </main>
       <Footer />
