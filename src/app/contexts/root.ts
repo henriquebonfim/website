@@ -1,6 +1,6 @@
-import { createContext } from "react";
-import type { RootContextType } from "#/shared/types";
-import { DEFAULT_LOCALE, DEFAULT_THEME } from "#/shared/constants";
+import { createContext } from 'react';
+import type { RootContextType } from '#/shared/types';
+import { DEFAULT_LOCALE, DEFAULT_THEME } from '#/shared/constants';
 
 /**
  * React context for root-level theme and locale state management.

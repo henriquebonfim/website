@@ -1,10 +1,11 @@
-import "./index.css";
-import { Homepage } from "#/pages/homepage";
-import { Providers } from "./providers";
-import Layout from "./layout";
-import ErrorBoundary from "./error";
+import { Homepage } from '#/pages/homepage';
+import type { FC } from 'react';
+import ErrorBoundary from './error';
+import './index.css';
+import Layout from './layout';
+import { Providers } from './providers';
 
-export function App() {
+export const App: FC = () => {
   return (
     <ErrorBoundary>
       <Providers>
@@ -14,4 +15,4 @@ export function App() {
       </Providers>
     </ErrorBoundary>
   );
-}
+};

@@ -13,3 +13,51 @@ msgstr ""
 "Last-Translator: \n"
 "Language-Team: \n"
 "Plural-Forms: \n"
+
+#: src/widgets/projects/index.tsx:128
+msgid "<0>Confira outros projetos...</0>"
+msgstr ""
+
+#: src/widgets/projects/index.tsx:121
+msgid "<0>Repositório...</0>"
+msgstr ""
+
+#: src/widgets/projects/index.tsx:131
+msgid "<0>Tenho diversos projetos open-source para qualquer pessoa contribuir ou ser contribuído com minhas soluções, desde API's até aplicativos completos. be my guest!</0>"
+msgstr ""
+
+#: src/app/error.tsx:87
+#~ msgid "An error occurred while rendering the component."
+#~ msgstr ""
+
+#: src/app/error.tsx:84
+#~ msgid "Error"
+#~ msgstr ""
+
+#: src/widgets/profile.tsx:25
+msgid "Leveraging<0>GenAI</0> to drive <1>next-generation solutions.</1>"
+msgstr ""
+
+#: src/widgets/projects/index.tsx:48
+msgid "Projeto criado no HackathonCCR, utilizando React-Native e infraestrutura AWS, visa auxiliar o caminhoneiro em suas tarefas diárias."
+msgstr ""
+
+#: src/widgets/projects/index.tsx:24
+msgid "Projeto feito com arquitetura orientada a micro serviços e Docker Swarm, utilizando NodeJS, VueJS, MongoDB e Arduino, para realizar o feito de controlar um relé eletrônico para abrir a porta do PET SISTEMAS via celular. "
+msgstr ""
+
+#: src/widgets/projects/index.tsx:16
+msgid "Projeto feito com arquitetura orientada a micro serviços e Docker Swarm, utilizando NodeJS, VueJS, MongoDB, Arduino e outros, para realizar o feito de controlar um relé eletrônico, utilizado para ativar/desativar a luz e uma porta eletrônica e alguns sensores para transmitir em tempo real a leitura de dados."
+msgstr ""
+
+#: src/widgets/projects/index.tsx:40
+msgid "Projeto Top 50 do Megahack v2 2020, plataforma construída com NodeJS, Angular e infraestrutura do Google Cloud, visa construir um sistema blockchain para criação de contratos jurídicos com 100% de integridade legal e transparência."
+msgstr ""
+
+#: src/widgets/projects/index.tsx:32
+msgid "Projeto vencedor no Hackatrouble SP 2020, construído com NodeJS, Angular e infraestrutura AWS para gerenciar um sistema de doação de alimentos hortaliços oriundos da produção excessiva dos produtores rurais, visando a distribuição para instituições de caridade."
+msgstr ""
+
+#: src/app/error.tsx:97
+#~ msgid "Reload the page"
+#~ msgstr ""

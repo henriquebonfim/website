@@ -1,9 +1,9 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "@tailwindcss/typography";
 @plugin "daisyui";
 
 @plugin "daisyui/theme" {
-  name: "light";
+  name: 'light';
   default: true;
   --color-base-100: oklch(0.61 0 0);
   --color-base-200: oklch(0.49 0 0);
@@ -37,7 +37,7 @@
 }
 
 @plugin "daisyui/theme" {
-  name: "dark";
+  name: 'dark';
   default: false;
   --color-base-100: oklch(0.61 0 0);
   --color-base-200: oklch(0.74 0 0);
@@ -71,7 +71,8 @@
 }
 
 html {
-  background: url("/background.webp") no-repeat center center fixed;
+  background: url('/assets/layout/background.webp') no-repeat center center
+    fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -253,4 +254,75 @@ html {
   100% {
     transform: translateX(-50%);
   }
+}
+
+/* Windows 95 retro range thumb styles */
+input[type='range'].win96-thumb::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 11px;
+  height: 21px;
+  background: linear-gradient(
+    to right,
+    #c0c0c0 0%,
+    #c0c0c0 45%,
+    #000 45%,
+    #000 55%,
+    #c0c0c0 55%,
+    #c0c0c0 100%
+  );
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #ffffff,
+    inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
+  cursor: pointer;
+  border-radius: 0;
+}
+input[type='range'].win96-thumb::-moz-range-thumb {
+  width: 11px;
+  height: 21px;
+  background: linear-gradient(
+    to right,
+    #c0c0c0 0%,
+    #c0c0c0 45%,
+    #000 45%,
+    #000 55%,
+    #c0c0c0 55%,
+    #c0c0c0 100%
+  );
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #ffffff,
+    inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+input[type='range'].win96-thumb::-ms-thumb {
+  width: 11px;
+  height: 21px;
+  background: linear-gradient(
+    to right,
+    #c0c0c0 0%,
+    #c0c0c0 45%,
+    #000 45%,
+    #000 55%,
+    #c0c0c0 55%,
+    #c0c0c0 100%
+  );
+  box-shadow:
+    inset -1px -1px #0a0a0a,
+    inset 1px 1px #ffffff,
+    inset -2px -2px #808080,
+    inset 2px 2px #dfdfdf;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+}
+input[type='range'].win96-thumb {
+  /* Remove default appearance for all browsers */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
 }

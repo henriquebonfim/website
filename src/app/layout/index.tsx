@@ -1,8 +1,8 @@
-import { THEME_ATTRIBUTE } from "#/shared/constants";
-import { useRootContext } from "#/shared/hooks";
-import { Footer } from "#/widgets/footer";
-import { Header } from "#/widgets/header";
-import { type JSX, type ReactNode, memo, useEffect } from "react";
+import { THEME_ATTRIBUTE } from '#/shared/constants';
+import { useRootContext } from '#/shared/hooks';
+import { Footer } from '#/widgets/footer';
+import { Header } from '#/widgets/header';
+import { type FC, type ReactNode, memo, useEffect } from 'react';
 
 /**
  * Layout component that wraps the application with a header, footer, and main content area.
@@ -11,7 +11,7 @@ import { type JSX, type ReactNode, memo, useEffect } from "react";
  * @param {React.ReactNode} props.children - The children components
  * @returns {JSX.Element} The Layout component
  */
-function Layout({ children }: { children: ReactNode }): JSX.Element {
+const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   const { theme } = useRootContext();
 
   useEffect(() => {
@@ -21,12 +21,10 @@ function Layout({ children }: { children: ReactNode }): JSX.Element {
   return (
     <>
       <Header />
-      <main className="container mx-auto flex min-h-screen scale-95 flex-col items-center justify-center gap-3 pt-16 2xl:scale-100">
-        {children}
-      </main>
+      <main className="h-full w-full px-3 py-16">{children}</main>
       <Footer />
     </>
   );
-}
+};
 
 export default memo(Layout);

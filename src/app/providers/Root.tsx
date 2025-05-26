@@ -1,13 +1,13 @@
-import { useState, useEffect, type JSX } from "react";
-import { RootContext } from "../contexts/root";
-import { type ThemeType } from "#/shared/types";
 import {
   DEFAULT_LOCALE,
   LOCALE_STORAGE_KEY,
   LOCALES,
-  THEMES,
   THEME_STORAGE_KEY,
-} from "#/shared/constants";
+  THEMES,
+} from '#/shared/constants';
+import { type ThemeType } from '#/shared/types';
+import { useEffect, useState, type FC, type ReactNode } from 'react';
+import { RootContext } from '../contexts/root';
 
 /**
  * Retrieves theme preference from localStorage or system preferences (DISABLED).
@@ -35,7 +35,7 @@ const getInitialLocale = (): keyof typeof LOCALES => {
   ) {
     return savedLocale as keyof typeof LOCALES;
   }
-  const browserLanguage = navigator.language.split("-")[0];
+  const browserLanguage = navigator.language.split('-')[0];
   if (Object.prototype.hasOwnProperty.call(LOCALES, browserLanguage)) {
     return browserLanguage as keyof typeof LOCALES;
   }
@@ -48,11 +48,7 @@ const getInitialLocale = (): keyof typeof LOCALES => {
  * @param {React.ReactNode} props.children - The children components.
  * @returns {JSX.Element} The RootProvider component.
  */
-export function RootProvider({
-  children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element {
+export const RootProvider: FC<{ children: ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<ThemeType>(getInitialTheme);
   const [locale, setLocale] = useState<keyof typeof LOCALES>(getInitialLocale);
 
@@ -66,4 +62,4 @@ export function RootProvider({
       {children}
     </RootContext.Provider>
   );
-}
+};

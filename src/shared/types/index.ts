@@ -1,5 +1,5 @@
-export type ThemeType = "light" | "dark";
-export type LocaleType = "en" | "es" | "pt";
+export type ThemeType = 'light' | 'dark';
+export type LocaleType = 'en' | 'es' | 'pt';
 export type RootContextType = {
   theme: ThemeType;
   setTheme: React.Dispatch<React.SetStateAction<ThemeType>>;

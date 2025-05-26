@@ -1,9 +1,9 @@
-import { type JSX, type ReactNode, useEffect, useState } from "react";
-import { I18nProvider } from "@lingui/react";
-import { i18n } from "@lingui/core";
-import { dynamicLoadMessages } from "#/shared/i18n";
-import { Loading } from "#/widgets/loading-spinner";
-import { useRootContext } from "#/shared/hooks";
+import { useRootContext } from '#/shared/hooks';
+import { dynamicLoadMessages } from '#/shared/i18n';
+import { Loading } from '#/widgets/loading-spinner';
+import { i18n } from '@lingui/core';
+import { I18nProvider } from '@lingui/react';
+import { type FC, type ReactNode, useEffect, useState } from 'react';
 
 /**
  * TranslatorProvider component that provides translation context to its children.
@@ -12,11 +12,11 @@ import { useRootContext } from "#/shared/hooks";
  * @param {React.ReactNode} props.children - The children components
  * @returns {JSX.Element} The TranslatorProvider component
  */
-function TranslatorProvider({
+const TranslatorProvider: FC<{ children: ReactNode }> = ({
   children,
 }: {
   children: ReactNode;
-}): JSX.Element {
+}) => {
   const [isReady, setIsReady] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
@@ -30,7 +30,7 @@ function TranslatorProvider({
         await dynamicLoadMessages(locale);
         setIsReady(true);
       } catch (error) {
-        console.error("Failed to load translations:", error);
+        console.error('Failed to load translations:', error);
         setHasError(true);
       } finally {
         setIsLoading(false);
@@ -55,6 +55,6 @@ function TranslatorProvider({
   if (isLoading && !isReady) return <Loading overlay size="md" />;
 
   return <I18nProvider i18n={i18n}>{children}</I18nProvider>;
-}
+};
 
 export default TranslatorProvider;

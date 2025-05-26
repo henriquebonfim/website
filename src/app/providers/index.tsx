@@ -1,6 +1,6 @@
-import type { JSX } from "react";
-import { RootProvider } from "./Root";
-import TranslatorProvider from "./Translator";
+import type { FC, ReactNode } from 'react';
+import { RootProvider } from './Root';
+import TranslatorProvider from './Translator';
 
 /**
  * Providers component that wraps the application with necessary context providers.
@@ -10,14 +10,10 @@ import TranslatorProvider from "./Translator";
  * @returns {JSX.Element} The Providers component
  */
 
-export function Providers({
-  children,
-}: {
-  children: React.ReactNode;
-}): JSX.Element {
+export const Providers: FC<{ children: ReactNode }> = ({ children }) => {
   return (
     <RootProvider>
       <TranslatorProvider>{children}</TranslatorProvider>
     </RootProvider>
   );
-}
+};
