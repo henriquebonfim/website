@@ -4,7 +4,7 @@
   "version": "1.0.2",
   "type": "module",
   "scripts": {
-    "dev": "pnpm translate && vite --port 3000",
+    "dev": "pnpm translate && pnpm test && vite --port 3000",
     "dev:host": "vite --port 3000 --host",
     "build": "pnpm translate && tsc -b && vite build",
     "lint": "pnpm exec prettier . --write && pnpm exec eslint . --fix",

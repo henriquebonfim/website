@@ -82,4 +82,4 @@ const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
   },
 );
 
-export { LoadingSpinner as Loading };
+export default LoadingSpinner;

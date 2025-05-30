@@ -87,7 +87,7 @@ test('renders name', async () => {
 
 ## Structure
 
-- Organize tests in a `test/` directory or alongside source files as `*.test.ts(x)`.
+- Organize tests in a `test/` directory or alongside source files as `*.spec.ts(x)`.
 - Use `describe` blocks for grouping related tests.
 - Use clear, descriptive test names.
 - Use a global setup file (e.g., `test/setup.ts`) for mocks (IntersectionObserver, ResizeObserver, matchMedia, etc.).
@@ -101,7 +101,7 @@ test('renders name', async () => {
 
 ## Naming
 
-- Test files: `ComponentName.test.tsx` or `functionName.test.ts`.
+- Test files: `ComponentName.spec.tsx` or `functionName.spec.ts`.
 - Test cases: Use descriptive, behavior-focused names.
 
 ## Best Practices

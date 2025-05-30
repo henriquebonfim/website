@@ -4,6 +4,11 @@ applyTo: '**/src/**, **/public/**, **/*.html'
 
 # Frontend Development Standards
 
+## Accessibility
+
+- Use semantic HTML, HTML entity like &nbsp; and ARIA attributes
+- Ensure keyboard navigation support
+
 ## Component Architecture
 
 - Use functional components with hooks over class components
@@ -21,7 +26,7 @@ applyTo: '**/src/**, **/public/**, **/*.html'
 
 ## Performance
 
-- Implement React.memo for expensive re-renders
+- Implement memo for expensive re-renders
 - Use useMemo and useCallback for expensive computations
 - Implement code splitting with lazy loading
 - Optimize bundle size with tree shaking
@@ -32,11 +37,17 @@ applyTo: '**/src/**, **/public/**, **/*.html'
 - Use TailwindCSS and DaisyUI for component styling
 - Follow mobile-first responsive design principles
 - Maintain consistent design system and spacing
-- Use semantic HTML elements for accessibility
 
-## Accessibility
+## i18n
 
-- Use semantic HTML and ARIA attributes
-- Ensure keyboard navigation support
-- Maintain proper color contrast ratios
-- Test with screen readers
+- use lingui for internationalization
+- There are two types of macros: Core Macros (JS) and React Macros (JSX).
+- Lingui uses the CLDR Plural Rules to determine the correct plural form for each language.
+- Choose the plural forms used in your source code based on the pluralization rules of your source locale.
+- In general, there are 6 plural forms (taken from the CLDR Plurals page):
+  -- zero
+  -- one (singular)
+  -- two (dual)
+  -- few (paucal)
+  -- many (also used for fractions if they have a separate class)
+  -- other (required — general plural form — also used if the language only has a single form)

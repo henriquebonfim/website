@@ -1,23 +1,47 @@
-import { API, SECTION_ITEMS } from '#/shared/constants';
-import type { FC } from 'react';
+import { SECTION_ITEMS } from '#/shared/constants';
+import type { FC, HTMLAttributes } from 'react';
 
-export const YoutubeWidget: FC = () => {
-  return (
-    <section
-      id={SECTION_ITEMS.YOUTUBE}
-      className="flex h-full w-full flex-col gap-4"
-    >
-      <iframe
-        className="rounded-lg border-3 border-[#333333] bg-[#131313] shadow-lg"
-        id="ytplayer"
-        width="100%"
-        height="500"
-        src={API.YOUTUBE_EMBED}
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        sandbox="allow-scripts allow-same-origin allow-presentation"
-        loading="lazy"
-        allowFullScreen
-      />
-    </section>
-  );
-};
+/**
+ * Props for YoutubeWidget component.
+ * @property url - The YouTube embed URL (required)
+ * @property className - Optional custom class names for the section
+ * @property height - Optional height for the iframe element
+ */
+interface YoutubeWidgetProps extends HTMLAttributes<HTMLIFrameElement> {
+  url: string;
+  height?: string | number;
+}
+
+/**
+ * Youtube video embed widget.
+ * Renders an accessible, responsive YouTube embed section.
+ * @param props - YoutubeWidgetProps
+ * @returns JSX.Element
+ */
+export const YoutubeWidget: FC<YoutubeWidgetProps> = ({
+  className,
+  url,
+  height = '400',
+}) => (
+  <section
+    id={SECTION_ITEMS.YOUTUBE}
+    className={className}
+    aria-label="YouTube Video Section"
+    tabIndex={0}
+  >
+    <iframe
+      height={height}
+      className="rounded-lg border-3 border-[#333333] bg-[#131313] shadow-lg"
+      id="ytplayer"
+      width="100%"
+      src={url}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      sandbox="allow-scripts allow-same-origin allow-presentation"
+      loading="lazy"
+      allowFullScreen
+      title="YouTube Video"
+      aria-label="YouTube Video Embed"
+      tabIndex={-1}
+    />
+  </section>
+);

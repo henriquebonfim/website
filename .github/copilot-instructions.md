@@ -4,6 +4,8 @@ applyTo: '**'
 
 # General Coding Standards
 
+- follows WCAG Guidelines
+- Ensure that the React app provides: Sufficient color contrast, Keyboard navigability, Focus indicators, Proper use of ARIA attributes and roles where needed, Text alternatives for images and icons, Logical heading structure and semantic elements.
 - Implement desired functionality, always use JSDocs and remove unnecessary code/libraries.
 - Follow coding styles, standards, and conventions (SOLID, KISS, DRY principles).
 - Strive for concise, meaningful code and avoid over-engineering.

@@ -1,9 +1,7 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
-import { Loading } from './loading-spinner';
-
-// Arrange, Act, Assert pattern
+import { Loading } from '..';
 
 describe('LoadingSpinner', () => {
   it('renders with default props', () => {

@@ -1,18 +1,20 @@
-import { Homepage } from '#/pages/homepage';
-import type { FC } from 'react';
-import ErrorBoundary from './error';
+import { Homepage } from '#/pages/home';
+import { Suspense, type FC } from 'react';
 import './index.css';
-import Layout from './layout';
+import { Layout } from './layout';
 import { Providers } from './providers';
+import { ErrorBoundary, Loading } from '#/shared/ui';
 
 export const App: FC = () => {
   return (
-    <ErrorBoundary>
-      <Providers>
-        <Layout>
-          <Homepage />
-        </Layout>
-      </Providers>
-    </ErrorBoundary>
+    <Suspense fallback={<Loading />}>
+      <ErrorBoundary>
+        <Providers>
+          <Layout>
+            <Homepage />
+          </Layout>
+        </Providers>
+      </ErrorBoundary>
+    </Suspense>
   );
 };
