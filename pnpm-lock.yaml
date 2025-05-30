@@ -60,6 +60,9 @@ importers:
       '@vitest/ui':
         specifier: ^3.1.4
         version: 3.1.4(vitest@3.1.4)
+      babel-plugin-macros:
+        specifier: ^3.1.0
+        version: 3.1.0
       daisyui:
         specifier: ^5.0.35
         version: 5.0.37
