@@ -7,7 +7,7 @@ import type { LocaleType } from '../../types';
  * @throws Error if the locale catalog cannot be loaded
  */
 export const dynamicLoadMessages = async (locale: LocaleType) => {
-  const catalog = await import(`../locales/${locale}.po`);
+  const catalog = await import(`../locales/${locale}.ts`);
   if (!catalog?.messages) {
     throw new Error(`No messages found in catalog for locale: ${locale}`);
   }

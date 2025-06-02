@@ -4,9 +4,9 @@ import react from '@vitejs/plugin-react';
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import viteCompression from 'vite-plugin-compression';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { VitePWA } from 'vite-plugin-pwa';
 import { configDefaults } from 'vitest/dist/config.js';
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 /**
  * Vite configuration optimized for performance and accessibility
@@ -40,7 +40,6 @@ export default defineConfig({
     rollupOptions: {
       output: {
         // Separate chunks by module type
-        // Function form of manualChunks to fix conflict with splitVendorChunkPlugin
         manualChunks: (id) => {
           // Core React libraries
           if (
@@ -48,11 +47,6 @@ export default defineConfig({
             id.includes('node_modules/react-dom/')
           ) {
             return 'vendor-react';
-          }
-
-          // i18n libraries
-          if (id.includes('node_modules/@lingui/')) {
-            return 'vendor-i18n';
           }
 
           // UI framework libraries
@@ -217,11 +211,6 @@ export default defineConfig({
           {
             src: 'icon-96x96.png',
             sizes: '96x96',
-            type: 'image/png',
-          },
-          {
-            src: 'icon-128x128.png',
-            sizes: '128x128',
             type: 'image/png',
           },
           {
