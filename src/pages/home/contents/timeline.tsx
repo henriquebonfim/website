@@ -1,12 +1,14 @@
-import { t } from '@lingui/core/macro';
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
-import type { FC } from 'react';
+import { memo, type FC } from 'react';
 
 /**
  * Timeline component displays a chronological list of career and education milestones.
  * Accessibility: Uses semantic HTML, ARIA attributes, and keyboard navigation support.
  */
-export const Timeline: FC = () => {
+const Timeline: FC = memo(() => {
+  const { i18n } = useLingui();
   // Handles keyboard navigation for timeline items
   const handleKeyDown = (
     event: React.KeyboardEvent<HTMLLIElement>,
@@ -28,14 +30,14 @@ export const Timeline: FC = () => {
   return (
     <ul
       className="timeline not-prose timeline-snap-icon max-md:timeline-compact timeline-vertical"
-      aria-label={t`Lifetime Timeline`}
+      aria-label={i18n._(msg`Lifetime Timeline`)}
       role="list"
     >
       {/* Childhood Creativity */}
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Childhood Creativity`}
+        aria-label={i18n._(msg`Childhood Creativity`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 0)}
       >
@@ -56,7 +58,10 @@ export const Timeline: FC = () => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label={t`Early 2000s`}>
+          <time
+            className="font-mono italic"
+            aria-label={i18n._(msg`Early 2000s`)}
+          >
             <Trans>Early 2000s</Trans>
           </time>
           <div className="text-lg font-black">
@@ -75,7 +80,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`First contact with tech and education program`}
+        aria-label={i18n._(msg`First contact with tech and education program`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 1)}
       >
@@ -116,7 +121,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`First IT Job`}
+        aria-label={i18n._(msg`First IT Job`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 2)}
       >
@@ -157,7 +162,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`University Begins`}
+        aria-label={i18n._(msg`University Begins`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 3)}
       >
@@ -198,7 +203,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Junior Dev at Indext`}
+        aria-label={i18n._(msg`Junior Dev at Indext`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 4)}
       >
@@ -238,7 +243,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Junior Developer – LEDES`}
+        aria-label={i18n._(msg`Junior Developer – LEDES`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 5)}
       >
@@ -279,7 +284,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Mid-Level Developer – PIME`}
+        aria-label={i18n._(msg`Mid-Level Developer – PIME`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 6)}
       >
@@ -320,7 +325,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Startup Failed`}
+        aria-label={i18n._(msg`Startup Failed`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 7)}
       >
@@ -359,7 +364,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Hackatrouble Win`}
+        aria-label={i18n._(msg`Hackatrouble Win`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 8)}
       >
@@ -400,7 +405,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Full-Stack Mid-Level at Portal Solar`}
+        aria-label={i18n._(msg`Full-Stack Mid-Level at Portal Solar`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 9)}
       >
@@ -440,7 +445,9 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Senior Software Engineer – Meu Financiamento Solar`}
+        aria-label={i18n._(
+          msg`Senior Software Engineer – Meu Financiamento Solar`,
+        )}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 10)}
       >
@@ -480,7 +487,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`AWS re/Start Graduate`}
+        aria-label={i18n._(msg`AWS re/Start Graduate`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 11)}
       >
@@ -521,7 +528,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Google Cloud Innovators`}
+        aria-label={i18n._(msg`Google Cloud Innovators`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 12)}
       >
@@ -562,7 +569,7 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Workana – Senior Backend Engineer`}
+        aria-label={i18n._(msg`Workana – Senior Backend Engineer`)}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 13)}
       >
@@ -603,7 +610,9 @@ export const Timeline: FC = () => {
       <li
         tabIndex={0}
         data-timeline-item
-        aria-label={t`Freelance Work at Upwork – Senior Software Engineer`}
+        aria-label={i18n._(
+          msg`Freelance Work at Upwork – Senior Software Engineer`,
+        )}
         role="listitem"
         onKeyDown={(e) => handleKeyDown(e, 14)}
       >
@@ -639,4 +648,6 @@ export const Timeline: FC = () => {
       </li>
     </ul>
   );
-};
+});
+
+export default Timeline;

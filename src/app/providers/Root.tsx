@@ -1,11 +1,18 @@
 import {
   DEFAULT_LOCALE,
+  LANG_ATTRIBUTE,
   LOCALE_STORAGE_KEY,
   LOCALES,
+  THEME_ATTRIBUTE,
   THEME_STORAGE_KEY,
   THEMES,
 } from '#/shared/constants';
+import useLocalStorage from '#/shared/hooks/useLocalStorage';
+import { dynamicLoadMessages } from '#/shared/i18n/functions';
 import { type LocaleType, type ThemeType } from '#/shared/types';
+import { Loading } from '#/shared/ui';
+import { i18n } from '@lingui/core';
+import { I18nProvider } from '@lingui/react';
 import { useEffect, useState, type FC, type ReactNode } from 'react';
 import { RootContext } from '../contexts/root';
 
@@ -14,12 +21,9 @@ import { RootContext } from '../contexts/root';
  * @returns {ThemeType} The user's preferred theme.
  */
 const getInitialTheme = (): ThemeType => {
-  const savedTheme = localStorage.getItem(
-    THEME_STORAGE_KEY,
-  ) as ThemeType | null;
-  return savedTheme === THEMES.dark || savedTheme === THEMES.light
-    ? savedTheme
-    : THEMES.dark;
+  if (typeof window === 'undefined') return THEMES.dark;
+  const saved = localStorage.getItem(THEME_STORAGE_KEY) as ThemeType | null;
+  return saved && saved in THEMES ? saved : THEMES.dark;
 };
 
 /**
@@ -27,37 +31,44 @@ const getInitialTheme = (): ThemeType => {
  * @returns {LocaleType} The user's preferred locale.
  */
 const getInitialLocale = (): LocaleType => {
-  const savedLocale = localStorage.getItem(LOCALE_STORAGE_KEY);
-  if (
-    savedLocale &&
-    Object.prototype.hasOwnProperty.call(LOCALES, savedLocale)
-  ) {
-    return savedLocale as LocaleType;
-  }
-  const browserLanguage = navigator.language.split('-')[0];
-  return Object.prototype.hasOwnProperty.call(LOCALES, browserLanguage)
-    ? (browserLanguage as LocaleType)
-    : DEFAULT_LOCALE;
+  const browserLang = navigator.language.split('-')[0];
+  const saved = localStorage.getItem(LOCALE_STORAGE_KEY);
+  if (saved && saved in LOCALES) return saved as LocaleType;
+  return browserLang in LOCALES ? (browserLang as LocaleType) : DEFAULT_LOCALE;
 };
 
-/**
- * Provides theme and locale context to its children.
- * @param {object} props - The component props.
- * @param {React.ReactNode} props.children - The children components.
- * @returns {JSX.Element} The RootProvider component.
- */
 export const RootProvider: FC<{ children: ReactNode }> = ({ children }) => {
-  const [theme, setTheme] = useState<ThemeType>(getInitialTheme);
-  const [locale, setLocale] = useState<LocaleType>(getInitialLocale);
+  const [loading, setLoading] = useState(true);
+  const [theme, setTheme] = useLocalStorage<ThemeType>(
+    THEME_STORAGE_KEY,
+    getInitialTheme,
+  );
+  const [locale, setLocale] = useLocalStorage<LocaleType>(
+    LOCALE_STORAGE_KEY,
+    getInitialLocale,
+  );
 
   useEffect(() => {
-    localStorage.setItem(LOCALE_STORAGE_KEY, locale);
-    localStorage.setItem(THEME_STORAGE_KEY, theme);
-  }, [locale, theme]);
+    document.documentElement.setAttribute(THEME_ATTRIBUTE, theme);
+  }, [theme]);
+
+  useEffect(() => {
+    (async () => {
+      await dynamicLoadMessages(locale).then(() => {
+        document.documentElement.setAttribute(LANG_ATTRIBUTE, locale);
+        i18n.activate(locale);
+        setLoading(false);
+      });
+    })();
+  }, [locale]);
 
   return (
     <RootContext.Provider value={{ theme, setTheme, locale, setLocale }}>
-      {children}
+      {loading ? (
+        <Loading centered overlay />
+      ) : (
+        <I18nProvider i18n={i18n}>{children}</I18nProvider>
+      )}
     </RootContext.Provider>
   );
 };

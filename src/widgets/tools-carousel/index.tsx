@@ -1,3 +1,5 @@
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react';
 import type { FC } from 'react';
 
 const getImageUrl = (name: string): string =>
@@ -58,12 +60,30 @@ const icons: Icon[] = [
 ];
 
 export const ToolsCarousel: FC = () => {
+  const { i18n } = useLingui();
   return (
-    <section className="fade-mask relative w-full overflow-hidden py-4">
-      <div className="tools-carousel-wrapper w-fit whitespace-nowrap">
-        <div className="tools-carousel animate-scroll inline-flex min-w-max">
+    <section
+      className="fade-mask relative w-full overflow-hidden py-4"
+      role="none"
+    >
+      <div
+        className="tools-carousel-wrapper w-fit whitespace-nowrap"
+        role="listitem"
+        aria-roledescription={i18n._(msg`A carousel of tools and technologies`)}
+        aria-live="polite"
+        aria-busy="false"
+        aria-label={i18n._(
+          msg`Carousel of tools and technologies used by Henrique Bonfim`,
+        )}
+      >
+        <figure
+          className="tools-carousel animate-scroll inline-flex min-w-max"
+          role="figure"
+        >
           {icons.concat(icons).map((icon, idx) => (
             <img
+              role="img"
+              aria-label={icon.title}
               key={idx}
               src={icon.src}
               alt={icon.alt}
@@ -73,7 +93,7 @@ export const ToolsCarousel: FC = () => {
               loading="lazy"
             />
           ))}
-        </div>
+        </figure>
       </div>
     </section>
   );

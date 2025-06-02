@@ -108,7 +108,7 @@ interface TerminalProps {
 /**
  * Terminal-like UI component with title bar, command prompt, and content area.
  */
-const Terminal: FC<TerminalProps> = memo(
+export const Terminal: FC<TerminalProps> = memo(
   ({ title = 'Terminal', cmd, children, className, id }) => (
     <section
       id={id}
@@ -116,12 +116,12 @@ const Terminal: FC<TerminalProps> = memo(
       aria-live="polite"
       className={`bg-neutral/90 w-full rounded-xl shadow-xl/30 ${className}`}
       aria-label={`Terminal: "${title.toLowerCase()}"`}
-      role="region"
+      role="none"
     >
       <header
         className="bg-neutral border-base-100/30 flex h-12 items-center rounded-t-xl border-b px-4 py-2"
         aria-label="Terminal header"
-        role="banner"
+        role="none"
       >
         <div className="left-4 flex items-center gap-1">
           <div className="bg-error h-3 w-3 rounded-full" />
@@ -134,7 +134,7 @@ const Terminal: FC<TerminalProps> = memo(
           )}
         </div>
       </header>
-      <main aria-label="Terminal content" role="main">
+      <main aria-label="Terminal content" role="none">
         {cmd && (
           <p
             className="space-x-2 px-3 pt-3 font-mono text-xs font-bold text-wrap"
@@ -150,5 +150,3 @@ const Terminal: FC<TerminalProps> = memo(
     </section>
   ),
 );
-
-export default Terminal;

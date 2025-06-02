@@ -1,39 +1,55 @@
 import { SOCIAL_LINKS } from '#/shared/constants';
-import { SocialMedia } from '#/widgets/social-badges';
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react';
 import type { FC } from 'react';
 
 /**
  * Footer component displays social media links and author credit.
- * Uses semantic HTML, ARIA attributes, and accessible links.
- * @returns {JSX.Element} The footer section of the website.
+ * @returns {JSX.Element} The footer section of the website
  */
-export const Footer: FC = () => (
-  <footer
-    className="bg-neutral border-base-100 mx-auto mt-1 flex w-full flex-col items-center justify-center gap-1 border-t-1 text-center"
-    aria-label="Website Footer"
-  >
-    <div className="divider divider-base mx-auto w-3/12">
-      <SocialMedia />
-    </div>
-    <p className="text-base-300 -m-1 mb-3 text-xs">
-      Made with&nbsp;
-      <span
-        role="img"
-        aria-label="love"
-        className="inline-block animate-[heartbeat_1.2s_infinite] grayscale-100 invert-100"
+export const Footer: FC = () => {
+  const { i18n } = useLingui();
+  return (
+    <footer
+      className="bg-neutral border-base-100 mx-auto mt-1 flex w-full flex-col items-center justify-center border-t-1 py-3 text-center"
+      aria-label="Website footer"
+      role="contentinfo"
+    >
+      <p
+        className="text-neutral-content mx-0 mb-3"
+        aria-label={i18n._(msg`Author credit`)}
       >
-        &#x2764;
-      </span>
-      &nbsp;by&nbsp;
-      <a
-        href={SOCIAL_LINKS.GITHUB}
-        title="GitHub profile of Henrique Bonfim"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="focus:ring-primary underline focus:ring-2 focus:outline-none"
-      >
-        Henrique Bonfim
-      </a>
-    </p>
-  </footer>
-);
+        Made with{' '}
+        <span
+          className="inline-block motion-safe:animate-[heartbeat_1.2s_infinite]"
+          aria-label={i18n._(msg`heart`)}
+          role="img"
+        >
+          ❤️
+        </span>{' '}
+        by{' '}
+        <a
+          role="link"
+          aria-label={i18n._(msg`GitHub profile of Henrique Bonfim`)}
+          href={SOCIAL_LINKS.GITHUB}
+          title={i18n._(msg`GitHub profile of Henrique Bonfim`)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="focus:ring-primary inline-flex min-h-[44px] min-w-[44px] items-center justify-center px-1 py-1 underline focus:ring-2 focus:outline-none"
+        >
+          Henrique Bonfim
+        </a>
+      </p>
+
+      <div className="ghost_loader_wrap" role="none" aria-hidden="true">
+        <div className="pacman-loader" />
+        <div className="ghosts">
+          <div className="ghost one blinky" />
+          <div className="ghost two clyde" />
+          <div className="ghost three inky" />
+          <div className="ghost four pinky" />
+        </div>
+      </div>
+    </footer>
+  );
+};

@@ -1,118 +1,283 @@
-import { t } from '@lingui/core/macro';
-import type { FC } from 'react';
+import type { I18n, MessageDescriptor } from '@lingui/core';
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react';
+import React, {
+  memo,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
+  type FC,
+} from 'react';
 
 interface Project {
   title: string;
-  popup_text: string;
+  popup_text: MessageDescriptor;
   image: string;
   link: string;
-  alt: string;
-  category: string[];
+  alt: MessageDescriptor;
+  category: MessageDescriptor[];
 }
 
-const ProjectCategoryBadge: FC<{ cat: string }> = ({ cat }) => (
-  <div
-    className="badge badge-outline pointer-events-none whitespace-nowrap"
-    tabIndex={-1}
-    aria-label={cat}
-  >
-    {cat}
-  </div>
-);
+const LIST_PROJECTS: ReadonlyArray<Project> = [
+  {
+    title: 'ArduEVE',
+    popup_text: msg`IoT automation system using microservices architecture with NodeJS, VueJS, and MongoDB. Controls electronic relays for lighting and door access while providing real-time sensor monitoring through Docker Swarm deployment.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/ardueve800x600.gif',
+    link: 'https://github.com/hpbonfim/ArduEVE',
+    alt: msg`ArduEVE IoT automation system interface showing real-time sensor data`,
+    category: [msg`Application`, msg`IoT`],
+  },
+  {
+    title: 'Pet Porta App',
+    popup_text: msg`Mobile-controlled door access system built with NodeJS microservices, MongoDB, and Arduino integration. Deployed with Docker Swarm for the PET SISTEMAS laboratory.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/pet800x600.png',
+    link: 'https://github.com/hpbonfim/pet-porta-app',
+    alt: msg`Pet Porta App mobile interface for door access control`,
+    category: [msg`Application`, msg`IoT`],
+  },
+  {
+    title: 'Roça Eats',
+    popup_text: msg`Hackatrouble SP 2020 award-winning platform connecting rural farmers with charity organizations to reduce food waste. Built with NodeJS, Angular, and AWS for scalable donation management.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/roca800x600.png',
+    link: 'https://github.com/hpbonfim/roca-eats',
+    alt: msg`Roça Eats platform interface showing food donation management system`,
+    category: [msg`Open Source`, msg`SaaS`],
+  },
+  {
+    title: 'Mideal',
+    popup_text: msg`Blockchain-based legal contract platform recognized in Top 50 at Megahack v2 2020. Implements NodeJS, Angular, and Google Cloud to ensure transparent, tamper-proof digital agreements with legal validity.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/mideal800x600.png',
+    link: 'https://github.com/hpbonfim/MegaHack-v2-2020-Projeto-Mideal',
+    alt: msg`Mideal blockchain contract system showing document verification interface`,
+    category: [msg`Open Source`, msg`SaaS`],
+  },
+  {
+    title: 'Canivete Perneta',
+    popup_text: msg`Mobile companion app for truck drivers developed at HackathonCCR. Features route optimization, rest stop finder, and health tracking using React Native with AWS backend services.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/canivete800x600.png',
+    link: 'https://github.com/hpbonfim/HackathonCCR',
+    alt: msg`Canivete Perneta mobile app interface showing truck driver assistance features`,
+    category: [msg`Open Source`, msg`App`],
+  },
+];
 
-const ProjectCard: FC<{ project: Project; descId: string }> = ({
-  project,
-  descId,
-}) => (
-  <div className="justify-center md:flex">
-    <div className="card bg-base-100 flex w-full max-w-xs flex-col shadow-md">
-      <figure className="rounded-t-lg bg-gray-100">
+const ProjectCard: React.FC<{
+  project: Project;
+  i18n: I18n;
+  isFocusable: boolean;
+  cardIdBase: string;
+}> = ({ project, i18n, isFocusable, cardIdBase }) => {
+  return (
+    <div
+      className="card bg-neutral focus-within:ring-primary flex h-full flex-col overflow-hidden rounded-lg border shadow-lg transition-shadow duration-300 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-800 hover:shadow-xl"
+      role="group"
+      aria-labelledby={`${cardIdBase}-title`}
+      aria-describedby={`${cardIdBase}-desc`}
+    >
+      <figure
+        className="not-prose aspect-[4/3]"
+        role="figure"
+        aria-label={i18n._(project.alt)}
+      >
         <img
+          role="img"
           src={project.image}
-          alt={project.alt}
+          alt={i18n._(project.alt)}
           loading="lazy"
-          className="h-60 w-full rounded-t-lg object-cover"
+          className="h-full w-full object-cover"
+          fetchPriority="auto"
+          aria-label={project.title}
+          tabIndex={isFocusable ? 0 : -1}
+          aria-describedby={`${cardIdBase}-desc`}
         />
       </figure>
-      <div className="card-body bg-neutral/50 flex flex-1 flex-col p-3">
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={project.title}
-          aria-describedby={descId}
-          className="card-title text-lg font-semibold"
-        >
-          {project.title}
-        </a>
-        <div className="card-actions flex flex-row flex-wrap justify-start gap-2">
+      <div className="card-body flex flex-grow flex-col p-3">
+        <h2 id={`${cardIdBase}-title`} className="mt-0 mb-2">
+          <a
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="focus:ring-primary rounded-sm hover:underline focus:ring-1 focus:outline-none"
+            aria-label={`${i18n._(project.title)} (opens in a new tab)`}
+            tabIndex={isFocusable ? 0 : -1}
+          >
+            {project.title}
+          </a>
+        </h2>
+        <p id={`${cardIdBase}-desc`} className="mb-3 text-wrap">
+          {i18n._(project.popup_text)}
+        </p>
+        <div className="card-actions border-base-100 mt-auto flex flex-row flex-wrap justify-start gap-2 border-t pt-3">
           {project.category.map((cat) => (
-            <ProjectCategoryBadge key={cat} cat={cat} />
+            <span
+              role="badge"
+              className="badge bg-primary rounded-full px-2 py-0.5"
+              key={cat.id || i18n._(cat)}
+              aria-label={`Category: ${i18n._(cat)}`}
+            >
+              {i18n._(cat)}
+            </span>
           ))}
         </div>
-        <small id={descId}>{project.popup_text}</small>
       </div>
     </div>
-  </div>
-);
-
-export const Projects: FC = () => {
-  const LIST_PROJECTS: ReadonlyArray<Project> = [
-    {
-      title: 'ArduEVE',
-      popup_text: t`Project built with microservices architecture and Docker Swarm, using NodeJS, VueJS, MongoDB, Arduino, and more, to control an electronic relay used to activate/deactivate a light and an electronic door, as well as some sensors to transmit real-time data readings.`,
-      image:
-        'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/ardueve800x600.gif',
-      link: 'https://github.com/hpbonfim/ArduEVE',
-      alt: t`ArduEVE project screenshot`,
-      category: ['Application', 'IoT'],
-    },
-    {
-      title: 'Pet Porta App',
-      popup_text: t`Project built with microservices architecture and Docker Swarm, using NodeJS, VueJS, MongoDB, and Arduino, to control an electronic relay for opening the PET SISTEMAS door via mobile phone.`,
-      image:
-        'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/pet800x600.png',
-      link: 'https://github.com/hpbonfim/pet-porta-app',
-      alt: t`Pet Porta App project screenshot`,
-      category: ['Application', 'IoT'],
-    },
-    {
-      title: 'Roça Eats',
-      popup_text: t`Award-winning project at Hackatrouble SP 2020, built with NodeJS, Angular, and AWS infrastructure to manage a system for donating surplus farm produce from rural producers, aiming for distribution to charity institutions.`,
-      image:
-        'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/roca800x600.png',
-      link: 'https://github.com/hpbonfim/roca-eats',
-      alt: t`Roça Eats project screenshot`,
-      category: ['Open Source', 'SaaS'],
-    },
-    {
-      title: 'Mideal',
-      popup_text: t`Top 50 project at Megahack v2 2020, a platform built with NodeJS, Angular, and Google Cloud infrastructure, aiming to create a blockchain system for generating legal contracts with 100% legal integrity and transparency.`,
-      image:
-        'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/mideal800x600.png',
-      link: 'https://github.com/hpbonfim/MegaHack-v2-2020-Projeto-Mideal',
-      alt: t`Mideal project screenshot`,
-      category: ['Open Source', 'SaaS'],
-    },
-    {
-      title: 'Canivete Perneta',
-      popup_text: t`Project created at HackathonCCR, using React-Native and AWS infrastructure, designed to assist truck drivers in their daily tasks.`,
-      image:
-        'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/canivete800x600.png',
-      link: 'https://github.com/hpbonfim/HackathonCCR',
-      alt: t`Canivete Perneta project screenshot`,
-      category: ['Open Source', 'App'],
-    },
-  ];
-
-  return (
-    <article className="not-prose grid justify-center gap-3 sm:grid-cols-3 lg:grid-cols-3">
-      {LIST_PROJECTS.map((project, idx) => {
-        const descId = `project-desc-${idx}`;
-        return (
-          <ProjectCard key={project.title} project={project} descId={descId} />
-        );
-      })}
-    </article>
   );
 };
+
+export const Projects: FC = memo(() => {
+  const { i18n } = useLingui();
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const totalSlides = LIST_PROJECTS.length;
+  const carouselId = 'projects-carousel-main';
+  const liveRegionRef = useRef<HTMLDivElement>(null);
+
+  const nextSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  }, [totalSlides]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  }, [totalSlides]);
+
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const carouselRegion = document.getElementById(carouselId + '-region');
+      if (carouselRegion && carouselRegion.contains(document.activeElement)) {
+        if (event.key === 'ArrowRight') {
+          nextSlide();
+        } else if (event.key === 'ArrowLeft') {
+          prevSlide();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [nextSlide, prevSlide]);
+
+  return (
+    <article
+      className="mb-3 w-full"
+      aria-label={i18n._(msg`Project list`)}
+      role="none"
+    >
+      {/* Visually hidden live region for screen reader announcements */}
+      <div
+        ref={liveRegionRef}
+        className="sr-only"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+
+      {/* Mobile: Show carousel (slider) */}
+      <section
+        id={carouselId + '-region'}
+        className="relative mx-auto w-[80vw] md:hidden"
+        aria-roledescription="carousel"
+        aria-label="My Projects Carousel"
+        role="tab"
+      >
+        <div className="overflow-hidden rounded-lg shadow-md">
+          {/* Pagination Dots for Carousel */}
+          {totalSlides > 1 && (
+            <div
+              className="absolute top-3 left-1/2 z-10 flex -translate-x-1/2 transform space-x-2"
+              role="tablist"
+              aria-label="Project slide picker"
+            >
+              {LIST_PROJECTS.map((project, idx) => (
+                <button
+                  key={idx + '-dot'}
+                  onClick={() => setCurrentSlide(idx)}
+                  className={`focus:ring-offset-base-300 h-3 w-6 rounded-full transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none ${idx === currentSlide ? 'focus:ring-accent/50 bg-accent' : 'bg-base-300 hover:bg-gray-500 focus:ring-gray-400'}`}
+                  aria-selected={idx === currentSlide}
+                  aria-controls={carouselId + '-region'}
+                  aria-label={`Go to project ${idx + 1}: ${i18n._(project.title)}`}
+                  role="tab"
+                  tabIndex={0}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* Added shadow and rounded for the container */}
+          <div
+            className="flex transition-transform duration-300 ease-in-out"
+            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+            role="list"
+            aria-label={i18n._(msg`Project carousel slides`)}
+          >
+            {LIST_PROJECTS.map((project, idx) => (
+              <div
+                key={project.title + '-slide'}
+                className="w-full flex-shrink-0"
+                role="group"
+                aria-label={i18n._(
+                  msg`Project ${idx + 1} of ${totalSlides}: ${i18n._(project.title)}`,
+                )}
+                aria-hidden={idx !== currentSlide}
+              >
+                <ProjectCard
+                  project={project}
+                  i18n={i18n}
+                  isFocusable={idx === currentSlide}
+                  cardIdBase={`carousel-card-${idx}`}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Navigation Buttons for Carousel */}
+        {totalSlides > 1 && (
+          <>
+            <button
+              onClick={prevSlide}
+              className="bg-neutral border-base-300 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-300 absolute top-1/2 left-2 z-10 -translate-y-1/2 transform rounded-full border-2 p-2 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              aria-controls={carouselId + '-region'}
+              aria-label="Previous project"
+            >
+              <span aria-hidden="true">&lt;</span>
+            </button>
+            <button
+              onClick={nextSlide}
+              className="bg-neutral border-base-300 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-300 absolute top-1/2 right-2 z-10 -translate-y-1/2 transform rounded-full border-2 p-2 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              aria-controls={carouselId + '-region'}
+              aria-label="Next project"
+            >
+              <span aria-hidden="true">&gt;</span>
+            </button>
+          </>
+        )}
+      </section>
+
+      {/* Desktop: Show cards in a grid */}
+      <section
+        className="hidden grid-cols-1 gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-8"
+        aria-labelledby="projects-grid-heading"
+        role="grid"
+      >
+        {/* Hidden heading for context */}
+        {LIST_PROJECTS.map((project, idx) => (
+          <ProjectCard
+            project={project}
+            i18n={i18n}
+            key={project.title + '-grid-' + idx}
+            isFocusable={true}
+            cardIdBase={`grid-card-${idx}`}
+          />
+        ))}
+      </section>
+    </article>
+  );
+});
+
+export default Projects;

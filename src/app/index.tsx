@@ -1,20 +1,17 @@
-import { Homepage } from '#/pages/home';
-import { Suspense, type FC } from 'react';
+import { lazy, type FC } from 'react';
 import './index.css';
 import { Layout } from './layout';
-import { Providers } from './providers';
-import { ErrorBoundary, Loading } from '#/shared/ui';
+import { RootProvider } from './providers/Root';
 
+const Homepage = lazy(() =>
+  import('#/pages/home').then((mod) => ({ default: mod.Homepage })),
+);
 export const App: FC = () => {
   return (
-    <Suspense fallback={<Loading />}>
-      <ErrorBoundary>
-        <Providers>
-          <Layout>
-            <Homepage />
-          </Layout>
-        </Providers>
-      </ErrorBoundary>
-    </Suspense>
+    <RootProvider>
+      <Layout>
+        <Homepage />
+      </Layout>
+    </RootProvider>
   );
 };

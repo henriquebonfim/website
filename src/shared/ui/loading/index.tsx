@@ -1,8 +1,11 @@
 import { memo, type FC } from 'react';
 
+/**
+ * Props for the Loading component
+ */
 interface LoadingSpinnerProps {
-  size?: 'sm' | 'md' | 'lg';
-  color?:
+  readonly size?: 'sm' | 'md' | 'lg';
+  readonly color?:
     | 'primary'
     | 'secondary'
     | 'accent'
@@ -11,28 +14,24 @@ interface LoadingSpinnerProps {
     | 'success'
     | 'warning'
     | 'error';
-  label?: string;
-  centered?: boolean;
-  overlay?: boolean;
+  readonly label?: string;
+  readonly centered?: boolean;
+  readonly overlay?: boolean;
 }
 
-const sizeClasses: Record<'sm' | 'md' | 'lg', string> = {
+/**
+ * Size configuration for loading spinner
+ */
+const SIZE_CONFIG = {
   sm: 'h-6 w-6 border-2',
   md: 'h-12 w-12 border-4',
   lg: 'h-16 w-16 border-8',
-};
+} as const;
 
-const colorClasses: Record<
-  | 'primary'
-  | 'secondary'
-  | 'accent'
-  | 'neutral'
-  | 'info'
-  | 'success'
-  | 'warning'
-  | 'error',
-  string
-> = {
+/**
+ * Color configuration for loading spinner
+ */
+const COLOR_CONFIG = {
   primary: 'border-primary',
   secondary: 'border-secondary',
   accent: 'border-accent',
@@ -41,8 +40,27 @@ const colorClasses: Record<
   success: 'border-success',
   warning: 'border-warning',
   error: 'border-error',
-};
+} as const;
 
+/**
+ * Loading spinner component with customizable size, color, and positioning options.
+ * Provides accessible loading indicators with proper ARIA attributes and semantic HTML.
+ *
+ * @param props - The component props
+ * @returns A loading spinner component
+ *
+ * @example
+ * ```tsx
+ * // Basic spinner
+ * <Loading />
+ *
+ * // Large spinner with label
+ * <Loading size="lg" label="Loading data..." />
+ *
+ * // Overlay spinner
+ * <Loading overlay label="Processing..." />
+ * ```
+ */
 const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
   ({
     size = 'md',
@@ -51,20 +69,34 @@ const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
     centered = false,
     overlay = false,
   }) => {
+    const spinnerClasses = `
+    animate-spin rounded-full border-t-transparent border-solid
+    ${SIZE_CONFIG[size]} ${COLOR_CONFIG[color]}
+  `.trim();
+
     const spinner = (
-      <div className="flex items-center">
+      <div className="flex items-center gap-3">
         <span
-          className={`animate-spin rounded-full border-t-transparent ${sizeClasses[size]} ${colorClasses[color]} border-solid`}
+          className={spinnerClasses}
           role="status"
-          aria-label="Loading"
+          aria-label={label || 'Loading content'}
         />
-        {label && <span className="ml-3 text-sm">{label}</span>}
+        {label && (
+          <span className="text-sm" aria-hidden="true">
+            {label}
+          </span>
+        )}
       </div>
     );
 
     if (overlay) {
       return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm">
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Loading overlay"
+        >
           {spinner}
         </div>
       );
@@ -72,7 +104,10 @@ const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
 
     if (centered) {
       return (
-        <div className="flex h-full w-full items-center justify-center">
+        <div
+          className="m-3 flex h-full w-full items-center justify-center"
+          aria-busy="true"
+        >
           {spinner}
         </div>
       );

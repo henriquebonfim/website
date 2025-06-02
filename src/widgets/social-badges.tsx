@@ -1,4 +1,6 @@
 import { SECTION_ITEMS, SOCIAL_LINKS } from '#/shared/constants';
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react';
 import type { FC, ReactNode } from 'react';
 
 interface SocialMediaLink {
@@ -17,26 +19,33 @@ const SocialIcon: FC<{
   url: string;
   children: ReactNode;
   download?: boolean;
-}> = ({ name, url, children, download }) => (
-  <a
-    className="cursor-pointer"
-    aria-label={download ? `Download ${name}` : `Follow on ${name}`}
-    title={download ? `Download ${name}` : `Follow on ${name}`}
-    href={url}
-    target="_blank"
-    rel="noopener noreferrer"
-    {...(download && { download })}
-  >
-    <svg
-      viewBox="0 0 24 24"
-      aria-hidden="true"
-      className="fill-base-300 hover:fill-base-100 h-6 w-6"
-    >
-      {children}
-    </svg>
-  </a>
-);
+}> = ({ name, url, children, download }) => {
+  const { i18n } = useLingui();
 
+  const ariaLabel = download
+    ? i18n._(msg`Download ${name}`)
+    : i18n._(msg`Follow on ${name}`);
+
+  return (
+    <a
+      className="cursor-pointer"
+      aria-label={ariaLabel}
+      title={ariaLabel}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      {...(download && { download })}
+    >
+      <svg
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        className="fill-base-300 hover:fill-base-100 h-6 w-6"
+      >
+        {children}
+      </svg>
+    </a>
+  );
+};
 const socialMediaLinks: SocialMediaLink[] = [
   {
     name: 'GitHub',
@@ -79,7 +88,7 @@ const resumeLink: ResumeLink = {
 
 export const SocialMedia: FC = () => {
   return (
-    <section id={SECTION_ITEMS.SOCIAL_MEDIA} className="flex gap-3">
+    <section id={SECTION_ITEMS.SOCIAL_MEDIA} className="mx-auto flex gap-3">
       {socialMediaLinks.map((link) => (
         <SocialIcon key={link.name} name={link.name} url={link.url}>
           {link.svgPath}
