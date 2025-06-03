@@ -29,7 +29,7 @@ const Timeline: FC = memo(() => {
 
   return (
     <ul
-      className="timeline not-prose timeline-snap-icon max-md:timeline-compact timeline-vertical"
+      className="timeline not-prose timeline-snap-icon max-md:timeline-compact timeline-vertical p-3"
       aria-label={i18n._(msg`Lifetime Timeline`)}
       role="list"
     >

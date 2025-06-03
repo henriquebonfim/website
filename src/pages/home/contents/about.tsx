@@ -13,12 +13,11 @@ import { PrettyJSON } from '../../../widgets/terminal';
 const About: FC = memo(() => {
   const { i18n } = useLingui();
   return (
-    <section
-      className="prose m-0 max-w-none p-0"
-      aria-label={i18n._(msg`About information`)}
-      role="none"
-    >
-      <div className="mb-10 flex flex-col items-center gap-8 md:flex-row">
+    <div className="p-3" role="none">
+      <div
+        aria-label={i18n._(msg`About information`)}
+        className="mb-10 flex flex-col items-center gap-8 md:flex-row"
+      >
         <div className="flex-1">
           <h1 className="mb-4">
             <Trans>Once upon a time...</Trans>
@@ -150,7 +149,7 @@ const About: FC = memo(() => {
           difference. Let’s create something amazing together!
         </Trans>
       </h4>
-    </section>
+    </div>
   );
 });
 

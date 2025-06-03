@@ -17,7 +17,7 @@ const Resume: FC = memo(() => {
   const { i18n } = useLingui();
   return (
     <article
-      className="prose flex max-w-none flex-col p-3 text-left font-serif"
+      className="prose flex max-w-none flex-col p-3 text-left"
       aria-label={i18n._(msg`Resume`)}
     >
       <header className="mb-8 text-center">

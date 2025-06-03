@@ -67,7 +67,7 @@ const Section: FC = () => {
               aria-selected={isSelected}
               aria-controls={`tab-${tab.id}-panel`}
               tabIndex={isSelected ? 0 : -1}
-              className={`join-item btn btn-ghost btn-xs md:btn-sm hover:bg-base-100/50 border-base-content/50 focus-visible:ring-primary/70 rounded-full border-1 border-dashed focus:outline-none focus-visible:ring-2 ${isSelected ? 'bg-primary text-base-300' : ''}`}
+              className={`join-item btn btn-ghost btn-xs md:btn-sm hover:bg-base-100/50 border-base-content/50 focus-visible:ring-primary/70 rounded-full border-1 border-dashed font-sans focus:outline-none focus-visible:ring-2 ${isSelected ? 'bg-primary text-base-300' : ''}`}
               role="tab"
               onClick={() => handleTabClick(tab)}
             >
@@ -78,7 +78,7 @@ const Section: FC = () => {
       </nav>
 
       <main
-        className="border-primary/20 bg-neutral/90 w-full rounded-xl border-2 shadow-xl/30"
+        className="border-primary bg-neutral/90 w-full rounded-xl border-3 border-dashed shadow-xl/30"
         id={`tab-${activeTab.id}-panel`}
         role="tabpanel"
         aria-label={`${i18n._(activeTab.labelMsg)} content`}
@@ -86,19 +86,17 @@ const Section: FC = () => {
         tabIndex={0}
       >
         <article
-          className="prose prose-h1:mt-3 prose-h1:-mb-3 m-1 flex !max-w-none flex-col justify-start gap-0 px-0 text-center sm:m-3"
+          className="prose prose-h2:m-0 flex !max-w-none flex-col justify-start text-center"
           aria-labelledby={`${activeTab.id}-title`}
         >
-          <h1 id={`${activeTab.id}-title`} className="uppercase">
+          <h1
+            id={`${activeTab.id}-title`}
+            className="sr-only lowercase"
+            role="heading"
+          >
             {i18n._(activeTab.labelMsg)}
           </h1>
-          <hr
-            className="divider divider-neutral m-0 p-0"
-            role="separator"
-            aria-labelledby={`${activeTab.id}-title`}
-            aria-orientation="horizontal"
-          />
-          {activeTab.content}
+          <section className="m-auto max-w-3xl">{activeTab.content}</section>
         </article>
       </main>
     </Terminal>

@@ -17,7 +17,7 @@ export const Profile: FC = memo(() => {
       <section id={SECTION_ITEMS.PROFILE} role="none">
         <Terminal title="Hello World!">
           <article
-            className="prose prose-img:m-0 prose-h1:m-0 prose-h2:m-0 prose-sm md:prose-base mx-auto flex flex-col items-center justify-center text-center font-serif"
+            className="prose prose-img:m-0 prose-h1:m-0 prose-h2:m-0 prose-sm md:prose-base mx-auto flex flex-col items-center justify-center text-center"
             aria-label={i18n._(msg`Henrique Profile`)}
             role="article"
           >

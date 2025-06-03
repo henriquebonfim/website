@@ -66,7 +66,7 @@ export const Windows96: FC<Windows96Props> = ({
 
   return (
     <section
-      className="flex h-full w-full flex-col gap-4"
+      className="flex h-full w-full flex-col gap-4 p-3 sm:p-0"
       aria-label="Windows 96 Retro Window"
       role="region"
       aria-live="polite"
@@ -113,11 +113,11 @@ export const Windows96: FC<Windows96Props> = ({
           {children}
         </div>
         <div
-          className="mx-0.5 flex flex-col gap-0.5 text-[11px] md:flex-row"
+          className="mx-0.5 flex flex-col gap-0.5 text-[11px] sm:flex-row"
           role="row"
           aria-label="Window: Status Bar"
         >
-          <p className="m-0 flex-1 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]">
+          <p className="m-0 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]">
             Press F1 for help
           </p>
           <div
@@ -136,7 +136,7 @@ export const Windows96: FC<Windows96Props> = ({
             {Range}
           </div>
           <p
-            className="m-0 flex-1 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
+            className="m-0 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
             role="status"
             aria-live="polite"
             aria-atomic="true"

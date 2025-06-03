@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/home/contents/about.tsx:138
+#: src/pages/home/contents/about.tsx:137
 msgid "'10+ years in software development'"
 msgstr "'Más de 10 años en desarrollo de software'"
 
@@ -29,12 +29,12 @@ msgstr "Acerca"
 msgid "About information"
 msgstr "Información sobre"
 
-#: src/pages/home/contents/projects.tsx:66
+#: src/pages/home/contents/projects.tsx:60
 msgid "App"
 msgstr "Aplicación"
 
-#: src/pages/home/contents/projects.tsx:30
-#: src/pages/home/contents/projects.tsx:39
+#: src/pages/home/contents/projects.tsx:24
+#: src/pages/home/contents/projects.tsx:33
 msgid "Application"
 msgstr "Aplicación"
 
@@ -46,7 +46,7 @@ msgstr "Abr"
 msgid "Architected B2B AI integrations with legacy systems (NDA)."
 msgstr "Arquitecté integraciones de IA B2B con sistemas heredados (NDA)."
 
-#: src/pages/home/contents/projects.tsx:29
+#: src/pages/home/contents/projects.tsx:23
 msgid "ArduEVE IoT automation system interface showing real-time sensor data"
 msgstr "Interfaz del sistema de automatización IoT ArduEVE mostrando datos de sensores en tiempo real"
 
@@ -67,11 +67,11 @@ msgstr "AWS Cloud Practitioner Certificado"
 msgid "AWS re/Start Graduate"
 msgstr "Graduado de AWS re/Start"
 
-#: src/pages/home/contents/about.tsx:77
+#: src/pages/home/contents/about.tsx:76
 msgid "Beyond the Code"
 msgstr "Más allá del código"
 
-#: src/pages/home/contents/projects.tsx:52
+#: src/pages/home/contents/projects.tsx:46
 msgid "Blockchain-based legal contract platform recognized in Top 50 at Megahack v2 2020. Implements NodeJS, Angular, and Google Cloud to ensure transparent, tamper-proof digital agreements with legal validity."
 msgstr "Plataforma de contratos legales basada en blockchain reconocida en el Top 50 de Megahack v2 2020. Implementa NodeJS, Angular y Google Cloud para garantizar acuerdos digitales transparentes e inviolables con validez legal."
 
@@ -95,7 +95,7 @@ msgstr "Construí APIs REST con Nest.js/PostgreSQL, asegurando un 99.98% de disp
 msgid "Campinho Digital — Cloud Computing (Sep 2023 – Dec 2023)"
 msgstr "Campinho Digital — Computación en la Nube (Sep 2023 – Dic 2023)"
 
-#: src/pages/home/contents/projects.tsx:65
+#: src/pages/home/contents/projects.tsx:59
 msgid "Canivete Perneta mobile app interface showing truck driver assistance features"
 msgstr "Interfaz de la app móvil Canivete Perneta mostrando funciones de asistencia para camioneros"
 
@@ -116,7 +116,7 @@ msgstr "Creatividad en la infancia"
 msgid "Click to change theme to {0} mode"
 msgstr "Haz clic para cambiar al modo {0}"
 
-#: src/pages/home/contents/about.tsx:99
+#: src/pages/home/contents/about.tsx:98
 msgid "Code is My Craft"
 msgstr "El código es mi arte"
 
@@ -243,7 +243,7 @@ msgstr "Seguir en {name}"
 msgid "Freelance Work at Upwork – Senior Software Engineer"
 msgstr "Trabajo freelance en Upwork – Ingeniero de Software Senior"
 
-#: src/pages/home/contents/about.tsx:64
+#: src/pages/home/contents/about.tsx:63
 msgid "From my first lines of code, I was hooked. I spent countless hours exploring, breaking, and fixing things—each bug a lesson, each project a new adventure. My curiosity led me to wear many hats, from tech support to cloud engineering."
 msgstr "Desde mis primeras líneas de código, quedé enganchado. Pasé incontables horas explorando, rompiendo y arreglando cosas: cada error una lección, cada proyecto una nueva aventura. Mi curiosidad me llevó a desempeñar muchos roles, desde soporte técnico hasta ingeniería en la nube."
 
@@ -252,7 +252,7 @@ msgstr "Desde mis primeras líneas de código, quedé enganchado. Pasé incontab
 msgid "Full-Stack Mid-Level at Portal Solar"
 msgstr "Desarrollador Full-Stack de nivel medio en Portal Solar"
 
-#: src/pages/home/contents/about.tsx:128
+#: src/pages/home/contents/about.tsx:127
 msgid "Gaming"
 msgstr "Videojuegos"
 
@@ -270,7 +270,7 @@ msgstr "Certificado de Google Cloud – Ingeniero Asociado en la Nube"
 msgid "Google Cloud Innovators"
 msgstr "Innovadores de Google Cloud"
 
-#: src/pages/home/contents/projects.tsx:43
+#: src/pages/home/contents/projects.tsx:37
 msgid "Hackatrouble SP 2020 award-winning platform connecting rural farmers with charity organizations to reduce food waste. Built with NodeJS, Angular, and AWS for scalable donation management."
 msgstr "Plataforma galardonada Hackatrouble SP 2020 que conecta a agricultores rurales con organizaciones benéficas para reducir el desperdicio de alimentos. Construida con NodeJS, Angular y AWS para una gestión de donaciones escalable."
 
@@ -283,15 +283,15 @@ msgstr "Victoria en Hackatrouble"
 msgid "heart"
 msgstr "corazón"
 
-#: src/pages/home/contents/about.tsx:112
+#: src/pages/home/contents/about.tsx:111
 msgid "Help Topics: Windows"
 msgstr "Temas de ayuda: Windows"
 
-#: src/pages/home/contents/about.tsx:45
+#: src/pages/home/contents/about.tsx:44
 msgid "Henrique at AWS event"
 msgstr "Henrique en evento de AWS"
 
-#: src/pages/home/contents/about.tsx:54
+#: src/pages/home/contents/about.tsx:53
 msgid "Henrique at AWS event, smiling and inspired"
 msgstr "Henrique en evento de AWS, sonriendo e inspirado"
 
@@ -303,13 +303,13 @@ msgstr "Avatar de Henrique"
 msgid "Henrique Bonfim Profile on top left"
 msgstr "Perfil de Henrique Bonfim en la parte superior izquierda"
 
-#: src/pages/home/contents/contact.tsx:107
-#: src/pages/home/contents/contact.tsx:112
+#: src/pages/home/contents/contact.tsx:115
+#: src/pages/home/contents/contact.tsx:120
 msgid "Henrique having lunch, smiling and hungry, 2023"
 msgstr "Henrique almorzando, sonriendo y hambriento, 2023"
 
-#: src/pages/home/contents/contact.tsx:124
-#: src/pages/home/contents/contact.tsx:125
+#: src/pages/home/contents/contact.tsx:132
+#: src/pages/home/contents/contact.tsx:133
 msgid "Henrique location"
 msgstr "Ubicación de Henrique"
 
@@ -317,8 +317,8 @@ msgstr "Ubicación de Henrique"
 msgid "Henrique photo"
 msgstr "Foto de Henrique"
 
-#: src/pages/home/contents/about.tsx:91
-#: src/pages/home/contents/about.tsx:119
+#: src/pages/home/contents/about.tsx:90
+#: src/pages/home/contents/about.tsx:118
 msgid "Henrique playing piano"
 msgstr "Henrique tocando el piano"
 
@@ -326,7 +326,11 @@ msgstr "Henrique tocando el piano"
 msgid "Henrique Profile"
 msgstr "Perfil de Henrique"
 
-#: src/pages/home/contents/about.tsx:102
+#: src/pages/home/contents/projects.tsx:168
+msgid "Here are some of my projects that showcase my skills"
+msgstr "Aquí tienes algunos de mis proyectos que muestran mis habilidades"
+
+#: src/pages/home/contents/about.tsx:101
 msgid "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
 msgstr "Creo en el poder del código limpio y eficiente para resolver problemas del mundo real. Ya sea construyendo APIs, diseñando interfaces de usuario o arquitectando soluciones en la nube, me esfuerzo por la excelencia y la simplicidad."
 
@@ -334,12 +338,12 @@ msgstr "Creo en el poder del código limpio y eficiente para resolver problemas 
 msgid "Improved platform stability and facilitated project alignment."
 msgstr "Mejoré la estabilidad de la plataforma y facilité la alineación de proyectos."
 
-#: src/pages/home/contents/projects.tsx:30
-#: src/pages/home/contents/projects.tsx:39
+#: src/pages/home/contents/projects.tsx:24
+#: src/pages/home/contents/projects.tsx:33
 msgid "IoT"
 msgstr "IoT"
 
-#: src/pages/home/contents/projects.tsx:25
+#: src/pages/home/contents/projects.tsx:19
 msgid "IoT automation system using microservices architecture with NodeJS, VueJS, and MongoDB. Controls electronic relays for lighting and door access while providing real-time sensor monitoring through Docker Swarm deployment."
 msgstr "Sistema de automatización IoT utilizando arquitectura de microservicios con NodeJS, VueJS y MongoDB. Controla relés electrónicos para iluminación y acceso a puertas mientras proporciona monitoreo de sensores en tiempo real a través de despliegue con Docker Swarm."
 
@@ -391,6 +395,10 @@ msgstr "Liderazgo, Resolución de Problemas, Gestión de Equipos, Pensamiento Cr
 msgid "Led development for Brazil’s largest solar credit platform. Improved OAuth2 security, scaled KYC systems, and mentored junior devs."
 msgstr "Lideré el desarrollo de la plataforma de créditos solares más grande de Brasil. Mejoré la seguridad de OAuth2, escalé sistemas KYC y mentoreé a desarrolladores junior."
 
+#: src/pages/home/contents/contact.tsx:98
+msgid "Let's connect!"
+msgstr "¡Conectémonos!"
+
 #: src/widgets/profile.tsx:50
 msgid "Leveraging <0>GenAI</0> to drive <1>next-generation solutions.</1>"
 msgstr "Aprovechando <0>GenAI</0> para impulsar <1>soluciones de próxima generación.</1>"
@@ -434,15 +442,15 @@ msgstr "Desarrollador de Software de Nivel Medio"
 msgid "Mid-level Software Engineer"
 msgstr "Ingeniero de Software de Nivel Medio"
 
-#: src/pages/home/contents/projects.tsx:56
+#: src/pages/home/contents/projects.tsx:50
 msgid "Mideal blockchain contract system showing document verification interface"
 msgstr "Sistema de contratos blockchain Mideal mostrando la interfaz de verificación de documentos"
 
-#: src/pages/home/contents/projects.tsx:61
+#: src/pages/home/contents/projects.tsx:55
 msgid "Mobile companion app for truck drivers developed at HackathonCCR. Features route optimization, rest stop finder, and health tracking using React Native with AWS backend services."
 msgstr "Aplicación móvil complementaria para camioneros desarrollada en HackathonCCR. Incluye optimización de rutas, buscador de paradas de descanso y seguimiento de salud utilizando React Native con servicios backend de AWS."
 
-#: src/pages/home/contents/projects.tsx:34
+#: src/pages/home/contents/projects.tsx:28
 msgid "Mobile-controlled door access system built with NodeJS microservices, MongoDB, and Arduino integration. Deployed with Docker Swarm for the PET SISTEMAS laboratory."
 msgstr "Sistema de acceso a puertas controlado por móvil construido con microservicios NodeJS, MongoDB e integración con Arduino. Desplegado con Docker Swarm para el laboratorio PET SISTEMAS."
 
@@ -450,11 +458,11 @@ msgstr "Sistema de acceso a puertas controlado por móvil construido con microse
 msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
 msgstr "Modernicé la pila KYC y optimicé el rendimiento de OAuth2 y SQL."
 
-#: src/pages/home/contents/about.tsx:127
+#: src/pages/home/contents/about.tsx:126
 msgid "Music"
 msgstr "Música"
 
-#: src/pages/home/contents/about.tsx:147
+#: src/pages/home/contents/about.tsx:146
 msgid "My journey is far from over. I’m always seeking new challenges, eager to collaborate, and passionate about building solutions that make a difference. Let’s create something amazing together!"
 msgstr "Mi viaje está lejos de terminar. Siempre estoy buscando nuevos desafíos, ansioso por colaborar y apasionado por construir soluciones que marquen la diferencia. ¡Creemos algo increíble juntos!"
 
@@ -464,13 +472,13 @@ msgstr "Mi viaje está lejos de terminar. Siempre estoy buscando nuevos desafío
 msgid "Nov"
 msgstr "Nov"
 
-#: src/pages/home/contents/about.tsx:24
+#: src/pages/home/contents/about.tsx:23
 msgid "Once upon a time..."
 msgstr "Érase una vez..."
 
-#: src/pages/home/contents/projects.tsx:48
-#: src/pages/home/contents/projects.tsx:57
-#: src/pages/home/contents/projects.tsx:66
+#: src/pages/home/contents/projects.tsx:42
+#: src/pages/home/contents/projects.tsx:51
+#: src/pages/home/contents/projects.tsx:60
 msgid "Open Source"
 msgstr "Código Abierto"
 
@@ -478,7 +486,7 @@ msgstr "Código Abierto"
 msgid "Optimized a Java-based monolith, reduced PostgreSQL storage usage, and achieved 100% test coverage. Also built user-friendly admin interfaces."
 msgstr "Optimizé un monolito basado en Java, reduje el uso de almacenamiento de PostgreSQL y logré una cobertura de pruebas del 100%. También construí interfaces administrativas amigables."
 
-#: src/pages/home/contents/projects.tsx:38
+#: src/pages/home/contents/projects.tsx:32
 msgid "Pet Porta App mobile interface for door access control"
 msgstr "Interfaz móvil de la aplicación Pet Porta para control de acceso a puertas"
 
@@ -500,15 +508,15 @@ msgstr "Resumen Profesional"
 
 #. placeholder {0}: idx + 1
 #. placeholder {1}: i18n._(project.title)
-#: src/pages/home/contents/projects.tsx:224
+#: src/pages/home/contents/projects.tsx:217
 msgid "Project {0} of {totalSlides}: {1}"
 msgstr "Proyecto {0} de {totalSlides}: {1}"
 
-#: src/pages/home/contents/projects.tsx:216
+#: src/pages/home/contents/projects.tsx:209
 msgid "Project carousel slides"
 msgstr "Diapositivas del carrusel de proyectos"
 
-#: src/pages/home/contents/projects.tsx:169
+#: src/pages/home/contents/projects.tsx:162
 msgid "Project list"
 msgstr "Lista de proyectos"
 
@@ -522,11 +530,11 @@ msgstr "Proyectos"
 msgid "Provided help-desk and preventive maintenance."
 msgstr "Proporcioné soporte técnico y mantenimiento preventivo."
 
-#: src/pages/home/contents/contact.tsx:97
-msgid "Reach out to me via WhatsApp, Telegram or LinkedIn. Let's connect!"
-msgstr "Contáctame a través de WhatsApp, Telegram o LinkedIn. ¡Conectemos!"
+#: src/pages/home/contents/contact.tsx:102
+msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
+msgstr "Contáctame vía WhatsApp, Telegram o LinkedIn."
 
-#: src/pages/home/contents/about.tsx:129
+#: src/pages/home/contents/about.tsx:128
 msgid "Reading"
 msgstr "Lectura"
 
@@ -549,14 +557,14 @@ msgstr "Resolví más de 150 problemas de backend y UI y contribuí a sistemas J
 #: src/pages/home/ui/section.tsx:22
 #: src/pages/home/contents/resume.tsx:21
 msgid "Resume"
-msgstr "Currículum"
+msgstr "Currículo"
 
-#: src/pages/home/contents/projects.tsx:47
+#: src/pages/home/contents/projects.tsx:41
 msgid "Roça Eats platform interface showing food donation management system"
 msgstr "Interfaz de la plataforma Roça Eats mostrando el sistema de gestión de donaciones de alimentos"
 
-#: src/pages/home/contents/projects.tsx:48
-#: src/pages/home/contents/projects.tsx:57
+#: src/pages/home/contents/projects.tsx:42
+#: src/pages/home/contents/projects.tsx:51
 msgid "SaaS"
 msgstr "SaaS"
 
@@ -581,7 +589,7 @@ msgstr "Ingeniero de Software Senior con más de 10 años de experiencia en desa
 msgid "Spanish (Basic)"
 msgstr "Español (Básico)"
 
-#: src/pages/home/contents/about.tsx:27
+#: src/pages/home/contents/about.tsx:26
 msgid "Sparked by curiosity and a love for learning. I found joy in every challenge and breakthrough. From late-night coding sessions to building my first blog,<0/>Over the years, I've grown from a curious beginner to a seasoned engineer, always driven by a passion for creating meaningful digital experiences."
 msgstr "Impulsado por la curiosidad y el amor por el aprendizaje. Encontré alegría en cada desafío y avance. Desde sesiones de codificación nocturnas hasta construir mi primer blog,<0/>A lo largo de los años, he pasado de ser un principiante curioso a un ingeniero experimentado, siempre impulsado por la pasión de crear experiencias digitales significativas."
 
@@ -652,7 +660,7 @@ msgstr "Logo del sitio web"
 msgid "Website Main Content"
 msgstr "Contenido Principal del Sitio Web"
 
-#: src/pages/home/contents/about.tsx:80
+#: src/pages/home/contents/about.tsx:79
 msgid "When I’m not coding, I find inspiration in music. Playing piano helps me recharge and approach problems with fresh creativity."
 msgstr "Cuando no estoy codificando, encuentro inspiración en la música. Tocar el piano me ayuda a recargarme y abordar problemas con creatividad renovada."
 
@@ -661,10 +669,10 @@ msgstr "Cuando no estoy codificando, encuentro inspiración en la música. Tocar
 msgid "Workana – Senior Backend Engineer"
 msgstr "Workana – Ingeniero Backend Senior"
 
-#: src/pages/home/contents/about.tsx:58
+#: src/pages/home/contents/about.tsx:57
 msgid "Young Henrique coding at home, 2010"
 msgstr "El joven Henrique codificando en casa, 2010"
 
-#: src/pages/home/contents/about.tsx:41
+#: src/pages/home/contents/about.tsx:40
 msgid "Young Henrique in event, 2019"
 msgstr "El joven Henrique en un evento, 2019"

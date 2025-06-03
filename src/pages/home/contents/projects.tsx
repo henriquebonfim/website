@@ -1,14 +1,8 @@
 import type { I18n, MessageDescriptor } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
-import React, {
-  memo,
-  useCallback,
-  useEffect,
-  useRef,
-  useState,
-  type FC,
-} from 'react';
+import { Trans } from '@lingui/react/macro';
+import React, { memo, useCallback, useEffect, useState, type FC } from 'react';
 
 interface Project {
   title: string;
@@ -74,8 +68,8 @@ const ProjectCard: React.FC<{
   cardIdBase: string;
 }> = ({ project, i18n, isFocusable, cardIdBase }) => {
   return (
-    <div
-      className="card bg-neutral focus-within:ring-primary flex h-full flex-col overflow-hidden rounded-lg border shadow-lg transition-shadow duration-300 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-800 hover:shadow-xl"
+    <section
+      className="focus-within:ring-primary flex flex-col overflow-hidden rounded-lg border shadow-lg transition-shadow duration-300 focus-within:ring-2 focus-within:ring-offset-2 focus-within:ring-offset-gray-800 hover:shadow-xl"
       role="group"
       aria-labelledby={`${cardIdBase}-title`}
       aria-describedby={`${cardIdBase}-desc`}
@@ -98,7 +92,7 @@ const ProjectCard: React.FC<{
         />
       </figure>
       <div className="card-body flex flex-grow flex-col p-3">
-        <h2 id={`${cardIdBase}-title`} className="mt-0 mb-2">
+        <h2 id={`${cardIdBase}-title`} className="mt-0 mb-2 font-mono">
           <a
             href={project.link}
             target="_blank"
@@ -117,7 +111,7 @@ const ProjectCard: React.FC<{
           {project.category.map((cat) => (
             <span
               role="badge"
-              className="badge bg-primary rounded-full px-2 py-0.5"
+              className="badge bg-primary badge-xs rounded-full px-2 py-0.5 font-mono"
               key={cat.id || i18n._(cat)}
               aria-label={`Category: ${i18n._(cat)}`}
             >
@@ -126,7 +120,7 @@ const ProjectCard: React.FC<{
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
@@ -135,7 +129,6 @@ export const Projects: FC = memo(() => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const totalSlides = LIST_PROJECTS.length;
   const carouselId = 'projects-carousel-main';
-  const liveRegionRef = useRef<HTMLDivElement>(null);
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -164,18 +157,18 @@ export const Projects: FC = memo(() => {
   }, [nextSlide, prevSlide]);
 
   return (
-    <article
-      className="mb-3 w-full"
+    <div
+      className="flex h-full w-full flex-col items-center justify-center p-3"
       aria-label={i18n._(msg`Project list`)}
-      role="none"
+      role="region"
+      aria-live="polite"
+      aria-atomic="true"
     >
-      {/* Visually hidden live region for screen reader announcements */}
-      <div
-        ref={liveRegionRef}
-        className="sr-only"
-        aria-live="polite"
-        aria-atomic="true"
-      ></div>
+      <h2 className="text-center" role="heading" aria-level={2}>
+        <Trans>Here are some of my projects that showcase my skills</Trans>
+      </h2>
+
+      <hr className="divider divider-neutral" role="separator" />
 
       {/* Mobile: Show carousel (slider) */}
       <section
@@ -241,7 +234,7 @@ export const Projects: FC = memo(() => {
           <>
             <button
               onClick={prevSlide}
-              className="bg-neutral border-base-300 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-300 absolute top-1/2 left-2 z-10 -translate-y-1/2 transform rounded-full border-2 p-2 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              className="bg-neutral/30 border-base-300/30 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-100/30 absolute top-1/3 left-3 z-10 -translate-y-1/3 transform rounded-full border-1 p-3 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               aria-controls={carouselId + '-region'}
               aria-label="Previous project"
             >
@@ -249,7 +242,7 @@ export const Projects: FC = memo(() => {
             </button>
             <button
               onClick={nextSlide}
-              className="bg-neutral border-base-300 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-300 absolute top-1/2 right-2 z-10 -translate-y-1/2 transform rounded-full border-2 p-2 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
+              className="bg-neutral/30 border-base-300/30 hover:bg-neutral/50 focus:ring-primary focus:ring-offset-base-100/30 absolute top-1/3 right-3 z-10 -translate-y-1/3 transform rounded-full border-1 p-3 shadow-lg transition-colors focus:ring-2 focus:ring-offset-2 focus:outline-none"
               aria-controls={carouselId + '-region'}
               aria-label="Next project"
             >
@@ -261,7 +254,7 @@ export const Projects: FC = memo(() => {
 
       {/* Desktop: Show cards in a grid */}
       <section
-        className="hidden grid-cols-1 gap-6 md:grid md:grid-cols-2 lg:grid-cols-3 lg:gap-8"
+        className="hidden grid-cols-3 gap-3 md:grid"
         aria-labelledby="projects-grid-heading"
         role="grid"
       >
@@ -276,7 +269,7 @@ export const Projects: FC = memo(() => {
           />
         ))}
       </section>
-    </article>
+    </div>
   );
 });
 

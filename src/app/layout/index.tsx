@@ -15,7 +15,7 @@ export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
         role="main"
       >
         <section
-          className="grid w-full gap-3 lg:grid-flow-row-dense lg:grid-cols-3"
+          className="grid w-full gap-3 font-serif lg:grid-flow-row-dense lg:grid-cols-3"
           role="none"
         >
           {children}
