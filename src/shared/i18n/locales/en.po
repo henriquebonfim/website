@@ -326,10 +326,6 @@ msgstr "Henrique playing piano"
 msgid "Henrique Profile"
 msgstr "Henrique Profile"
 
-#: src/pages/home/contents/projects.tsx:168
-msgid "Here are some of my projects that showcase my skills"
-msgstr "Here are some of my projects that showcase my skills"
-
 #: src/pages/home/contents/about.tsx:101
 msgid "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
 msgstr "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
@@ -584,6 +580,10 @@ msgstr "Senior Software Engineer – Meu Financiamento Solar"
 #: src/pages/home/contents/resume.tsx:67
 msgid "Senior Software Engineer with 10+ years of experience in full-stack development (JavaScript, TypeScript, Node.js). Expertise in scalable microservices, serverless, and event-driven architectures. Proven success across fintech, government, and startups, with a passion for generative AI and performance optimization."
 msgstr "Senior Software Engineer with 10+ years of experience in full-stack development (JavaScript, TypeScript, Node.js). Expertise in scalable microservices, serverless, and event-driven architectures. Proven success across fintech, government, and startups, with a passion for generative AI and performance optimization."
+
+#: src/pages/home/contents/projects.tsx:168
+msgid "Some of my projects that showcase my skills"
+msgstr "Some of my projects that showcase my skills"
 
 #: src/pages/home/contents/resume.tsx:373
 msgid "Spanish (Basic)"

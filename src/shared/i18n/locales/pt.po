@@ -326,10 +326,6 @@ msgstr "Henrique tocando piano"
 msgid "Henrique Profile"
 msgstr "Perfil do Henrique"
 
-#: src/pages/home/contents/projects.tsx:168
-msgid "Here are some of my projects that showcase my skills"
-msgstr "Aqui estão alguns dos meus projetos que demonstram minhas habilidades"
-
 #: src/pages/home/contents/about.tsx:101
 msgid "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
 msgstr "Acredito no poder do código limpo e eficiente para resolver problemas do mundo real. Seja construindo APIs, projetando UIs ou arquitetando soluções em nuvem, busco excelência e simplicidade."
@@ -532,7 +528,7 @@ msgstr "Prestei suporte técnico e manutenção preventiva."
 
 #: src/pages/home/contents/contact.tsx:102
 msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
-msgstr "Entre em contato comigo pelo WhatsApp, Telegram ou LinkedIn."
+msgstr "Entre em contato pelo WhatsApp, Telegram ou LinkedIn."
 
 #: src/pages/home/contents/about.tsx:128
 msgid "Reading"
@@ -584,6 +580,10 @@ msgstr "Engenheiro de Software Sênior – Meu Financiamento Solar"
 #: src/pages/home/contents/resume.tsx:67
 msgid "Senior Software Engineer with 10+ years of experience in full-stack development (JavaScript, TypeScript, Node.js). Expertise in scalable microservices, serverless, and event-driven architectures. Proven success across fintech, government, and startups, with a passion for generative AI and performance optimization."
 msgstr "Engenheiro de Software Sênior com mais de 10 anos de experiência em desenvolvimento full-stack (JavaScript, TypeScript, Node.js). Especialista em microsserviços escaláveis, serverless e arquiteturas orientadas a eventos. Sucesso comprovado em fintechs, governo e startups, com paixão por IA generativa e otimização de performance."
+
+#: src/pages/home/contents/projects.tsx:168
+msgid "Some of my projects that showcase my skills"
+msgstr "Alguns dos meus projetos que demonstram minhas habilidades"
 
 #: src/pages/home/contents/resume.tsx:373
 msgid "Spanish (Basic)"

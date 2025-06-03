@@ -165,7 +165,7 @@ export const Projects: FC = memo(() => {
       aria-atomic="true"
     >
       <h2 className="text-center" role="heading" aria-level={2}>
-        <Trans>Here are some of my projects that showcase my skills</Trans>
+        <Trans>Some of my projects that showcase my skills</Trans>
       </h2>
 
       <hr className="divider divider-neutral" role="separator" />
