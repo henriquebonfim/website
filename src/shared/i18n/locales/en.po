@@ -13,7 +13,7 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: src/pages/home/contents/about.tsx:137
+#: src/pages/home/contents/about.tsx:178
 msgid "'10+ years in software development'"
 msgstr "10+ years in software development"
 
@@ -25,7 +25,7 @@ msgstr "A carousel of tools and technologies"
 msgid "About"
 msgstr "About"
 
-#: src/pages/home/contents/about.tsx:18
+#: src/pages/home/contents/about.tsx:17
 msgid "About information"
 msgstr "About information"
 
@@ -67,7 +67,7 @@ msgstr "AWS Certified Cloud Practitioner"
 msgid "AWS re/Start Graduate"
 msgstr "AWS re/Start Graduate"
 
-#: src/pages/home/contents/about.tsx:76
+#: src/pages/home/contents/about.tsx:120
 msgid "Beyond the Code"
 msgstr "Beyond the Code"
 
@@ -116,7 +116,7 @@ msgstr "Childhood Creativity"
 msgid "Click to change theme to {0} mode"
 msgstr "Click to change theme to {0} mode"
 
-#: src/pages/home/contents/about.tsx:98
+#: src/pages/home/contents/about.tsx:140
 msgid "Code is My Craft"
 msgstr "Code is My Craft"
 
@@ -243,7 +243,7 @@ msgstr "Follow on {name}"
 msgid "Freelance Work at Upwork – Senior Software Engineer"
 msgstr "Freelance Work at Upwork – Senior Software Engineer"
 
-#: src/pages/home/contents/about.tsx:63
+#: src/pages/home/contents/about.tsx:107
 msgid "From my first lines of code, I was hooked. I spent countless hours exploring, breaking, and fixing things—each bug a lesson, each project a new adventure. My curiosity led me to wear many hats, from tech support to cloud engineering."
 msgstr "From my first lines of code, I was hooked. I spent countless hours exploring, breaking, and fixing things—each bug a lesson, each project a new adventure. My curiosity led me to wear many hats, from tech support to cloud engineering."
 
@@ -252,7 +252,7 @@ msgstr "From my first lines of code, I was hooked. I spent countless hours explo
 msgid "Full-Stack Mid-Level at Portal Solar"
 msgstr "Full-Stack Mid-Level at Portal Solar"
 
-#: src/pages/home/contents/about.tsx:127
+#: src/pages/home/contents/about.tsx:168
 msgid "Gaming"
 msgstr "Gaming"
 
@@ -283,17 +283,21 @@ msgstr "Hackatrouble Win"
 msgid "heart"
 msgstr "heart"
 
-#: src/pages/home/contents/about.tsx:111
+#: src/pages/home/contents/about.tsx:153
 msgid "Help Topics: Windows"
 msgstr "Help Topics: Windows"
 
 #: src/pages/home/contents/about.tsx:44
-msgid "Henrique at AWS event"
-msgstr "Henrique at AWS event"
+#~ msgid "Henrique at AWS event"
+#~ msgstr "Henrique at AWS event"
 
-#: src/pages/home/contents/about.tsx:53
+#: src/pages/home/contents/about.tsx:97
 msgid "Henrique at AWS event, smiling and inspired"
 msgstr "Henrique at AWS event, smiling and inspired"
+
+#: src/pages/home/contents/about.tsx:86
+msgid "Henrique at UFMS event"
+msgstr ""
 
 #: src/widgets/profile.tsx:27
 msgid "Henrique Avatar"
@@ -313,12 +317,22 @@ msgstr "Henrique having lunch, smiling and hungry, 2023"
 msgid "Henrique location"
 msgstr "Henrique location"
 
+#: src/pages/home/contents/about.tsx:27
+#: src/pages/home/contents/about.tsx:33
+#: src/pages/home/contents/about.tsx:38
+#: src/pages/home/contents/about.tsx:44
+#: src/pages/home/contents/about.tsx:50
+#: src/pages/home/contents/about.tsx:56
+#: src/pages/home/contents/about.tsx:62
+msgid "Henrique over the years"
+msgstr ""
+
 #: src/widgets/profile.tsx:36
 msgid "Henrique photo"
 msgstr "Henrique photo"
 
-#: src/pages/home/contents/about.tsx:90
-#: src/pages/home/contents/about.tsx:118
+#: src/pages/home/contents/about.tsx:132
+#: src/pages/home/contents/about.tsx:159
 msgid "Henrique playing piano"
 msgstr "Henrique playing piano"
 
@@ -326,7 +340,7 @@ msgstr "Henrique playing piano"
 msgid "Henrique Profile"
 msgstr "Henrique Profile"
 
-#: src/pages/home/contents/about.tsx:101
+#: src/pages/home/contents/about.tsx:143
 msgid "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
 msgstr "I believe in the power of clean, efficient code to solve real-world problems. Whether building APIs, designing UIs, or architecting cloud solutions, I strive for excellence and simplicity."
 
@@ -454,11 +468,11 @@ msgstr "Mobile-controlled door access system built with NodeJS microservices, Mo
 msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
 msgstr "Modernized KYC stack and optimized OAuth2 and SQL performance."
 
-#: src/pages/home/contents/about.tsx:126
+#: src/pages/home/contents/about.tsx:167
 msgid "Music"
 msgstr "Music"
 
-#: src/pages/home/contents/about.tsx:146
+#: src/pages/home/contents/about.tsx:187
 msgid "My journey is far from over. I’m always seeking new challenges, eager to collaborate, and passionate about building solutions that make a difference. Let’s create something amazing together!"
 msgstr "My journey is far from over. I’m always seeking new challenges, eager to collaborate, and passionate about building solutions that make a difference. Let’s create something amazing together!"
 
@@ -468,7 +482,7 @@ msgstr "My journey is far from over. I’m always seeking new challenges, eager 
 msgid "Nov"
 msgstr "Nov"
 
-#: src/pages/home/contents/about.tsx:23
+#: src/pages/home/contents/about.tsx:20
 msgid "Once upon a time..."
 msgstr "Once upon a time..."
 
@@ -530,7 +544,7 @@ msgstr "Provided help-desk and preventive maintenance."
 msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
 msgstr "Reach out to me via WhatsApp, Telegram, LinkedIn."
 
-#: src/pages/home/contents/about.tsx:128
+#: src/pages/home/contents/about.tsx:169
 msgid "Reading"
 msgstr "Reading"
 
@@ -589,7 +603,7 @@ msgstr "Some of my projects that showcase my skills"
 msgid "Spanish (Basic)"
 msgstr "Spanish (Basic)"
 
-#: src/pages/home/contents/about.tsx:26
+#: src/pages/home/contents/about.tsx:69
 msgid "Sparked by curiosity and a love for learning. I found joy in every challenge and breakthrough. From late-night coding sessions to building my first blog,<0/>Over the years, I've grown from a curious beginner to a seasoned engineer, always driven by a passion for creating meaningful digital experiences."
 msgstr "Sparked by curiosity and a love for learning. I found joy in every challenge and breakthrough. From late-night coding sessions to building my first blog,<0/>Over the years, I've grown from a curious beginner to a seasoned engineer, always driven by a passion for creating meaningful digital experiences."
 
@@ -660,7 +674,7 @@ msgstr "Website logo"
 msgid "Website Main Content"
 msgstr "Website Main Content"
 
-#: src/pages/home/contents/about.tsx:79
+#: src/pages/home/contents/about.tsx:123
 msgid "When I’m not coding, I find inspiration in music. Playing piano helps me recharge and approach problems with fresh creativity."
 msgstr "When I’m not coding, I find inspiration in music. Playing piano helps me recharge and approach problems with fresh creativity."
 
@@ -669,10 +683,10 @@ msgstr "When I’m not coding, I find inspiration in music. Playing piano helps 
 msgid "Workana – Senior Backend Engineer"
 msgstr "Workana – Senior Backend Engineer"
 
-#: src/pages/home/contents/about.tsx:57
+#: src/pages/home/contents/about.tsx:101
 msgid "Young Henrique coding at home, 2010"
 msgstr "Young Henrique coding at home, 2010"
 
-#: src/pages/home/contents/about.tsx:40
+#: src/pages/home/contents/about.tsx:82
 msgid "Young Henrique in event, 2019"
 msgstr "Young Henrique in event, 2019"

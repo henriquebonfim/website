@@ -18,11 +18,7 @@ interface YoutubeWidgetProps extends HTMLAttributes<HTMLIFrameElement> {
  * @param props - YoutubeWidgetProps
  * @returns JSX.Element
  */
-export const YoutubeWidget: FC<YoutubeWidgetProps> = ({
-  className,
-  url,
-  height = '400',
-}) => (
+export const YoutubeWidget: FC<YoutubeWidgetProps> = ({ className, url }) => (
   <section
     id={SECTION_ITEMS.YOUTUBE}
     className={className}
@@ -30,8 +26,8 @@ export const YoutubeWidget: FC<YoutubeWidgetProps> = ({
     tabIndex={0}
   >
     <iframe
-      height={height}
-      className="rounded-lg border-3 border-[#333333] bg-[#131313] shadow-lg"
+      height="100%"
+      className="aspect-video rounded-lg border-1 border-[#333333] bg-[#131313] shadow-lg"
       id="ytplayer"
       width="100%"
       src={url}

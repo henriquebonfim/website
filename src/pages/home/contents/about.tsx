@@ -14,19 +14,55 @@ const About: FC = memo(() => {
   const { i18n } = useLingui();
   return (
     <div className="p-3" role="none">
-      <div
-        aria-label={i18n._(msg`About information`)}
-        className="mb-10 flex flex-col items-center gap-8 md:flex-row"
-      >
-        <div className="flex-1">
+      <div aria-label={i18n._(msg`About information`)} className="">
+        <div className="">
           <h1 className="mb-4">
             <Trans>Once upon a time...</Trans>
           </h1>
-          <p className="mb-4">
+          <hr className="divider divider-neutral" />
+
+          <figure className="not-prose not-md:carousel relative flex h-33 flex-row space-x-3 md:mb-52">
+            <img
+              src="/assets/photos/myself_child.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            />
+
+            <img
+              src="/assets/photos/myself_formal.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:-translate-y-9"
+            />
+
+            <img
+              src="/assets/photos/myself_flying.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            />
+
+            <img
+              src="/assets/photos/myself_coding.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="z-1 w-64 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:h-64"
+            />
+
+            <img
+              src="/assets/photos/myself_eating.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            />
+
+            <img
+              src="/assets/photos/myself.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:-translate-y-9"
+            />
+          </figure>
+
+          <p className="text-center">
             <Trans>
-              Sparked by curiosity and a love for learning. I found joy in every
-              challenge and breakthrough. From late-night coding sessions to
-              building my first blog,
+              Sparked by curiosity and love. I found joy in every challenge and
+              breakthrough.
               <br />
               Over the years, I've grown from a curious beginner to a seasoned
               engineer, always driven by a passion for creating meaningful
@@ -34,19 +70,9 @@ const About: FC = memo(() => {
             </Trans>
           </p>
         </div>
-        <figure className="flex flex-1 justify-center">
-          <img
-            src="/assets/photos/about_me.webp"
-            alt={i18n._(msg`Young Henrique in event, 2019`)}
-            className="w-fit rounded-lg border-2 border-blue-200 shadow-lg focus:outline-2 focus:outline-blue-400"
-          />
-          <figcaption className="sr-only">
-            <Trans>Henrique at AWS event</Trans>
-          </figcaption>
-        </figure>
       </div>
 
-      <div className="mb-10 flex flex-col-reverse items-center gap-8 md:flex-row">
+      <div className="mb-10 flex flex-col-reverse gap-8 md:flex-row">
         <figure className="flex flex-1 justify-center">
           <img
             src="/assets/photos/aws.webp"
@@ -70,7 +96,7 @@ const About: FC = memo(() => {
         </div>
       </div>
 
-      <div className="mb-10 ml-3 flex flex-col items-center gap-6 md:flex-row">
+      <div className="mb-10 ml-3 flex flex-col gap-6 md:flex-row">
         <div className="flex-1">
           <h2 className="mb-2">
             <Trans>Beyond the Code</Trans>
@@ -84,15 +110,13 @@ const About: FC = memo(() => {
         </div>
         <div className="flex-1">
           <YoutubeWidget
-            className="mx-auto w-full max-w-md rounded-lg shadow-lg"
-            height="300"
             url={API.YOUTUBE_EMBED.VIDEO_PIANO}
             title={i18n._(msg`Henrique playing piano`)}
           />
         </div>
       </div>
 
-      <div className="mb-10 flex flex-col items-center md:gap-8">
+      <div className="mb-10 flex flex-col md:gap-8">
         <div className="flex-1">
           <h2 className="mb-2">
             <Trans>Code is My Craft</Trans>
@@ -109,15 +133,14 @@ const About: FC = memo(() => {
         <div className="not-prose w-full flex-1">
           <Windows96
             title={i18n._(msg`Help Topics: Windows`)}
-            className="bg-neutral flex flex-col content-evenly items-center justify-evenly text-left md:flex-row"
+            className="bg-neutral flex flex-col content-evenly justify-evenly text-left md:flex-row"
           >
             <YoutubeWidget
-              className="mx-auto w-full max-w-md rounded-lg p-3 shadow-lg"
-              height="300"
+              className="mx-auto aspect-square max-w-md px-3"
               url={API.YOUTUBE_EMBED.SHORT_GUITAR}
               title={i18n._(msg`Henrique playing piano`)}
             />
-            <pre className="">
+            <pre className="p-3 shadow-lg">
               <PrettyJSON
                 json={{
                   name: 'Henrique',

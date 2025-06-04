@@ -117,11 +117,11 @@ export const Windows96: FC<Windows96Props> = ({
           role="row"
           aria-label="Window: Status Bar"
         >
-          <p className="m-0 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]">
+          <p className="m-0 flex-1/3 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]">
             Press F1 for help
           </p>
           <div
-            className="m-0 flex-1 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
+            className="m-0 flex-2/3 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
             role="slider"
             aria-label="CPU Usage Range"
             aria-valuemin={1}
@@ -136,7 +136,7 @@ export const Windows96: FC<Windows96Props> = ({
             {Range}
           </div>
           <p
-            className="m-0 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
+            className="m-0 flex-1/3 truncate px-2 py-0.5 shadow-[inset_-1px_-1px_#dfdfdf,inset_1px_1px_#808080]"
             role="status"
             aria-live="polite"
             aria-atomic="true"
