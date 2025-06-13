@@ -247,8 +247,7 @@ const About: FC = memo(() => {
               Solutions), which didn't work out due to a lack of clients. That
               failure taught me a lot and motivated me to keep going.
             </Trans>
-          </p>
-          <p>
+
             <Trans>
               I went on to work for companies like Portal Solar and Meu
               Financiamento Solar, where I really consolidated my experience as
@@ -263,7 +262,6 @@ const About: FC = memo(() => {
               role="img"
               aria-label={i18n._(msg`Henrique eating`)}
             />
-
             <Trans>
               At Meu Financiamento Solar, I contributed to the entire SDLC of
               the country's largest solar credit acquisition platform, helping
@@ -280,14 +278,14 @@ const About: FC = memo(() => {
           <h2>
             <Trans>Present and Future</Trans>
           </h2>
-          <img
-            src="/assets/photos/myself.webp"
-            alt={i18n._(msg`Henrique over the years`)}
-            className="float-left m-3 w-64 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
-            role="img"
-            aria-label={i18n._(msg`Henrique`)}
-          />
           <p>
+            <img
+              src="/assets/photos/myself.webp"
+              alt={i18n._(msg`Henrique over the years`)}
+              className="float-left w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-64"
+              role="img"
+              aria-label={i18n._(msg`Henrique`)}
+            />
             <Trans>
               Today I work as a freelance Senior Software Engineer,
               collaborating with clients around the world. I have more than 10
