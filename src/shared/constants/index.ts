@@ -24,19 +24,26 @@ export const SOCIAL_LINKS = {
   GITHUB_REPO: 'https://github.com/henriquebonfim?tab=repositories',
   PROFILE_IMAGE_URI:
     'https://avatars3.githubusercontent.com/u/40275173?s=460&u=fbc8036afb33b27a0758c0d091959cdc31676f66&v=4',
+  WHATSAPP:
+    'https://wa.me/+5548996855477?text=Hello%20Henrique%2C%20I%20found%20your%20contact%20on%20your%20website.',
+  TELEGRAM:
+    'https://t.me/henriquebonfim?text=Hello%20Henrique%2C%20I%20found%20your%20contact%20on%20your%20website.',
 };
 
-export const API = {
-  SPOTIFY_EMBED:
+export const EMBED = {
+  SPOTIFY:
     'https://open.spotify.com/embed/playlist/4x4izj9nqd1HaNJb1PFKOe?utm_source=generator',
-  YOUTUBE_EMBED: {
+  GOOGLE_MAPS:
+    'https://maps.google.com/maps?q=campo_grande&t=k&z=10&ie=UTF8&iwloc=&output=embed',
+  YOUTUBE: {
     VIDEO_PIANO:
       'https://www.youtube.com/embed/ogoZCRLjRgA?enablejsapi=1&loop=1&modestbranding=1&playsinline=1&color=white&iv_load_policy=3',
     SHORT_PIANO: 'https://www.youtube.com/embed/VsRiGYE-Dqs',
-    SHORT_GUITAR: 'https://www.youtube.com/embed/4o1bFjUzIPI',
+    SHORT_REC: 'https://www.youtube.com/embed/4o1bFjUzIPI',
+    SHORT_GUITAR: 'https://www.youtube.com/embed/Vc0ruOr-9lU',
+    SHORT_ORGAN:
+      'https://www.youtube.com/embed/t9_m43tiTik?si=ftzePvQ5AOB12nbj&amp;start=8',
   },
-  GOOGLE_MAPS_EMBED:
-    'https://maps.google.com/maps?q=florianopolis&t=k&z=10&ie=UTF8&iwloc=&output=embed',
 };
 
 export const LOCALES: Record<LocaleType, string> = {

@@ -2,18 +2,21 @@
 applyTo: '**'
 ---
 
-# General Coding Standards
+@copilot
+Project Context:
 
-- follows WCAG Guidelines
-- Ensure that the React app provides: Sufficient color contrast, Keyboard navigability, Focus indicators, Proper use of ARIA attributes and roles where needed, Text alternatives for images and icons, Logical heading structure and semantic elements.
-- Implement desired functionality, always use JSDocs and remove unnecessary code/libraries.
-- Follow coding styles, standards, and conventions (SOLID, KISS, DRY principles).
-- Strive for concise, meaningful code and avoid over-engineering.
-- Utilize functional programming concepts, such as immutability and declarative code.
-- Comment complex logic or algorithms clearly.
-- Use TypeScript for new code and provide clear type definitions.
-- Employ ES6+ features, like arrow functions and template literals.
-- Use async/await for asynchronous code instead of callbacks or `.then()` chaining.
-- Validate inputs, sanitize outputs, and use parameterized queries.
-- Consider algorithmic complexity, lazy loading, and caching.
-- Avoid premature optimization, unnecessary comments and dead code.
+- This is a [Node.js | Python] backend service built with scalable, cloud-native principles.
+- Architecture: Distributed microservices communicating via [REST | gRPC | Message Queues].
+- Follow clean code, SOLID principles, and error handling best practices.
+- All code should be production-grade, testable, and optimized for readability and maintainability.
+
+Copilot Instructions:
+
+- Prioritize writing modular, reusable functions.
+- Use appropriate design patterns when relevant (Factory, Strategy, etc.).
+- For infrastructure code, prefer declarative IaC (e.g., Terraform, Pulumi).
+- Use concise, descriptive variable and function names.
+- Write self-documenting code with inline JSDoc or Python docstrings.
+- Include edge case handling and default behavior where applicable.
+- When writing test files, use [Jest | Pytest | JUnit] and aim for high coverage.
+- For DevOps scripts, assume a CI/CD pipeline using GitHub Actions or GitLab CI.

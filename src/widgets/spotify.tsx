@@ -1,4 +1,4 @@
-import { API, SECTION_ITEMS } from '#/shared/constants';
+import { EMBED, SECTION_ITEMS } from '#/shared/constants';
 import type { FC, HTMLAttributes } from 'react';
 
 /**
@@ -24,7 +24,7 @@ export const SpotifyWidget: FC<SpotifyWidgetProps> = ({
   >
     <iframe
       {...rest}
-      src={API.SPOTIFY_EMBED}
+      src={EMBED.SPOTIFY}
       width="100%"
       height="600"
       frameBorder={0}

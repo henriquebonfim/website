@@ -1,4 +1,4 @@
-import { API } from '#/shared/constants';
+import { EMBED, SOCIAL_LINKS } from '#/shared/constants';
 import { Windows96 } from '#/widgets/windows';
 import type { I18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
@@ -18,7 +18,7 @@ const ContactLinks: React.FC<{ i18n: I18n }> = ({ i18n }) => (
     className="mx-auto mb-3 flex flex-wrap justify-center gap-4 p-0"
   >
     <a
-      href="https://wa.me/+5548996855477?text=Hello%20Henrique%2C%20I%20found%20your%20contact%20on%20your%20website."
+      href={SOCIAL_LINKS.WHATSAPP}
       target="_blank"
       role="link"
       rel="noopener noreferrer"
@@ -40,7 +40,7 @@ const ContactLinks: React.FC<{ i18n: I18n }> = ({ i18n }) => (
       <span className="text-sm">WhatsApp</span>
     </a>
     <a
-      href="https://t.me/henriquebonfim?text=Hello%20Henrique%2C%20I%20found%20your%20contact%20on%20your%20website."
+      href={SOCIAL_LINKS.TELEGRAM}
       target="_blank"
       role="link"
       rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const ContactLinks: React.FC<{ i18n: I18n }> = ({ i18n }) => (
       <span className="text-sm">Telegram</span>
     </a>
     <a
-      href="https://www.linkedin.com/in/henriquebonfim"
+      href={SOCIAL_LINKS.LINKEDIN}
       target="_blank"
       role="link"
       rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const Contact: FC = memo(() => {
             )}
           >
             <img
-              src="/assets/photos/contact_me.webp"
+              src="/assets/photos/myself_eating.webp"
               alt={i18n._(msg`Henrique having lunch, smiling and hungry, 2023`)}
               className="w-26 rotate-y-180 rounded-lg border-1 shadow-lg md:w-33"
               width="132"
@@ -132,7 +132,7 @@ const Contact: FC = memo(() => {
               title={i18n._(msg`Henrique location`)}
               aria-label={i18n._(msg`Henrique location`)}
               aria-describedby="contact-me-caption"
-              src={API.GOOGLE_MAPS_EMBED}
+              src={EMBED.GOOGLE_MAPS}
               width="600"
               height="600"
               style={{ border: 0 }}
