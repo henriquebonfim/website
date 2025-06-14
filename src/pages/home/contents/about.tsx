@@ -16,7 +16,7 @@ const About: FC = memo(() => {
     <div className="p-3" role="none">
       <article
         aria-label={i18n._(msg`About me`)}
-        className="prose prose-neutral prose-img:m-3 prose-p:text-left prose-p:indent-3 prose-headings:font-bold prose-p:text-neutral-content prose-a:text-neutral-content prose-a:underline prose-a:decoration-2 prose-a:decoration-dotted prose-a:hover:decoration-solid md:prose-lg lg:prose-xl xl:prose-2xl hyphens-none"
+        className="prose prose-neutral prose-h2:m-3 prose-img:m-3 prose-p:text-left prose-p:indent-3 prose-headings:font-bold prose-p:text-neutral-content prose-a:text-neutral-content prose-a:underline prose-a:decoration-2 prose-a:decoration-dotted prose-a:hover:decoration-solid md:prose-lg lg:prose-xl xl:prose-2xl hyphens-none"
         role="article"
       >
         <h1 className="bg-linear-to-r from-black to-white bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent hover:backdrop-blur-sm md:text-5xl">
@@ -26,7 +26,7 @@ const About: FC = memo(() => {
         <hr className="divider divider-neutral" role="separator" />
 
         <figure
-          className="not-prose not-md:carousel relative flex h-33 flex-row space-x-3 md:mb-52"
+          className="not-prose not-sm:carousel relative flex h-33 flex-row space-x-3 sm:mb-33"
           role="figure"
           aria-label={i18n._(msg`Henrique over the years`)}
           aria-roledescription={i18n._(
@@ -36,7 +36,7 @@ const About: FC = memo(() => {
           <img
             src="/assets/photos/myself_child.webp"
             alt={i18n._(msg`Henrique over the years`)}
-            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
             aria-label={i18n._(msg`Henrique as a child`)}
           />
@@ -44,7 +44,7 @@ const About: FC = memo(() => {
           <img
             src="/assets/photos/myself_formal.webp"
             alt={i18n._(msg`Henrique over the years`)}
-            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:-translate-y-9"
+            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:-translate-y-9"
             role="img"
             aria-label={i18n._(msg`Henrique formal`)}
           />
@@ -52,7 +52,7 @@ const About: FC = memo(() => {
           <img
             src="/assets/photos/myself_flying.webp"
             alt={i18n._(msg`Henrique over the years`)}
-            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
             aria-label={i18n._(msg`Henrique flying`)}
           />
@@ -68,7 +68,7 @@ const About: FC = memo(() => {
           <img
             src="/assets/photos/myself_eating.webp"
             alt={i18n._(msg`Henrique over the years`)}
-            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:translate-y-9"
+            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
             aria-label={i18n._(msg`Henrique eating`)}
           />
@@ -76,7 +76,7 @@ const About: FC = memo(() => {
           <img
             src="/assets/photos/myself.webp"
             alt={i18n._(msg`Henrique over the years`)}
-            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:-translate-y-9"
+            className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:-translate-y-9"
             role="img"
             aria-label={i18n._(msg`Henrique today`)}
           />
@@ -192,7 +192,7 @@ const About: FC = memo(() => {
             <img
               src="/assets/photos/ctei.webp"
               alt={i18n._(msg`Henrique over the years`)}
-              className="float-left w-20 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
+              className="float-right w-20 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
               role="img"
               aria-label={i18n._(msg`Henrique coding`)}
             />
@@ -202,27 +202,32 @@ const About: FC = memo(() => {
               projects, CTEI, AGETIC and FETEC. In 2018, I took part in
               programming competitions, winning third place in one of them.
             </Trans>
-            <img
-              src="/assets/photos/myself_fetec.webp"
-              alt={i18n._(msg`Henrique over the years`)}
-              className="float-right hidden w-33 rotate-y-180 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:block"
-              role="img"
-              aria-label={i18n._(msg`Henrique coding`)}
-            />
           </p>
-
+          <img
+            src="/assets/photos/myself_fetec.webp"
+            alt={i18n._(msg`Henrique over the years`)}
+            className="float-left w-20 rotate-y-180 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-33"
+            role="img"
+            aria-label={i18n._(msg`Henrique coding`)}
+          />
+          <blockquote>
+            <Trans>
+              "Resilience is not about never falling, but about rising every
+              time you fall." - <strong>Henrique Bonfim</strong>
+            </Trans>
+          </blockquote>
+          <img
+            src="/assets/photos/myself_event.webp"
+            alt={i18n._(msg`Henrique over the years`)}
+            className="float-right w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
+            role="img"
+            aria-label={i18n._(msg`Henrique coding`)}
+          />
           <p>
-            <img
-              src="/assets/photos/myself_event.webp"
-              alt={i18n._(msg`Henrique over the years`)}
-              className="float-left w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
-              role="img"
-              aria-label={i18n._(msg`Henrique coding`)}
-            />
             <Trans>
               I also got involved with incubators and startups such as IndexT,
-              Codate, LivingLab and even tried once (SoftState Solutions) - it
-              was exactly where I wanted to be by that time.
+              Codate, LivingLab - it was exactly where I wanted to be by that
+              time.
             </Trans>
           </p>
         </div>
@@ -274,7 +279,7 @@ const About: FC = memo(() => {
           </p>
         </div>
 
-        <div>
+        <div id="present-future">
           <h2>
             <Trans>Present and Future</Trans>
           </h2>
@@ -298,76 +303,80 @@ const About: FC = memo(() => {
               built secure distributed systems using Redis and RabbitMQ.
             </Trans>
           </p>
-        </div>
 
-        <div className="not-prose w-full flex-1">
-          <Windows96
-            title={i18n._(msg`Help Topics: Windows`)}
-            className="bg-neutral flex flex-col content-evenly justify-evenly text-left md:flex-row"
-          >
-            <YoutubeWidget
-              className="m-3"
-              url={EMBED.YOUTUBE.SHORT_REC}
-              title={i18n._(msg`Henrique playing guitar`)}
-            />
-            <pre className="p-3">
-              <PrettyJSON
-                json={{
-                  name: 'Henrique Paulo Bonfim',
-                  role: 'Senior Software Engineer',
-                  location: 'Florianópolis, SC',
-                  experience: i18n._(msg`'10+ years in software development'`),
-                  specialties: [
-                    'Backend Development',
-                    'Cloud Architecture',
-                    'Microservices',
-                    'AI Integration',
-                  ],
-                  techStack: [
-                    'Node.js',
-                    'TypeScript',
-                    'React',
-                    'Python',
-                    'AWS',
-                    'Google Cloud',
-                  ],
-                  certifications: [
-                    'AWS Cloud Practitioner',
-                    'Google Cloud Associate Engineer',
-                    'Scrum Foundation Professional',
-                  ],
-                  hobbies: [
-                    i18n._(msg`Music`),
-                    i18n._(msg`Piano & Guitar`),
-                    i18n._(msg`Lifelong Learning`),
-                  ],
-                  mission: i18n._(
-                    msg`Building solutions that make a difference`,
-                  ),
-                }}
+          <div className="not-prose w-full flex-1">
+            <Windows96
+              title={i18n._(msg`Help Topics: Windows`)}
+              className="bg-neutral flex flex-col content-evenly justify-evenly text-left md:flex-row"
+            >
+              <YoutubeWidget
+                className="m-3"
+                url={EMBED.YOUTUBE.SHORT_REC}
+                title={i18n._(msg`Henrique playing guitar`)}
               />
-            </pre>
-          </Windows96>
+              <pre className="p-3">
+                <PrettyJSON
+                  json={{
+                    name: 'Henrique Paulo Bonfim',
+                    role: 'Senior Software Engineer',
+                    location: 'Florianópolis, SC',
+                    experience: i18n._(
+                      msg`'10+ years in software development'`,
+                    ),
+                    specialties: [
+                      'Backend Development',
+                      'Cloud Architecture',
+                      'Microservices',
+                      'AI Integration',
+                    ],
+                    techStack: [
+                      'Node.js',
+                      'TypeScript',
+                      'React',
+                      'Python',
+                      'AWS',
+                      'Google Cloud',
+                    ],
+                    certifications: [
+                      'AWS Cloud Practitioner',
+                      'Google Cloud Associate Engineer',
+                      'Scrum Foundation Professional',
+                    ],
+                    hobbies: [
+                      i18n._(msg`Music`),
+                      i18n._(msg`Piano & Guitar`),
+                      i18n._(msg`Lifelong Learning`),
+                    ],
+                    mission: i18n._(
+                      msg`Building solutions that make a difference`,
+                    ),
+                  }}
+                />
+              </pre>
+            </Windows96>
+          </div>
         </div>
 
-        <div>
+        <div id="beyond-code">
           <h2>
             <Trans>Beyond Code</Trans>
           </h2>
-          <YoutubeWidget
-            className="float-right aspect-square w-1/3"
-            url={EMBED.YOUTUBE.SHORT_GUITAR}
-            title={i18n._(msg`Henrique playing guitar`)}
-          />
-          <p>
-            <Trans>
-              Alongside technology, music occupies a special place in my life. I
-              play piano and guitar, and have learned several other instruments.
-              I've performed with other artists, in street bands and at public
-              events. This passion reinforces my philosophy of lifelong learning
-              and my ability to constantly adapt.
-            </Trans>
-          </p>
+          <div>
+            <YoutubeWidget
+              className="float-right hidden aspect-square w-1/3 sm:block"
+              url={EMBED.YOUTUBE.SHORT_GUITAR}
+              title={i18n._(msg`Henrique playing guitar`)}
+            />
+            <p>
+              <Trans>
+                Alongside technology, music occupies a special place in my life.
+                I play piano and guitar, and have learned several other
+                instruments. I've performed with other artists, in street bands
+                and at public events. This passion reinforces my philosophy of
+                lifelong learning and my ability to constantly adapt.
+              </Trans>
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
             <YoutubeWidget
@@ -384,21 +393,17 @@ const About: FC = memo(() => {
             />
           </div>
         </div>
+
         <hr className="divider divider-primary not-prose" />
-        <div>
-          <h4 className="text-center indent-3">
-            <Trans>
-              I always strive to carry out projects that bring real value to
-              society, combining my technical expertise in Cloud, AI and
-              development with agile methodologies.
-            </Trans>
-          </h4>
-          <blockquote>
+
+        <div id="conclusion">
+          <h3 className="text-center indent-3">
             <Trans>
               I believe that technology should make a difference to people's
               lives - and that's what drives me every day.
             </Trans>
-          </blockquote>
+          </h3>
+
           <span>
             <Trans>
               If you want to know more about my work, check out my{' '}
