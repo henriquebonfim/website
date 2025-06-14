@@ -1,0 +1,6 @@
+services:
+  libre-translate:
+    image: libretranslate/libretranslate
+    ports:
+      - "5000:5000"
+    command: --load-only en,pt,es

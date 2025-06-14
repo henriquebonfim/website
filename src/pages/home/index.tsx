@@ -1,63 +1,20 @@
+import { Profile } from '#/widgets/profile';
+import { SpotifyWidget } from '#/widgets/spotify';
+import { Terminal } from '#/widgets/terminal';
+import { type FC } from 'react';
+import Section from './ui/section';
 
-import { About } from '../../components/about'
-import { Projects } from '../../components/projects'
-import { Terminal } from '../../components/terminal'
-import { I18nProvider } from "@lingui/react"
-import { i18n } from "@lingui/core"
-import './styles.css'
-import { useEffect } from 'react'
-import { dynamicLoadMessages, LOCALES } from '../../i18n'
-
-const SelectComponent = () => {
-  function changeLanguage(key: keyof typeof LOCALES) {
-    dynamicLoadMessages(key)
-  }
-
-  return (
-    <div style={{ display: "flex", flexDirection: 'row', justifyContent: 'end', margin: '10px', gap: '5px' }}>
-      {Object.entries(LOCALES).map(([key]) => (
-        <img loading="lazy"
-          style={{ background: 'none', border: 'none', cursor: 'pointer', width: '40px' }}
-          key={key}
-          onClick={() => changeLanguage(key as keyof typeof LOCALES)}
-          src={`/${key}.png`}
-          alt={key}
-        />
-      ))}
-    </div>
-  )
-}
-
-const Home = () => {
-
-  useEffect(() => {
-    dynamicLoadMessages('en')
-  }, [])
-
-  return (
-    <I18nProvider i18n={i18n}>
-      <SelectComponent />
-
-      <div id="page-home">
-        <div className="content">
-          <main>
-            <Terminal />
-          </main>
-
-          <main>
-            <About />
-          </main>
-
-          <main>
-            <Projects />
-          </main>
-
-          <br />
-          <br />
-        </div>
-      </div>
-    </I18nProvider>
-  )
-}
-
-export default Home
+export const Homepage: FC = () => (
+  <>
+    <Profile />
+    <Section />
+    <aside className="min-w-60 lg:col-span-1" aria-label="Spotify API terminal">
+      <Terminal
+        title="Spotify API"
+        cmd="curl --request GET --url https://api.spotify.com/v1/me/player --header 'Authorization: Bearer 1POdFZRZbvb...qqillRxMr2z"
+      >
+        <SpotifyWidget className="p-3 px-6 transition-all duration-300 hover:blur-none hover:grayscale-0 sm:px-0" />
+      </Terminal>
+    </aside>
+  </>
+);
