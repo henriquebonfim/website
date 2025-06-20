@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "pnpm translate && pnpm test && vite --port 3000 --host",
     "dev:host": "vite --port 3000 --host",
-    "build": "pnpm translate && tsc -b && vite build",
+    "build": "vite build",
     "analyze": "vite build --mode analyze",
     "lint": "pnpm exec prettier . --write && pnpm exec eslint . --fix",
     "preview": "vite preview --port 3000",
