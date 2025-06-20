@@ -40,7 +40,7 @@ jobs:
           cache: "pnpm"
 
       - name: Step 4 - Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
         working-directory: website
 
       - name: Step 5 - Audit dependencies
