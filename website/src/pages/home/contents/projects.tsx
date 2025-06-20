@@ -13,7 +13,7 @@ interface Project {
   category: MessageDescriptor[];
 }
 
-const LIST_PROJECTS: ReadonlyArray<Project> = [
+const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
   {
     title: 'ArduEVE',
     popup_text: msg`IoT automation system using microservices architecture with NodeJS, VueJS, and MongoDB. Controls electronic relays for lighting and door access while providing real-time sensor monitoring through Docker Swarm deployment.`,
@@ -59,8 +59,50 @@ const LIST_PROJECTS: ReadonlyArray<Project> = [
     alt: msg`Canivete Perneta mobile app interface showing truck driver assistance features`,
     category: [msg`Open Source`, msg`App`],
   },
+  {
+    title: 'EduDoa',
+    popup_text: msg`Educational platform for mobile network sharing, providing interactive learning tools and resources. Developed with ReactJS and NodeJS, it focuses on accessibility and user-friendly design.`,
+    image:
+      'https://henriquebonfim.github.io/Hackathon-IBM-CallForCode-Project_EduDoa/img/iPhone-principal.png',
+    link: 'https://github.com/henriquebonfim/Hackathon-IBM-CallForCode-Project_EduDoa',
+    alt: msg`EduDoa educational platform interface for mobile network sharing`,
+    category: [msg`Open Source`, msg`EduTech`],
+  },
+  {
+    title: 'Crawler Mercado Libre',
+    popup_text: msg`Web scraping tool for Mercado Libre using NodeJS. Extracts product data for price comparison and market analysis, demonstrating advanced web automation techniques.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/crawler-mercadolibre800x600.png',
+    link: 'https://github.com/henriquebonfim/crawler-mercadolibre',
+    alt: msg`Crawler Mercado Libre interface showing product data extraction`,
+    category: [msg`Open Source`, msg`Web Scraping`],
+  },
 ];
 
+const LIST_WORK_PROJECTS: ReadonlyArray<Project> = [
+  {
+    title: 'Meu Financiamento Solar',
+    popup_text: msg`A comprehensive platform for solar energy financing, integrating advanced analytics and user-friendly interfaces to streamline the financing process.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/meu-financiamento-solar800x600.png',
+    link: 'https://meufinanciamentosolar.com.br',
+    alt: msg`Meu Financiamento Solar platform`,
+    category: [msg`FinTech`, msg`PaaS`],
+  },
+  {
+    title: 'Portal Solar',
+    popup_text: msg`A leading platform in the solar energy sector, providing comprehensive solutions for solar project management, from initial design to final installation.`,
+    image:
+      'https://raw.githubusercontent.com/hpbonfim/website/production/src/assets/projetos-page/portal-solar800x600.png',
+    link: 'https://portalsolar.com.br',
+    alt: msg`Portal Solar platform`,
+    category: [msg`Energy`, msg`PaaS`],
+  },
+];
+const LIST_PROJECTS = [
+  ...LIST_PERSONAL_PROJECTS,
+  ...LIST_WORK_PROJECTS,
+] as const;
 const ProjectCard: React.FC<{
   project: Project;
   i18n: I18n;

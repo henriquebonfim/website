@@ -2,6 +2,7 @@
 
 # Node modules
 node_modules
+.venv
 
 # Logs
 logs

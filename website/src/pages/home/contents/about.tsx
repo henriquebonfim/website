@@ -406,12 +406,12 @@ const About: FC = memo(() => {
 
           <span>
             <Trans>
-              If you want to know more about my work, check out my{' '}
+              Check out my{' '}
               <a
                 href="#projects"
                 className="text-neutral-content underline decoration-dotted decoration-2 hover:decoration-solid"
               >
-                Projects
+                Projects and Contribuitions
               </a>
               .
             </Trans>

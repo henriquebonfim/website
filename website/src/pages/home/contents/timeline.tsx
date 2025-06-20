@@ -69,8 +69,8 @@ const Timeline: FC = memo(() => {
           </div>
           <Trans>
             Built a soapbox car from scraps and spent countless hours on LAN
-            matches of Counter-Strike: Condition Zero. This playful creativity
-            planted the seed for an engineering mindset.
+            matches of Counter-Strike: 1.6 and Condition Zero. This playful
+            creativity planted the seed for an engineering mindset.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -106,10 +106,10 @@ const Timeline: FC = memo(() => {
             2010
           </time>
           <div className="text-lg font-black">
-            <Trans>First Step into Love</Trans>
+            <Trans>First Step into Code</Trans>
           </div>
           <Trans>
-            Took the first computer literacy course. Graduated from the{' '}
+            Took the first basic computer course from the{' '}
             <i>Work Education Program by Coca-Cola</i>. Also started learning to
             play acoustic guitar, which became a lifelong passion.
           </Trans>
@@ -143,15 +143,15 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2013">
-            2013
+          <time className="font-mono italic" aria-label="2013-2014">
+            2013-2014
           </time>
           <div className="text-lg font-black">
             <Trans>First IT Job</Trans>
           </div>
           <Trans>
-            Started as Assistent Computer Support Technician at Sedit. Learned
-            helpdesk skills, preventive maintenance, and how to troubleshoot
+            Started as Assistant Computer Support Technician at Sedit. Learned
+            help-desk skills, preventive maintenance, and how to troubleshoot
             under pressure.
           </Trans>
         </div>
@@ -193,7 +193,7 @@ const Timeline: FC = memo(() => {
           <Trans>
             Enrolled in the Information Systems bachelor's program at UFMS.
             Gained foundational knowledge in software engineering, foundations
-            in algorithms, databases, and system design.
+            in algorithms, databases, IA and system design.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -274,7 +274,7 @@ const Timeline: FC = memo(() => {
           <Trans>
             Resolved over 150 backend and UI issues and contributed to
             JavaScript/PHP systems. Helped stabilize key platforms and
-            documented APIs.
+            documented changes.
           </Trans>
         </div>
         <hr aria-hidden="true" />

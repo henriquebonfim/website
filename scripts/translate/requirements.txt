@@ -1,0 +1,3 @@
+httpx==0.25.2
+polib==1.2.0
+watchdog==6.0.0

@@ -4,7 +4,7 @@
   "version": "1.0.3",
   "type": "module",
   "scripts": {
-    "dev": "pnpm translate && pnpm test && vite --port 3000",
+    "dev": "pnpm translate && pnpm test && vite --port 3000 --host",
     "dev:host": "vite --port 3000 --host",
     "build": "pnpm translate && tsc -b && vite build",
     "analyze": "vite build --mode analyze",

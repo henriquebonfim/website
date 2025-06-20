@@ -1,0 +1,1126 @@
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-02 11:56-0300\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: @lingui/cli\n"
+
+#: src/pages/home/contents/about.tsx:324
+msgid "'10+ years in software development'"
+msgstr "'10+ anos em desenvolvimento de software'"
+
+#: src/pages/home/contents/about.tsx:214
+msgid ""
+"\"Resilience is not about never falling, but about rising every time you "
+"fall.\" - <0>Henrique Bonfim</0>"
+msgstr ""
+"\"A resiliência não é sobre nunca cair, mas sobre levantar cada vez que você"
+" cair.\" - <0>Henrique Bonfim</0>"
+
+#: src/widgets/tools-carousel/index.tsx:72
+msgid "A carousel of tools and technologies"
+msgstr "Um carrossel de ferramentas e tecnologias"
+
+#: src/pages/home/contents/projects.tsx:85
+msgid ""
+"A comprehensive platform for solar energy financing, integrating advanced "
+"analytics and user-friendly interfaces to streamline the financing process."
+msgstr ""
+"Uma plataforma abrangente para o financiamento da energia solar, integrando "
+"análises avançadas e interfaces amigáveis para simplificar o processo de "
+"financiamento."
+
+#: src/pages/home/contents/projects.tsx:94
+msgid ""
+"A leading platform in the solar energy sector, providing comprehensive "
+"solutions for solar project management, from initial design to final "
+"installation."
+msgstr ""
+"Uma plataforma líder no setor de energia solar, fornecendo soluções "
+"abrangentes para a gestão de projetos solares, desde o projeto inicial até a"
+" instalação final."
+
+#: src/pages/home/ui/section.tsx:19
+msgid "About"
+msgstr "Sobre"
+
+#: src/pages/home/contents/about.tsx:18
+msgid "About me"
+msgstr "Sobre mim"
+
+#: src/pages/home/contents/about.tsx:23
+msgid "About Me"
+msgstr "Sobre mim"
+
+#: src/pages/home/contents/about.tsx:371
+msgid ""
+"Alongside technology, music occupies a special place in my life. I play "
+"piano and guitar, and have learned several other instruments. I've performed"
+" with other artists, in street bands and at public events. This passion "
+"reinforces my philosophy of lifelong learning and my ability to constantly "
+"adapt."
+msgstr ""
+"Ao lado da tecnologia, a música ocupa um lugar especial na minha vida. Toco "
+"piano e violão, e aprendi vários outros instrumentos. Já me apresentei com "
+"outros artistas, em bandas de rua e em eventos públicos. Esta paixão reforça"
+" a minha filosofia de aprendizagem ao longo da vida e a minha capacidade de "
+"adaptação constante."
+
+#: src/pages/home/contents/projects.tsx:60
+msgid "App"
+msgstr "Aplicativo"
+
+#: src/pages/home/contents/projects.tsx:24
+#: src/pages/home/contents/projects.tsx:33
+msgid "Application"
+msgstr "Aplicação"
+
+#: src/pages/home/contents/resume.tsx:154
+msgid "Apr"
+msgstr "Abr"
+
+#: src/pages/home/contents/resume.tsx:126
+msgid "Architected B2B AI integrations with legacy systems (NDA)."
+msgstr "Arquitetei integrações B2B de IA com sistemas legados (NDA)."
+
+#: src/pages/home/contents/projects.tsx:23
+msgid "ArduEVE IoT automation system interface showing real-time sensor data"
+msgstr ""
+"Interface do sistema de automação IoT ArduEVE mostrando dados dos sensores "
+"em tempo real"
+
+#: src/pages/home/contents/about.tsx:270
+msgid ""
+"At Meu Financiamento Solar, I contributed to the entire SDLC of the "
+"country's largest solar credit acquisition platform, helping to increase "
+"engagement by 300% after launch. In 2023, I was selected for AWS re/Start, "
+"an intensive cloud immersion program that earned me my first AWS "
+"certificate. The following year, I took part in Google Cloud - Get "
+"Certified, earning my Associate Cloud Engineer certification."
+msgstr ""
+"Em Meu Financiamento Solar, eu contribuí para todo o SDLC da maior "
+"plataforma de aquisição de crédito solar do país, ajudando a aumentar o "
+"engajamento em 300% após o lançamento. Em 2023, fui selecionado para o AWS "
+"re/Start, um programa intensivo de imersão em nuvem que me valeu meu "
+"primeiro certificado AWS. No ano seguinte, participei do Google Cloud - Get "
+"Certified, ganhando minha certificação de Engenheiro de Nuvem Associado."
+
+#: src/pages/home/contents/about.tsx:134
+msgid ""
+"At school there was a basic computer course, and every day after school, my "
+"friends and I would go to the lan house to play Counter-Strike 1.6 - a "
+"passion that would define my interest in technology and team spirit."
+msgstr ""
+"Na escola havia um curso básico de informática, e todos os dias depois da "
+"escola, meus amigos e eu íamos para a casa do Ian jogar Counter-Strike 1.6 -"
+" uma paixão que definiria meu interesse em tecnologia e espírito de equipe."
+
+#: src/pages/home/contents/about.tsx:181
+msgid ""
+"At the age of 17 (2013), I took a technical course in computer maintenance "
+"offered by Intel. This earned me my first job as a technical support "
+"assistant at the Sedit hemodialysis clinic, where I discovered the world of "
+"help desk and customer service. In 2015, at the age of 19, I put everything "
+"together and moved to Campo Grande, MS, to study Information Systems at "
+"UFMS."
+msgstr ""
+"Aos 17 anos (2013), fiz um curso técnico em manutenção de computadores "
+"oferecido pela Intel. Isso me valeu meu primeiro emprego como assistente de "
+"suporte técnico na clínica de hemodiálise Sedit, onde descobri o mundo da "
+"mesa de ajuda e serviço ao cliente. Em 2015, aos 19 anos, juntei tudo e me "
+"mudei para Campo Grande, MS, para estudar Sistemas de Informação na UFMS."
+
+#: src/pages/home/contents/resume.tsx:120
+msgid "Aug"
+msgstr "Ago"
+
+#: src/app/layout/ui/footer.tsx:20
+msgid "Author credit"
+msgstr "Crédito do autor"
+
+#: src/pages/home/contents/resume.tsx:305
+msgid "AWS Certified Cloud Practitioner"
+msgstr "AWS Certified Cloud Practitioner"
+
+#: src/pages/home/contents/timeline.tsx:490
+#: src/pages/home/contents/timeline.tsx:516
+msgid "AWS re/Start Graduate"
+msgstr "Graduado AWS re/Start"
+
+#: src/pages/home/contents/about.tsx:362
+msgid "Beyond Code"
+msgstr "Além do código"
+
+#: src/pages/home/contents/projects.tsx:46
+msgid ""
+"Blockchain-based legal contract platform recognized in Top 50 at Megahack v2"
+" 2020. Implements NodeJS, Angular, and Google Cloud to ensure transparent, "
+"tamper-proof digital agreements with legal validity."
+msgstr ""
+"Plataforma de contratos legais baseada em blockchain reconhecida no Top 50 "
+"do Megahack v2 2020. Utiliza NodeJS, Angular e Google Cloud para garantir "
+"acordos digitais transparentes e invioláveis com validade jurídica."
+
+#: src/pages/home/contents/about.tsx:351
+msgid "Building solutions that make a difference"
+msgstr "Construindo soluções que fazem a diferença"
+
+#: src/pages/home/contents/timeline.tsx:70
+msgid ""
+"Built a soapbox car from scraps and spent countless hours on LAN matches of "
+"Counter-Strike: 1.6 and Condition Zero. This playful creativity planted the "
+"seed for an engineering mindset."
+msgstr ""
+"Construiu uma caixa de sabão de sucatas e gastou inúmeras horas em jogos LAN"
+" de Counter-Strike: 1.6 e Condição Zero. Esta criatividade lúdica plantou a "
+"semente para uma mentalidade de engenharia."
+
+#: src/pages/home/contents/resume.tsx:224
+msgid "Built admin interfaces with JavaScript and Bootstrap."
+msgstr "Construí interfaces administrativas com JavaScript e Bootstrap."
+
+#: src/pages/home/contents/resume.tsx:273
+msgid "Built agribusiness dashboards with JavaScript/Bootstrap."
+msgstr "Desenvolvi dashboards para agronegócio com JavaScript/Bootstrap."
+
+#: src/pages/home/contents/resume.tsx:131
+msgid "Built REST APIs with Nest.js/PostgreSQL, ensured 99.98% uptime."
+msgstr ""
+"Desenvolvi APIs REST com Nest.js/PostgreSQL, garantindo 99,98% de "
+"disponibilidade."
+
+#: src/pages/home/contents/resume.tsx:349
+msgid "Campinho Digital — Cloud Computing (Sep 2023 – Dec 2023)"
+msgstr "Campinho Digital — Computação em Nuvem (Set 2023 – Dez 2023)"
+
+#: src/pages/home/contents/projects.tsx:59
+msgid ""
+"Canivete Perneta mobile app interface showing truck driver assistance "
+"features"
+msgstr ""
+"Interface do app Canivete Perneta mostrando recursos de assistência ao "
+"caminhoneiro"
+
+#: src/widgets/tools-carousel/index.tsx:76
+msgid "Carousel of tools and technologies used by Henrique Bonfim"
+msgstr "Carrossel de ferramentas e tecnologias usadas por Henrique Bonfim"
+
+#: src/pages/home/contents/resume.tsx:298
+msgid "Certifications"
+msgstr "Certificações"
+
+#: src/pages/home/contents/about.tsx:408
+msgid "Check out my <0>Projects and Contribuitions</0>."
+msgstr "Confira meus <0>Projetos e Contribuições</0>."
+
+#: src/pages/home/contents/timeline.tsx:40
+msgid "Childhood Creativity"
+msgstr "Criatividade na Infância"
+
+#: src/pages/home/contents/about.tsx:120
+msgid ""
+"Childhood was fun, but when I got my first computer, Debian 4 with CD/DVD-RW"
+" and dial-up internet that barely lasted 2 hours online, things became more "
+"interesting."
+msgstr ""
+"A infância foi divertida, mas quando consegui meu primeiro computador, o "
+"Debian 4 com CD/DVD-RW e internet discada que mal durou 2 horas online, as "
+"coisas ficaram mais interessantes."
+
+#. placeholder {0}: theme === THEMES.dark ? 'light' : 'dark'
+#: src/app/layout/ui/header.tsx:152
+msgid "Click to change theme to {0} mode"
+msgstr "Clique para mudar para o tema {0}"
+
+#: src/pages/home/contents/timeline.tsx:518
+msgid ""
+"Completed AWS re/Start program and earned AWS Certified Cloud Practitioner. "
+"Learned foundational cloud concepts and DevOps workflows."
+msgstr ""
+"Completei o programa AWS re/Start e obtive a certificação AWS Cloud "
+"Practitioner. Aprendi conceitos fundamentais de cloud e workflows DevOps."
+
+#: src/pages/home/contents/timeline.tsx:559
+msgid ""
+"Completed the Get Certified Program. Became a Google Associate Cloud "
+"Engineer, expanding my skills across GCP services and infrastructure."
+msgstr ""
+"Completei o Programa Get Certified. Me tornei um Google Associate Cloud "
+"Engineer, expandindo minhas habilidades em serviços e infraestrutura GCP."
+
+#: src/pages/home/ui/section.tsx:23
+msgid "Contact"
+msgstr "Contato"
+
+#: src/pages/home/contents/contact.tsx:17
+msgid "Contact methods"
+msgstr "Métodos de contato"
+
+#: src/pages/home/contents/contact.tsx:69
+msgid "Contact via LinkedIn"
+msgstr "Contato via LinkedIn"
+
+#: src/pages/home/contents/contact.tsx:47
+msgid "Contact via Telegram"
+msgstr "Contato via Telegram"
+
+#: src/pages/home/contents/contact.tsx:25
+msgid "Contact via WhatsApp"
+msgstr "Contato via WhatsApp"
+
+#: src/pages/home/contents/projects.tsx:77
+msgid "Crawler Mercado Libre interface showing product data extraction"
+msgstr ""
+"Crawler Mercado Interface Libre mostrando extração de dados do produto"
+
+#: src/pages/home/contents/timeline.tsx:68
+msgid "Creative Childhood"
+msgstr "Infância Criativa"
+
+#: src/pages/home/contents/resume.tsx:241
+#: src/pages/home/contents/resume.tsx:285
+msgid "Dec"
+msgstr "Dez"
+
+#: src/pages/home/contents/timeline.tsx:642
+msgid ""
+"Delivering backend, API, and documentation excellence to global clients. "
+"Helping startups grow with clean code, cloud infra, and fast delivery."
+msgstr ""
+"Entregando excelência em backend, API e documentação para clientes globais. "
+"Ajudando startups a crescerem com código limpo, infraestrutura em nuvem e "
+"entregas rápidas."
+
+#: src/pages/home/contents/timeline.tsx:600
+msgid ""
+"Designed scalable microservices, built APIs with Nest.js, and integrated AI "
+"with legacy systems. Delivered enterprise-grade uptime and stability."
+msgstr ""
+"Projetei microsserviços escaláveis, construí APIs com Nest.js e integrei IA "
+"com sistemas legados. Entreguei disponibilidade e estabilidade em nível "
+"empresarial."
+
+#: src/pages/home/contents/timeline.tsx:395
+msgid ""
+"Despite the business not taking off, I won the Hackatrouble hackathon with "
+"an Uber Eats-style solution—proving innovation never goes to waste."
+msgstr ""
+"Apesar do negócio não ter decolado, ganhei o hackathon Hackatrouble com uma "
+"solução estilo Uber Eats—provando que inovação nunca é desperdiçada."
+
+#: src/pages/home/contents/timeline.tsx:234
+msgid ""
+"Developed dashboards and admin tools with JavaScript and Bootstrap. Improved"
+" user experience and honed frontend-backend collaboration."
+msgstr ""
+"Desenvolvi dashboards e ferramentas administrativas com JavaScript e "
+"Bootstrap. Melhorei a experiência do usuário e aprimorei a colaboração "
+"frontend-backend."
+
+#: src/pages/home/contents/resume.tsx:171
+msgid "Developed dashboards using React and Chart.js."
+msgstr "Desenvolvi dashboards usando React e Chart.js."
+
+#: src/pages/home/contents/resume.tsx:252
+msgid "Developed modules in JavaScript and PHP."
+msgstr "Desenvolvi módulos em JavaScript e PHP."
+
+#: src/pages/home/contents/resume.tsx:316
+msgid "Developing Secure Software – Linux Foundation"
+msgstr "Desenvolvimento de Software Seguro – Linux Foundation"
+
+#: src/pages/home/contents/resume.tsx:313
+msgid "Docker Essentials – IBM"
+msgstr "Docker Essentials – IBM"
+
+#: src/widgets/social-badges.tsx:26
+msgid "Download {name}"
+msgstr "Baixar {name}"
+
+#: src/pages/home/contents/about.tsx:199
+msgid ""
+"During my degree, I dived headfirst into opportunities: I took part in the "
+"PET (Tutorial Education Program), university expansion projects, CTEI, "
+"AGETIC and FETEC. In 2018, I took part in programming competitions, winning "
+"third place in one of them."
+msgstr ""
+"Durante o meu curso, mergulhei de cabeça em oportunidades: Participei do PET"
+" (Programa de Educação Tutorial), projetos de expansão universitária, CTEI, "
+"AGETIC e FETEC. Em 2018, participei em competições de programação, ganhando "
+"o terceiro lugar em uma delas."
+
+#: src/pages/home/contents/timeline.tsx:63
+#: src/pages/home/contents/timeline.tsx:65
+msgid "Early 2000s"
+msgstr "Início dos anos 2000"
+
+#: src/pages/home/contents/resume.tsx:345
+msgid "Education"
+msgstr "Educação"
+
+#: src/pages/home/contents/projects.tsx:64
+msgid ""
+"Educational platform for mobile network sharing, providing interactive "
+"learning tools and resources. Developed with ReactJS and NodeJS, it focuses "
+"on accessibility and user-friendly design."
+msgstr ""
+"Plataforma educacional para compartilhamento de rede móvel, fornecendo "
+"ferramentas e recursos de aprendizagem interativos. Desenvolvido com ReactJS"
+" e NodeJS, ele se concentra em acessibilidade e design amigável."
+
+#: src/pages/home/contents/projects.tsx:68
+msgid "EduDoa educational platform interface for mobile network sharing"
+msgstr ""
+"Interface de plataforma educacional EduDoa para compartilhamento de rede "
+"móvel"
+
+#: src/pages/home/contents/projects.tsx:69
+msgid "EduTech"
+msgstr "EduTech"
+
+#: src/pages/home/contents/projects.tsx:99
+msgid "Energy"
+msgstr "Energia"
+
+#: src/pages/home/contents/resume.tsx:370
+msgid "English (Fluent)"
+msgstr "Inglês (Fluente)"
+
+#: src/pages/home/contents/timeline.tsx:193
+msgid ""
+"Enrolled in the Information Systems bachelor's program at UFMS. Gained "
+"foundational knowledge in software engineering, foundations in algorithms, "
+"databases, IA and system design."
+msgstr ""
+"Inscrito no programa de bacharel em Sistemas de Informação da UFMS. Obteve "
+"conhecimento fundamental em engenharia de software, fundações em algoritmos,"
+" bases de dados, IA e design de sistema."
+
+#: src/pages/home/contents/resume.tsx:116
+msgid "Feb"
+msgstr "Fev"
+
+#: src/pages/home/contents/resume.tsx:354
+msgid ""
+"Federal University of Mato Grosso do Sul — Bachelor's in Information Systems"
+" (Jan 2015 – Dec 2019)"
+msgstr ""
+"Universidade Federal de Mato Grosso do Sul — Bacharel em Sistemas de "
+"Informação (Jan 2015 – Dez 2019)"
+
+#: src/pages/home/contents/projects.tsx:90
+msgid "FinTech"
+msgstr "FinTech"
+
+#: src/pages/home/contents/timeline.tsx:83
+msgid "First contact with tech and education program"
+msgstr "Primeiro contato com tecnologia e programa educacional"
+
+#: src/pages/home/contents/timeline.tsx:124
+#: src/pages/home/contents/timeline.tsx:150
+msgid "First IT Job"
+msgstr "Primeiro Emprego em TI"
+
+#: src/pages/home/contents/timeline.tsx:109
+msgid "First Step into Code"
+msgstr "Primeiro Passo para o Código"
+
+#: src/app/layout/ui/header.tsx:76
+msgid "flag of {value}"
+msgstr "bandeira de {value}"
+
+#: src/widgets/social-badges.tsx:27
+msgid "Follow on {name}"
+msgstr "Seguir no {name}"
+
+#: src/pages/home/contents/timeline.tsx:614
+msgid "Freelance Work at Upwork – Senior Software Engineer"
+msgstr "Trabalho Freelance na Upwork – Engenheiro de Software Sênior"
+
+#: src/pages/home/contents/about.tsx:87
+msgid "Fresh start"
+msgstr "Era uma vez..."
+
+#: src/pages/home/contents/timeline.tsx:408
+#: src/pages/home/contents/timeline.tsx:434
+msgid "Full-Stack Mid-Level at Portal Solar"
+msgstr "Desenvolvedor Full-Stack Pleno no Portal Solar"
+
+#: src/app/layout/ui/footer.tsx:33 src/app/layout/ui/footer.tsx:35
+msgid "GitHub profile of Henrique Bonfim"
+msgstr "Perfil do GitHub de Henrique Bonfim"
+
+#: src/pages/home/contents/resume.tsx:302
+msgid "Google Cloud Certified – Associate Cloud Engineer"
+msgstr "Google Cloud Certified – Associate Cloud Engineer"
+
+#: src/pages/home/contents/timeline.tsx:531
+#: src/pages/home/contents/timeline.tsx:557
+msgid "Google Cloud Innovators"
+msgstr "Google Cloud Innovators"
+
+#: src/pages/home/contents/about.tsx:237
+msgid "Growth in the midst of chaos"
+msgstr "Crescimento no meio do caos"
+
+#: src/pages/home/contents/projects.tsx:37
+msgid ""
+"Hackatrouble SP 2020 award-winning platform connecting rural farmers with "
+"charity organizations to reduce food waste. Built with NodeJS, Angular, and "
+"AWS for scalable donation management."
+msgstr ""
+"Plataforma premiada no Hackatrouble SP 2020 que conecta agricultores rurais "
+"com organizações beneficentes para reduzir o desperdício de alimentos. "
+"Construída com NodeJS, Angular e AWS para gestão escalável de doações."
+
+#: src/pages/home/contents/timeline.tsx:367
+#: src/pages/home/contents/timeline.tsx:393
+msgid "Hackatrouble Win"
+msgstr "Vitória no Hackatrouble"
+
+#: src/app/layout/ui/footer.tsx:25
+msgid "heart"
+msgstr "coração"
+
+#: src/pages/home/contents/about.tsx:309
+msgid "Help Topics: Windows"
+msgstr "Tópicos de Ajuda: Windows"
+
+#: src/pages/home/contents/about.tsx:292
+msgid "Henrique"
+msgstr "Henrique"
+
+#: src/pages/home/contents/about.tsx:41 src/pages/home/contents/about.tsx:102
+msgid "Henrique as a child"
+msgstr "Henrique quando criança"
+
+#: src/widgets/profile.tsx:27
+msgid "Henrique Avatar"
+msgstr "Avatar do Henrique"
+
+#: src/widgets/profile.tsx:15
+msgid "Henrique Bonfim Profile on top left"
+msgstr "Perfil de Henrique Bonfim no topo à esquerda"
+
+#: src/pages/home/contents/about.tsx:65 src/pages/home/contents/about.tsx:197
+#: src/pages/home/contents/about.tsx:211 src/pages/home/contents/about.tsx:224
+#: src/pages/home/contents/about.tsx:245
+msgid "Henrique coding"
+msgstr "Código Henrique"
+
+#: src/pages/home/contents/about.tsx:73 src/pages/home/contents/about.tsx:268
+msgid "Henrique eating"
+msgstr "Henrique comendo"
+
+#: src/pages/home/contents/about.tsx:57 src/pages/home/contents/about.tsx:179
+msgid "Henrique flying"
+msgstr "Henrique voando"
+
+#: src/pages/home/contents/about.tsx:49 src/pages/home/contents/about.tsx:131
+#: src/pages/home/contents/about.tsx:156
+msgid "Henrique formal"
+msgstr "Formal Henrique"
+
+#: src/pages/home/contents/contact.tsx:115
+#: src/pages/home/contents/contact.tsx:120
+msgid "Henrique having lunch, smiling and hungry, 2023"
+msgstr "Henrique almoçando, sorrindo e com fome, 2023"
+
+#: src/pages/home/contents/contact.tsx:132
+#: src/pages/home/contents/contact.tsx:133
+msgid "Henrique location"
+msgstr "Localização do Henrique"
+
+#: src/pages/home/contents/about.tsx:31 src/pages/home/contents/about.tsx:38
+#: src/pages/home/contents/about.tsx:46 src/pages/home/contents/about.tsx:54
+#: src/pages/home/contents/about.tsx:62 src/pages/home/contents/about.tsx:70
+#: src/pages/home/contents/about.tsx:78 src/pages/home/contents/about.tsx:99
+#: src/pages/home/contents/about.tsx:128 src/pages/home/contents/about.tsx:153
+#: src/pages/home/contents/about.tsx:176 src/pages/home/contents/about.tsx:194
+#: src/pages/home/contents/about.tsx:208 src/pages/home/contents/about.tsx:221
+#: src/pages/home/contents/about.tsx:242 src/pages/home/contents/about.tsx:265
+#: src/pages/home/contents/about.tsx:289
+msgid "Henrique over the years"
+msgstr "Henrique ao longo dos anos"
+
+#: src/widgets/profile.tsx:36
+msgid "Henrique photo"
+msgstr "Foto do Henrique"
+
+#: src/pages/home/contents/about.tsx:315 src/pages/home/contents/about.tsx:368
+msgid "Henrique playing guitar"
+msgstr "Henrique tocando guitarra"
+
+#: src/pages/home/contents/about.tsx:384
+msgid "Henrique playing organ"
+msgstr "Henrique brincando de órgão"
+
+#: src/pages/home/contents/about.tsx:388 src/pages/home/contents/about.tsx:392
+msgid "Henrique playing piano"
+msgstr "Henrique tocando piano"
+
+#: src/widgets/profile.tsx:21
+msgid "Henrique Profile"
+msgstr "Perfil do Henrique"
+
+#: src/pages/home/contents/about.tsx:81
+msgid "Henrique today"
+msgstr "Henrique hoje"
+
+#: src/pages/home/contents/about.tsx:105
+msgid "How can energy put images inside a wooden box?"
+msgstr "Como a energia pode colocar imagens dentro de uma caixa de madeira?"
+
+#: src/pages/home/contents/about.tsx:227
+msgid ""
+"I also got involved with incubators and startups such as IndexT, Codate, "
+"LivingLab - it was exactly where I wanted to be by that time."
+msgstr ""
+"Também me envolvi com incubadoras e startups como IndexT, Codate, LivingLab "
+"- era exatamente onde eu queria estar naquela época."
+
+#: src/pages/home/contents/about.tsx:401
+msgid ""
+"I believe that technology should make a difference to people's lives - and "
+"that's what drives me every day."
+msgstr ""
+"Acredito que a tecnologia deve fazer a diferença na vida das pessoas e é "
+"isso que me motiva todos os dias."
+
+#: src/pages/home/contents/about.tsx:108
+msgid ""
+"I was an energetic child who learned quickly, observing and listening to "
+"everything that fascinated me. I think one of my greatest childhood "
+"achievements was building a soapbox car out of scraps and learning to play "
+"the guitar. I was always fascinated by doing things that were out of the "
+"ordinary, at least for me."
+msgstr ""
+"Eu era uma criança enérgica que aprendia rapidamente, observando e ouvindo "
+"tudo o que me fascinava. Acho que uma das minhas maiores conquistas na "
+"infância foi construir um carro com sucatas e aprender a tocar guitarra. "
+"Sempre fiquei fascinado por fazer coisas fora do comum, pelo menos para mim."
+
+#: src/pages/home/contents/about.tsx:90
+msgid ""
+"I was born in 1996, at the beginning of the digital age. I had access to "
+"technology from an early age - TV, VCR, radio, a Super Nintendo - and all of"
+" this \"magic\" sparked my natural curiosity about it all."
+msgstr ""
+"Nasci em 1996, no início da era digital. Eu tive acesso à tecnologia desde "
+"cedo - TV, videocassete, rádio, um Super Nintendo - e tudo isso \"mágico\" "
+"despertou minha curiosidade natural sobre tudo isso."
+
+#: src/pages/home/contents/about.tsx:143
+msgid ""
+"I was never the best student in the class but a turning point came at a "
+"young age: I took part in the work education program sponsored by Coca Cola "
+"FEMSA. This course changed my life and set a definite goal, planting "
+"important seeds in my mind."
+msgstr ""
+"Eu nunca fui o melhor aluno da turma, mas um ponto de viragem veio em uma "
+"idade jovem: Participei do programa de educação de trabalho patrocinado pela"
+" Coca-Cola FEMSA. Este curso mudou minha vida e estabeleceu um objetivo "
+"definido, plantando sementes importantes em minha mente."
+
+#: src/pages/home/contents/about.tsx:256
+msgid ""
+"I went on to work for companies like Portal Solar and Meu Financiamento "
+"Solar, where I really consolidated my experience as a senior developer. At "
+"Portal Solar, I maintained high-traffic applications that served 100,000 "
+"photovoltaic installers in Brazil."
+msgstr ""
+"Passei a trabalhar para empresas como Portal Solar e Meu Financiamento "
+"Solar, onde realmente consolidei minha experiência como desenvolvedor "
+"sênior. No Portal Solar, mantive aplicações de alto tráfego que atenderam "
+"100.000 instaladores fotovoltaicos no Brasil."
+
+#: src/pages/home/contents/about.tsx:33
+msgid "Image carousel showcasing Henrique's journey"
+msgstr "Imagem carrossel mostrando viagem de Henrique"
+
+#: src/pages/home/contents/resume.tsx:102
+msgid "Improved platform stability and facilitated project alignment."
+msgstr ""
+"Melhorei a estabilidade da plataforma e facilitei o alinhamento do projeto."
+
+#: src/pages/home/contents/projects.tsx:24
+#: src/pages/home/contents/projects.tsx:33
+msgid "IoT"
+msgstr "IoT"
+
+#: src/pages/home/contents/projects.tsx:19
+msgid ""
+"IoT automation system using microservices architecture with NodeJS, VueJS, "
+"and MongoDB. Controls electronic relays for lighting and door access while "
+"providing real-time sensor monitoring through Docker Swarm deployment."
+msgstr ""
+"Sistema de automação IoT usando arquitetura de microsserviços com NodeJS, "
+"VueJS e MongoDB. Controla relés eletrônicos para iluminação e acesso a "
+"portas enquanto fornece monitoramento de sensores em tempo real por meio de "
+"implantação Docker Swarm."
+
+#: src/pages/home/contents/about.tsx:161
+msgid ""
+"It was there that I had my first contact with programming logic and wrote my"
+" first codes in HTML, CSS and JavaScript. A real opportunity to do things "
+"out of the ordinary was born."
+msgstr ""
+"Foi lá que tive meu primeiro contato com a lógica de programação e escrevi "
+"meus primeiros códigos em HTML, CSS e JavaScript. Uma oportunidade real de "
+"fazer coisas fora do comum nasceu."
+
+#: src/pages/home/contents/resume.tsx:237
+#: src/pages/home/contents/resume.tsx:263
+msgid "Jan"
+msgstr "Jan"
+
+#: src/pages/home/contents/resume.tsx:267
+msgid "Jul"
+msgstr "Jul"
+
+#: src/pages/home/contents/timeline.tsx:206
+#: src/pages/home/contents/timeline.tsx:232
+msgid "Junior Dev at Indext"
+msgstr "Desenvolvedor Júnior na Indext"
+
+#: src/pages/home/contents/timeline.tsx:246
+#: src/pages/home/contents/timeline.tsx:272
+msgid "Junior Developer – LEDES"
+msgstr "Desenvolvedor Júnior – LEDES"
+
+#: src/pages/home/contents/resume.tsx:235
+#: src/pages/home/contents/resume.tsx:261
+msgid "Junior Software Developer"
+msgstr "Desenvolvedor de Software Júnior"
+
+#: src/pages/home/contents/resume.tsx:322
+msgid "Key Skills"
+msgstr "Habilidades Principais"
+
+#: src/app/layout/ui/header.tsx:56
+msgid "Language Switcher"
+msgstr "Alternador de Idioma"
+
+#: src/pages/home/contents/resume.tsx:363
+msgid "Languages"
+msgstr "Idiomas"
+
+#: src/pages/home/contents/resume.tsx:160
+msgid "Launched solar credit platform with 300% engagement growth."
+msgstr ""
+"Lancei plataforma de crédito solar com crescimento de engajamento de 300%."
+
+#: src/pages/home/contents/resume.tsx:337
+msgid "Leadership, Problem-solving, Team Management, Critical Thinking"
+msgstr ""
+"Liderança, Resolução de Problemas, Gestão de Equipes, Pensamento Crítico"
+
+#: src/pages/home/contents/timeline.tsx:478
+msgid ""
+"Led development for Brazil’s largest solar credit platform. Improved OAuth2 "
+"security, scaled KYC systems, and mentored junior devs."
+msgstr ""
+"Liderei o desenvolvimento da maior plataforma de crédito solar do Brasil. "
+"Melhorei a segurança do OAuth2, escalei sistemas KYC e mentorei "
+"desenvolvedores juniores."
+
+#: src/pages/home/contents/contact.tsx:98
+msgid "Let's connect!"
+msgstr "Vamos nos conectar!"
+
+#: src/widgets/profile.tsx:50
+msgid "Leveraging <0>GenAI</0> to drive <1>next-generation solutions.</1>"
+msgstr ""
+"Aproveitando <0>GenAI</0> para impulsionar <1>soluções de próxima "
+"geração.</1>"
+
+#: src/pages/home/contents/about.tsx:348
+msgid "Lifelong Learning"
+msgstr "Aprendizagem ao longo da vida"
+
+#: src/pages/home/contents/timeline.tsx:33
+msgid "Lifetime Timeline"
+msgstr "Linha do Tempo da Vida"
+
+#: src/pages/home/contents/resume.tsx:218
+msgid "Maintained Java AGETIC system with optimized PostgreSQL queries."
+msgstr "Mantive sistema Java AGETIC com queries PostgreSQL otimizadas."
+
+#: src/pages/home/contents/resume.tsx:192
+msgid "Maintained Node.js and React apps for 100K+ users."
+msgstr "Mantive aplicações Node.js e React para mais de 100 mil usuários."
+
+#: src/pages/home/contents/timeline.tsx:436
+msgid ""
+"Maintained production Node.js and React applications serving 100K+ users. "
+"Refactored CRM code and implemented Agile best practices."
+msgstr ""
+"Mantive aplicações Node.js e React em produção para mais de 100 mil "
+"usuários. Refatorei código de CRM e implementei práticas ágeis."
+
+#: src/pages/home/contents/resume.tsx:89
+#: src/pages/home/contents/resume.tsx:208
+#: src/pages/home/contents/resume.tsx:212
+msgid "Mar"
+msgstr "Mar"
+
+#: src/pages/home/contents/resume.tsx:285
+msgid "May"
+msgstr "Mai"
+
+#: src/pages/home/contents/projects.tsx:89
+msgid "Meu Financiamento Solar platform"
+msgstr "Meu Financiamento Plataforma solar"
+
+#: src/pages/home/contents/timeline.tsx:287
+#: src/pages/home/contents/timeline.tsx:313
+msgid "Mid-Level Developer – PIME"
+msgstr "Desenvolvedor Pleno – PIME"
+
+#: src/pages/home/contents/resume.tsx:206
+msgid "Mid-level Software Developer"
+msgstr "Desenvolvedor de Software Pleno"
+
+#: src/pages/home/contents/resume.tsx:180
+msgid "Mid-level Software Engineer"
+msgstr "Engenheiro de Software Pleno"
+
+#: src/pages/home/contents/projects.tsx:50
+msgid ""
+"Mideal blockchain contract system showing document verification interface"
+msgstr ""
+"Sistema de contrato blockchain Mideal mostrando interface de verificação de "
+"documentos"
+
+#: src/pages/home/contents/projects.tsx:55
+msgid ""
+"Mobile companion app for truck drivers developed at HackathonCCR. Features "
+"route optimization, rest stop finder, and health tracking using React Native"
+" with AWS backend services."
+msgstr ""
+"Aplicativo móvel para caminhoneiros desenvolvido no HackathonCCR. Possui "
+"otimização de rotas, busca de pontos de parada e monitoramento de saúde "
+"usando React Native com serviços AWS."
+
+#: src/pages/home/contents/projects.tsx:28
+msgid ""
+"Mobile-controlled door access system built with NodeJS microservices, "
+"MongoDB, and Arduino integration. Deployed with Docker Swarm for the PET "
+"SISTEMAS laboratory."
+msgstr ""
+"Sistema de acesso a portas controlado por celular, construído com "
+"microsserviços NodeJS, MongoDB e integração com Arduino. Implantado com "
+"Docker Swarm para o laboratório PET SISTEMAS."
+
+#: src/pages/home/contents/resume.tsx:165
+msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
+msgstr "Modernizei a stack de KYC e otimizei o desempenho do OAuth2 e SQL."
+
+#: src/pages/home/contents/about.tsx:346
+msgid "Music"
+msgstr "Música"
+
+#: src/pages/home/contents/resume.tsx:150
+#: src/pages/home/contents/resume.tsx:182
+#: src/pages/home/contents/resume.tsx:186
+msgid "Nov"
+msgstr "Nov"
+
+#: src/pages/home/contents/projects.tsx:42
+#: src/pages/home/contents/projects.tsx:51
+#: src/pages/home/contents/projects.tsx:60
+#: src/pages/home/contents/projects.tsx:69
+#: src/pages/home/contents/projects.tsx:78
+msgid "Open Source"
+msgstr "Código Aberto"
+
+#: src/pages/home/contents/timeline.tsx:315
+msgid ""
+"Optimized a Java-based monolith, reduced PostgreSQL storage usage, and "
+"achieved 100% test coverage. Also built user-friendly admin interfaces."
+msgstr ""
+"Otimizei um monólito em Java, reduzi o uso de armazenamento do PostgreSQL e "
+"alcancei 100% de cobertura de testes. Também construí interfaces "
+"administrativas amigáveis."
+
+#: src/pages/home/contents/projects.tsx:90
+#: src/pages/home/contents/projects.tsx:99
+msgid "PaaS"
+msgstr "PaaS"
+
+#: src/pages/home/contents/projects.tsx:32
+msgid "Pet Porta App mobile interface for door access control"
+msgstr "Interface móvel do Pet Porta App para controle de acesso a portas"
+
+#: src/pages/home/contents/about.tsx:347
+msgid "Piano & Guitar"
+msgstr "Piano e Guitarra"
+
+#: src/pages/home/contents/projects.tsx:98
+msgid "Portal Solar platform"
+msgstr "Plataforma Solar Portal"
+
+#: src/pages/home/contents/resume.tsx:367
+msgid "Portuguese (Native)"
+msgstr "Português (Nativo)"
+
+#: src/pages/home/contents/resume.tsx:91
+msgid "Present"
+msgstr "Atual"
+
+#: src/pages/home/contents/about.tsx:284
+msgid "Present and Future"
+msgstr "Presente e Futuro"
+
+#: src/pages/home/contents/resume.tsx:79
+msgid "Professional Experience"
+msgstr "Experiência Profissional"
+
+#: src/pages/home/contents/resume.tsx:64
+msgid "Professional Summary"
+msgstr "Resumo Profissional"
+
+#. placeholder {0}: idx + 1
+#. placeholder {1}: i18n._(project.title)
+#: src/pages/home/contents/projects.tsx:259
+msgid "Project {0} of {totalSlides}: {1}"
+msgstr "Projeto {0} de {totalSlides}: {1}"
+
+#: src/pages/home/contents/projects.tsx:251
+msgid "Project carousel slides"
+msgstr "Slides do carrossel de projetos"
+
+#: src/pages/home/contents/projects.tsx:204
+msgid "Project list"
+msgstr "Lista de projetos"
+
+#: src/pages/home/ui/section.tsx:20 src/pages/home/contents/resume.tsx:54
+#: src/pages/home/contents/resume.tsx:57
+msgid "Projects"
+msgstr "Projetos"
+
+#: src/pages/home/contents/resume.tsx:290
+msgid "Provided help-desk and preventive maintenance."
+msgstr "Prestei suporte técnico e manutenção preventiva."
+
+#: src/pages/home/contents/contact.tsx:102
+msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
+msgstr "Entre em contato pelo WhatsApp, Telegram ou LinkedIn."
+
+#: src/pages/home/contents/resume.tsx:197
+msgid "Refactored CRM modules, cut API latency by 40%."
+msgstr "Refatorei módulos do CRM, reduzindo a latência da API em 40%."
+
+#: src/pages/home/contents/resume.tsx:247
+msgid "Resolved 150+ backend/UI issues in SIGPROJ system."
+msgstr "Resolvi mais de 150 problemas de backend/UI no sistema SIGPROJ."
+
+#: src/pages/home/contents/resume.tsx:96
+msgid "Resolved backend/UI issues and documented APIs and release notes."
+msgstr "Resolvi problemas de backend/UI e documentei APIs e notas de versão."
+
+#: src/pages/home/contents/timeline.tsx:274
+msgid ""
+"Resolved over 150 backend and UI issues and contributed to JavaScript/PHP "
+"systems. Helped stabilize key platforms and documented changes."
+msgstr ""
+"Resolveu mais de 150 problemas de infraestrutura e UI e contribuiu para "
+"sistemas JavaScript/PHP. Ajudaram a estabilizar as plataformas-chave e as "
+"alterações documentadas."
+
+#: src/pages/home/ui/section.tsx:22 src/pages/home/contents/resume.tsx:21
+msgid "Resume"
+msgstr "Currículo"
+
+#: src/pages/home/contents/projects.tsx:41
+msgid "Roça Eats platform interface showing food donation management system"
+msgstr ""
+"Interface da plataforma Roça Eats mostrando sistema de gestão de doações de "
+"alimentos"
+
+#: src/pages/home/contents/projects.tsx:42
+#: src/pages/home/contents/projects.tsx:51
+msgid "SaaS"
+msgstr "SaaS"
+
+#: src/pages/home/contents/resume.tsx:308
+msgid "Scrum Foundation Professional Certification (SFPC™)"
+msgstr "Certificação Profissional Scrum Foundation (SFPC™)"
+
+#: src/widgets/profile.tsx:44
+msgid "Senior Software Engineer"
+msgstr "Engenheiro de Software Sênior"
+
+#: src/pages/home/contents/timeline.tsx:449
+#: src/pages/home/contents/timeline.tsx:476
+msgid "Senior Software Engineer – Meu Financiamento Solar"
+msgstr "Engenheiro de Software Sênior – Meu Financiamento Solar"
+
+#: src/pages/home/contents/resume.tsx:67
+msgid ""
+"Senior Software Engineer with 10+ years of experience in full-stack "
+"development (JavaScript, TypeScript, Node.js). Expertise in scalable "
+"microservices, serverless, and event-driven architectures. Proven success "
+"across fintech, government, and startups, with a passion for generative AI "
+"and performance optimization."
+msgstr ""
+"Engenheiro de Software Sênior com mais de 10 anos de experiência em "
+"desenvolvimento full-stack (JavaScript, TypeScript, Node.js). Especialista "
+"em microsserviços escaláveis, serverless e arquiteturas orientadas a "
+"eventos. Sucesso comprovado em fintechs, governo e startups, com paixão por "
+"IA generativa e otimização de performance."
+
+#: src/pages/home/contents/projects.tsx:210
+msgid "Some of my projects that showcase my skills"
+msgstr "Alguns dos meus projetos que demonstram minhas habilidades"
+
+#: src/pages/home/contents/resume.tsx:373
+msgid "Spanish (Basic)"
+msgstr "Espanhol (Básico)"
+
+#: src/pages/home/contents/timeline.tsx:152
+msgid ""
+"Started as Assistant Computer Support Technician at Sedit. Learned help-desk"
+" skills, preventive maintenance, and how to troubleshoot under pressure."
+msgstr ""
+"Começou como técnico assistente de suporte ao computador na Sedit. Aprender "
+"habilidades de ajuda, manutenção preventiva e como solucionar problemas sob "
+"pressão."
+
+#: src/pages/home/contents/timeline.tsx:328
+#: src/pages/home/contents/timeline.tsx:354
+msgid "Startup Failed"
+msgstr "Startup Fracassada"
+
+#: src/app/layout/ui/header.tsx:66
+msgid "Switch language to {value}"
+msgstr "Mudar idioma para {value}"
+
+#. placeholder {0}: theme === THEMES.dark ? 'light' : 'dark'
+#: src/app/layout/ui/header.tsx:149
+msgid "Switch to {0} theme"
+msgstr "Mudar para o tema {0}"
+
+#: src/pages/home/ui/section.tsx:52
+msgid "Tab navigation"
+msgstr "Navegação por abas"
+
+#: src/pages/home/contents/resume.tsx:284
+msgid "Technical Support Assistant"
+msgstr "Assistente de Suporte Técnico"
+
+#: src/pages/home/contents/about.tsx:171
+msgid "The boy becomes a man"
+msgstr "O rapaz torna-se um homem"
+
+#: src/pages/home/contents/about.tsx:247
+msgid ""
+"The start of the pandemic in 2020 was challenging, but I turned this period "
+"into an opportunity. I dedicated myself to studying Cloud Computing and "
+"Machine Learning, playing with IBM Watson and TensorFlow. I even tried to "
+"create a startup (Softstate Solutions), which didn't work out due to a lack "
+"of clients. That failure taught me a lot and motivated me to keep going."
+msgstr ""
+"O início da pandemia em 2020 foi um desafio, mas transformei este período "
+"numa oportunidade. Dediquei-me a estudar Cloud Computing e Machine Learning,"
+" jogando com IBM Watson e TensorFlow. Até tentei criar uma startup "
+"(Softstate Solutions), que não deu certo devido à falta de clientes. Esse "
+"fracasso me ensinou muito e me motivou a continuar."
+
+#: src/app/layout/ui/header.tsx:164
+msgid "Theme Toggle Icon"
+msgstr "Ícone de alternância de tema"
+
+#: src/widgets/profile.tsx:37
+msgid "This is me!"
+msgstr "Este sou eu!"
+
+#: src/pages/home/ui/section.tsx:21
+msgid "Timeline"
+msgstr "Linha do Tempo"
+
+#: src/pages/home/contents/about.tsx:294
+msgid ""
+"Today I work as a freelance Senior Software Engineer, collaborating with "
+"clients around the world. I have more than 10 years' experience in IT, "
+"specializing in backend development with Node.js and TypeScript. I have "
+"delivered scalable solutions in microservices, serverless and event-driven "
+"architectures for startups, solar energy, fintech, B2B and more. Recently, I"
+" architected a B2B solution integrating generative AI with legacy "
+"microservices, designed robust REST EMBEDs with 99.98% uptime and built "
+"secure distributed systems using Redis and RabbitMQ."
+msgstr ""
+"Hoje eu trabalho como um engenheiro de software sênior freelance, "
+"colaborando com clientes em todo o mundo. Tenho mais de 10 anos de "
+"experiência em TI, especializada em desenvolvimento de backend com Node.js e"
+" TypeScript. Entreguei soluções escaláveis em microservices, arquiteturas "
+"sem servidor e orientadas a eventos para startups, energia solar, fintech, "
+"B2B e muito mais. Recentemente, eu arquitetei uma solução B2B integrando IA "
+"generativa com microservices legados, projetado robustos EMBEDs REST com "
+"99,98% de tempo de funcionamento e construído sistemas distribuídos seguros "
+"usando Redis e RabbitMQ."
+
+#: src/pages/home/contents/timeline.tsx:111
+msgid ""
+"Took the first basic computer course from the <0>Work Education Program by "
+"Coca-Cola</0>. Also started learning to play acoustic guitar, which became a"
+" lifelong passion."
+msgstr ""
+"Tomou o primeiro curso básico de informática do Programa de Educação do "
+"Trabalho <0> da Coca-Cola</0>. Também começou a aprender a tocar guitarra "
+"acústica, que se tornou uma paixão ao longo da vida."
+
+#: src/pages/home/contents/timeline.tsx:356
+msgid "Tried launching my own product but struggled with getting clients."
+msgstr ""
+"Tentei lançar meu próprio produto, mas tive dificuldades para conseguir "
+"clientes."
+
+#: src/pages/home/contents/timeline.tsx:165
+#: src/pages/home/contents/timeline.tsx:191
+msgid "University Begins"
+msgstr "Início da Universidade"
+
+#: src/pages/home/contents/timeline.tsx:640
+msgid "Upwork – Senior Software Engineer"
+msgstr "Upwork – Engenheiro de Software Sênior"
+
+#: src/pages/home/contents/resume.tsx:137
+msgid "Used Redis/RabbitMQ for distributed microservices."
+msgstr "Utilizei Redis/RabbitMQ para microsserviços distribuídos."
+
+#: src/pages/home/contents/projects.tsx:78
+msgid "Web Scraping"
+msgstr "Raspar a Web"
+
+#: src/pages/home/contents/projects.tsx:73
+msgid ""
+"Web scraping tool for Mercado Libre using NodeJS. Extracts product data for "
+"price comparison and market analysis, demonstrating advanced web automation "
+"techniques."
+msgstr ""
+"Ferramenta de raspagem para Mercado Libre usando NodeJS. Extrai dados de "
+"produto para comparação de preços e análise de mercado, demonstrando "
+"técnicas avançadas de automação web."
+
+#: src/app/layout/ui/header.tsx:168
+msgid "Website logo"
+msgstr "Logo do site"
+
+#: src/app/layout/index.tsx:14
+msgid "Website Main Content"
+msgstr "Conteúdo Principal do Site"
+
+#: src/pages/home/contents/timeline.tsx:572
+#: src/pages/home/contents/timeline.tsx:598
+msgid "Workana – Senior Backend Engineer"
+msgstr "Workana – Engenheiro Backend Sênior"

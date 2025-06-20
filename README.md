@@ -46,6 +46,7 @@ A modern, performant, and multilingual personal portfolio website built with Rea
 - **Internationalization:** English, Spanish, and Portuguese support
 - **Performance Optimized:** Fast loading, code splitting, and lazy loading
 - **SEO Friendly:** Optimized meta tags and semantic HTML
+- **Bot Ready**  [Robots.txt](https://www.robotstxt.org/robotstxt.html)
 - **Terminal UI:** Interactive command-line style interface
 - **Spotify Integration:** Live music player widget
 - **YouTube Embed:** Integrated video content
