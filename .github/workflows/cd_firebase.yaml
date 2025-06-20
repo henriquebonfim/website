@@ -42,23 +42,29 @@ jobs:
 
       - name: Step 4 - Install Dependencies
         run: pnpm install --frozen-lockfile
+        working-directory: website
 
       - name: Step 5 - Audit dependencies
         run: pnpm audit --audit-level high
+        working-directory: website
 
       - name: Step 6 - Lint
         run: pnpm lint
+        working-directory: website
 
       - name: Step 7 - Build
         run: pnpm build
+        working-directory: website
 
       - name: Step 8 - Test
         run: pnpm test
+        working-directory: website
 
       - name: Step 9 - Check bundle size
         run: |
           echo "Checking bundle size..."
           du -sh dist/
+        working-directory: website
 
       - name: Step 10 - Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}

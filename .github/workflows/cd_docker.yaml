@@ -46,8 +46,8 @@ jobs:
       - name: Step 5 - Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: .
-          file: ./Dockerfile
+          context: ./website
+          file: ./website/Dockerfile
           push: true
           tags: |
             ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
