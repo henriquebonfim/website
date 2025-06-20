@@ -1,3 +1,7 @@
 cd frontend
+pnpm translate
 pnpm lint
 pnpm test
+
+# debugging
+exit 1
