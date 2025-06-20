@@ -176,3 +176,46 @@ export const BADGES = [
     url: 'https://www.credly.com/badges/3b21958a-6f1c-4382-bd74-b91099afdac2',
   },
 ] as const;
+
+export const IMAGES = {
+  MYSELF_AWS:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/aws.webp',
+  MYSELF_CTEI:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/ctei.webp',
+  MYSELF_FRIENDS:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/friends.webp',
+  MYSELF_GIFTS:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/gifts.webp',
+  MYSELF:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself.webp',
+  MYSELF_CHILD:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_child.webp',
+  MYSELF_CODING:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_coding.webp',
+  MYSELF_EATING:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_eating.webp',
+  MYSELF_EVENT:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_event.webp',
+  MYSELF_FETEC:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_fetec.webp',
+  MYSELF_FLYING:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_flying.webp',
+  MYSELF_FORMAL:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_formal.webp',
+  MYSELF_FORMAL_SELFIE:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_formal_selfie.webp',
+  MYSELF_SELFIE:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_selfie.webp',
+  MYSELF_SMILING:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_smilling.webp',
+  MYSELF_SP:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_sp.webp',
+  MYSELF_PET:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/pet.webp',
+  MYSELF_PROJECT_1:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_1.webp',
+  MYSELF_PROJECT_2:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_2.webp',
+  MYSELF_PROJECT_GUITAR:
+    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_guitar.webp',
+};

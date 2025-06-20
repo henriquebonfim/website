@@ -1,4 +1,5 @@
 cd frontend
+pnpm translate
 pnpm lint
 pnpm test
 

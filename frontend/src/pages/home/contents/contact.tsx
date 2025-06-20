@@ -1,4 +1,4 @@
-import { EMBED, SOCIAL_LINKS } from '#/shared/constants';
+import { EMBED, IMAGES, SOCIAL_LINKS } from '#/shared/constants';
 import { Windows96 } from '#/widgets/windows';
 import type { I18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
@@ -116,7 +116,7 @@ const Contact: FC = memo(() => {
             )}
           >
             <img
-              src="/assets/photos/myself_eating.webp"
+              src={IMAGES.MYSELF_EATING}
               alt={i18n._(msg`Henrique having lunch, smiling and hungry, 2023`)}
               className="w-26 rotate-y-180 rounded-lg border-1 shadow-lg md:w-33"
               width="132"

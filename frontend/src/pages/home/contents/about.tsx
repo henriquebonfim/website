@@ -1,10 +1,10 @@
-import { EMBED } from '#/shared/constants';
+import { EMBED, IMAGES } from '#/shared/constants';
+import { PrettyJSON } from '#/widgets/terminal';
 import { Windows96 } from '#/widgets/windows';
 import { YoutubeWidget } from '#/widgets/youtube';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { memo, type FC } from 'react';
-import { PrettyJSON } from '../../../widgets/terminal';
 
 /**
  * About component displays my journey from childhood curiosity to senior software engineer.
@@ -34,7 +34,7 @@ const About: FC = memo(() => {
           )}
         >
           <img
-            src="/assets/photos/myself_child.webp"
+            src={IMAGES.MYSELF_CHILD}
             alt={i18n._(msg`Henrique over the years`)}
             className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
@@ -42,7 +42,7 @@ const About: FC = memo(() => {
           />
 
           <img
-            src="/assets/photos/myself_formal.webp"
+            src={IMAGES.MYSELF_FORMAL}
             alt={i18n._(msg`Henrique over the years`)}
             className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:-translate-y-9"
             role="img"
@@ -50,7 +50,7 @@ const About: FC = memo(() => {
           />
 
           <img
-            src="/assets/photos/myself_flying.webp"
+            src={IMAGES.MYSELF_FLYING}
             alt={i18n._(msg`Henrique over the years`)}
             className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
@@ -58,7 +58,7 @@ const About: FC = memo(() => {
           />
 
           <img
-            src="/assets/photos/myself_coding.webp"
+            src={IMAGES.MYSELF_CODING}
             alt={i18n._(msg`Henrique over the years`)}
             className="z-1 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 xl:h-64"
             role="img"
@@ -66,7 +66,7 @@ const About: FC = memo(() => {
           />
 
           <img
-            src="/assets/photos/myself_eating.webp"
+            src={IMAGES.MYSELF_EATING}
             alt={i18n._(msg`Henrique over the years`)}
             className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:translate-y-9"
             role="img"
@@ -74,7 +74,7 @@ const About: FC = memo(() => {
           />
 
           <img
-            src="/assets/photos/myself.webp"
+            src={IMAGES.MYSELF}
             alt={i18n._(msg`Henrique over the years`)}
             className="w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 sm:-translate-y-9"
             role="img"
@@ -95,7 +95,7 @@ const About: FC = memo(() => {
             </Trans>
           </p>
           <img
-            src="/assets/photos/myself_child.webp"
+            src={IMAGES.MYSELF_CHILD}
             alt={i18n._(msg`Henrique over the years`)}
             className="float-left w-18 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-33"
             role="img"
@@ -124,7 +124,7 @@ const About: FC = memo(() => {
             </Trans>
           </p>
           <img
-            src="/assets/photos/myself_formal.webp"
+            src={IMAGES.MYSELF_FORMAL}
             alt={i18n._(msg`Henrique over the years`)}
             className="float-right w-32 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-44"
             role="img"
@@ -149,7 +149,7 @@ const About: FC = memo(() => {
           </p>
           <figure className="not-prose">
             <img
-              src="/assets/photos/pet.webp"
+              src={IMAGES.MYSELF_PET}
               alt={i18n._(msg`Henrique over the years`)}
               className="w-full rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:float-left md:m-3 md:w-64"
               role="img"
@@ -172,7 +172,7 @@ const About: FC = memo(() => {
           </h2>
           <p>
             <img
-              src="/assets/photos/myself_flying.webp"
+              src={IMAGES.MYSELF_FLYING}
               alt={i18n._(msg`Henrique over the years`)}
               className="float-left w-20 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-44"
               role="img"
@@ -190,7 +190,7 @@ const About: FC = memo(() => {
 
           <p className="text-center">
             <img
-              src="/assets/photos/ctei.webp"
+              src={IMAGES.MYSELF_CTEI}
               alt={i18n._(msg`Henrique over the years`)}
               className="float-right w-20 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
               role="img"
@@ -204,7 +204,7 @@ const About: FC = memo(() => {
             </Trans>
           </p>
           <img
-            src="/assets/photos/myself_fetec.webp"
+            src={IMAGES.MYSELF_FETEC}
             alt={i18n._(msg`Henrique over the years`)}
             className="float-left w-20 rotate-y-180 rounded-lg object-cover p-0 shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-33"
             role="img"
@@ -217,7 +217,7 @@ const About: FC = memo(() => {
             </Trans>
           </blockquote>
           <img
-            src="/assets/photos/myself_event.webp"
+            src={IMAGES.MYSELF_EVENT}
             alt={i18n._(msg`Henrique over the years`)}
             className="float-right w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
             role="img"
@@ -238,7 +238,7 @@ const About: FC = memo(() => {
           </h2>
           <p>
             <img
-              src="/assets/photos/myself_coding.webp"
+              src={IMAGES.MYSELF_CODING}
               alt={i18n._(msg`Henrique over the years`)}
               className="float-left w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0"
               role="img"
@@ -261,7 +261,7 @@ const About: FC = memo(() => {
               Brazil.
             </Trans>
             <img
-              src="/assets/photos/myself_eating.webp"
+              src={IMAGES.MYSELF_EATING}
               alt={i18n._(msg`Henrique over the years`)}
               className="float-right w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-64"
               role="img"
@@ -285,7 +285,7 @@ const About: FC = memo(() => {
           </h2>
           <p>
             <img
-              src="/assets/photos/myself.webp"
+              src={IMAGES.MYSELF}
               alt={i18n._(msg`Henrique over the years`)}
               className="float-left w-33 rounded-lg object-cover shadow-lg grayscale-100 transition-all duration-500 ease-in-out hover:grayscale-0 md:w-64"
               role="img"
