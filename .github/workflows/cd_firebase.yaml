@@ -53,21 +53,11 @@ jobs:
         run: pnpm lint
         working-directory: frontend
 
-      - name: Step 7 - Build
-        run: pnpm build
-        working-directory: frontend
-
-      - name: Step 8 - Test
+      - name: Step 7 - Test
         run: pnpm test
         working-directory: frontend
 
-      - name: Step 9 - Check bundle size
-        run: |
-          echo "Checking bundle size..."
-          du -sh dist/
-        working-directory: frontend
-
-      - name: Step 10 - Deploy to Firebase Hosting Preview (Pull Request)
+      - name: Step 8 - Build & Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -77,7 +67,7 @@ jobs:
           expires: ${{ vars.FIREBASE_EXPIRES }}
           entryPoint: frontend/
 
-      - name: Step 11 - Deploy to Firebase Hosting Production (Push)
+      - name: Step 8 - Build & Deploy to Firebase Hosting Production (Push)
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
