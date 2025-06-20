@@ -46,8 +46,8 @@ jobs:
       - name: Step 5 - Build and push Docker image
         uses: docker/build-push-action@v6
         with:
-          context: ./website
-          file: ./website/Dockerfile
+          context: ./frontend
+          file: ./frontend/Dockerfile
           push: true
           tags: |
             ${{ vars.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
@@ -56,7 +56,7 @@ jobs:
             ${{ vars.REGISTRY }}/${{ github.repository_owner }}/${{ github.event.repository.name }}:${{ steps.git_tag.outputs.VERSION }}
           labels: |
             org.opencontainers.image.title=${{ github.event.repository.name }}
-            org.opencontainers.image.description=Personal website
+            org.opencontainers.image.description=Personal Website
             org.opencontainers.image.version=${{ steps.git_tag.outputs.VERSION }}
             org.opencontainers.image.created=${{ github.event.repository.updated_at }}
             org.opencontainers.image.source=${{ github.event.repository.clone_url }}

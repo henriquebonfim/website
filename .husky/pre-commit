@@ -1,1 +1,6 @@
-git update-index --again
+cd frontend
+pnpm lint
+pnpm test
+
+# debugging
+exit 1

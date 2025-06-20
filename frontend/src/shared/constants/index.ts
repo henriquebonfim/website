@@ -1,5 +1,6 @@
+import { version as buildVersion } from '../../../package.json';
 import type { LocaleType, ThemeType } from '../types';
-
+export const BUILD_VERSION = 'v' + buildVersion;
 export const SECTION_ITEMS = {
   YOUTUBE: 'youtube',
   SPOTIFY: 'spotify',

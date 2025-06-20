@@ -16,7 +16,7 @@
     "translate": "pnpm i18n:extract && pnpm i18n:compile",
     "i18n:extract": "lingui extract",
     "i18n:compile": "lingui compile --typescript",
-    "prepare": "husky"
+    "prepare": "cd .. && husky frontend/.husky"
   },
   "sideEffects": false,
   "browserslist": [

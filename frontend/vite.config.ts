@@ -8,6 +8,8 @@ import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { VitePWA } from 'vite-plugin-pwa';
 import { configDefaults } from 'vitest/dist/config.js';
 
+import { version } from './package.json';
+const buildVersion = 'v' + version;
 /**
  * Vite configuration optimized for performance and accessibility
  * Addresses Lighthouse CI issues:
@@ -24,7 +26,7 @@ export default defineConfig({
     },
   },
   test: {
-    exclude: [...configDefaults.exclude, 'nginx', '.firebase', '.husky'],
+    exclude: [...configDefaults.exclude, 'nginx'],
     environment: 'jsdom',
     globals: true,
     coverage: {
@@ -99,7 +101,7 @@ export default defineConfig({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
-        cacheId: 'henrique-bonfim-v1.0.3',
+        cacheId: `henrique-bonfim-${buildVersion}`,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         maximumFileSizeToCacheInBytes: 3000000,
         runtimeCaching: [
@@ -107,7 +109,7 @@ export default defineConfig({
             urlPattern: /\.(?:png|jpg|jpeg|svg|webp|avif|ico)$/,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'images-v1.0.3',
+              cacheName: `images-${buildVersion}`,
               expiration: {
                 maxEntries: 60,
                 maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
@@ -123,7 +125,7 @@ export default defineConfig({
             urlPattern: /\.(?:css)$/,
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'styles-v1.0.3',
+              cacheName: `styles-${buildVersion}`,
               expiration: {
                 maxEntries: 20,
                 maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
@@ -136,7 +138,7 @@ export default defineConfig({
             urlPattern: /\.(?:woff2?|ttf|eot)$/,
             handler: 'CacheFirst',
             options: {
-              cacheName: 'fonts-v1.0.3',
+              cacheName: `fonts-${buildVersion}`,
               expiration: {
                 maxEntries: 20,
                 maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
@@ -149,7 +151,7 @@ export default defineConfig({
             urlPattern: /\.(?:js)$/,
             handler: 'StaleWhileRevalidate',
             options: {
-              cacheName: 'js-v1.0.3',
+              cacheName: `js-${buildVersion}`,
               expiration: {
                 maxEntries: 30,
                 maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
@@ -162,7 +164,7 @@ export default defineConfig({
             urlPattern: /\.(?:html)$/,
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'html-v1.0.3',
+              cacheName: `html-${buildVersion}`,
               expiration: {
                 maxEntries: 10,
                 maxAgeSeconds: 24 * 60 * 60, // 1 day
@@ -176,7 +178,7 @@ export default defineConfig({
             urlPattern: /^https:\/\/api\.(?:(?!extension).)*$/,
             handler: 'NetworkFirst',
             options: {
-              cacheName: 'api-cache-v1.0.3',
+              cacheName: `api-cache-${buildVersion}`,
               expiration: {
                 maxEntries: 50,
                 maxAgeSeconds: 5 * 60, // 5 minutes
@@ -194,7 +196,7 @@ export default defineConfig({
       manifest: {
         name: 'Henrique Bonfim',
         short_name: 'Henrique',
-        description: 'Be my guest',
+        description: `${buildVersion} - Personal website of Henrique Bonfim`,
         theme_color: '#3f3f3f',
         background_color: '#3f3f3f',
         display: 'standalone',
