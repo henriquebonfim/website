@@ -1,7 +1,7 @@
 {
   "name": "website",
   "private": true,
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "scripts": {
     "dev": "pnpm translate && pnpm test && vite --port 3000 --host",
