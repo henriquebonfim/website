@@ -62,17 +62,16 @@ services:
       context: ./scripts/translate
     restart: unless-stopped
     environment:
-      - PYTHONUNBUFFERED=1
       - LOCALES_PATH=/app/locales
       - TRANSLATE_URL=http://libre-translate:5000/translate
     volumes:
-      - ./website/src/shared/i18n/locales:/app/locales:rw
+      - ./frontend/src/shared/i18n/locales:/app/locales:rw
     depends_on:
       - libre-translate
 
-  website-dev:
+  frontend-dev:
     build:
-      context: ./website
+      context: ./frontend
       dockerfile: Dockerfile.dev
     restart: unless-stopped
     environment:
@@ -80,7 +79,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./website:/app:rw
+      - ./frontend:/app:rw
     develop:
       watch:
         - action: rebuild
