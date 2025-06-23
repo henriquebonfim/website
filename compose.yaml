@@ -80,6 +80,7 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend:/app:rw
+      - ./frontend/node_modules:/app/node_modules:rw
     develop:
       watch:
         - action: rebuild

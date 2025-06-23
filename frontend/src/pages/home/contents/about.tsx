@@ -247,16 +247,16 @@ const About: FC = memo(() => {
             <Trans>
               The start of the pandemic in 2020 was challenging, but I turned
               this period into an opportunity. I dedicated myself to studying
-              Cloud Computing and Machine Learning, playing with IBM Watson and
-              TensorFlow. I even tried to create a startup (Softstate
-              Solutions), which didn't work out due to a lack of clients. That
+              Cloud Computing and Machine Learning, experimenting with IBM
+              Watson and TensorFlow. I even tried to create a startup (Softstate
+              Solutions), which did not succeed due to a lack of clients. That
               failure taught me a lot and motivated me to keep going.
             </Trans>
 
             <Trans>
               I went on to work for companies like Portal Solar and Meu
-              Financiamento Solar, where I really consolidated my experience as
-              a senior developer. At Portal Solar, I maintained high-traffic
+              Financiamento Solar, where I truly consolidated my experience as a
+              senior developer. At Portal Solar, I maintained high-traffic
               applications that served 100,000 photovoltaic installers in
               Brazil.
             </Trans>
@@ -268,13 +268,13 @@ const About: FC = memo(() => {
               aria-label={i18n._(msg`Henrique eating`)}
             />
             <Trans>
-              At Meu Financiamento Solar, I contributed to the entire SDLC of
-              the country's largest solar credit acquisition platform, helping
-              to increase engagement by 300% after launch. In 2023, I was
-              selected for AWS re/Start, an intensive cloud immersion program
-              that earned me my first AWS certificate. The following year, I
-              took part in Google Cloud - Get Certified, earning my Associate
-              Cloud Engineer certification.
+              At Meu Financiamento Solar, I contributed to the entire software
+              development lifecycle of the country's largest solar credit
+              acquisition platform, helping to increase engagement by 300% after
+              launch. In 2023, I was selected for AWS re/Start, an intensive
+              cloud immersion program that earned me my first AWS certificate.
+              The following year, I participated in Google Cloud - Get
+              Certified, earning my Associate Cloud Engineer certification.
             </Trans>
           </p>
         </div>
@@ -292,14 +292,12 @@ const About: FC = memo(() => {
               aria-label={i18n._(msg`Henrique`)}
             />
             <Trans>
-              Today I work as a freelance Senior Software Engineer,
-              collaborating with clients around the world. I have more than 10
-              years' experience in IT, specializing in backend development with
-              Node.js and TypeScript. I have delivered scalable solutions in
-              microservices, serverless and event-driven architectures for
+              Today I'm specializing in full-stack development, collaborating
+              with clients around the world. I have delivered scalable solutions
+              in microservices, serverless and event-driven architectures for
               startups, solar energy, fintech, B2B and more. Recently, I
               architected a B2B solution integrating generative AI with legacy
-              microservices, designed robust REST EMBEDs with 99.98% uptime and
+              microservices, designed robust REST APIs with 99.98% uptime and
               built secure distributed systems using Redis and RabbitMQ.
             </Trans>
           </p>
@@ -319,10 +317,8 @@ const About: FC = memo(() => {
                   json={{
                     name: 'Henrique Paulo Bonfim',
                     role: 'Senior Software Engineer',
-                    location: 'Florianópolis, SC',
-                    experience: i18n._(
-                      msg`'10+ years in software development'`,
-                    ),
+                    location: 'Home Office',
+                    experience: i18n._(msg`'8+ years in software development'`),
                     specialties: [
                       'Backend Development',
                       'Cloud Architecture',
@@ -411,7 +407,7 @@ const About: FC = memo(() => {
                 href="#projects"
                 className="text-neutral-content underline decoration-dotted decoration-2 hover:decoration-solid"
               >
-                Projects and Contribuitions
+                Projects and Contributions
               </a>
               .
             </Trans>

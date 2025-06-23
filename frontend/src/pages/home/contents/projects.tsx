@@ -100,8 +100,8 @@ const LIST_WORK_PROJECTS: ReadonlyArray<Project> = [
   },
 ];
 const LIST_PROJECTS = [
-  ...LIST_PERSONAL_PROJECTS,
   ...LIST_WORK_PROJECTS,
+  ...LIST_PERSONAL_PROJECTS,
 ] as const;
 const ProjectCard: React.FC<{
   project: Project;

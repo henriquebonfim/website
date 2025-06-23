@@ -15,8 +15,7 @@
     "coverage": "vitest run --coverage",
     "translate": "pnpm i18n:extract && pnpm i18n:compile",
     "i18n:extract": "lingui extract",
-    "i18n:compile": "lingui compile --typescript",
-    "prepare": "cd .. && husky frontend/.husky"
+    "i18n:compile": "lingui compile --typescript"
   },
   "sideEffects": false,
   "browserslist": [
@@ -53,7 +52,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^16.0.0",
-    "husky": "^9.1.7",
     "isomorphic-dompurify": "^2.25.0",
     "jsdom": "^26.1.0",
     "playwright": "^1.52.0",
