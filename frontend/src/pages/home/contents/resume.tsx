@@ -86,22 +86,28 @@ const Resume: FC = memo(() => {
                 <span className="text-sm italic">
                   Senior Software Engineer |{' '}
                   <time dateTime="2025-03">
-                    <Trans>Mar</Trans> 2025
+                    <Trans>Oct</Trans> 2024
                   </time>{' '}
-                  – <Trans>Present</Trans>
+                  – <Trans>Apr</Trans> 2025
                 </span>
               </div>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Resolved backend/UI issues and documented APIs and release
-                    notes.
+                    Develop AI-driven chatbot and ensure seamless integration of
+                    AI technologies
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Improved platform stability and facilitated project
-                    alignment.
+                    Integrate AI models, APIs, and third-party services into
+                    existing infrastructures
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Contributing to technical documentation, bug reports, and
+                    facilitating clearer communication and project alignment.
                   </Trans>
                 </li>
               </ul>
@@ -111,20 +117,21 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Workana</span>
                 <span className="text-sm italic">
-                  Senior Backend Software Engineer |{' '}
+                  Backend Software Engineer |{' '}
                   <time dateTime="2024-02">
-                    <Trans>Feb</Trans> 2024
+                    <Trans>Dec</Trans> 2023
                   </time>{' '}
                   –{' '}
                   <time dateTime="2024-08">
-                    <Trans>Aug</Trans> 2024
+                    <Trans>Jul</Trans> 2024
                   </time>
                 </span>
               </div>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Architected B2B AI integrations with legacy systems (NDA).
+                    Architected a B2B solution (MCP alike) integrating
+                    generative AI with legacy microservices (NDA project).
                   </Trans>
                 </li>
                 <li>
@@ -222,7 +229,8 @@ const Resume: FC = memo(() => {
                 </li>
                 <li>
                   <Trans>
-                    Built admin interfaces with JavaScript and Bootstrap.
+                    Built admin interfaces, refined documentation, and improved
+                    bug tracking.
                   </Trans>
                 </li>
               </ul>
@@ -245,11 +253,9 @@ const Resume: FC = memo(() => {
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Resolved 150+ backend/UI issues in SIGPROJ system.
+                    Resolved 100+ backend/UI issues in SIGPROJ system, developed
+                    new modules and improved documentation.
                   </Trans>
-                </li>
-                <li>
-                  <Trans>Developed modules in JavaScript and PHP.</Trans>
                 </li>
               </ul>
             </li>
@@ -260,18 +266,19 @@ const Resume: FC = memo(() => {
                 <span className="text-sm italic">
                   <Trans>Junior Software Developer</Trans> |{' '}
                   <time dateTime="2016-01">
-                    <Trans>Jan</Trans> 2016
+                    <Trans>Feb</Trans> 2016
                   </time>{' '}
                   –{' '}
                   <time dateTime="2016-07">
-                    <Trans>Jul</Trans> 2016
+                    <Trans>Jun</Trans> 2016
                   </time>
                 </span>
               </div>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Built agribusiness dashboards with JavaScript/Bootstrap.
+                    Built JavaScript/Bootstrap solutions and generated technical
+                    documentation.
                   </Trans>
                 </li>
               </ul>
@@ -345,11 +352,6 @@ const Resume: FC = memo(() => {
             <Trans>Education</Trans>
           </h2>
           <ul className="list-disc pl-5">
-            <li>
-              <Trans>
-                Campinho Digital — Cloud Computing (Sep 2023 – Dec 2023)
-              </Trans>
-            </li>
             <li>
               <Trans>
                 Federal University of Mato Grosso do Sul — Bachelor's in
