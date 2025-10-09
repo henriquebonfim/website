@@ -598,9 +598,9 @@ const Timeline: FC = memo(() => {
             <Trans>Workana – Senior Backend Engineer</Trans>
           </div>
           <Trans>
-            Designed scalable microservices, built APIs with Nest.js, and
-            integrated AI with legacy systems. Delivered enterprise-grade uptime
-            and stability.
+            Architected a B2B (MCP alike) solution integrating generative AI
+            with legacy microservices (NDA project). Delivered enterprise-grade
+            uptime and stability.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -640,9 +640,10 @@ const Timeline: FC = memo(() => {
             <Trans>Upwork – Senior Software Engineer</Trans>
           </div>
           <Trans>
-            Delivering backend, API, and documentation excellence to global
-            clients. Helping startups grow with clean code, cloud infra, and
-            fast delivery.
+            Delivered an AI-driven chatbot, integrated with AI models, APIs and
+            third-party services into existing infrastructures. Contributed to
+            technical documentation, bug reports, communication and project
+            alignment.
           </Trans>
         </div>
       </li>

@@ -1,10 +1,16 @@
 services:
   libre-translate:
-    image: libretranslate/libretranslate
-    restart: unless-stopped
+    image: libretranslate/libretranslate:latest
     ports:
       - "5000:5000"
     command: --load-only en,pt,es
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "./venv/bin/python scripts/healthcheck.py"]
+      interval: 10s
+      timeout: 4s
+      retries: 4
+      start_period: 5s
 
   translate-machine:
     build:

@@ -21,8 +21,10 @@ const Resume: FC = memo(() => {
       aria-label={i18n._(msg`Resume`)}
     >
       <header className="mb-8 text-center">
-        <h1>Henrique Paulo Bonfim da Silva</h1>
-        <h2>Senior Software Engineer</h2>
+        <h1>Henrique Bonfim</h1>
+        <h2>
+          <Trans>Senior Software Engineer</Trans>
+        </h2>
         <nav className="m-auto flex w-full flex-row content-center justify-center gap-3">
           <a
             href={SOCIAL_LINKS.EMAIL}
@@ -65,14 +67,53 @@ const Resume: FC = memo(() => {
           </h2>
           <p>
             <Trans>
-              Senior Software Engineer with 10+ years of experience in
-              full-stack development (JavaScript, TypeScript, Node.js).
-              Expertise in scalable microservices, serverless, and event-driven
-              architectures. Proven success across fintech, government, and
-              startups, with a passion for generative AI and performance
-              optimization.
+              Software Engineer with 8+ years of experience focusing on backend
+              development with Python and TypeScript on Node.js. Proven
+              expertise in microservices, serverless and event-driven
+              architectures. Demonstrated success across startups, fintech,
+              solar energy and B2B. Skilled in system design and AI integration.
             </Trans>
           </p>
+        </section>
+        <section className="mb-8">
+          <h2>
+            <Trans>Key Skills</Trans>
+          </h2>
+          <ul className="list-disc pl-5">
+            <li>Programming: JavaScript, TypeScript, Python, SQL</li>
+            <li>
+              Frameworks: Node.js, Nest.js, Next.js, React, React Native, Flask,
+              FastAPI
+            </li>
+            <li>API: REST, GraphQL, gRPC, WebSockets, OpenAPI/Swagger</li>
+            <li>
+              Architectures: Microservices, Event-Driven, Serverless, DDD, CQRS,
+              Event Sourcing, Hexagonal
+            </li>
+            <li>
+              Database: PostgreSQL, MySQL, MongoDB, Redis, Supabase, Pinecone,
+              Milvus
+            </li>
+            <li>Messaging: RabbitMQ, Kafka, AWS SQS/SNS, Google Pub/Sub</li>
+            <li>Storage: AWS S3, Google Storage, File System</li>
+            <li>Observability: Prometheus, Grafana, OpenTelemetry</li>
+            <li>Testing: Jest, Pytest</li>
+            <li>CI/CD: GitHub Actions, GitLab CI, Jenkins</li>
+            <li>Security: OAuth2, JWT, IAM, DevSecOps, OWASP</li>
+            <li>Cloud: AWS, Google Cloud Platform (GCP), Vercel, Firebase</li>
+            <li>DevOps: Docker, Kubernetes, Terraform, Helm, GitOps</li>
+            <li>
+              AI/ML: OpenAI, Claude, Gemini, sLLMs, LangChain, Pinecone, Hugging
+              Face, TensorFlow, PyTorch
+            </li>
+            <li>
+              Soft Skills:{' '}
+              <Trans>
+                Leadership, Problem-solving, Project Management, Critical
+                Thinking, Communication
+              </Trans>
+            </li>
+          </ul>
         </section>
         <section className="mb-8">
           <h2>
@@ -84,7 +125,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Upwork</span>
                 <span className="text-sm italic">
-                  Senior Software Engineer |{' '}
+                  Senior Software Engineer (part-time contract) |{' '}
                   <time dateTime="2025-03">
                     <Trans>Oct</Trans> 2024
                   </time>{' '}
@@ -94,13 +135,13 @@ const Resume: FC = memo(() => {
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Develop AI-driven chatbot and ensure seamless integration of
+                    Built AI-driven chatbot and ensure seamless integration of
                     AI technologies
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Integrate AI models, APIs, and third-party services into
+                    Integrated AI models, APIs, and third-party services into
                     existing infrastructures
                   </Trans>
                 </li>
@@ -117,7 +158,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Workana</span>
                 <span className="text-sm italic">
-                  Backend Software Engineer |{' '}
+                  Backend Software Engineer (part-time contract) |{' '}
                   <time dateTime="2024-02">
                     <Trans>Dec</Trans> 2023
                   </time>{' '}
@@ -152,7 +193,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Meu Financiamento Solar</span>
                 <span className="text-sm italic">
-                  Senior Software Engineer |{' '}
+                  Software Engineer |{' '}
                   <time dateTime="2021-11">
                     <Trans>Nov</Trans> 2021
                   </time>{' '}
@@ -184,7 +225,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Portal Solar Ltda</span>
                 <span className="text-sm italic">
-                  <Trans>Mid-level Software Engineer</Trans> |{' '}
+                  <Trans>Full Stack Software Engineer</Trans> |{' '}
                   <time dateTime="2020-11">
                     <Trans>Nov</Trans> 2020
                   </time>{' '}
@@ -210,7 +251,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">PIME</span>
                 <span className="text-sm italic">
-                  <Trans>Mid-level Software Developer</Trans> |{' '}
+                  <Trans>Full Stack Software Engineer</Trans> |{' '}
                   <time dateTime="2019-03">
                     <Trans>Mar</Trans> 2019
                   </time>{' '}
@@ -324,29 +365,7 @@ const Resume: FC = memo(() => {
             </li>
           </ul>
         </section>
-        <section className="mb-8">
-          <h2>
-            <Trans>Key Skills</Trans>
-          </h2>
-          <ul className="list-disc pl-5">
-            <li>
-              JavaScript, TypeScript, Node.js, Nest.js, React, Next.js, Python,
-              FastAPI, Java, Spring Boot, SQL
-            </li>
-            <li>Microservices, Serverless, DDD, CQRS, Event Sourcing, gRPC</li>
-            <li>
-              AWS, Google Cloud, Firebase, Docker, Kubernetes, Terraform, GitOps
-            </li>
-            <li>PostgreSQL, MySQL, MongoDB, Redis</li>
-            <li>Prometheus, Grafana, Jest, Cypress, JUnit</li>
-            <li>OAuth2, JWT, IAM, DevSecOps, OWASP</li>
-            <li>
-              <Trans>
-                Leadership, Problem-solving, Team Management, Critical Thinking
-              </Trans>
-            </li>
-          </ul>
-        </section>
+
         <section className="mb-8">
           <h2>
             <Trans>Education</Trans>
