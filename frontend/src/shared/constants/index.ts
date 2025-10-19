@@ -178,44 +178,24 @@ export const BADGES = [
 ] as const;
 
 export const IMAGES = {
-  MYSELF_AWS:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/aws.webp',
-  MYSELF_CTEI:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/ctei.webp',
-  MYSELF_FRIENDS:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/friends.webp',
-  MYSELF_GIFTS:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/gifts.webp',
-  MYSELF:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself.webp',
-  MYSELF_CHILD:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_child.webp',
-  MYSELF_CODING:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_coding.webp',
-  MYSELF_EATING:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_eating.webp',
-  MYSELF_EVENT:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_event.webp',
-  MYSELF_FETEC:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_fetec.webp',
-  MYSELF_FLYING:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_flying.webp',
-  MYSELF_FORMAL:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_formal.webp',
-  MYSELF_FORMAL_SELFIE:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_formal_selfie.webp',
-  MYSELF_SELFIE:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_selfie.webp',
-  MYSELF_SMILING:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_smilling.webp',
-  MYSELF_SP:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/myself_sp.webp',
-  MYSELF_PET:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/pet.webp',
-  MYSELF_PROJECT_1:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_1.webp',
-  MYSELF_PROJECT_2:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_2.webp',
-  MYSELF_PROJECT_GUITAR:
-    'https://raw.githubusercontent.com/henriquebonfim/website/refs/heads/master/frontend/images/project_guitar.webp',
+  MYSELF_CTEI: '/assets/photos/ctei.webp',
+  MYSELF: '/assets/photos/myself.webp',
+  MYSELF_CHILD: '/assets/photos/myself_child.webp',
+  MYSELF_CODING: '/assets/photos/myself_coding.webp',
+  MYSELF_EATING: '/assets/photos/myself_eating.webp',
+  MYSELF_EVENT: '/assets/photos/myself_event.webp',
+  MYSELF_FETEC: '/assets/photos/myself_fetec.webp',
+  MYSELF_FLYING: '/assets/photos/myself_flying.webp',
+  MYSELF_FORMAL: '/assets/photos/myself_formal.webp',
+  MYSELF_PET: '/assets/photos/pet.webp',
+  // MYSELF_AWS: '/assets/photos/aws.webp',
+  // MYSELF_FRIENDS: '/assets/photos/friends.webp',
+  // MYSELF_GIFTS: '/assets/photos/gifts.webp',
+  // MYSELF_FORMAL_SELFIE: '/assets/photos/myself_formal_selfie.webp',
+  // MYSELF_SELFIE: '/assets/photos/myself_selfie.webp',
+  // MYSELF_SMILING: '/assets/photos/myself_smilling.webp',
+  // MYSELF_SP: '/assets/photos/myself_sp.webp',
+  // MYSELF_PROJECT_1: '/assets/photos/project_1.webp',
+  // MYSELF_PROJECT_2: '/assets/photos/project_2.webp',
+  // MYSELF_PROJECT_GUITAR: '/assets/photos/project_guitar.webp',
 };
