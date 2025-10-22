@@ -3,12 +3,14 @@ import { useLingui } from '@lingui/react';
 import { type FC, type ReactNode } from 'react';
 import { Footer } from './ui/footer';
 import { Header } from './ui/header';
+import { NasaWidget } from '#/widgets/nasa';
 
 export const Layout: FC<{ children: ReactNode }> = ({ children }) => {
   const { i18n } = useLingui();
   return (
     <>
       <Header />
+      <NasaWidget />
       <main
         className="h-full w-full px-1 py-16 md:px-3"
         aria-label={i18n._(msg`Website Main Content`)}

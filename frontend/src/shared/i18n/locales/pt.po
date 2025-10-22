@@ -840,7 +840,7 @@ msgstr "Ferramenta de raspagem para Mercado Libre usando NodeJS. Extrai dados de
 msgid "Website logo"
 msgstr "Logo do site"
 
-#: src/app/layout/index.tsx:14
+#: src/app/layout/index.tsx:16
 msgid "Website Main Content"
 msgstr "Conteúdo Principal do Site"
 

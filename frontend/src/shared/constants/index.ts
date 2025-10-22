@@ -12,6 +12,7 @@ export const SECTION_ITEMS = {
   LANGUAGE: 'language',
   SOCIAL_MEDIA: 'social-media',
   PROFILE: 'profile',
+  NASA: 'nasa',
 };
 
 export const SOCIAL_LINKS = {
@@ -45,6 +46,7 @@ export const EMBED = {
     SHORT_ORGAN:
       'https://www.youtube.com/embed/t9_m43tiTik?si=ftzePvQ5AOB12nbj&amp;start=8',
   },
+  NASA: 'https://eyes.nasa.gov/apps/solar-system/#/home?featured=false&detailPanel=false&search=false&shareButton=false&menu=false&collapseSettingsOptions=true&hideFullScreenToggle=false&locked=true&hideExternalLinks=true&surfaceMapTiling=true&hd=true&lighting=natural',
 };
 
 export const LOCALES: Record<LocaleType, string> = {

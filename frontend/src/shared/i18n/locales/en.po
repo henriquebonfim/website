@@ -840,7 +840,7 @@ msgstr "Web scraping tool for Mercado Libre using NodeJS. Extracts product data 
 msgid "Website logo"
 msgstr "Website logo"
 
-#: src/app/layout/index.tsx:14
+#: src/app/layout/index.tsx:16
 msgid "Website Main Content"
 msgstr "Website Main Content"
 

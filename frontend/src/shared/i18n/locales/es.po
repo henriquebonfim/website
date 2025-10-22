@@ -840,7 +840,7 @@ msgstr "Herramienta de raspado web para Mercado Libre utilizando NodeJS. Extrae 
 msgid "Website logo"
 msgstr "Logo del sitio web"
 
-#: src/app/layout/index.tsx:14
+#: src/app/layout/index.tsx:16
 msgid "Website Main Content"
 msgstr "Contenido Principal del Sitio Web"
 
