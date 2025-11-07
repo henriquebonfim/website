@@ -1,29 +1,4 @@
 services:
-  libre-translate:
-    image: libretranslate/libretranslate:latest
-    ports:
-      - "5000:5000"
-    command: --load-only en,pt,es
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD-SHELL", "./venv/bin/python scripts/healthcheck.py"]
-      interval: 10s
-      timeout: 4s
-      retries: 4
-      start_period: 5s
-
-  translate-machine:
-    build:
-      context: ./scripts/translate
-    restart: unless-stopped
-    environment:
-      - LOCALES_PATH=/app/locales
-      - TRANSLATE_URL=http://libre-translate:5000/translate
-    volumes:
-      - ./frontend/src/shared/i18n/locales:/app/locales:rw
-    depends_on:
-      - libre-translate
-
   frontend-dev:
     build:
       context: ./frontend
