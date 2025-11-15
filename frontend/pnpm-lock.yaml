@@ -56,7 +56,7 @@ importers:
         version: 4.5.0(vite@6.4.1(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))
       '@vitest/browser':
         specifier: ^3.1.4
-        version: 3.1.4(playwright@1.56.1)(vite@6.3.5(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
+        version: 3.1.4(playwright@1.56.1)(vite@6.4.1(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
       '@vitest/ui':
         specifier: ^3.1.4
         version: 3.1.4(vitest@3.1.4)
@@ -1930,8 +1930,8 @@ packages:
   base64-js@1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
 
-  baseline-browser-mapping@2.8.25:
-    resolution: {integrity: sha512-2NovHVesVF5TXefsGX1yzx1xgr7+m9JQenvz6FQY3qd+YXkKkYiv+vTCc7OriP9mcDZpTC5mAOYN4ocd29+erA==}
+  baseline-browser-mapping@2.8.28:
+    resolution: {integrity: sha512-gYjt7OIqdM0PcttNYP2aVrr2G0bMALkBaoehD4BuRGjAOtipg0b6wHg1yNL+s5zSnLZZrGHOw4IrND8CD+3oIQ==}
     hasBin: true
 
   binary-extensions@2.3.0:
@@ -1962,8 +1962,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
-  browserslist@4.27.0:
-    resolution: {integrity: sha512-AXVQwdhot1eqLihwasPElhX2tAZiBjWdJ9i/Zcj2S6QYIjkx62OKSfnobkriB81C3l4w0rVy3Nt4jaTBltYEpw==}
+  browserslist@4.28.0:
+    resolution: {integrity: sha512-tbydkR/CxfMwelN0vwdP/pLkDwyAASZ+VfWm4EOwlB6SWhx1sYnWLqo8N5j0rAzPfzfRaxt0mM/4wPU/Su84RQ==}
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
 
@@ -2257,8 +2257,8 @@ packages:
   electron-to-chromium@1.5.161:
     resolution: {integrity: sha512-hwtetwfKNZo/UlwHIVBlKZVdy7o8bIZxxKs0Mv/ROPiQQQmDgdm5a+KvKtBsxM8ZjFzTaCeLoodZ8jiBE3o9rA==}
 
-  electron-to-chromium@1.5.248:
-    resolution: {integrity: sha512-zsur2yunphlyAO4gIubdJEXCK6KOVvtpiuDfCIqbM9FjcnMYiyn0ICa3hWfPr0nc41zcLWobgy1iL7VvoOyA2Q==}
+  electron-to-chromium@1.5.253:
+    resolution: {integrity: sha512-O0tpQ/35rrgdiGQ0/OFWhy1itmd9A6TY9uQzlqj3hKSu/aYpe7UIn5d7CU2N9myH6biZiWF3VMZVuup8pw5U9w==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -5789,7 +5789,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/browser@3.1.4(playwright@1.56.1)(vite@6.3.5(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)':
+  '@vitest/browser@3.1.4(playwright@1.56.1)(vite@6.4.1(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)':
     dependencies:
       '@testing-library/dom': 10.4.0
       '@testing-library/user-event': 14.6.1(@testing-library/dom@10.4.0)
@@ -5975,7 +5975,7 @@ snapshots:
 
   base64-js@1.5.1: {}
 
-  baseline-browser-mapping@2.8.25: {}
+  baseline-browser-mapping@2.8.28: {}
 
   binary-extensions@2.3.0: {}
 
@@ -6011,13 +6011,13 @@ snapshots:
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.25.0)
 
-  browserslist@4.27.0:
+  browserslist@4.28.0:
     dependencies:
-      baseline-browser-mapping: 2.8.25
+      baseline-browser-mapping: 2.8.28
       caniuse-lite: 1.0.30001754
-      electron-to-chromium: 1.5.248
+      electron-to-chromium: 1.5.253
       node-releases: 2.0.27
-      update-browserslist-db: 1.1.4(browserslist@4.27.0)
+      update-browserslist-db: 1.1.4(browserslist@4.28.0)
 
   buffer-from@1.1.2: {}
 
@@ -6135,7 +6135,7 @@ snapshots:
 
   core-js-compat@3.46.0:
     dependencies:
-      browserslist: 4.27.0
+      browserslist: 4.28.0
 
   cosmiconfig@7.1.0:
     dependencies:
@@ -6300,7 +6300,7 @@ snapshots:
 
   electron-to-chromium@1.5.161: {}
 
-  electron-to-chromium@1.5.248: {}
+  electron-to-chromium@1.5.253: {}
 
   emoji-regex@8.0.0: {}
 
@@ -8006,9 +8006,9 @@ snapshots:
       escalade: 3.2.0
       picocolors: 1.1.1
 
-  update-browserslist-db@1.1.4(browserslist@4.27.0):
+  update-browserslist-db@1.1.4(browserslist@4.28.0):
     dependencies:
-      browserslist: 4.27.0
+      browserslist: 4.28.0
       escalade: 3.2.0
       picocolors: 1.1.1
 
@@ -8082,7 +8082,7 @@ snapshots:
 
   vitest-browser-react@0.2.0(@types/react-dom@19.1.5(@types/react@19.1.6))(@types/react@19.1.6)(@vitest/browser@3.1.4)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(vitest@3.1.4):
     dependencies:
-      '@vitest/browser': 3.1.4(playwright@1.56.1)(vite@6.3.5(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
+      '@vitest/browser': 3.1.4(playwright@1.56.1)(vite@6.4.1(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
       vitest: 3.1.4(@types/node@22.15.28)(@vitest/browser@3.1.4)(@vitest/ui@3.1.4)(jiti@2.4.2)(jsdom@26.1.0)(lightningcss@1.30.1)(terser@5.40.0)
@@ -8115,7 +8115,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.15.28
-      '@vitest/browser': 3.1.4(playwright@1.56.1)(vite@6.3.5(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
+      '@vitest/browser': 3.1.4(playwright@1.56.1)(vite@6.4.1(@types/node@22.15.28)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.40.0))(vitest@3.1.4)
       '@vitest/ui': 3.1.4(vitest@3.1.4)
       jsdom: 26.1.0
     transitivePeerDependencies:
