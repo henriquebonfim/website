@@ -1,0 +1,24 @@
+# Henrique Bonfim - Personal Website
+
+## Project Overview
+This is the personal portfolio and resume website of Henrique Bonfim, a Senior Software Engineer with 10+ years of experience in full-stack development, microservices, and AI/LLM integrations.
+The website serves as a digital business card, showcasing projects, skills, and professional history.
+
+## Architecture & Tech Stack
+- **Framework**: React 19 (Vite 6)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4, DaisyUI 5, Shadcn/UI (Radix Primitives)
+- **Runtime**: Bun
+- **I18n**: LinguiJS (English, Portuguese, Spanish)
+- **Features**: PWA (Progressive Web App), SEO Optimized (JSON-LD, Sitemap), Dark/Light Mode
+
+## Content Structure
+- **/**: Home page - Introduction and summary.
+- **/projects**: Portfolio of developed projects.
+- **/resume**: Professional experience and skills.
+- **/blog**: Technical articles (Planned).
+
+## Key Capabilities
+- **Responsive Design**: Mobile-first approach.
+- **Performance**: Optimized images (WebP), Gzip/Brotli compression.
+- **Accessibility**: Semantic HTML, ARIA labels.
