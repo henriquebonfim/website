@@ -1,7 +1,6 @@
 import { lingui } from '@lingui/vite-plugin';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
-import { componentTagger } from 'lovable-tagger';
 import path from 'path';
 import { defineConfig } from 'vite';
 import viteCompression from 'vite-plugin-compression';
@@ -60,7 +59,6 @@ export default defineConfig(({ mode }) => ({
       },
       jsxRuntime: 'automatic',
     }),
-    mode === "development" && componentTagger(),
     ViteImageOptimizer(),
     viteCompression({
       algorithm: 'brotliCompress',

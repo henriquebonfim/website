@@ -25,7 +25,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/tick3r/main/public/og-image.webp',
     link: 'https://github.com/henriquebonfim/tick3r',
     alt: msg`tick3r project interface`,
-    category: [msg`Open Source`, msg`TypeScript`],
+    category: [msg`Video`, msg`TypeScript`],
   },
   {
     title: 'O11y Stack',
@@ -34,7 +34,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
       'https://raw.githubusercontent.com/henriquebonfim/o11y-stack-template/master/docs/system-health-overview.png',
     link: 'https://github.com/henriquebonfim/o11y-stack-template',
     alt: msg`O11y Stack system health dashboard`,
-    category: [msg`Open Source`, msg`DevOps`],
+    category: [msg`Observability`, msg`DevOps`],
   },
   {
     title: 'Text To Video',
@@ -42,7 +42,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://placehold.co/800x600/20BEFF/ffffff?text=CogVideoX-2B',
     link: 'https://www.kaggle.com/code/henriquebonfim/text-to-video-cogvideox-2b',
     alt: msg`CogVideoX-2B Text to Video generation`,
-    category: [msg`AI`, msg`Kaggle`],
+    category: [msg`AI`, msg`LLM`],
   },
   {
     title: 'Ollama LLM Server',
@@ -50,7 +50,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://placehold.co/800x600/000000/ffffff?text=Ollama+Server',
     link: 'https://www.kaggle.com/code/henriquebonfim/ollama-llm-server',
     alt: msg`Ollama LLM Server`,
-    category: [msg`AI`, msg`Kaggle`],
+    category: [msg`AI`, msg`LLM`],
   },
   {
     title: 'ai-chat',
@@ -58,7 +58,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/ai-chat/main/chat.png',
     link: 'https://github.com/henriquebonfim/ai-chat',
     alt: msg`AI Chat application interface`,
-    category: [msg`Open Source`, msg`AI`, msg`TypeScript`],
+    category: [msg`Chatbot`, msg`TypeScript`],
   },
   {
     title: 'ultra-dl',
@@ -66,7 +66,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/ultra-dl/main/image.gif',
     link: 'https://github.com/henriquebonfim/ultra-dl',
     alt: msg`UltraDL application interface`,
-    category: [msg`Open Source`, msg`Python`],
+    category: [msg`Video`, msg`Python`],
   },
   {
     title: 'premium-blogger',
@@ -74,7 +74,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/premium-blogger/v2/docs/image.png',
     link: 'https://github.com/henriquebonfim/premium-blogger',
     alt: msg`Premium Blogger templates preview`,
-    category: [msg`Open Source`, msg`Templates`],
+    category: [msg`Blog`, msg`Templates`],
   },
   {
     title: 'Roça Eats',
@@ -83,7 +83,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
       'https://raw.githubusercontent.com/henriquebonfim/roca-eats/master/roca-landing.png',
     link: 'https://github.com/henriquebonfim/roca-eats',
     alt: msg`Roça Eats platform landing page`,
-    category: [msg`Open Source`, msg`SaaS`],
+    category: [msg`Food`, msg`SaaS`],
     image_position: 'object-top',
   },
   {
@@ -100,7 +100,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://placehold.co/800x600/ffe600/2d3277?text=Crawler+ML',
     link: 'https://github.com/henriquebonfim/crawler-mercadolibre',
     alt: msg`Crawler Mercado Libre interface`,
-    category: [msg`Open Source`, msg`Web Scraping`],
+    category: [msg`CLI`, msg`Web Scraping`],
   },
   {
     title: 'Pet Porta App',
@@ -116,7 +116,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/MegaHack-v2-2020-Projeto-Mideal/master/mideal-logo-white.png',
     link: 'https://github.com/hpbonfim/MegaHack-v2-2020-Projeto-Mideal',
     alt: msg`Mideal preview`,
-    category: [msg`Open Source`, msg`SaaS`],
+    category: [msg`Blockchain`, msg`SaaS`],
   },
   {
     title: 'Canivete Perneta',
@@ -124,7 +124,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
     image: 'https://raw.githubusercontent.com/henriquebonfim/HackathonCCR/master/canivete.png',
     link: 'https://github.com/hpbonfim/HackathonCCR',
     alt: msg`Canivete Perneta app preview`,
-    category: [msg`Open Source`, msg`App`],
+    category: [msg`Mobile`, msg`App`],
   },
   {
     title: 'EduDoa',
@@ -133,7 +133,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
       'https://henriquebonfim.github.io/Hackathon-IBM-CallForCode-Project_EduDoa/img/iPhone-principal.png',
     link: 'https://github.com/henriquebonfim/Hackathon-IBM-CallForCode-Project_EduDoa',
     alt: msg`EduDoa app preview`,
-    category: [msg`Open Source`, msg`EduTech`],
+    category: [msg`Mobile`, msg`EduTech`],
   },
 ];
 
