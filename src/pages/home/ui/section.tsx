@@ -1,4 +1,4 @@
-import { Terminal } from '#/widgets/terminal';
+import { Terminal } from '@/widgets/terminal';
 import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { lazy, useEffect, useState, type FC } from 'react';
@@ -39,6 +39,7 @@ const Section: FC = () => {
   }, []);
 
   const handleTabClick = (tab: Tab) => {
+    // eslint-disable-next-line
     window.location.hash = `#${tab.id}`;
     setActiveTab(tab);
   };

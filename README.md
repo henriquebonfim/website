@@ -59,8 +59,44 @@ This project is built with:
 - React
 - shadcn-ui
 - Tailwind CSS
+- Bun (Runtime & Package Manager)
+- LinguiJS (Internationalization)
 
-## How can I deploy this project?
+## 🌍 Internationalization (i18n)
+
+This project uses **LinguiJS** for internationalization. It supports English (`en`), Portuguese (`pt`), and Spanish (`es`).
+
+### Automated AI Translations
+
+We have an automated workflow that uses **OpenRouter** (free tier models like Gemini 2.0 Flash or Llama 3) to generate missing translations.
+
+**To run translations locally:**
+
+1. Get a free API key from [OpenRouter](https://openrouter.ai/).
+2. Export the key and run the translation script:
+
+```bash
+export OPENAI_API_KEY=your_key_here
+bun run translate:ai
+```
+
+**CI/CD Integration:**
+
+Translations are automatically generated and committed on every push to the `main` branch via GitHub Actions, provided the `OPENAI_API_KEY` secret is set in the repository.
+
+### Manual Translation Workflow
+
+If you prefer to translate manually:
+
+1. Extract strings:
+   ```bash
+   bun run i18n:extract
+   ```
+2. Edit the `.po` files in `src/shared/i18n/locales/`.
+3. Compile the catalogs:
+   ```bash
+   bun run i18n:compile
+   ```
 
 Simply open [Lovable](https://lovable.dev/projects/27b1d4c5-a2a6-4f2b-af32-36bad3719111) and click on Share -> Publish.
 

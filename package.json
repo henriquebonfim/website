@@ -9,7 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "i18n:extract": "lingui extract",
-    "i18n:compile": "lingui compile"
+    "i18n:compile": "lingui compile",
+    "translate:ai": "bun run scripts/translate.ts",
+    "translate:pipeline": "bun run i18n:extract && bun run translate:ai && bun run i18n:compile"
   },
   "dependencies": {
     "lucide-react": "^0.562.0",

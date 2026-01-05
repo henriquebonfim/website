@@ -38,7 +38,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
   },
   {
     title: 'Text To Video',
-    popup_text: msg`Text-to-video generation pipeline using CogVideoX-2B. Running on Kaggle Kernels for high-performance inference.`,
+    popup_text: msg`Text-to-video AI generation pipeline using CogVideoX-2B. Running on Kaggle Kernels for high-performance inference.`,
     image: 'https://placehold.co/800x600/20BEFF/ffffff?text=CogVideoX-2B',
     link: 'https://www.kaggle.com/code/henriquebonfim/text-to-video-cogvideox-2b',
     alt: msg`CogVideoX-2B Text to Video generation`,
@@ -54,7 +54,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
   },
   {
     title: 'ai-chat',
-    popup_text: msg`A lightweight, real-time chat-bot that connects to your local LLM services via Docker Model Runner.`,
+    popup_text: msg`A lightweight, real-time chat-bot that connects to any local LLM services via Docker Model Runner.`,
     image: 'https://raw.githubusercontent.com/henriquebonfim/ai-chat/main/chat.png',
     link: 'https://github.com/henriquebonfim/ai-chat',
     alt: msg`AI Chat application interface`,
@@ -112,7 +112,7 @@ const LIST_PERSONAL_PROJECTS: ReadonlyArray<Project> = [
   },
   {
     title: 'Mideal',
-    popup_text: msg`Blockchain-based legal contract platform recognized in Top 50 at Megahack v2 2020. Implements NodeJS, Angular, and Google Cloud.`,
+    popup_text: msg`Blockchain-based legal contract platform recognized in Top 50 at Megahack v2 2020. Uses NodeJS, Angular, and Google Cloud.`,
     image: 'https://raw.githubusercontent.com/henriquebonfim/MegaHack-v2-2020-Projeto-Mideal/master/mideal-logo-white.png',
     link: 'https://github.com/hpbonfim/MegaHack-v2-2020-Projeto-Mideal',
     alt: msg`Mideal preview`,

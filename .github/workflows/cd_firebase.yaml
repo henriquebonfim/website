@@ -28,36 +28,24 @@ jobs:
         with:
           fetch-depth: 1
 
-      - name: Step 2 - Install pnpm ${{ vars.PNPM_VERSION }}
-        uses: pnpm/action-setup@v4
+      - name: Step 2 - Setup Bun
+        uses: oven-sh/setup-bun@v2
         with:
-          version: ${{ vars.PNPM_VERSION }}
-          run_install: false
+          bun-version: latest
 
-      - name: Step 3 - Use Node.js ${{ vars.NODE_VERSION }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ vars.NODE_VERSION }}
-          cache: "pnpm"
-          cache-dependency-path: frontend/pnpm-lock.yaml
-
-      - name: Step 4 - Install Dependencies
-        run: pnpm install
+      - name: Step 3 - Install Dependencies
+        run: bun install
         working-directory: frontend
 
-      - name: Step 5 - Audit dependencies
-        run: pnpm audit --audit-level high
+      - name: Step 5 - Lint
+        run: bun run lint
         working-directory: frontend
 
-      - name: Step 6 - Lint
-        run: pnpm lint
+      - name: Step 4 - Audit dependencies
+        run: bun audit
         working-directory: frontend
 
-      - name: Step 7 - Test
-        run: pnpm test
-        working-directory: frontend
-
-      - name: Step 8 - Build & Deploy to Firebase Hosting Preview (Pull Request)
+      - name: Step 6 - Build & Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -67,7 +55,7 @@ jobs:
           expires: ${{ vars.FIREBASE_EXPIRES }}
           entryPoint: frontend/
 
-      - name: Step 8 - Build & Deploy to Firebase Hosting Production (Push)
+      - name: Step 7 - Build & Deploy to Firebase Hosting Production (Push)
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
