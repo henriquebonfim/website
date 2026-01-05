@@ -1,11 +1,11 @@
-import { SECTION_ITEMS, SOCIAL_LINKS } from '#/shared/constants';
-import { SocialMedia } from '#/widgets/social-badges';
-import { Terminal } from '#/widgets/terminal';
-import { ToolsCarousel } from '#/widgets/tools-carousel';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import { Trans } from '@lingui/react/macro';
-import { memo, type FC } from 'react';
+import { SECTION_ITEMS, SOCIAL_LINKS } from "#/shared/constants";
+import { SocialMedia } from "#/widgets/social-badges";
+import { Terminal } from "#/widgets/terminal";
+import { ToolsCarousel } from "#/widgets/tools-carousel";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import { Trans } from "@lingui/react/macro";
+import { memo, type FC } from "react";
 
 export const Profile: FC = memo(() => {
   const { i18n } = useLingui();
@@ -48,7 +48,7 @@ export const Profile: FC = memo(() => {
             </div>
             <h5>
               <Trans>
-                Leveraging <i>GenAI</i> to drive{' '}
+                Leveraging <i>GenAI</i> to drive{" "}
                 <b>next-generation solutions.</b>
               </Trans>
             </h5>

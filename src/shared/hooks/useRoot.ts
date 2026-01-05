@@ -1,6 +1,6 @@
-import { RootContext } from '#/app/contexts/root';
-import { useContext } from 'react';
-import type { RootContextType } from '../types';
+import { RootContext } from "#/app/contexts/root";
+import { useContext } from "react";
+import type { RootContextType } from "../types";
 
 /**
  * Custom hook to access the Root context
@@ -10,7 +10,7 @@ import type { RootContextType } from '../types';
 const useRootContext = (): RootContextType => {
   const context = useContext(RootContext);
   if (!context) {
-    throw new Error('useRootContext must be used within a RootProvider');
+    throw new Error("useRootContext must be used within a RootProvider");
   }
   return context;
 };

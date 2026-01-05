@@ -4,7 +4,7 @@ import React, {
   useState,
   type ChangeEvent,
   type FC,
-} from 'react';
+} from "react";
 
 interface Windows96Props {
   title?: string;
@@ -18,8 +18,8 @@ interface Windows96Props {
  * @returns JSX.Element
  */
 export const Windows96: FC<Windows96Props> = ({
-  title = 'Help Topics: Location',
-  className = '',
+  title = "Help Topics: Location",
+  className = "",
   children,
 }) => {
   const [range, setRange] = useState<number>(5);

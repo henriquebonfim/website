@@ -1,4 +1,4 @@
-import DOMPurify from 'isomorphic-dompurify';
+import DOMPurify from "isomorphic-dompurify";
 
 /**
  * Sanitizes an HTML string using DOMPurify.
@@ -9,7 +9,7 @@ export const sanitizeHTML = (html: string): string => {
   try {
     return DOMPurify.sanitize(html);
   } catch (error) {
-    console.error('DOMPurify sanitization error:', error);
-    return '';
+    console.error("DOMPurify sanitization error:", error);
+    return "";
   }
 };

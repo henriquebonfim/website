@@ -1,8 +1,8 @@
-import { Profile } from '#/widgets/profile';
-import { SpotifyWidget } from '#/widgets/spotify';
-import { Terminal } from '#/widgets/terminal';
-import { type FC } from 'react';
-import Section from './ui/section';
+import { Profile } from "#/widgets/profile";
+import { SpotifyWidget } from "#/widgets/spotify";
+import { Terminal } from "#/widgets/terminal";
+import { type FC } from "react";
+import Section from "./ui/section";
 
 export const Homepage: FC = () => (
   <>

@@ -1,11 +1,11 @@
-import { EMBED, IMAGES, SOCIAL_LINKS } from '#/shared/constants';
-import { Windows96 } from '#/widgets/windows';
-import { NasaWidget } from '@/widgets/nasa';
-import type { I18n } from '@lingui/core';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import { Trans } from '@lingui/react/macro';
-import React, { memo, type FC } from 'react';
+import { EMBED, IMAGES, SOCIAL_LINKS } from "#/shared/constants";
+import { Windows96 } from "#/widgets/windows";
+import { NasaWidget } from "@/widgets/nasa";
+import type { I18n } from "@lingui/core";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import { Trans } from "@lingui/react/macro";
+import React, { memo, type FC } from "react";
 
 /**
  * Contact component displays contact options and a profile image.

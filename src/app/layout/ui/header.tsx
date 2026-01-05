@@ -1,8 +1,8 @@
-import { AUDIO_URL, LOCALES, SECTION_ITEMS, THEMES } from '#/shared/constants';
-import { useRootContext } from '#/shared/hooks';
-import type { LocaleType } from '#/shared/types';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
+import { AUDIO_URL, LOCALES, SECTION_ITEMS, THEMES } from "#/shared/constants";
+import { useRootContext } from "#/shared/hooks";
+import type { LocaleType } from "#/shared/types";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
 import {
   useCallback,
   useEffect,
@@ -10,7 +10,7 @@ import {
   useRef,
   useState,
   type FC,
-} from 'react';
+} from "react";
 
 /**
  * Custom hook that manages header visibility based on scroll direction
@@ -35,8 +35,8 @@ const useHeaderVisibility = (): boolean => {
       lastScrollY.current = currentScrollY;
     };
 
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return isVisible;
@@ -62,13 +62,13 @@ const LanguageSwitcher: FC = () => {
             id="language-switcher"
             key={key}
             onClick={() => setLocale(key as LocaleType)}
-            className={`focus:ring-primary transition-all duration-300 hover:scale-110 focus:ring-1 focus:ring-offset-1 focus:outline-none active:scale-90 ${isActive ? 'ring-primary ring-1' : ''} `}
+            className={`focus:ring-primary transition-all duration-300 hover:scale-110 focus:ring-1 focus:ring-offset-1 focus:outline-none active:scale-90 ${isActive ? "ring-primary ring-1" : ""} `}
             aria-label={i18n._(msg`Switch language to ${value}`)}
             title={value}
             type="button"
             role="switch"
             tabIndex={0}
-            aria-current={isActive ? 'true' : undefined}
+            aria-current={isActive ? "true" : undefined}
           >
             <img
               loading="lazy"
@@ -77,7 +77,7 @@ const LanguageSwitcher: FC = () => {
               width={44}
               height={44}
               aria-hidden="true"
-              className={`-my-1.5 min-h-11 min-w-11 object-cover transition-all duration-300 md:h-11 md:w-11 ${isActive ? 'grayscale-0' : 'grayscale-100'} hover:grayscale-0`}
+              className={`-my-1.5 min-h-11 min-w-11 object-cover transition-all duration-300 md:h-11 md:w-11 ${isActive ? "grayscale-0" : "grayscale-100"} hover:grayscale-0`}
             />
           </button>
         );
@@ -97,7 +97,7 @@ const ThemeToggle: FC = () => {
 
   const audio = useMemo(() => {
     const audio = new Audio(AUDIO_URL);
-    audio.preload = 'auto';
+    audio.preload = "auto";
     audio.currentTime = 0;
     audio.volume = 0.5;
     audio.load();
@@ -108,7 +108,7 @@ const ThemeToggle: FC = () => {
     if (audio) {
       audio.currentTime = 0;
       audio.play().catch((error) => {
-        console.warn('Audio playback failed:', error);
+        console.warn("Audio playback failed:", error);
       });
     }
   }, [audio]);
@@ -118,27 +118,27 @@ const ThemeToggle: FC = () => {
     if (!wrapper || isAnimating) return;
 
     setIsAnimating(true);
-    wrapper.classList.remove('alien-disappear', 'alien-reappear');
+    wrapper.classList.remove("alien-disappear", "alien-reappear");
     // Force reflow to restart animation
     void wrapper.offsetWidth;
-    wrapper.classList.add('alien-disappear');
+    wrapper.classList.add("alien-disappear");
 
     const onDisappearEnd = (): void => {
-      wrapper.classList.remove('alien-disappear');
-      wrapper.classList.add('alien-reappear');
-      wrapper.removeEventListener('animationend', onDisappearEnd);
+      wrapper.classList.remove("alien-disappear");
+      wrapper.classList.add("alien-reappear");
+      wrapper.removeEventListener("animationend", onDisappearEnd);
       setTheme(theme === THEMES.dark ? THEMES.light : THEMES.dark);
       const onReappearEnd = (): void => {
-        wrapper.classList.remove('alien-reappear');
-        wrapper.removeEventListener('animationend', onReappearEnd);
+        wrapper.classList.remove("alien-reappear");
+        wrapper.removeEventListener("animationend", onReappearEnd);
         setIsAnimating(false);
         playAudio();
       };
 
-      wrapper.addEventListener('animationend', onReappearEnd, { once: true });
+      wrapper.addEventListener("animationend", onReappearEnd, { once: true });
     };
 
-    wrapper.addEventListener('animationend', onDisappearEnd, { once: true });
+    wrapper.addEventListener("animationend", onDisappearEnd, { once: true });
   }, [isAnimating, setTheme, theme, playAudio]);
 
   return (
@@ -146,14 +146,14 @@ const ThemeToggle: FC = () => {
       onClick={handleThemeToggle}
       className="focus:ring-primary rounded-md transition-all focus:ring-1 focus:outline-none"
       aria-label={i18n._(
-        msg`Switch to ${theme === THEMES.dark ? 'light' : 'dark'} theme`,
+        msg`Switch to ${theme === THEMES.dark ? "light" : "dark"} theme`,
       )}
       title={i18n._(
-        msg`Click to change theme to ${theme === THEMES.dark ? 'light' : 'dark'} mode`,
+        msg`Click to change theme to ${theme === THEMES.dark ? "light" : "dark"} mode`,
       )}
       disabled={isAnimating}
       type="button"
-      aria-busy={isAnimating ? 'true' : 'false'}
+      aria-busy={isAnimating ? "true" : "false"}
       aria-live="polite"
       aria-atomic="true"
     >
@@ -186,7 +186,7 @@ export const Header: FC = () => {
 
   return (
     <header
-      className={`bg-neutral/10 border-base-100 fixed top-0 z-10 flex w-screen flex-row items-center justify-between p-1 backdrop-blur-xs transition-transform duration-300 md:p-3 ${isHeaderVisible ? 'translate-y-0' : '-translate-y-full'} `}
+      className={`bg-neutral/10 border-base-100 fixed top-0 z-10 flex w-screen flex-row items-center justify-between p-1 backdrop-blur-xs transition-transform duration-300 md:p-3 ${isHeaderVisible ? "translate-y-0" : "-translate-y-full"} `}
       aria-label="Website Header"
       role="navigation"
     >

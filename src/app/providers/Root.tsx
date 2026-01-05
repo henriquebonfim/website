@@ -6,22 +6,22 @@ import {
   THEME_ATTRIBUTE,
   THEME_STORAGE_KEY,
   THEMES,
-} from '#/shared/constants';
-import useLocalStorage from '#/shared/hooks/useLocalStorage';
-import { dynamicLoadMessages } from '#/shared/i18n/functions';
-import { type LocaleType, type ThemeType } from '#/shared/types';
-import { Loading } from '#/shared/ui';
-import { i18n } from '@lingui/core';
-import { I18nProvider } from '@lingui/react';
-import { useEffect, useState, type FC, type ReactNode } from 'react';
-import { RootContext } from '../contexts/root';
+} from "#/shared/constants";
+import useLocalStorage from "#/shared/hooks/useLocalStorage";
+import { dynamicLoadMessages } from "#/shared/i18n/functions";
+import { type LocaleType, type ThemeType } from "#/shared/types";
+import { Loading } from "#/shared/ui";
+import { i18n } from "@lingui/core";
+import { I18nProvider } from "@lingui/react";
+import { useEffect, useState, type FC, type ReactNode } from "react";
+import { RootContext } from "../contexts/root";
 
 /**
  * Retrieves theme preference from localStorage or defaults to dark theme.
  * @returns {ThemeType} The user's preferred theme.
  */
 const getInitialTheme = (): ThemeType => {
-  if (typeof window === 'undefined') return THEMES.dark;
+  if (typeof window === "undefined") return THEMES.dark;
   const saved = localStorage.getItem(THEME_STORAGE_KEY) as ThemeType | null;
   return saved && saved in THEMES ? saved : THEMES.dark;
 };
@@ -31,7 +31,7 @@ const getInitialTheme = (): ThemeType => {
  * @returns {LocaleType} The user's preferred locale.
  */
 const getInitialLocale = (): LocaleType => {
-  const browserLang = navigator.language.split('-')[0];
+  const browserLang = navigator.language.split("-")[0];
   const saved = localStorage.getItem(LOCALE_STORAGE_KEY);
   if (saved && saved in LOCALES) return saved as LocaleType;
   return browserLang in LOCALES ? (browserLang as LocaleType) : DEFAULT_LOCALE;

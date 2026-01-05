@@ -1,7 +1,7 @@
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import { Trans } from '@lingui/react/macro';
-import { memo, type FC } from 'react';
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import { Trans } from "@lingui/react/macro";
+import { memo, type FC } from "react";
 
 /**
  * Timeline component displays a chronological list of career and education milestones.
@@ -14,13 +14,13 @@ const Timeline: FC = memo(() => {
     event: React.KeyboardEvent<HTMLLIElement>,
     index: number,
   ) => {
-    const items = document.querySelectorAll('[data-timeline-item]');
+    const items = document.querySelectorAll("[data-timeline-item]");
     if (!items.length) return;
-    if (event.key === 'ArrowDown' || event.key === 'ArrowRight') {
+    if (event.key === "ArrowDown" || event.key === "ArrowRight") {
       event.preventDefault();
       const next = (index + 1) % items.length;
       (items[next] as HTMLElement).focus();
-    } else if (event.key === 'ArrowUp' || event.key === 'ArrowLeft') {
+    } else if (event.key === "ArrowUp" || event.key === "ArrowLeft") {
       event.preventDefault();
       const prev = (index - 1 + items.length) % items.length;
       (items[prev] as HTMLElement).focus();
@@ -109,7 +109,7 @@ const Timeline: FC = memo(() => {
             <Trans>First Step into Code</Trans>
           </div>
           <Trans>
-            Took the first basic computer course from the{' '}
+            Took the first basic computer course from the{" "}
             <i>Work Education Program by Coca-Cola</i>. Also started learning to
             play acoustic guitar, which became a lifelong passion.
           </Trans>

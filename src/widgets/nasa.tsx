@@ -1,5 +1,5 @@
-import { EMBED, SECTION_ITEMS } from '#/shared/constants';
-import type { FC, HTMLAttributes } from 'react';
+import { EMBED, SECTION_ITEMS } from "#/shared/constants";
+import type { FC, HTMLAttributes } from "react";
 
 /**
  * Props for NasaWidget component.
@@ -13,7 +13,7 @@ export type NasaWidgetProps = HTMLAttributes<HTMLIFrameElement>;
  * @returns JSX.Element
  */
 export const NasaWidget: FC<NasaWidgetProps> = ({
-  className = '',
+  className = "",
   ...rest
 }) => (
   <section

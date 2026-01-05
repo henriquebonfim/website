@@ -1,5 +1,5 @@
-import { i18n } from '@lingui/core';
-import type { LocaleType } from '../../types';
+import { i18n } from "@lingui/core";
+import type { LocaleType } from "../../types";
 
 /**
  * Dynamically loads and activates locale messages.

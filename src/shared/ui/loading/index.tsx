@@ -1,19 +1,19 @@
-import { memo, type FC } from 'react';
+import { memo, type FC } from "react";
 
 /**
  * Props for the Loading component
  */
 interface LoadingSpinnerProps {
-  readonly size?: 'sm' | 'md' | 'lg';
+  readonly size?: "sm" | "md" | "lg";
   readonly color?:
-    | 'primary'
-    | 'secondary'
-    | 'accent'
-    | 'neutral'
-    | 'info'
-    | 'success'
-    | 'warning'
-    | 'error';
+    | "primary"
+    | "secondary"
+    | "accent"
+    | "neutral"
+    | "info"
+    | "success"
+    | "warning"
+    | "error";
   readonly label?: string;
   readonly centered?: boolean;
   readonly overlay?: boolean;
@@ -23,23 +23,23 @@ interface LoadingSpinnerProps {
  * Size configuration for loading spinner
  */
 const SIZE_CONFIG = {
-  sm: 'h-6 w-6 border-2',
-  md: 'h-12 w-12 border-4',
-  lg: 'h-16 w-16 border-8',
+  sm: "h-6 w-6 border-2",
+  md: "h-12 w-12 border-4",
+  lg: "h-16 w-16 border-8",
 } as const;
 
 /**
  * Color configuration for loading spinner
  */
 const COLOR_CONFIG = {
-  primary: 'border-primary',
-  secondary: 'border-secondary',
-  accent: 'border-accent',
-  neutral: 'border-neutral',
-  info: 'border-info',
-  success: 'border-success',
-  warning: 'border-warning',
-  error: 'border-error',
+  primary: "border-primary",
+  secondary: "border-secondary",
+  accent: "border-accent",
+  neutral: "border-neutral",
+  info: "border-info",
+  success: "border-success",
+  warning: "border-warning",
+  error: "border-error",
 } as const;
 
 /**
@@ -63,8 +63,8 @@ const COLOR_CONFIG = {
  */
 const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
   ({
-    size = 'md',
-    color = 'primary',
+    size = "md",
+    color = "primary",
     label,
     centered = false,
     overlay = false,
@@ -79,7 +79,7 @@ const LoadingSpinner: FC<LoadingSpinnerProps> = memo(
         <span
           className={spinnerClasses}
           role="status"
-          aria-label={label || 'Loading content'}
+          aria-label={label || "Loading content"}
         />
         {label && (
           <span className="text-sm" aria-hidden="true">

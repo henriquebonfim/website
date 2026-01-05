@@ -3,11 +3,11 @@
  * Uses semantic HTML, TailwindCSS prose, and Lingui for i18n.
  * @module Resume
  */
-import { SOCIAL_LINKS } from '#/shared/constants';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import { Trans } from '@lingui/react/macro';
-import { memo, type FC } from 'react';
+import { SOCIAL_LINKS } from "#/shared/constants";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import { Trans } from "@lingui/react/macro";
+import { memo, type FC } from "react";
 
 /**
  * Resume section for the homepage.
@@ -107,7 +107,7 @@ const Resume: FC = memo(() => {
               Face, TensorFlow, PyTorch
             </li>
             <li>
-              Soft Skills:{' '}
+              Soft Skills:{" "}
               <Trans>
                 Leadership, Problem-solving, Project Management, Critical
                 Thinking, Communication
@@ -125,10 +125,10 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Upwork</span>
                 <span className="text-sm italic">
-                  Senior Software Engineer (part-time contract) |{' '}
+                  Senior Software Engineer (part-time contract) |{" "}
                   <time dateTime="2025-03">
                     <Trans>Oct</Trans> 2024
-                  </time>{' '}
+                  </time>{" "}
                   – <Trans>Apr</Trans> 2025
                 </span>
               </div>
@@ -158,11 +158,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Workana</span>
                 <span className="text-sm italic">
-                  Backend Software Engineer (part-time contract) |{' '}
+                  Backend Software Engineer (part-time contract) |{" "}
                   <time dateTime="2024-02">
                     <Trans>Dec</Trans> 2023
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2024-08">
                     <Trans>Jul</Trans> 2024
                   </time>
@@ -193,11 +193,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Meu Financiamento Solar</span>
                 <span className="text-sm italic">
-                  Software Engineer |{' '}
+                  Software Engineer |{" "}
                   <time dateTime="2021-11">
                     <Trans>Nov</Trans> 2021
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2023-04">
                     <Trans>Apr</Trans> 2023
                   </time>
@@ -225,11 +225,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Portal Solar Ltda</span>
                 <span className="text-sm italic">
-                  <Trans>Full Stack Software Engineer</Trans> |{' '}
+                  <Trans>Full Stack Software Engineer</Trans> |{" "}
                   <time dateTime="2020-11">
                     <Trans>Nov</Trans> 2020
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2021-11">
                     <Trans>Nov</Trans> 2021
                   </time>
@@ -251,11 +251,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">PIME</span>
                 <span className="text-sm italic">
-                  <Trans>Full Stack Software Engineer</Trans> |{' '}
+                  <Trans>Full Stack Software Engineer</Trans> |{" "}
                   <time dateTime="2019-03">
                     <Trans>Mar</Trans> 2019
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2020-03">
                     <Trans>Mar</Trans> 2020
                   </time>
@@ -281,11 +281,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">LEDES</span>
                 <span className="text-sm italic">
-                  <Trans>Junior Software Developer</Trans> |{' '}
+                  <Trans>Junior Software Developer</Trans> |{" "}
                   <time dateTime="2018-01">
                     <Trans>Jan</Trans> 2018
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2018-12">
                     <Trans>Dec</Trans> 2018
                   </time>
@@ -305,11 +305,11 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">IndexT</span>
                 <span className="text-sm italic">
-                  <Trans>Junior Software Developer</Trans> |{' '}
+                  <Trans>Junior Software Developer</Trans> |{" "}
                   <time dateTime="2016-01">
                     <Trans>Feb</Trans> 2016
-                  </time>{' '}
-                  –{' '}
+                  </time>{" "}
+                  –{" "}
                   <time dateTime="2016-07">
                     <Trans>Jun</Trans> 2016
                   </time>
@@ -329,7 +329,7 @@ const Resume: FC = memo(() => {
               <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                 <span className="font-bold">Sedit</span>
                 <span className="text-sm italic">
-                  <Trans>Technical Support Assistant</Trans> |{' '}
+                  <Trans>Technical Support Assistant</Trans> |{" "}
                   <Trans>May</Trans> 2013 – <Trans>Dec</Trans> 2014
                 </span>
               </div>
@@ -353,9 +353,7 @@ const Resume: FC = memo(() => {
               <Trans>AWS Certified Cloud Practitioner</Trans>
             </li>
             <li>
-              <Trans>
-                Scrum Foundation Professional Certification (SFPC™)
-              </Trans>
+              <Trans>Scrum Foundation Professional Certification (SFPC™)</Trans>
             </li>
             <li>
               <Trans>Docker Essentials – IBM</Trans>

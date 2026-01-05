@@ -1,5 +1,5 @@
-import { EMBED, SECTION_ITEMS } from '#/shared/constants';
-import type { FC, HTMLAttributes } from 'react';
+import { EMBED, SECTION_ITEMS } from "#/shared/constants";
+import type { FC, HTMLAttributes } from "react";
 
 /**
  * Props for SpotifyWidget component.
@@ -13,7 +13,7 @@ export type SpotifyWidgetProps = HTMLAttributes<HTMLIFrameElement>;
  * @returns JSX.Element
  */
 export const SpotifyWidget: FC<SpotifyWidgetProps> = ({
-  className = '',
+  className = "",
   ...rest
 }) => (
   <section

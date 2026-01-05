@@ -1,5 +1,5 @@
-import { SECTION_ITEMS } from '#/shared/constants';
-import type { FC, HTMLAttributes } from 'react';
+import { SECTION_ITEMS } from "#/shared/constants";
+import type { FC, HTMLAttributes } from "react";
 
 /**
  * Props for YoutubeWidget component.

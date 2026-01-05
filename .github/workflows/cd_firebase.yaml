@@ -35,15 +35,12 @@ jobs:
 
       - name: Step 3 - Install Dependencies
         run: bun install
-        working-directory: frontend
 
-      - name: Step 5 - Lint
+      - name: Step 4 - Lint
         run: bun run lint
-        working-directory: frontend
 
-      - name: Step 4 - Audit dependencies
+      - name: Step 5 - Audit dependencies
         run: bun audit
-        working-directory: frontend
 
       - name: Step 6 - Build & Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
@@ -53,7 +50,7 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           expires: ${{ vars.FIREBASE_EXPIRES }}
-          entryPoint: frontend/
+          entryPoint: ./
 
       - name: Step 7 - Build & Deploy to Firebase Hosting Production (Push)
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
@@ -63,4 +60,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           channelId: ${{ vars.FIREBASE_CHANNEL_ID }}
-          entryPoint: frontend/
+          entryPoint: ./

@@ -1,1 +1,1 @@
-export { default as useRootContext } from './useRoot';
+export { default as useRootContext } from "./useRoot";

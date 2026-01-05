@@ -1,5 +1,5 @@
-import { TERMINAL_USERNAME } from '#/shared/constants';
-import { sanitizeHTML } from '#/shared/utils';
+import { TERMINAL_USERNAME } from "#/shared/constants";
+import { sanitizeHTML } from "#/shared/utils";
 import React, {
   type FC,
   memo,
@@ -7,7 +7,7 @@ import React, {
   useMemo,
   useRef,
   useState,
-} from 'react';
+} from "react";
 
 /**
  * Colorizes JSON for pretty terminal display.
@@ -15,18 +15,18 @@ import React, {
  * @returns HTML string with syntax highlighting
  */
 const colorizeJSON = (json: string | object): string => {
-  let str = typeof json === 'string' ? json : JSON.stringify(json, null, 2);
-  str = str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;/');
+  let str = typeof json === "string" ? json : JSON.stringify(json, null, 2);
+  str = str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;/");
   return str.replace(
     /("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(?:\s*:)?|\b(true|false|null)\b|\b-?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b)/g,
     (match) => {
-      let cls = 'number';
+      let cls = "number";
       if (/^"/.test(match)) {
-        cls = /:$/.test(match) ? 'key' : 'string';
+        cls = /:$/.test(match) ? "key" : "string";
       } else if (/true|false/.test(match)) {
-        cls = 'boolean';
+        cls = "boolean";
       } else if (/null/.test(match)) {
-        cls = 'null';
+        cls = "null";
       }
       return `<span class="terminal-json-${cls}">${match}</span>`;
     },
@@ -46,11 +46,11 @@ interface PrettyJSONProps {
 export const PrettyJSON: FC<PrettyJSONProps> = ({ json, animate = false }) => {
   const colorized = useMemo(() => {
     if (
-      typeof json === 'string' &&
-      !json.trim().startsWith('{') &&
-      !json.trim().startsWith('[')
+      typeof json === "string" &&
+      !json.trim().startsWith("{") &&
+      !json.trim().startsWith("[")
     )
-      return '';
+      return "";
     return sanitizeHTML(colorizeJSON(json));
   }, [json]);
 
@@ -109,7 +109,7 @@ interface TerminalProps {
  * Terminal-like UI component with title bar, command prompt, and content area.
  */
 export const Terminal: FC<TerminalProps> = memo(
-  ({ title = 'Terminal', cmd, children, className, id }) => (
+  ({ title = "Terminal", cmd, children, className, id }) => (
     <section
       id={id}
       tabIndex={0}

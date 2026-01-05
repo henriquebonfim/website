@@ -1,7 +1,7 @@
-import { SOCIAL_LINKS } from '#/shared/constants';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import type { FC } from 'react';
+import { SOCIAL_LINKS } from "#/shared/constants";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import type { FC } from "react";
 
 /**
  * Footer component displays social media links and author credit.
@@ -19,15 +19,15 @@ export const Footer: FC = () => {
         className="text-neutral-content mx-0 mb-3"
         aria-label={i18n._(msg`Author credit`)}
       >
-        Made with{' '}
+        Made with{" "}
         <span
           className="inline-block motion-safe:animate-[heartbeat_1.2s_infinite]"
           aria-label={i18n._(msg`heart`)}
           role="img"
         >
           ❤️
-        </span>{' '}
-        by{' '}
+        </span>{" "}
+        by{" "}
         <a
           role="link"
           aria-label={i18n._(msg`GitHub profile of Henrique Bonfim`)}

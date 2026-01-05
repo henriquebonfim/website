@@ -1,7 +1,7 @@
-import { Terminal } from '@/widgets/terminal';
-import { msg } from '@lingui/core/macro';
-import { useLingui } from '@lingui/react';
-import { lazy, useEffect, useState, type FC } from 'react';
+import { Terminal } from "@/widgets/terminal";
+import { msg } from "@lingui/core/macro";
+import { useLingui } from "@lingui/react";
+import { lazy, useEffect, useState, type FC } from "react";
 
 interface Tab {
   readonly id: string;
@@ -9,22 +9,22 @@ interface Tab {
   readonly content: React.ReactNode;
 }
 
-const About = lazy(() => import('../contents/about'));
-const Projects = lazy(() => import('../contents/projects'));
-const Timeline = lazy(() => import('../contents/timeline'));
-const Resume = lazy(() => import('../contents/resume'));
-const Contact = lazy(() => import('../contents/contact'));
+const About = lazy(() => import("../contents/about"));
+const Projects = lazy(() => import("../contents/projects"));
+const Timeline = lazy(() => import("../contents/timeline"));
+const Resume = lazy(() => import("../contents/resume"));
+const Contact = lazy(() => import("../contents/contact"));
 
 const TAB_CONFIG: readonly Tab[] = [
-  { id: 'about', labelMsg: msg`About`, content: <About /> },
-  { id: 'projects', labelMsg: msg`Projects`, content: <Projects /> },
-  { id: 'timeline', labelMsg: msg`Timeline`, content: <Timeline /> },
-  { id: 'resume', labelMsg: msg`Resume`, content: <Resume /> },
-  { id: 'contact', labelMsg: msg`Contact`, content: <Contact /> },
+  { id: "about", labelMsg: msg`About`, content: <About /> },
+  { id: "projects", labelMsg: msg`Projects`, content: <Projects /> },
+  { id: "timeline", labelMsg: msg`Timeline`, content: <Timeline /> },
+  { id: "resume", labelMsg: msg`Resume`, content: <Resume /> },
+  { id: "contact", labelMsg: msg`Contact`, content: <Contact /> },
 ] as const;
 
 const getTabFromHash = (): Tab => {
-  const id = window.location.hash.replace(/^#/, '');
+  const id = window.location.hash.replace(/^#/, "");
   return TAB_CONFIG.find((tab) => tab.id === id) ?? TAB_CONFIG[0];
 };
 
@@ -34,8 +34,8 @@ const Section: FC = () => {
 
   useEffect(() => {
     const handleHashChange = () => setActiveTab(getTabFromHash());
-    window.addEventListener('hashchange', handleHashChange);
-    return () => window.removeEventListener('hashchange', handleHashChange);
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
   }, []);
 
   const handleTabClick = (tab: Tab) => {
@@ -68,7 +68,7 @@ const Section: FC = () => {
               aria-selected={isSelected}
               aria-controls={`tab-${tab.id}-panel`}
               tabIndex={isSelected ? 0 : -1}
-              className={`join-item btn btn-ghost btn-xs md:btn-sm hover:bg-base-100/50 border-base-content/50 focus-visible:ring-primary/70 rounded-full border-1 border-dashed font-sans focus:outline-none focus-visible:ring-2 ${isSelected ? 'bg-primary text-base-300' : ''}`}
+              className={`join-item btn btn-ghost btn-xs md:btn-sm hover:bg-base-100/50 border-base-content/50 focus-visible:ring-primary/70 rounded-full border-1 border-dashed font-sans focus:outline-none focus-visible:ring-2 ${isSelected ? "bg-primary text-base-300" : ""}`}
               role="tab"
               onClick={() => handleTabClick(tab)}
             >

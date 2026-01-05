@@ -2,7 +2,12 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: "class",
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+  ],
   prefix: "",
   theme: {
     container: {
@@ -64,7 +69,7 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        mono: ['JetBrains Mono', 'Courier New', 'monospace'],
+        mono: ["JetBrains Mono", "Courier New", "monospace"],
       },
       keyframes: {
         "accordion-down": {
@@ -99,7 +104,7 @@ export default {
             opacity: "0",
           },
         },
-        "typing": {
+        typing: {
           "0%": {
             width: "0",
           },
@@ -107,7 +112,7 @@ export default {
             width: "100%",
           },
         },
-        "blink": {
+        blink: {
           "0%, 50%": {
             opacity: "1",
           },
@@ -128,8 +133,8 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "matrix-fall": "matrix-fall 10s linear infinite",
-        "typing": "typing 3.5s steps(40, end)",
-        "blink": "blink 1s infinite",
+        typing: "typing 3.5s steps(40, end)",
+        blink: "blink 1s infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
     },

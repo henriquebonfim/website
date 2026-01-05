@@ -1,10 +1,10 @@
-import { EMBED, IMAGES } from '#/shared/constants';
-import { PrettyJSON } from '#/widgets/terminal';
-import { Windows96 } from '#/widgets/windows';
-import { YoutubeWidget } from '#/widgets/youtube';
-import { msg } from '@lingui/core/macro';
-import { Trans, useLingui } from '@lingui/react/macro';
-import { memo, type FC } from 'react';
+import { EMBED, IMAGES } from "#/shared/constants";
+import { PrettyJSON } from "#/widgets/terminal";
+import { Windows96 } from "#/widgets/windows";
+import { YoutubeWidget } from "#/widgets/youtube";
+import { msg } from "@lingui/core/macro";
+import { Trans, useLingui } from "@lingui/react/macro";
+import { memo, type FC } from "react";
 
 /**
  * About component displays my journey from childhood curiosity to senior software engineer.
@@ -315,28 +315,28 @@ const About: FC = memo(() => {
               <pre className="p-3">
                 <PrettyJSON
                   json={{
-                    name: 'Henrique Paulo Bonfim',
-                    role: 'Senior Software Engineer',
-                    location: 'Home Office',
+                    name: "Henrique Paulo Bonfim",
+                    role: "Senior Software Engineer",
+                    location: "Home Office",
                     experience: i18n._(msg`'8+ years in software development'`),
                     specialties: [
-                      'Backend Development',
-                      'Cloud Architecture',
-                      'Microservices',
-                      'AI Integration',
+                      "Backend Development",
+                      "Cloud Architecture",
+                      "Microservices",
+                      "AI Integration",
                     ],
                     techStack: [
-                      'Node.js',
-                      'TypeScript',
-                      'React',
-                      'Python',
-                      'AWS',
-                      'Google Cloud',
+                      "Node.js",
+                      "TypeScript",
+                      "React",
+                      "Python",
+                      "AWS",
+                      "Google Cloud",
                     ],
                     certifications: [
-                      'AWS Cloud Practitioner',
-                      'Google Cloud Associate Engineer',
-                      'Scrum Foundation Professional',
+                      "AWS Cloud Practitioner",
+                      "Google Cloud Associate Engineer",
+                      "Scrum Foundation Professional",
                     ],
                     hobbies: [
                       i18n._(msg`Music`),
@@ -402,7 +402,7 @@ const About: FC = memo(() => {
 
           <span>
             <Trans>
-              Check out my{' '}
+              Check out my{" "}
               <a
                 href="#projects"
                 className="text-neutral-content underline decoration-dotted decoration-2 hover:decoration-solid"
