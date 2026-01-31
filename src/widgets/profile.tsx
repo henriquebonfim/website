@@ -6,6 +6,7 @@ import { msg } from "@lingui/core/macro";
 import { useLingui } from "@lingui/react";
 import { Trans } from "@lingui/react/macro";
 import { memo, type FC } from "react";
+import { Certifications } from "./certifications";
 
 export const Profile: FC = memo(() => {
   const { i18n } = useLingui();
@@ -40,18 +41,19 @@ export const Profile: FC = memo(() => {
               </div>
             </figure>
             <h1>Henrique Bonfim</h1>
-            <h2>
-              <Trans>Senior Software Engineer</Trans>
-            </h2>
             <div className="not-prose m-3">
               <SocialMedia />
             </div>
+            <h2>
+              <Trans>Senior Software Engineer</Trans>
+            </h2>
             <h5>
               <Trans>
-                Leveraging <i>GenAI</i> to drive{" "}
+                Leveraging <i>AI</i> to drive{" "}
                 <b>next-generation solutions.</b>
               </Trans>
             </h5>
+              <Certifications />
           </article>
           <ToolsCarousel />
         </Terminal>

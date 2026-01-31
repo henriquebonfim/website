@@ -74,14 +74,14 @@ export const AUDIO_URL =
 
 export const BADGES = [
   {
+    name: "Professional Cloud Architect Certification",
+    url: "https://www.credly.com/badges/8ef12665-1a5f-4c24-81ab-426d4a5ac6d5",
+    img: "https://images.credly.com/images/71c579e0-51fd-4247-b493-d2fa8167157a/image.png",
+  },
+  {
     name: "Associate Cloud Engineer Certification",
     url: "https://www.credly.com/badges/eeeb2956-3917-425d-8d00-6f6dd7c23219",
     img: "https://images.credly.com/images/08096465-cbfc-4c3e-93e5-93c5aa61f23e/image.png",
-  },
-  {
-    name: "Google Cloud Computing Foundations Certificate",
-    url: "https://www.credly.com/badges/89a03378-e9a5-407d-8ae7-8fc75f23186e",
-    img: "https://images.credly.com/images/4dda8ae4-99ee-476c-bca3-6f0adbab42fe/image.png",
   },
   {
     name: "AWS Certified Cloud Practitioner",
@@ -92,6 +92,10 @@ export const BADGES = [
     name: "AWS re/Start Graduate",
     url: "https://www.credly.com/badges/803276bf-5ede-4e16-9f63-222d97ef324e",
     img: "https://images.credly.com/size/340x340/images/44e2c252-5d19-4574-9646-005f7225bf53/image.png",
+  },
+  {
+    name: "Google Cloud Computing Foundations Certificate",
+    url: "https://www.credly.com/badges/89a03378-e9a5-407d-8ae7-8fc75f23186e",
   },
   {
     name: "Scrum Foundation Professional Certification - SFPC™ !",

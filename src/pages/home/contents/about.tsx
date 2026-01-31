@@ -2,6 +2,7 @@ import { EMBED, IMAGES } from "#/shared/constants";
 import { PrettyJSON } from "#/widgets/terminal";
 import { Windows96 } from "#/widgets/windows";
 import { YoutubeWidget } from "#/widgets/youtube";
+import { Certifications } from "@/widgets/certifications";
 import { msg } from "@lingui/core/macro";
 import { Trans, useLingui } from "@lingui/react/macro";
 import { memo, type FC } from "react";
@@ -22,7 +23,6 @@ const About: FC = memo(() => {
         <h1 className="bg-linear-to-r from-black to-white bg-clip-text text-center text-4xl font-bold tracking-tight text-transparent hover:backdrop-blur-sm md:text-5xl">
           <Trans>About Me</Trans>
         </h1>
-
         <hr className="divider divider-neutral" role="separator" />
 
         <figure
@@ -283,6 +283,7 @@ const About: FC = memo(() => {
           <h2>
             <Trans>Present and Future</Trans>
           </h2>
+            <Certifications />
           <p>
             <img
               src={IMAGES.MYSELF}
@@ -301,7 +302,6 @@ const About: FC = memo(() => {
               built secure distributed systems using Redis and RabbitMQ.
             </Trans>
           </p>
-
           <div className="not-prose w-full flex-1">
             <Windows96
               title={i18n._(msg`Help Topics: Windows`)}
