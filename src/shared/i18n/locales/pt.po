@@ -14,9 +14,9 @@ msgstr ""
 "Plural-Forms: \n"
 "X-Generator: @lingui/cli\n"
 
-#: src/pages/home/contents/about.tsx:321
+#: src/pages/home/contents/about.tsx:329
 msgid "'8+ years in software development'"
-msgstr "'8+ anos em desenvolvimento de software '"
+msgstr "'Mais de 8 anos em desenvolvimento de software'"
 
 #: src/pages/home/contents/about.tsx:214
 msgid "\"Resilience is not about never falling, but about rising every time you fall.\" - <0>Henrique Bonfim</0>"
@@ -24,19 +24,19 @@ msgstr "\"A resiliência não é sobre nunca cair, mas sobre levantar cada vez q
 
 #: src/widgets/tools-carousel/index.tsx:72
 msgid "A carousel of tools and technologies"
-msgstr "Um carrossel de ferramentas e tecnologias"
+msgstr "Carrossel de ferramentas e tecnologias"
 
 #: src/pages/home/contents/projects.tsx:76
 msgid "A collection of open source blog templates generated and curated for modern blogging needs."
-msgstr "Uma coleção de templates de blog open source gerados e curados para necessidades modernas de blog."
+msgstr "Uma coleção de templates open source para blogs, gerados e curados para necessidades modernas de publicação de conteúdo."
 
 #: src/pages/home/contents/projects.tsx:58
 msgid "A lightweight, real-time chat-bot that connects to any local LLM services via Docker Model Runner."
-msgstr "Um chatbot leve e em tempo real que se conecta a qualquer serviço LLM local via Docker Model Runner."
+msgstr "Um chatbot leve em tempo real que se conecta a qualquer serviço LLM local através do Docker Model Runner."
 
 #: src/pages/home/contents/projects.tsx:50
 msgid "A scalable Ollama LLM server implementation. deploy local large language models with an API interface."
-msgstr "Uma implementação escalável de servidor Ollama LLM. Implante modelos de linguagem ampla locais com uma interface API."
+msgstr "Uma implementação escalável de servidor Ollama LLM. Implante modelos de linguagem de grande escala localmente com uma interface de API."
 
 #: src/pages/home/ui/section.tsx:19
 msgid "About"
@@ -59,7 +59,7 @@ msgstr "IA"
 msgid "AI Chat application interface"
 msgstr "Interface de aplicação de Chat IA"
 
-#: src/pages/home/contents/about.tsx:367
+#: src/pages/home/contents/about.tsx:376
 msgid "Alongside technology, music occupies a special place in my life. I play piano and guitar, and have learned several other instruments. I've performed with other artists, in street bands and at public events. This passion reinforces my philosophy of lifelong learning and my ability to constantly adapt."
 msgstr "Ao lado da tecnologia, a música ocupa um lugar especial na minha vida. Toco piano e violão, e aprendi vários outros instrumentos. Já me apresentei com outros artistas, em bandas de rua e em eventos públicos. Esta paixão reforça a minha filosofia de aprendizagem ao longo da vida e a minha capacidade de adaptação constante."
 
@@ -73,25 +73,33 @@ msgid "Application"
 msgstr "Aplicação"
 
 #: src/pages/home/contents/resume.tsx:132
-#: src/pages/home/contents/resume.tsx:202
+#: src/pages/home/contents/resume.tsx:241
 msgid "Apr"
 msgstr "Abr"
 
 #: src/pages/home/contents/timeline.tsx:600
-msgid "Architected a B2B (MCP alike) solution integrating generative AI with legacy microservices (NDA project). Delivered enterprise-grade uptime and stability."
-msgstr "Arquitetou uma solução B2B (MCP similar) integrando IA generativa com microservices legados (projeto NDA). Forneceu tempo de atividade empresarial e estabilidade."
+#~ msgid "Architected a B2B (MCP alike) solution integrating generative AI with legacy microservices (NDA project). Delivered enterprise-grade uptime and stability."
+#~ msgstr "Arquitetou uma solução B2B (MCP similar) integrando IA generativa com microservices legados (projeto NDA). Forneceu tempo de atividade empresarial e estabilidade."
 
 #: src/pages/home/contents/resume.tsx:173
-msgid "Architected a B2B solution (MCP alike) integrating generative AI with legacy microservices (NDA project)."
-msgstr "Arquitetou uma solução B2B (MCP) que integra IA generativa com microservices legados (projeto NDA)."
+#~ msgid "Architected a B2B solution (MCP alike) integrating generative AI with legacy microservices (NDA project)."
+#~ msgstr "Arquitetou uma solução B2B (MCP) que integra IA generativa com microservices legados (projeto NDA)."
 
 #: src/pages/home/contents/projects.tsx:99
 msgid "ArduEVE IoT automation system interface"
 msgstr "Interface do sistema de automação IoT ArduEVE"
 
+#: src/pages/home/contents/resume.tsx:415
+msgid "Assisted in developing administrative dashboards to improve process visibility and tracking"
+msgstr "Auxiliou no desenvolvimento de painéis administrativos para melhorar a visibilidade e o rastreamento de processos"
+
 #: src/pages/home/contents/about.tsx:270
-msgid "At Meu Financiamento Solar, I contributed to the entire software development lifecycle of the country's largest solar credit acquisition platform, helping to increase engagement by 300% after launch. In 2023, I was selected for AWS re/Start, an intensive cloud immersion program that earned me my first AWS certificate. The following year, I participated in Google Cloud - Get Certified, earning my Associate Cloud Engineer certification."
-msgstr "Em Meu Financiamento Solar, eu contribuí para todo o ciclo de vida de desenvolvimento de software da maior plataforma de aquisição de crédito solar do país, ajudando a aumentar o engajamento em 300% após o lançamento. Em 2023, fui selecionado para o AWS re/Start, um programa intensivo de imersão em nuvem que me valeu meu primeiro certificado AWS. No ano seguinte, participei do Google Cloud - Get Certified, ganhando minha certificação de Engenheiro de Nuvem Associado."
+#~ msgid "At Meu Financiamento Solar, I contributed to the entire software development lifecycle of the country's largest solar credit acquisition platform, helping to increase engagement by 300% after launch. In 2023, I was selected for AWS re/Start, an intensive cloud immersion program that earned me my first AWS certificate. The following year, I participated in Google Cloud - Get Certified, earning my Associate Cloud Engineer certification."
+#~ msgstr "Em Meu Financiamento Solar, eu contribuí para todo o ciclo de vida de desenvolvimento de software da maior plataforma de aquisição de crédito solar do país, ajudando a aumentar o engajamento em 300% após o lançamento. Em 2023, fui selecionado para o AWS re/Start, um programa intensivo de imersão em nuvem que me valeu meu primeiro certificado AWS. No ano seguinte, participei do Google Cloud - Get Certified, ganhando minha certificação de Engenheiro de Nuvem Associado."
+
+#: src/pages/home/contents/about.tsx:271
+msgid "At Meu Financiamento Solar, I worked on one of Brazil's largest solar financing platforms with 30,000+ active users, supporting loan origination, KYC, and financial operations prior to acquisition by BV Bank. I led the partial migration of critical KYC workflows from Ruby on Rails to Next.js, improving throughput by 22%, and designed executive dashboards that accelerated data-driven decisions by 53%. In 2023, I was selected for AWS re/Start, an intensive cloud immersion program that earned me my first AWS certificate. The following year, I participated in Google Cloud - Get Certified, earning my Associate Cloud Engineer certification, and in 2026 I became a Google Professional Cloud Architect."
+msgstr "No Meu Financiamento Solar, trabalhei em uma das maiores plataformas de financiamento solar do Brasil com mais de 30.000 usuários ativos, dando suporte à originação de empréstimos, KYC e operações financeiras antes da aquisição pelo BV Bank. Liderei a migração parcial de fluxos críticos de KYC do Ruby on Rails para Next.js, melhorando a vazão em 22%, e projetei painéis executivos que aceleraram as decisões baseadas em dados em 53%. Em 2023, fui selecionado para o AWS re/Start, um programa intensivo de imersão em nuvem que me rendeu meu primeiro certificado AWS. No ano seguinte, participei do Google Cloud - Get Certified, obtendo minha certificação de Associate Cloud Engineer e, em 2026, tornei-me Google Professional Cloud Architect."
 
 #: src/pages/home/contents/about.tsx:134
 msgid "At school there was a basic computer course, and every day after school, my friends and I would go to the lan house to play Counter-Strike 1.6 - a passion that would define my interest in technology and team spirit."
@@ -101,20 +109,25 @@ msgstr "Na escola havia um curso básico de informática e, todos os dias após 
 msgid "At the age of 17 (2013), I took a technical course in computer maintenance offered by Intel. This earned me my first job as a technical support assistant at the Sedit hemodialysis clinic, where I discovered the world of help desk and customer service. In 2015, at the age of 19, I put everything together and moved to Campo Grande, MS, to study Information Systems at UFMS."
 msgstr "Aos 17 anos (2013), fiz um curso técnico de manutenção de computadores oferecido pela Intel. Isso me garantiu o primeiro emprego como assistente de suporte técnico na clínica de hemodiálise Sedit, onde descobri o universo do help desk e do atendimento ao cliente. Em 2015, aos 19 anos, reuni tudo e me mudei para Campo Grande (MS) para cursar Sistemas de Informação na UFMS."
 
+#: src/pages/home/contents/resume.tsx:237
+#: src/pages/home/contents/resume.tsx:329
+msgid "Aug"
+msgstr "Ago"
+
 #: src/app/layout/ui/footer.tsx:20
 msgid "Author credit"
 msgstr "Crédito do autor"
 
-#: src/pages/home/contents/resume.tsx:353
+#: src/pages/home/contents/resume.tsx:521
 msgid "AWS Certified Cloud Practitioner"
 msgstr "AWS Certified Cloud Practitioner"
 
-#: src/pages/home/contents/timeline.tsx:490
-#: src/pages/home/contents/timeline.tsx:516
+#: src/pages/home/contents/timeline.tsx:493
+#: src/pages/home/contents/timeline.tsx:519
 msgid "AWS re/Start Graduate"
 msgstr "Graduado AWS re/Start"
 
-#: src/pages/home/contents/about.tsx:358
+#: src/pages/home/contents/about.tsx:367
 msgid "Beyond Code"
 msgstr "Além do código"
 
@@ -130,29 +143,33 @@ msgstr "Plataforma de contrato legal baseada em Blockchain reconhecida no Top 50
 msgid "Blog"
 msgstr "Blog"
 
-#: src/pages/home/contents/about.tsx:347
+#: src/pages/home/contents/about.tsx:356
 msgid "Building solutions that make a difference"
 msgstr "Construindo soluções que fazem a diferença"
+
+#: src/pages/home/contents/resume.tsx:144
+msgid "Built a Python + Next.js bot leveraging AI/LLM models to interpret market data and generate context-aware recommendations for advisors"
+msgstr "Construiu um bot em Python + Next.js aproveitando modelos de IA/LLM para interpretar dados de mercado e gerar recomendações contextuais para assessores"
 
 #: src/pages/home/contents/timeline.tsx:70
 msgid "Built a soapbox car from scraps and spent countless hours on LAN matches of Counter-Strike: 1.6 and Condition Zero. This playful creativity planted the seed for an engineering mindset."
 msgstr "Construi um carrinho de rolimã com sucata e passei horas em partidas LAN de Counter-Strike 1.6 e Condition Zero. Essa criatividade lúdica plantou a semente de uma mentalidade de engenheiro."
 
 #: src/pages/home/contents/resume.tsx:272
-msgid "Built admin interfaces, refined documentation, and improved bug tracking."
-msgstr "Interfaces de administração construídas, documentação refinada e rastreamento de bugs aprimorados."
+#~ msgid "Built admin interfaces, refined documentation, and improved bug tracking."
+#~ msgstr "Interfaces de administração construídas, documentação refinada e rastreamento de bugs aprimorados."
 
 #: src/pages/home/contents/resume.tsx:137
-msgid "Built AI-driven chatbot and ensure seamless integration of AI technologies"
-msgstr "Chatbot baseado em IA construído e garantir a integração perfeita de tecnologias de IA"
+#~ msgid "Built AI-driven chatbot and ensure seamless integration of AI technologies"
+#~ msgstr "Chatbot baseado em IA construído e garantir a integração perfeita de tecnologias de IA"
 
-#: src/pages/home/contents/resume.tsx:320
+#: src/pages/home/contents/resume.tsx:485
 msgid "Built JavaScript/Bootstrap solutions and generated technical documentation."
 msgstr "Soluções de JavaScript/Bootstrap construídas e documentação técnica gerada."
 
 #: src/pages/home/contents/resume.tsx:179
-msgid "Built REST APIs with Nest.js/PostgreSQL, ensured 99.98% uptime."
-msgstr "Desenvolvi APIs REST com Nest.js/PostgreSQL, garantindo 99,98% de disponibilidade."
+#~ msgid "Built REST APIs with Nest.js/PostgreSQL, ensured 99.98% uptime."
+#~ msgstr "Desenvolvi APIs REST com Nest.js/PostgreSQL, garantindo 99,98% de disponibilidade."
 
 #: src/pages/home/contents/projects.tsx:134
 msgid "Canivete Perneta app preview"
@@ -162,7 +179,7 @@ msgstr "Prévia do app Canivete Perneta"
 msgid "Carousel of tools and technologies used by Henrique Bonfim"
 msgstr "Carrossel de ferramentas e tecnologias usadas por Henrique Bonfim"
 
-#: src/pages/home/contents/resume.tsx:346
+#: src/pages/home/contents/resume.tsx:511
 msgid "Certifications"
 msgstr "Certificações"
 
@@ -170,7 +187,7 @@ msgstr "Certificações"
 msgid "Chatbot"
 msgstr "Chatbot"
 
-#: src/pages/home/contents/about.tsx:404
+#: src/pages/home/contents/about.tsx:413
 msgid "Check out my <0>Projects and Contributions</0>."
 msgstr "Confira meus <0>Projetos e Contribuições</0>."
 
@@ -195,13 +212,33 @@ msgstr "Clique para mudar para o tema {0}"
 msgid "CogVideoX-2B Text to Video generation"
 msgstr "Geração de Texto para Vídeo CogVideoX-2B"
 
-#: src/pages/home/contents/timeline.tsx:518
+#: src/pages/home/contents/resume.tsx:276
+msgid "Collaborated closely with risk, compliance, and data teams to ensure regulatory alignment (LGPD) and strengthen fraud-prevention mechanisms"
+msgstr "Colaborou estreitamente com as equipes de risco, compliance e dados para garantir alinhamento regulatório (LGPD) e fortalecer mecanismos de prevenção à fraude"
+
+#: src/pages/home/contents/resume.tsx:165
+msgid "Collaborated closely with the client to translate financial requirements into automated workflows, integrating AI outputs with actionable portfolio guidance"
+msgstr "Colaborou estreitamente com o cliente para traduzir requisitos financeiros em fluxos de trabalho automatizados, integrando resultados de IA com orientações acionáveis de portfólio"
+
+#: src/pages/home/contents/resume.tsx:216
+msgid "Collaborated on integrating GPT-4 and Claude APIs to support a recommendation layer that generated personalized suggestions based on user profile and behavioral data"
+msgstr "Colaborou na integração das APIs GPT-4 e Claude para suportar uma camada de recomendação que gerou sugestões personalizadas baseadas no perfil do usuário e dados comportamentais"
+
+#: src/pages/home/contents/resume.tsx:452
+msgid "Collaborated with a development team to maintain \"SIGPROJ,\" a project management system used by Federal Universities across Brazil, resolving 100+ backend and UI issues using PHP and MySQL"
+msgstr "Colaborou com uma equipe de desenvolvimento para manter o \"SIGPROJ\", um sistema de gestão de projetos usado por Universidades Federais em todo o Brasil, resolvendo mais de 100 problemas de backend e interface usando PHP e MySQL"
+
+#: src/pages/home/contents/timeline.tsx:521
 msgid "Completed AWS re/Start program and earned AWS Certified Cloud Practitioner. Learned foundational cloud concepts and DevOps workflows."
 msgstr "Completei o programa AWS re/Start e obtive a certificação AWS Cloud Practitioner. Aprendi conceitos fundamentais de cloud e workflows DevOps."
 
-#: src/pages/home/contents/timeline.tsx:559
+#: src/pages/home/contents/timeline.tsx:562
 msgid "Completed the Get Certified Program. Became a Google Associate Cloud Engineer, expanding my skills across GCP services and infrastructure."
 msgstr "Completei o Programa Get Certified. Me tornei um Google Associate Cloud Engineer, expandindo minhas habilidades em serviços e infraestrutura GCP."
+
+#: src/pages/home/contents/timeline.tsx:688
+msgid "Completed the Get Certified Program. Became a Google Professional Cloud Architect, now with advanced expertise in cloud architecture and design."
+msgstr "Completei o Programa Get Certified. Me tornei um Google Professional Cloud Architect, agora com expertise avançada em arquitetura e design de nuvem."
 
 #: src/pages/home/ui/section.tsx:23
 msgid "Contact"
@@ -223,9 +260,37 @@ msgstr "Contato via Telegram"
 msgid "Contact via WhatsApp"
 msgstr "Contato via WhatsApp"
 
+#: src/pages/home/contents/resume.tsx:401
+msgid "Contributed as part of a cross-functional team to a digital transformation project aimed at replacing paper-based processes and spreadsheets with digital solutions."
+msgstr "Contribuiu como parte de uma equipe multifuncional em um projeto de transformação digital com o objetivo de substituir processos baseados em papel e planilhas por soluções digitais."
+
+#: src/pages/home/contents/timeline.tsx:315
+msgid "Contributed to a digital transformation project, implementing backend and frontend tasks using Java 11 and Angular. Helped transition from manual workflows to digital systems."
+msgstr "Contribuiu para um projeto de transformação digital, implementando tarefas de backend e frontend usando Java 11 e Angular. Ajudou na transição de fluxos de trabalho manuais para sistemas digitais."
+
+#: src/pages/home/contents/resume.tsx:334
+msgid "Contributed to a large-scale platform serving 100,000+ photovoltaic installers across Brazil, supporting marketplace operations, project management, and installer-client interactions."
+msgstr "Contribuiu para uma plataforma de larga escala atendendo mais de 100.000 instaladores fotovoltaicos em todo o Brasil, dando suporte a operações de marketplace, gestão de projetos e interações entre instaladores e clientes."
+
+#: src/pages/home/contents/timeline.tsx:436
+msgid "Contributed to a platform serving 100,000+ photovoltaic installers across Brazil. Improved application response time by 40% through optimization and implemented comprehensive testing with Jest."
+msgstr "Contribuiu para uma plataforma atendendo mais de 100.000 instaladores fotovoltaicos em todo o Brasil. Melhorou o tempo de resposta da aplicação em 40% através de otimizações e implementou testes abrangentes com Jest."
+
+#: src/pages/home/contents/resume.tsx:254
+msgid "Contributed to scaling and stabilizing a distributed financing platform with 99.9% availability and zero downtime, supporting loan origination, KYC validation, and credit workflows"
+msgstr "Contribuiu para escalar e estabilizar uma plataforma de financiamento distribuído com 99,9% de disponibilidade e zero downtime, dando suporte à originação de empréstimos, validação KYC e fluxos de trabalho de crédito"
+
+#: src/pages/home/contents/resume.tsx:377
+msgid "Contributed to technical documentation, structured bug reporting, and cross-team communication to ensure alignment between product, design, and engineering"
+msgstr "Contribuiu para documentação técnica, relatórios estruturados de bugs e comunicação entre equipes para garantir alinhamento entre produto, design e engenharia"
+
+#: src/pages/home/contents/resume.tsx:198
+msgid "Contributed to the backend microservices architecture using Nest.js, Node.js, PostgreSQL, QuestDB, RabbitMQ, and Redis"
+msgstr "Contribuiu para a arquitetura de microsserviços backend usando Nest.js, Node.js, PostgreSQL, QuestDB, RabbitMQ e Redis"
+
 #: src/pages/home/contents/resume.tsx:149
-msgid "Contributing to technical documentation, bug reports, and facilitating clearer communication and project alignment."
-msgstr "Contribuindo para documentação técnica, relatórios de erros e facilitando uma comunicação mais clara e o alinhamento do projeto."
+#~ msgid "Contributing to technical documentation, bug reports, and facilitating clearer communication and project alignment."
+#~ msgstr "Contribuindo para documentação técnica, relatórios de erros e facilitando uma comunicação mais clara e o alinhamento do projeto."
 
 #: src/pages/home/contents/projects.tsx:107
 msgid "Crawler Mercado Libre interface"
@@ -235,29 +300,53 @@ msgstr "Interface do Crawler Mercado Livre"
 msgid "Creative Childhood"
 msgstr "Infância Criativa"
 
-#: src/pages/home/contents/resume.tsx:163
-#: src/pages/home/contents/resume.tsx:290
-#: src/pages/home/contents/resume.tsx:333
+#: src/pages/home/contents/resume.tsx:180
+#: src/pages/home/contents/resume.tsx:440
+#: src/pages/home/contents/resume.tsx:498
 msgid "Dec"
 msgstr "Dez"
 
 #: src/pages/home/contents/timeline.tsx:642
-msgid "Delivered an AI-driven chatbot, integrated with AI models, APIs and third-party services into existing infrastructures. Contributed to technical documentation, bug reports, communication and project alignment."
-msgstr "Forneceu um chatbot orientado por IA, integrado com modelos de IA, APIs e serviços de terceiros em infraestruturas existentes. Contribuiu para documentação técnica, relatórios de erros, comunicação e alinhamento do projeto."
+#~ msgid "Delivered an AI-driven chatbot, integrated with AI models, APIs and third-party services into existing infrastructures. Contributed to technical documentation, bug reports, communication and project alignment."
+#~ msgstr "Forneceu um chatbot orientado por IA, integrado com modelos de IA, APIs e serviços de terceiros em infraestruturas existentes. Contribuiu para documentação técnica, relatórios de erros, comunicação e alinhamento do projeto."
+
+#: src/pages/home/contents/resume.tsx:151
+msgid "Deployed and scaled the system on Google Compute VMs with autoscaling, enabling reliable execution of Monte Carlo simulations under variable workloads"
+msgstr "Implantou e escalou o sistema em VMs do Google Compute com autoscaling, permitindo execução confiável de simulações Monte Carlo sob cargas de trabalho variáveis"
+
+#: src/pages/home/contents/resume.tsx:261
+msgid "Designed and developed executive and operational dashboards using React, Chart.js, Node.js, Ruby on Rails, and PostgreSQL, accelerating data-driven decisions by 53%"
+msgstr "Projetou e desenvolveu painéis executivos e operacionais usando React, Chart.js, Node.js, Ruby on Rails e PostgreSQL, acelerando decisões baseadas em dados em 53%"
+
+#: src/pages/home/contents/timeline.tsx:603
+msgid "Designed and implemented a KYC microservice with AI integration. Built backend architecture using Nest.js, PostgreSQL, QuestDB, RabbitMQ, and Redis. Integrated GPT-4 and Claude APIs for personalized recommendations."
+msgstr "Projetou e implementou um microsserviço de KYC com integração de IA. Construiu arquitetura de backend usando Nest.js, PostgreSQL, QuestDB, RabbitMQ e Redis. Integrou as APIs GPT-4 e Claude para recomendações personalizadas."
 
 #: src/pages/home/contents/timeline.tsx:395
 msgid "Despite the business not taking off, I won the Hackatrouble hackathon with an Uber Eats-style solution—proving innovation never goes to waste."
 msgstr "Apesar do negócio não ter decolado, ganhei o hackathon Hackatrouble com uma solução estilo Uber Eats—provando que inovação nunca é desperdiçada."
+
+#: src/pages/home/contents/resume.tsx:136
+msgid "Developed a stock analysis bot for personal advisors under NDA, combining cloud infrastructure, AI models, and Monte Carlo simulations for automated portfolio insights."
+msgstr "Desenvolveu um bot de análise de ações para assessores pessoais sob NDA, combinando infraestrutura em nuvem, modelos de IA e simulações Monte Carlo para insights automatizados de portfólio."
+
+#: src/pages/home/contents/timeline.tsx:646
+msgid "Developed a stock analysis bot under NDA, combining cloud infrastructure, AI models, and Monte Carlo simulations. Built with Python + Next.js, deployed on Google Compute VMs with autoscaling, and implemented RAG patterns."
+msgstr "Desenvolveu um bot de análise de ações sob NDA, combinando infraestrutura em nuvem, modelos de IA e simulações Monte Carlo. Construído com Python + Next.js, implantado em VMs do Google Compute com autoscaling e implementou padrões RAG."
+
+#: src/pages/home/contents/resume.tsx:351
+msgid "Developed and shipped new features using TypeScript, Node.js, React, React Native, GraphQL, and PostgreSQL, ensuring strong type safety and scalable API design"
+msgstr "Desenvolveu e entregou novas funcionalidades usando TypeScript, Node.js, React, React Native, GraphQL e PostgreSQL, garantindo forte segurança de tipos e design de API escalável"
 
 #: src/pages/home/contents/timeline.tsx:234
 msgid "Developed dashboards and admin tools with JavaScript and Bootstrap. Improved user experience and honed frontend-backend collaboration."
 msgstr "Desenvolvi dashboards e ferramentas administrativas com JavaScript e Bootstrap. Melhorei a experiência do usuário e aprimorei a colaboração frontend-backend."
 
 #: src/pages/home/contents/resume.tsx:219
-msgid "Developed dashboards using React and Chart.js."
-msgstr "Desenvolvi dashboards usando React e Chart.js."
+#~ msgid "Developed dashboards using React and Chart.js."
+#~ msgstr "Desenvolvi dashboards usando React e Chart.js."
 
-#: src/pages/home/contents/resume.tsx:362
+#: src/pages/home/contents/resume.tsx:530
 msgid "Developing Secure Software – Linux Foundation"
 msgstr "Desenvolvimento de Software Seguro – Linux Foundation"
 
@@ -265,7 +354,7 @@ msgstr "Desenvolvimento de Software Seguro – Linux Foundation"
 msgid "DevOps"
 msgstr "DevOps"
 
-#: src/pages/home/contents/resume.tsx:359
+#: src/pages/home/contents/resume.tsx:527
 msgid "Docker Essentials – IBM"
 msgstr "Docker Essentials – IBM"
 
@@ -282,7 +371,7 @@ msgstr "Durante o meu curso, mergulhei de cabeça em oportunidades: Participei d
 msgid "Early 2000s"
 msgstr "Início dos anos 2000"
 
-#: src/pages/home/contents/resume.tsx:369
+#: src/pages/home/contents/resume.tsx:537
 msgid "Education"
 msgstr "Educação"
 
@@ -298,7 +387,7 @@ msgstr "Prévia do app EduDoa"
 msgid "EduTech"
 msgstr "EduTech"
 
-#: src/pages/home/contents/resume.tsx:389
+#: src/pages/home/contents/resume.tsx:557
 msgid "English (Fluent)"
 msgstr "Inglês (Fluente)"
 
@@ -310,11 +399,11 @@ msgstr "Inscrito no programa de bacharel em Sistemas de Informação da UFMS. Ob
 msgid "Extract frames from any video. Built with TypeScript and modern web technologies."
 msgstr "Extraia quadros de qualquer vídeo. Construído com TypeScript e tecnologias web modernas."
 
-#: src/pages/home/contents/resume.tsx:310
+#: src/pages/home/contents/resume.tsx:475
 msgid "Feb"
 msgstr "Fev"
 
-#: src/pages/home/contents/resume.tsx:373
+#: src/pages/home/contents/resume.tsx:541
 msgid "Federal University of Mato Grosso do Sul — Bachelor's in Information Systems (Jan 2015 – Dec 2019)"
 msgstr "Universidade Federal de Mato Grosso do Sul — Bacharel em Sistemas de Informação (Jan 2015 – Dez 2019)"
 
@@ -343,7 +432,7 @@ msgstr "Seguir no {name}"
 msgid "Food"
 msgstr "Comida"
 
-#: src/pages/home/contents/timeline.tsx:614
+#: src/pages/home/contents/timeline.tsx:618
 msgid "Freelance Work at Upwork – Senior Software Engineer"
 msgstr "Trabalho Freelance na Upwork – Engenheiro de Software Sênior"
 
@@ -351,8 +440,8 @@ msgstr "Trabalho Freelance na Upwork – Engenheiro de Software Sênior"
 msgid "Fresh start"
 msgstr "Era uma vez..."
 
-#: src/pages/home/contents/resume.tsx:228
-#: src/pages/home/contents/resume.tsx:254
+#: src/pages/home/contents/resume.tsx:323
+#: src/pages/home/contents/resume.tsx:390
 msgid "Full Stack Software Engineer"
 msgstr "Engenheiro de Software Full Stack"
 
@@ -366,14 +455,23 @@ msgstr "Desenvolvedor Full-Stack Pleno no Portal Solar"
 msgid "GitHub profile of Henrique Bonfim"
 msgstr "Perfil do GitHub de Henrique Bonfim"
 
-#: src/pages/home/contents/resume.tsx:350
+#: src/pages/home/contents/resume.tsx:518
 msgid "Google Cloud Certified – Associate Cloud Engineer"
 msgstr "Google Cloud Certified – Associate Cloud Engineer"
 
-#: src/pages/home/contents/timeline.tsx:531
-#: src/pages/home/contents/timeline.tsx:557
+#: src/pages/home/contents/resume.tsx:515
+msgid "Google Cloud Certified – Professional Cloud Architect"
+msgstr "Google Cloud Certified – Professional Cloud Architect"
+
+#: src/pages/home/contents/timeline.tsx:534
+#: src/pages/home/contents/timeline.tsx:560
+#: src/pages/home/contents/timeline.tsx:686
 msgid "Google Cloud Innovators"
 msgstr "Google Cloud Innovators"
+
+#: src/pages/home/contents/timeline.tsx:660
+msgid "Google Cloud Innovators."
+msgstr "Google Cloud Innovators."
 
 #: src/pages/home/contents/about.tsx:237
 msgid "Growth in the midst of chaos"
@@ -392,11 +490,27 @@ msgstr "Vitória no Hackatrouble"
 msgid "heart"
 msgstr "coração"
 
-#: src/pages/home/contents/about.tsx:307
+#: src/pages/home/contents/resume.tsx:445
+msgid "Help maintained and evolved SIGPROJ, a project management system used by federal universities across Brazil."
+msgstr "Auxiliou na manutenção e evolução do SIGPROJ, um sistema de gestão de projetos usado por universidades federais em todo o Brasil."
+
+#: src/pages/home/contents/about.tsx:315
 msgid "Help Topics: Windows"
 msgstr "Tópicos de Ajuda: Windows"
 
-#: src/pages/home/contents/about.tsx:293
+#: src/pages/home/contents/resume.tsx:283
+msgid "Helped implement structured CI/CD practices and deployment improvements to increase release reliability and reduce rollback frequency"
+msgstr "Ajudou a implementar práticas estruturadas de CI/CD e melhorias de deployment para aumentar a confiabilidade de releases e reduzir a frequência de rollbacks"
+
+#: src/pages/home/contents/resume.tsx:204
+msgid "Helped integrate with the FIX protocol for real-time communication with external providers"
+msgstr "Ajudou a integrar com o protocolo FIX para comunicação em tempo real com provedores externos"
+
+#: src/pages/home/contents/timeline.tsx:274
+msgid "Helped maintain SIGPROJ, a project management system used by federal universities across Brazil. Resolved 100+ backend and UI issues using PHP and MySQL."
+msgstr "Ajudou a manter o SIGPROJ, um sistema de gestão de projetos usado por universidades federais em todo o Brasil. Resolveu mais de 100 problemas de backend e interface usando PHP e MySQL."
+
+#: src/pages/home/contents/about.tsx:299
 msgid "Henrique"
 msgstr "Henrique"
 
@@ -422,7 +536,7 @@ msgid "Henrique coding"
 msgstr "Código Henrique"
 
 #: src/pages/home/contents/about.tsx:73
-#: src/pages/home/contents/about.tsx:268
+#: src/pages/home/contents/about.tsx:269
 msgid "Henrique eating"
 msgstr "Henrique comendo"
 
@@ -462,8 +576,8 @@ msgstr "Localização do Henrique"
 #: src/pages/home/contents/about.tsx:208
 #: src/pages/home/contents/about.tsx:221
 #: src/pages/home/contents/about.tsx:242
-#: src/pages/home/contents/about.tsx:265
-#: src/pages/home/contents/about.tsx:290
+#: src/pages/home/contents/about.tsx:266
+#: src/pages/home/contents/about.tsx:296
 msgid "Henrique over the years"
 msgstr "Henrique ao longo dos anos"
 
@@ -471,17 +585,17 @@ msgstr "Henrique ao longo dos anos"
 msgid "Henrique photo"
 msgstr "Foto do Henrique"
 
-#: src/pages/home/contents/about.tsx:313
-#: src/pages/home/contents/about.tsx:364
+#: src/pages/home/contents/about.tsx:321
+#: src/pages/home/contents/about.tsx:373
 msgid "Henrique playing guitar"
 msgstr "Henrique tocando guitarra"
 
-#: src/pages/home/contents/about.tsx:380
+#: src/pages/home/contents/about.tsx:389
 msgid "Henrique playing organ"
 msgstr "Henrique tocando órgão"
 
-#: src/pages/home/contents/about.tsx:384
-#: src/pages/home/contents/about.tsx:388
+#: src/pages/home/contents/about.tsx:393
+#: src/pages/home/contents/about.tsx:397
 msgid "Henrique playing piano"
 msgstr "Henrique tocando piano"
 
@@ -501,13 +615,13 @@ msgstr "Como a energia pode colocar imagens dentro de uma caixa de madeira?"
 msgid "I also got involved with incubators and startups such as IndexT, Codate, LivingLab - it was exactly where I wanted to be by that time."
 msgstr "Também participei de incubadoras e startups como IndexT, Codate e LivingLab – era exatamente onde eu queria estar naquela época."
 
-#: src/pages/home/contents/about.tsx:397
+#: src/pages/home/contents/about.tsx:406
 msgid "I believe that technology should make a difference to people's lives - and that's what drives me every day."
 msgstr "Acredito que a tecnologia deve fazer a diferença na vida das pessoas – e é isso que me motiva todos os dias."
 
 #: src/pages/home/contents/about.tsx:108
 msgid "I was an energetic child who learned quickly, observing and listening to everything that fascinated me. I think one of my greatest childhood achievements was building a soapbox car out of scraps and learning to play the guitar. I was always fascinated by doing things that were out of the ordinary, at least for me."
-msgstr "Eu era uma criança enérgica que aprendia rapidamente, observando e ouvindo tudo o que me fascinava. Acho que uma das minhas maiores conquistas na infância foi construir um carro com sucatas e aprender a tocar guitarra. Sempre fiquei fascinado por fazer coisas fora do comum, pelo menos para mim."
+msgstr "Eu era uma criança enérgica que aprendia rapidamente, observando e ouvindo tudo o que me fascinava. Acho que uma das minhas maiores conquistas na infância foi construir um carrinho de rolimã com sucata e aprender a tocar violão. Sempre fui fascinado por fazer coisas fora do comum, pelo menos para mim."
 
 #: src/pages/home/contents/about.tsx:90
 msgid "I was born in 1996, at the beginning of the digital age. I had access to technology from an early age - TV, VCR, radio, a Super Nintendo - and all of this \"magic\" sparked my natural curiosity about it all."
@@ -518,16 +632,40 @@ msgid "I was never the best student in the class but a turning point came at a y
 msgstr "Nunca fui o melhor aluno da turma, mas um ponto de virada aconteceu quando ainda era jovem: participei do programa de educação para o trabalho patrocinado pela Coca-Cola FEMSA. Esse curso mudou minha vida, definiu um objetivo claro e plantou sementes importantes na minha mente."
 
 #: src/pages/home/contents/about.tsx:256
-msgid "I went on to work for companies like Portal Solar and Meu Financiamento Solar, where I truly consolidated my experience as a senior developer. At Portal Solar, I maintained high-traffic applications that served 100,000 photovoltaic installers in Brazil."
-msgstr "Depois, trabalhei em empresas como Portal Solar e Meu Financiamento Solar, onde realmente consolidei minha experiência como desenvolvedor sênior. No Portal Solar, mantive aplicações de alto tráfego que atendiam 100 mil instaladores fotovoltaicos no Brasil."
+#~ msgid "I went on to work for companies like Portal Solar and Meu Financiamento Solar, where I truly consolidated my experience as a senior developer. At Portal Solar, I maintained high-traffic applications that served 100,000 photovoltaic installers in Brazil."
+#~ msgstr "Depois, trabalhei em empresas como Portal Solar e Meu Financiamento Solar, onde realmente consolidei minha experiência como desenvolvedor sênior. No Portal Solar, mantive aplicações de alto tráfego que atendiam 100 mil instaladores fotovoltaicos no Brasil."
+
+#: src/pages/home/contents/about.tsx:256
+msgid "I went on to work for companies like Portal Solar and Meu Financiamento Solar, where I truly consolidated my experience as a senior developer. At Portal Solar, I maintained high-traffic web and mobile applications that served 100,000+ photovoltaic installers across Brazil, improving application response time by 40% through optimization."
+msgstr "Passei a trabalhar em empresas como Portal Solar e Meu Financiamento Solar, onde realmente consolidei minha experiência como desenvolvedor sênior. No Portal Solar, mantive aplicações web e mobile de alto tráfego que atendiam mais de 100.000 instaladores fotovoltaicos em todo o Brasil, melhorando o tempo de resposta da aplicação em 40% através de otimizações."
 
 #: src/pages/home/contents/about.tsx:33
 msgid "Image carousel showcasing Henrique's journey"
 msgstr "Carrossel de imagens mostrando a trajetória do Henrique"
 
+#: src/pages/home/contents/resume.tsx:409
+msgid "Implemented assigned backend and frontend tasks using Java 11 and Angular"
+msgstr "Implementou tarefas atribuídas de backend e frontend usando Java 11 e Angular"
+
+#: src/pages/home/contents/resume.tsx:370
+msgid "Implemented comprehensive unit testing with Jest and React Testing Library, increasing test coverage by 90% and significantly reducing regression issues in production"
+msgstr "Implementou testes unitários abrangentes com Jest e React Testing Library, aumentando a cobertura de testes em 90% e reduzindo significativamente problemas de regressão em produção"
+
+#: src/pages/home/contents/resume.tsx:210
+msgid "Implemented event-driven flows using RabbitMQ to handle transaction processing and internal service communication"
+msgstr "Implementou fluxos orientados a eventos usando RabbitMQ para lidar com processamento de transações e comunicação interna entre serviços"
+
+#: src/pages/home/contents/resume.tsx:158
+msgid "Implemented RAG (retrieval-augmented generation) patterns to combine historical data with AI-generated insights, improving report accuracy and decision-making support"
+msgstr "Implementou padrões RAG (geração aumentada por recuperação) para combinar dados históricos com insights gerados por IA, melhorando a precisão de relatórios e o suporte à tomada de decisões"
+
+#: src/pages/home/contents/resume.tsx:358
+msgid "Improved data-fetching efficiency by optimizing GraphQL resolvers and reducing unnecessary database calls"
+msgstr "Melhorou a eficiência de busca de dados otimizando resolvers GraphQL e reduzindo chamadas desnecessárias ao banco de dados"
+
 #: src/pages/home/contents/resume.tsx:143
-msgid "Integrated AI models, APIs, and third-party services into existing infrastructures"
-msgstr "Modelos integrados de IA, APIs e serviços de terceiros em infraestruturas existentes"
+#~ msgid "Integrated AI models, APIs, and third-party services into existing infrastructures"
+#~ msgstr "Modelos integrados de IA, APIs e serviços de terceiros em infraestruturas existentes"
 
 #: src/pages/home/contents/projects.tsx:100
 #: src/pages/home/contents/projects.tsx:117
@@ -536,21 +674,21 @@ msgstr "IoT"
 
 #: src/pages/home/contents/projects.tsx:95
 msgid "IoT automation system using microservices architecture with NodeJS, VueJS, and MongoDB. Controls electronic relays for lighting and door access."
-msgstr "Sistema de automação IoT usando arquitetura de microsserviços com NodeJS, VueJS e MongoDB. Controla relés eletrônicos para iluminação e acesso a portas."
+msgstr "Sistema de automação IoT usando arquitetura de microsserviços com NodeJS, VueJS e MongoDB. Controla relés eletrônicos para iluminação e controle de acesso a portas."
 
 #: src/pages/home/contents/about.tsx:161
 msgid "It was there that I had my first contact with programming logic and wrote my first codes in HTML, CSS and JavaScript. A real opportunity to do things out of the ordinary was born."
 msgstr "Foi lá que tive meu primeiro contato com a lógica de programação e escrevi meus primeiros códigos em HTML, CSS e JavaScript. Uma oportunidade real de fazer coisas fora do comum nasceu."
 
-#: src/pages/home/contents/resume.tsx:286
+#: src/pages/home/contents/resume.tsx:436
 msgid "Jan"
 msgstr "Jan"
 
 #: src/pages/home/contents/resume.tsx:167
-msgid "Jul"
-msgstr "Jul"
+#~ msgid "Jul"
+#~ msgstr "Jul"
 
-#: src/pages/home/contents/resume.tsx:314
+#: src/pages/home/contents/resume.tsx:479
 msgid "Jun"
 msgstr "Jun"
 
@@ -564,8 +702,8 @@ msgstr "Desenvolvedor Júnior na Indext"
 msgid "Junior Developer – LEDES"
 msgstr "Desenvolvedor Júnior – LEDES"
 
-#: src/pages/home/contents/resume.tsx:284
-#: src/pages/home/contents/resume.tsx:308
+#: src/pages/home/contents/resume.tsx:434
+#: src/pages/home/contents/resume.tsx:473
 msgid "Junior Software Developer"
 msgstr "Desenvolvedor de Software Júnior"
 
@@ -577,21 +715,25 @@ msgstr "Habilidades Principais"
 msgid "Language Switcher"
 msgstr "Alternador de Idioma"
 
-#: src/pages/home/contents/resume.tsx:382
+#: src/pages/home/contents/resume.tsx:550
 msgid "Languages"
 msgstr "Idiomas"
 
 #: src/pages/home/contents/resume.tsx:208
-msgid "Launched solar credit platform with 300% engagement growth."
-msgstr "Lancei plataforma de crédito solar com crescimento de engajamento de 300%."
+#~ msgid "Launched solar credit platform with 300% engagement growth."
+#~ msgstr "Lancei plataforma de crédito solar com crescimento de engajamento de 300%."
 
 #: src/pages/home/contents/resume.tsx:111
 msgid "Leadership, Problem-solving, Project Management, Critical Thinking, Communication"
 msgstr "Liderança, Resolução de Problemas, Gestão de Projetos, Pensamento crítico, Comunicação"
 
 #: src/pages/home/contents/timeline.tsx:478
-msgid "Led development for Brazil’s largest solar credit platform. Improved OAuth2 security, scaled KYC systems, and mentored junior devs."
-msgstr "Liderei o desenvolvimento da maior plataforma de crédito solar do Brasil. Melhorei a segurança do OAuth2, escalei sistemas KYC e mentorei desenvolvedores juniores."
+#~ msgid "Led development for Brazil’s largest solar credit platform. Improved OAuth2 security, scaled KYC systems, and mentored junior devs."
+#~ msgstr "Liderei o desenvolvimento da maior plataforma de crédito solar do Brasil. Melhorei a segurança do OAuth2, escalei sistemas KYC e mentorei desenvolvedores juniores."
+
+#: src/pages/home/contents/resume.tsx:268
+msgid "Led the partial migration of critical KYC workflows from a Ruby on Rails monolith to Next.js (SSR), improving throughput by 22%, enhancing performance, and increasing front-end security controls"
+msgstr "Liderou a migração parcial de fluxos críticos de KYC de um monolito Ruby on Rails para Next.js (SSR), melhorando a vazão em 22%, aprimorando o desempenho e aumentando os controles de segurança do frontend"
 
 #: src/pages/home/contents/contact.tsx:99
 msgid "Let's connect!"
@@ -601,7 +743,7 @@ msgstr "Vamos nos conectar!"
 msgid "Leveraging <0>AI</0> to drive <1>next-generation solutions.</1>"
 msgstr "Aproveitando a <0>IA</0> para impulsionar <1>soluções de próxima geração.</1>"
 
-#: src/pages/home/contents/about.tsx:344
+#: src/pages/home/contents/about.tsx:353
 msgid "Lifelong Learning"
 msgstr "Aprendizagem ao longo da vida"
 
@@ -614,26 +756,35 @@ msgstr "Linha do Tempo da Vida"
 msgid "LLM"
 msgstr "LLM"
 
+#: src/pages/home/contents/resume.tsx:343
+msgid "Maintained and evolved a high-traffic web and mobile ecosystem, improving overall application response time by 40% through backend query optimization, caching strategies, and improved error handling"
+msgstr "Manteve e evoluiu um ecossistema web e mobile de alto tráfego, melhorando o tempo de resposta geral da aplicação em 40% através de otimização de consultas backend, estratégias de cache e tratamento aprimorado de erros"
+
 #: src/pages/home/contents/resume.tsx:266
-msgid "Maintained Java AGETIC system with optimized PostgreSQL queries."
-msgstr "Mantive sistema Java AGETIC com queries PostgreSQL otimizadas."
+#~ msgid "Maintained Java AGETIC system with optimized PostgreSQL queries."
+#~ msgstr "Mantive sistema Java AGETIC com queries PostgreSQL otimizadas."
 
 #: src/pages/home/contents/resume.tsx:240
-msgid "Maintained Node.js and React apps for 100K+ users."
-msgstr "Mantive aplicações Node.js e React para mais de 100 mil usuários."
+#~ msgid "Maintained Node.js and React apps for 100K+ users."
+#~ msgstr "Mantive aplicações Node.js e React para mais de 100 mil usuários."
 
 #: src/pages/home/contents/timeline.tsx:436
-msgid "Maintained production Node.js and React applications serving 100K+ users. Refactored CRM code and implemented Agile best practices."
-msgstr "Mantive aplicações Node.js e React em produção para mais de 100 mil usuários. Refatorei código de CRM e implementei práticas ágeis."
+#~ msgid "Maintained production Node.js and React applications serving 100K+ users. Refactored CRM code and implemented Agile best practices."
+#~ msgstr "Mantive aplicações Node.js e React em produção para mais de 100 mil usuários. Refatorei código de CRM e implementei práticas ágeis."
 
-#: src/pages/home/contents/resume.tsx:256
-#: src/pages/home/contents/resume.tsx:260
+#: src/pages/home/contents/resume.tsx:392
+#: src/pages/home/contents/resume.tsx:396
 msgid "Mar"
 msgstr "Mar"
 
-#: src/pages/home/contents/resume.tsx:333
+#: src/pages/home/contents/resume.tsx:184
+#: src/pages/home/contents/resume.tsx:498
 msgid "May"
 msgstr "Mai"
+
+#: src/pages/home/contents/resume.tsx:297
+msgid "Mentored new engineers through onboarding, architecture walkthroughs, and code reviews, promoting clean code standards and security best practices"
+msgstr "Mentorou novos engenheiros através de onboarding, apresentações de arquitetura e revisões de código, promovendo padrões de código limpo e melhores práticas de segurança"
 
 #: src/pages/home/contents/timeline.tsx:287
 #: src/pages/home/contents/timeline.tsx:313
@@ -655,19 +806,17 @@ msgstr "App companheiro móvel para caminhoneiros desenvolvido na HackathonCCR. 
 
 #: src/pages/home/contents/projects.tsx:112
 msgid "Mobile-controlled door access system built with NodeJS microservices, MongoDB, and Arduino integration."
-msgstr "Sistema de acesso a portas controlado por celular construído com microsserviços NodeJS, MongoDB e integração Arduino."
+msgstr "Sistema de controle de acesso a portas via mobile construído com microsserviços em NodeJS, MongoDB e integração com Arduino."
 
 #: src/pages/home/contents/resume.tsx:213
-msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
-msgstr "Modernizei a stack de KYC e otimizei o desempenho do OAuth2 e SQL."
+#~ msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
+#~ msgstr "Modernizei a stack de KYC e otimizei o desempenho do OAuth2 e SQL."
 
-#: src/pages/home/contents/about.tsx:342
+#: src/pages/home/contents/about.tsx:351
 msgid "Music"
 msgstr "Música"
 
-#: src/pages/home/contents/resume.tsx:198
-#: src/pages/home/contents/resume.tsx:230
-#: src/pages/home/contents/resume.tsx:234
+#: src/pages/home/contents/resume.tsx:325
 msgid "Nov"
 msgstr "Nov"
 
@@ -688,18 +837,30 @@ msgid "Ollama LLM Server"
 msgstr "Servidor Ollama LLM"
 
 #: src/pages/home/contents/timeline.tsx:315
-msgid "Optimized a Java-based monolith, reduced PostgreSQL storage usage, and achieved 100% test coverage. Also built user-friendly admin interfaces."
-msgstr "Otimizei um monólito em Java, reduzi o uso de armazenamento do PostgreSQL e alcancei 100% de cobertura de testes. Também construí interfaces administrativas amigáveis."
+#~ msgid "Optimized a Java-based monolith, reduced PostgreSQL storage usage, and achieved 100% test coverage. Also built user-friendly admin interfaces."
+#~ msgstr "Otimizei um monólito em Java, reduzi o uso de armazenamento do PostgreSQL e alcancei 100% de cobertura de testes. Também construí interfaces administrativas amigáveis."
+
+#: src/pages/home/contents/resume.tsx:311
+msgid "Participated in cross-functional discussions with C-level stakeholders, aligning technical delivery with strategic goals"
+msgstr "Participou de discussões multifuncionais com stakeholders de nível C, alinhando entrega técnica com objetivos estratégicos"
+
+#: src/pages/home/contents/resume.tsx:223
+msgid "Participated in sprint planning, architecture discussions, and code reviews in a Kanban-based workflow"
+msgstr "Participou de planejamento de sprints, discussões de arquitetura e revisões de código em um fluxo de trabalho baseado em Kanban"
+
+#: src/pages/home/contents/resume.tsx:290
+msgid "Participated in strategic technical discussions during the acquisition process, aligning system architecture and delivery timelines with BV Bank stakeholders"
+msgstr "Participou de discussões técnicas estratégicas durante o processo de aquisição, alinhando arquitetura de sistema e cronogramas de entrega com stakeholders do BV Bank"
 
 #: src/pages/home/contents/projects.tsx:116
 msgid "Pet Porta App mobile interface"
 msgstr "Interface móvel do App Pet Porta"
 
-#: src/pages/home/contents/about.tsx:343
+#: src/pages/home/contents/about.tsx:352
 msgid "Piano & Guitar"
 msgstr "Piano e Guitarra"
 
-#: src/pages/home/contents/resume.tsx:386
+#: src/pages/home/contents/resume.tsx:554
 msgid "Portuguese (Native)"
 msgstr "Português (Nativo)"
 
@@ -707,7 +868,7 @@ msgstr "Português (Nativo)"
 msgid "Premium Blogger templates preview"
 msgstr "Prévia de templates Premium Blogger"
 
-#: src/pages/home/contents/about.tsx:284
+#: src/pages/home/contents/about.tsx:290
 msgid "Present and Future"
 msgstr "Presente e Futuro"
 
@@ -737,7 +898,7 @@ msgstr "Lista de projetos"
 msgid "Projects"
 msgstr "Projetos"
 
-#: src/pages/home/contents/resume.tsx:338
+#: src/pages/home/contents/resume.tsx:503
 msgid "Provided help-desk and preventive maintenance."
 msgstr "Prestei suporte técnico e manutenção preventiva."
 
@@ -750,16 +911,16 @@ msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
 msgstr "Entre em contato pelo WhatsApp, Telegram ou LinkedIn."
 
 #: src/pages/home/contents/resume.tsx:245
-msgid "Refactored CRM modules, cut API latency by 40%."
-msgstr "Refatorei módulos do CRM, reduzindo a latência da API em 40%."
+#~ msgid "Refactored CRM modules, cut API latency by 40%."
+#~ msgstr "Refatorei módulos do CRM, reduzindo a latência da API em 40%."
 
 #: src/pages/home/contents/resume.tsx:296
-msgid "Resolved 100+ backend/UI issues in SIGPROJ system, developed new modules and improved documentation."
-msgstr "Resolveu mais de 100 problemas de infraestrutura/UI no sistema SIGPROJ, desenvolveu novos módulos e melhorou a documentação."
+#~ msgid "Resolved 100+ backend/UI issues in SIGPROJ system, developed new modules and improved documentation."
+#~ msgstr "Resolveu mais de 100 problemas de infraestrutura/UI no sistema SIGPROJ, desenvolveu novos módulos e melhorou a documentação."
 
 #: src/pages/home/contents/timeline.tsx:274
-msgid "Resolved over 150 backend and UI issues and contributed to JavaScript/PHP systems. Helped stabilize key platforms and documented changes."
-msgstr "Resolvi mais de 150 problemas de backend e UI e contribuí para sistemas em JavaScript/PHP. Ajudei a estabilizar plataformas importantes e documentei as mudanças."
+#~ msgid "Resolved over 150 backend and UI issues and contributed to JavaScript/PHP systems. Helped stabilize key platforms and documented changes."
+#~ msgstr "Resolvi mais de 150 problemas de backend e UI e contribuí para sistemas em JavaScript/PHP. Ajudei a estabilizar plataformas importantes e documentei as mudanças."
 
 #: src/pages/home/contents/resume.tsx:21
 #: src/pages/home/ui/section.tsx:22
@@ -775,7 +936,7 @@ msgstr "Landing page da plataforma Roça Eats"
 msgid "SaaS"
 msgstr "SaaS"
 
-#: src/pages/home/contents/resume.tsx:356
+#: src/pages/home/contents/resume.tsx:524
 msgid "Scrum Foundation Professional Certification (SFPC™)"
 msgstr "Certificação Profissional Scrum Foundation (SFPC™)"
 
@@ -784,20 +945,24 @@ msgstr "Certificação Profissional Scrum Foundation (SFPC™)"
 msgid "Senior Software Engineer"
 msgstr "Engenheiro de Software Sênior"
 
-#: src/pages/home/contents/timeline.tsx:449
-#: src/pages/home/contents/timeline.tsx:476
+#: src/pages/home/contents/timeline.tsx:450
+#: src/pages/home/contents/timeline.tsx:477
 msgid "Senior Software Engineer – Meu Financiamento Solar"
 msgstr "Engenheiro de Software Sênior – Meu Financiamento Solar"
 
+#: src/pages/home/contents/resume.tsx:189
+msgid "Short contract to designed and implemented a dedicated KYC microservice with AI integration, responsible for validating user data through third-party APIs and communicating results to other system components via asynchronous messaging."
+msgstr "Contrato curto para projetar e implementar um microsserviço de KYC dedicado com integração de IA, responsável por validar dados de usuários através de APIs de terceiros e comunicar resultados a outros componentes do sistema via mensageria assíncrona."
+
 #: src/pages/home/contents/resume.tsx:69
 msgid "Software Engineer with 8+ years of experience focusing on backend development with Python and TypeScript on Node.js. Proven expertise in microservices, serverless and event-driven architectures. Demonstrated success across startups, fintech, solar energy and B2B. Skilled in system design and AI integration."
-msgstr "Engenheiro de Software com 8+ anos de experiência com foco no desenvolvimento de backend com Python e TypeScript em Node.js. Experiência comprovada em microservices, arquiteturas sem servidores e orientadas para eventos. Demonstrou sucesso entre startups, fintech, energia solar e B2B. Especializada em design de sistema e integração de IA."
+msgstr "Engenheiro de Software com mais de 8 anos de experiência focado em desenvolvimento backend com Python e TypeScript em Node.js. Expertise comprovada em microsserviços, arquiteturas serverless e orientadas a eventos. Sucesso demonstrado em startups, fintech, energia solar e B2B. Especializado em design de sistemas e integração de IA."
 
 #: src/pages/home/contents/projects.tsx:227
 msgid "Some of my projects that showcase my skills"
 msgstr "Alguns dos meus projetos que demonstram minhas habilidades"
 
-#: src/pages/home/contents/resume.tsx:392
+#: src/pages/home/contents/resume.tsx:560
 msgid "Spanish (Basic)"
 msgstr "Espanhol (Básico)"
 
@@ -809,6 +974,14 @@ msgstr "Começou como técnico assistente de suporte ao computador na Sedit. Apr
 #: src/pages/home/contents/timeline.tsx:354
 msgid "Startup Failed"
 msgstr "Startup Fracassada"
+
+#: src/pages/home/contents/resume.tsx:364
+msgid "Strengthened backend reliability through structured logging, validation layers, and improved exception management"
+msgstr "Fortaleceu a confiabilidade do backend através de logging estruturado, camadas de validação e gerenciamento aprimorado de exceções"
+
+#: src/pages/home/contents/resume.tsx:421
+msgid "Supported the transition from manual workflows to a fully digital system, contributing to a 100% improvement in process agility"
+msgstr "Apoiou a transição de fluxos de trabalho manuais para um sistema totalmente digital, contribuindo para uma melhoria de 100% na agilidade de processos"
 
 #: src/app/layout/ui/header.tsx:66
 msgid "Switch language to {value}"
@@ -823,7 +996,7 @@ msgstr "Mudar para o tema {0}"
 msgid "Tab navigation"
 msgstr "Navegação por abas"
 
-#: src/pages/home/contents/resume.tsx:332
+#: src/pages/home/contents/resume.tsx:497
 msgid "Technical Support Assistant"
 msgstr "Assistente de Suporte Técnico"
 
@@ -831,13 +1004,17 @@ msgstr "Assistente de Suporte Técnico"
 msgid "Templates"
 msgstr "Templates"
 
+#: src/pages/home/contents/resume.tsx:304
+msgid "Temporarily assumed technical leadership responsibilities, facilitating cross-functional alignment and guiding sprint execution"
+msgstr "Assumiu temporariamente responsabilidades de liderança técnica, facilitando alinhamento multifuncional e orientando execução de sprints"
+
 #: src/pages/home/contents/projects.tsx:42
 msgid "Text-to-video AI generation pipeline using CogVideoX-2B. Running on Kaggle Kernels for high-performance inference."
 msgstr "Pipeline de geração de IA texto-para-vídeo usando CogVideoX-2B. Executando em Kaggle Kernels para inferência de alto desempenho."
 
 #: src/pages/home/contents/about.tsx:171
 msgid "The boy becomes a man"
-msgstr "O rapaz torna-se um homem"
+msgstr "O jovem se torna um homem"
 
 #: src/pages/home/contents/about.tsx:247
 msgid "The start of the pandemic in 2020 was challenging, but I turned this period into an opportunity. I dedicated myself to studying Cloud Computing and Machine Learning, experimenting with IBM Watson and TensorFlow. I even tried to create a startup (Softstate Solutions), which did not succeed due to a lack of clients. That failure taught me a lot and motivated me to keep going."
@@ -860,8 +1037,12 @@ msgid "Timeline"
 msgstr "Linha do Tempo"
 
 #: src/pages/home/contents/about.tsx:295
-msgid "Today I'm specializing in full-stack development, collaborating with clients around the world. I have delivered scalable solutions in microservices, serverless and event-driven architectures for startups, solar energy, fintech, B2B and more. Recently, I architected a B2B solution integrating generative AI with legacy microservices, designed robust REST APIs with 99.98% uptime and built secure distributed systems using Redis and RabbitMQ."
-msgstr "Hoje me especializo em desenvolvimento full-stack, colaborando com clientes do mundo todo. Entreguei soluções escaláveis em microsserviços, arquiteturas serverless e orientadas a eventos para startups, energia solar, fintech, B2B e outros. Recentemente, arquitetei uma solução B2B integrando IA generativa com microsserviços legados, desenvolvi APIs REST robustas com 99,98% de disponibilidade e construí sistemas distribuídos seguros usando Redis e RabbitMQ."
+#~ msgid "Today I'm specializing in full-stack development, collaborating with clients around the world. I have delivered scalable solutions in microservices, serverless and event-driven architectures for startups, solar energy, fintech, B2B and more. Recently, I architected a B2B solution integrating generative AI with legacy microservices, designed robust REST APIs with 99.98% uptime and built secure distributed systems using Redis and RabbitMQ."
+#~ msgstr "Hoje me especializo em desenvolvimento full-stack, colaborando com clientes do mundo todo. Entreguei soluções escaláveis em microsserviços, arquiteturas serverless e orientadas a eventos para startups, energia solar, fintech, B2B e outros. Recentemente, arquitetei uma solução B2B integrando IA generativa com microsserviços legados, desenvolvi APIs REST robustas com 99,98% de disponibilidade e construí sistemas distribuídos seguros usando Redis e RabbitMQ."
+
+#: src/pages/home/contents/about.tsx:301
+msgid "Today I'm specializing in full-stack development, collaborating with clients around the world. I have delivered scalable solutions in microservices, serverless and event-driven architectures for startups, solar energy, fintech, B2B and more. Recently, I developed a stock analysis bot combining cloud infrastructure, AI models, and Monte Carlo simulations on Google Compute VMs. I also designed a KYC microservice with AI integration using Nest.js, PostgreSQL, RabbitMQ, and integrated GPT-4 and Claude APIs for personalized recommendations."
+msgstr "Hoje me especializo em desenvolvimento full-stack, colaborando com clientes do mundo todo. Entreguei soluções escaláveis em microsserviços, arquiteturas serverless e orientadas a eventos para startups, energia solar, fintech, B2B e outros. Recentemente, desenvolvi um bot de análise de ações combinando infraestrutura em nuvem, modelos de IA e simulações Monte Carlo em VMs do Google Compute. Também projetei um microsserviço de KYC com integração de IA usando Nest.js, PostgreSQL, RabbitMQ e integrei as APIs GPT-4 e Claude para recomendações personalizadas."
 
 #: src/pages/home/contents/timeline.tsx:111
 msgid "Took the first basic computer course from the <0>Work Education Program by Coca-Cola</0>. Also started learning to play acoustic guitar, which became a lifelong passion."
@@ -889,13 +1070,13 @@ msgstr "UltraDL é uma aplicação web moderna de download de vídeos de alto de
 msgid "University Begins"
 msgstr "Início da Universidade"
 
-#: src/pages/home/contents/timeline.tsx:640
+#: src/pages/home/contents/timeline.tsx:644
 msgid "Upwork – Senior Software Engineer"
 msgstr "Upwork – Engenheiro de Software Sênior"
 
 #: src/pages/home/contents/resume.tsx:185
-msgid "Used Redis/RabbitMQ for distributed microservices."
-msgstr "Utilizei Redis/RabbitMQ para microsserviços distribuídos."
+#~ msgid "Used Redis/RabbitMQ for distributed microservices."
+#~ msgstr "Utilizei Redis/RabbitMQ para microsserviços distribuídos."
 
 #: src/pages/home/contents/projects.tsx:29
 #: src/pages/home/contents/projects.tsx:72
@@ -931,7 +1112,19 @@ msgstr "Logo do site"
 msgid "Website Main Content"
 msgstr "Conteúdo Principal do Site"
 
-#: src/pages/home/contents/timeline.tsx:572
-#: src/pages/home/contents/timeline.tsx:598
+#: src/pages/home/contents/timeline.tsx:575
+#: src/pages/home/contents/timeline.tsx:601
 msgid "Workana – Senior Backend Engineer"
 msgstr "Workana – Engenheiro Backend Sênior"
+
+#: src/pages/home/contents/timeline.tsx:479
+msgid "Worked on Brazil's largest solar financing platform (30,000+ active users). Led KYC migration to Next.js, designed dashboards, and participated in BV Bank acquisition discussions. Mentored engineers and temporarily assumed technical leadership."
+msgstr "Trabalhou na maior plataforma de financiamento solar do Brasil (mais de 30.000 usuários ativos). Liderou a migração de KYC para Next.js, projetou painéis e participou de discussões de aquisição do BV Bank. Mentorou engenheiros e assumiu temporariamente liderança técnica."
+
+#: src/pages/home/contents/resume.tsx:246
+msgid "Worked on one of Brazil's largest solar financing platforms (30,000+ active users), supporting loan origination, KYC, and financial operations prior to acquisition by BV Bank."
+msgstr "Trabalhou em uma das maiores plataformas de financiamento solar do Brasil (mais de 30.000 usuários ativos), dando suporte à originação de empréstimos, KYC e operações financeiras antes da aquisição pelo BV Bank."
+
+#: src/pages/home/contents/resume.tsx:460
+msgid "Worked within a structured bug-tracking and documentation process using Redmine, contributing to system reliability and stable institutional operations"
+msgstr "Trabalhou dentro de um processo estruturado de rastreamento de bugs e documentação usando Redmine, contribuindo para confiabilidade do sistema e operações institucionais estáveis"

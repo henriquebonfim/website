@@ -256,9 +256,10 @@ const About: FC = memo(() => {
             <Trans>
               I went on to work for companies like Portal Solar and Meu
               Financiamento Solar, where I truly consolidated my experience as a
-              senior developer. At Portal Solar, I maintained high-traffic
-              applications that served 100,000 photovoltaic installers in
-              Brazil.
+              senior developer. At Portal Solar, I maintained high-traffic web
+              and mobile applications that served 100,000+ photovoltaic
+              installers across Brazil, improving application response time by
+              40% through optimization.
             </Trans>
             <img
               src={IMAGES.MYSELF_EATING}
@@ -268,13 +269,18 @@ const About: FC = memo(() => {
               aria-label={i18n._(msg`Henrique eating`)}
             />
             <Trans>
-              At Meu Financiamento Solar, I contributed to the entire software
-              development lifecycle of the country's largest solar credit
-              acquisition platform, helping to increase engagement by 300% after
-              launch. In 2023, I was selected for AWS re/Start, an intensive
-              cloud immersion program that earned me my first AWS certificate.
-              The following year, I participated in Google Cloud - Get
-              Certified, earning my Associate Cloud Engineer certification.
+              At Meu Financiamento Solar, I worked on one of Brazil's largest
+              solar financing platforms with 30,000+ active users, supporting
+              loan origination, KYC, and financial operations prior to
+              acquisition by BV Bank. I led the partial migration of critical
+              KYC workflows from Ruby on Rails to Next.js, improving throughput
+              by 22%, and designed executive dashboards that accelerated
+              data-driven decisions by 53%. In 2023, I was selected for AWS
+              re/Start, an intensive cloud immersion program that earned me my
+              first AWS certificate. The following year, I participated in
+              Google Cloud - Get Certified, earning my Associate Cloud Engineer
+              certification, and in 2026 I became a Google Professional Cloud
+              Architect.
             </Trans>
           </p>
         </div>
@@ -297,9 +303,11 @@ const About: FC = memo(() => {
               with clients around the world. I have delivered scalable solutions
               in microservices, serverless and event-driven architectures for
               startups, solar energy, fintech, B2B and more. Recently, I
-              architected a B2B solution integrating generative AI with legacy
-              microservices, designed robust REST APIs with 99.98% uptime and
-              built secure distributed systems using Redis and RabbitMQ.
+              developed a stock analysis bot combining cloud infrastructure, AI
+              models, and Monte Carlo simulations on Google Compute VMs. I also
+              designed a KYC microservice with AI integration using Nest.js,
+              PostgreSQL, RabbitMQ, and integrated GPT-4 and Claude APIs for
+              personalized recommendations.
             </Trans>
           </p>
           <div className="not-prose w-full flex-1">
@@ -335,6 +343,7 @@ const About: FC = memo(() => {
                     ],
                     certifications: [
                       "AWS Cloud Practitioner",
+                      "Google Professional Cloud Architect",
                       "Google Cloud Associate Engineer",
                       "Scrum Foundation Professional",
                     ],

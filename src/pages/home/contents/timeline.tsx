@@ -143,8 +143,8 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2013-2014">
-            2013-2014
+          <time className="font-mono italic" aria-label="May 2013 – Dec 2014">
+            May 2013 – Dec 2014
           </time>
           <div className="text-lg font-black">
             <Trans>First IT Job</Trans>
@@ -225,8 +225,8 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2016-2016">
-            2016-2016
+          <time className="font-mono italic" aria-label="Feb 2016 – Jun 2016">
+            Feb 2016 – Jun 2016
           </time>
           <div className="text-lg font-black">
             <Trans>Junior Dev at Indext</Trans>
@@ -265,16 +265,16 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-end text-start md:text-start">
-          <time className="font-mono italic" aria-label="2018-2019">
-            2018-2019
+          <time className="font-mono italic" aria-label="Jan 2018 – Dec 2018">
+            Jan 2018 – Dec 2018
           </time>
           <div className="text-lg font-black">
             <Trans>Junior Developer – LEDES</Trans>
           </div>
           <Trans>
-            Resolved over 150 backend and UI issues and contributed to
-            JavaScript/PHP systems. Helped stabilize key platforms and
-            documented changes.
+            Helped maintain SIGPROJ, a project management system used by
+            federal universities across Brazil. Resolved 100+ backend and UI
+            issues using PHP and MySQL.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -306,16 +306,16 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2019-2020">
-            2019-2020
+          <time className="font-mono italic" aria-label="Mar 2019 – Mar 2020">
+            Mar 2019 – Mar 2020
           </time>
           <div className="text-lg font-black">
             <Trans>Mid-Level Developer – PIME</Trans>
           </div>
           <Trans>
-            Optimized a Java-based monolith, reduced PostgreSQL storage usage,
-            and achieved 100% test coverage. Also built user-friendly admin
-            interfaces.
+            Contributed to a digital transformation project, implementing
+            backend and frontend tasks using Java 11 and Angular. Helped
+            transition from manual workflows to digital systems.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -427,15 +427,16 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-end text-start md:text-start">
-          <time className="font-mono italic" aria-label="2020-2021">
-            2020-2021
+          <time className="font-mono italic" aria-label="Nov 2020 – Aug 2021">
+            Nov 2020 – Aug 2021
           </time>
           <div className="text-lg font-black">
             <Trans>Full-Stack Mid-Level at Portal Solar</Trans>
           </div>
           <Trans>
-            Maintained production Node.js and React applications serving 100K+
-            users. Refactored CRM code and implemented Agile best practices.
+            Contributed to a platform serving 100,000+ photovoltaic installers
+            across Brazil. Improved application response time by 40% through
+            optimization and implemented comprehensive testing with Jest.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -469,15 +470,17 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2021-2023">
-            2021-2023
+          <time className="font-mono italic" aria-label="Aug 2021 – Apr 2023">
+            Aug 2021 – Apr 2023
           </time>
           <div className="text-lg font-black">
             <Trans>Senior Software Engineer – Meu Financiamento Solar</Trans>
           </div>
           <Trans>
-            Led development for Brazil’s largest solar credit platform. Improved
-            OAuth2 security, scaled KYC systems, and mentored junior devs.
+            Worked on Brazil's largest solar financing platform (30,000+ active
+            users). Led KYC migration to Next.js, designed dashboards, and
+            participated in BV Bank acquisition discussions. Mentored engineers
+            and temporarily assumed technical leadership.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -550,8 +553,8 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2024">
-            2024
+          <time className="font-mono italic" aria-label="2023">
+            2023
           </time>
           <div className="text-lg font-black">
             <Trans>Google Cloud Innovators</Trans>
@@ -591,16 +594,17 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-end text-start md:text-start">
-          <time className="font-mono italic" aria-label="2024">
-            2024
+          <time className="font-mono italic" aria-label="Dec 2023 – May 2024">
+            Dec 2023 – May 2024
           </time>
           <div className="text-lg font-black">
             <Trans>Workana – Senior Backend Engineer</Trans>
           </div>
           <Trans>
-            Architected a B2B (MCP alike) solution integrating generative AI
-            with legacy microservices (NDA project). Delivered enterprise-grade
-            uptime and stability.
+            Designed and implemented a KYC microservice with AI integration.
+            Built backend architecture using Nest.js, PostgreSQL, QuestDB,
+            RabbitMQ, and Redis. Integrated GPT-4 and Claude APIs for
+            personalized recommendations.
           </Trans>
         </div>
         <hr aria-hidden="true" />
@@ -633,17 +637,57 @@ const Timeline: FC = memo(() => {
           </svg>
         </div>
         <div className="timeline-start text-start md:text-end">
-          <time className="font-mono italic" aria-label="2025">
-            2025
+          <time className="font-mono italic" aria-label="Oct 2024 – Apr 2025">
+            Oct 2024 – Apr 2025
           </time>
           <div className="text-lg font-black">
             <Trans>Upwork – Senior Software Engineer</Trans>
           </div>
           <Trans>
-            Delivered an AI-driven chatbot, integrated with AI models, APIs and
-            third-party services into existing infrastructures. Contributed to
-            technical documentation, bug reports, communication and project
-            alignment.
+            Developed a stock analysis bot under NDA, combining cloud
+            infrastructure, AI models, and Monte Carlo simulations. Built with
+            Python + Next.js, deployed on Google Compute VMs with autoscaling,
+            and implemented RAG patterns.
+          </Trans>
+        </div>
+        <hr aria-hidden="true" />
+      </li>
+
+      {/* Google Cloud Certification */}
+      <li
+        tabIndex={0}
+        data-timeline-item
+        aria-label={i18n._(msg`Google Cloud Innovators.`)}
+        role="listitem"
+        onKeyDown={(e) => handleKeyDown(e, 15)}
+      >
+        <hr aria-hidden="true" />
+        <div className="timeline-middle" aria-hidden="true">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            className="h-5 w-5"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div className="timeline-end text-start md:text-start">
+          <time className="font-mono italic" aria-label="2026">
+            2026
+          </time>
+          <div className="text-lg font-black">
+            <Trans>Google Cloud Innovators</Trans>
+          </div>
+          <Trans>
+            Completed the Get Certified Program. Became a Google Professional Cloud
+            Architect, now with advanced expertise in cloud architecture and design.
           </Trans>
         </div>
       </li>

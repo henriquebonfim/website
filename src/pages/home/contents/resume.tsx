@@ -132,23 +132,40 @@ const Resume: FC = memo(() => {
                   – <Trans>Apr</Trans> 2025
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Developed a stock analysis bot for personal advisors under NDA,
+                  combining cloud infrastructure, AI models, and Monte Carlo
+                  simulations for automated portfolio insights.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Built AI-driven chatbot and ensure seamless integration of
-                    AI technologies
+                    Built a Python + Next.js bot leveraging AI/LLM models to
+                    interpret market data and generate context-aware
+                    recommendations for advisors
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Integrated AI models, APIs, and third-party services into
-                    existing infrastructures
+                    Deployed and scaled the system on Google Compute VMs with
+                    autoscaling, enabling reliable execution of Monte Carlo
+                    simulations under variable workloads
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Contributing to technical documentation, bug reports, and
-                    facilitating clearer communication and project alignment.
+                    Implemented RAG (retrieval-augmented generation) patterns to
+                    combine historical data with AI-generated insights, improving
+                    report accuracy and decision-making support
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Collaborated closely with the client to translate financial
+                    requirements into automated workflows, integrating AI outputs
+                    with actionable portfolio guidance
                   </Trans>
                 </li>
               </ul>
@@ -159,31 +176,53 @@ const Resume: FC = memo(() => {
                 <span className="font-bold">Workana</span>
                 <span className="text-sm italic">
                   Backend Software Engineer (part-time contract) |{" "}
-                  <time dateTime="2024-02">
+                  <time dateTime="2023-12">
                     <Trans>Dec</Trans> 2023
                   </time>{" "}
                   –{" "}
-                  <time dateTime="2024-08">
-                    <Trans>Jul</Trans> 2024
+                  <time dateTime="2024-05">
+                    <Trans>May</Trans> 2024
                   </time>
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Short contract to designed and implemented a dedicated KYC
+                  microservice with AI integration, responsible for validating user
+                  data through third-party APIs and communicating results to other
+                  system components via asynchronous messaging.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Architected a B2B solution (MCP alike) integrating
-                    generative AI with legacy microservices (NDA project).
+                    Contributed to the backend microservices architecture using
+                    Nest.js, Node.js, PostgreSQL, QuestDB, RabbitMQ, and Redis
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Built REST APIs with Nest.js/PostgreSQL, ensured 99.98%
-                    uptime.
+                    Helped integrate with the FIX protocol for real-time
+                    communication with external providers
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Used Redis/RabbitMQ for distributed microservices.
+                    Implemented event-driven flows using RabbitMQ to handle
+                    transaction processing and internal service communication
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Collaborated on integrating GPT-4 and Claude APIs to support a
+                    recommendation layer that generated personalized suggestions
+                    based on user profile and behavioral data
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Participated in sprint planning, architecture discussions, and
+                    code reviews in a Kanban-based workflow
                   </Trans>
                 </li>
               </ul>
@@ -194,8 +233,8 @@ const Resume: FC = memo(() => {
                 <span className="font-bold">Meu Financiamento Solar</span>
                 <span className="text-sm italic">
                   Software Engineer |{" "}
-                  <time dateTime="2021-11">
-                    <Trans>Nov</Trans> 2021
+                  <time dateTime="2021-08">
+                    <Trans>Aug</Trans> 2021
                   </time>{" "}
                   –{" "}
                   <time dateTime="2023-04">
@@ -203,20 +242,76 @@ const Resume: FC = memo(() => {
                   </time>
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Worked on one of Brazil's largest solar financing platforms
+                  (30,000+ active users), supporting loan origination, KYC, and
+                  financial operations prior to acquisition by BV Bank.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Launched solar credit platform with 300% engagement growth.
+                    Contributed to scaling and stabilizing a distributed financing
+                    platform with 99.9% availability and zero downtime, supporting
+                    loan origination, KYC validation, and credit workflows
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Modernized KYC stack and optimized OAuth2 and SQL
-                    performance.
+                    Designed and developed executive and operational dashboards
+                    using React, Chart.js, Node.js, Ruby on Rails, and PostgreSQL,
+                    accelerating data-driven decisions by 53%
                   </Trans>
                 </li>
                 <li>
-                  <Trans>Developed dashboards using React and Chart.js.</Trans>
+                  <Trans>
+                    Led the partial migration of critical KYC workflows from a Ruby
+                    on Rails monolith to Next.js (SSR), improving throughput by
+                    22%, enhancing performance, and increasing front-end security
+                    controls
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Collaborated closely with risk, compliance, and data teams to
+                    ensure regulatory alignment (LGPD) and strengthen
+                    fraud-prevention mechanisms
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Helped implement structured CI/CD practices and deployment
+                    improvements to increase release reliability and reduce
+                    rollback frequency
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Participated in strategic technical discussions during the
+                    acquisition process, aligning system architecture and delivery
+                    timelines with BV Bank stakeholders
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Mentored new engineers through onboarding, architecture
+                    walkthroughs, and code reviews, promoting clean code standards
+                    and security best practices
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Temporarily assumed technical leadership responsibilities,
+                    facilitating cross-functional alignment and guiding sprint
+                    execution
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Participated in cross-functional discussions with C-level
+                    stakeholders, aligning technical delivery with strategic goals
+                  </Trans>
                 </li>
               </ul>
             </li>
@@ -230,19 +325,60 @@ const Resume: FC = memo(() => {
                     <Trans>Nov</Trans> 2020
                   </time>{" "}
                   –{" "}
-                  <time dateTime="2021-11">
-                    <Trans>Nov</Trans> 2021
+                  <time dateTime="2021-08">
+                    <Trans>Aug</Trans> 2021
                   </time>
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Contributed to a large-scale platform serving 100,000+
+                  photovoltaic installers across Brazil, supporting marketplace
+                  operations, project management, and installer-client
+                  interactions.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Maintained Node.js and React apps for 100K+ users.
+                    Maintained and evolved a high-traffic web and mobile ecosystem,
+                    improving overall application response time by 40% through
+                    backend query optimization, caching strategies, and improved
+                    error handling
                   </Trans>
                 </li>
                 <li>
-                  <Trans>Refactored CRM modules, cut API latency by 40%.</Trans>
+                  <Trans>
+                    Developed and shipped new features using TypeScript, Node.js,
+                    React, React Native, GraphQL, and PostgreSQL, ensuring strong
+                    type safety and scalable API design
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Improved data-fetching efficiency by optimizing GraphQL
+                    resolvers and reducing unnecessary database calls
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Strengthened backend reliability through structured logging,
+                    validation layers, and improved exception management
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Implemented comprehensive unit testing with Jest and React
+                    Testing Library, increasing test coverage by 90% and
+                    significantly reducing regression issues in production
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Contributed to technical documentation, structured bug
+                    reporting, and cross-team communication to ensure alignment
+                    between product, design, and engineering
+                  </Trans>
                 </li>
               </ul>
             </li>
@@ -261,17 +397,31 @@ const Resume: FC = memo(() => {
                   </time>
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Contributed as part of a cross-functional team to a digital
+                  transformation project aimed at replacing paper-based processes
+                  and spreadsheets with digital solutions.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Maintained Java AGETIC system with optimized PostgreSQL
-                    queries.
+                    Implemented assigned backend and frontend tasks using Java 11
+                    and Angular
                   </Trans>
                 </li>
                 <li>
                   <Trans>
-                    Built admin interfaces, refined documentation, and improved
-                    bug tracking.
+                    Assisted in developing administrative dashboards to improve
+                    process visibility and tracking
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Supported the transition from manual workflows to a fully
+                    digital system, contributing to a 100% improvement in process
+                    agility
                   </Trans>
                 </li>
               </ul>
@@ -291,11 +441,26 @@ const Resume: FC = memo(() => {
                   </time>
                 </span>
               </div>
+              <p>
+                <Trans>
+                  Help maintained and evolved SIGPROJ, a project management system
+                  used by federal universities across Brazil.
+                </Trans>
+              </p>
               <ul className="list-disc pl-5">
                 <li>
                   <Trans>
-                    Resolved 100+ backend/UI issues in SIGPROJ system, developed
-                    new modules and improved documentation.
+                    Collaborated with a development team to maintain "SIGPROJ," a
+                    project management system used by Federal Universities across
+                    Brazil, resolving 100+ backend and UI issues using PHP and
+                    MySQL
+                  </Trans>
+                </li>
+                <li>
+                  <Trans>
+                    Worked within a structured bug-tracking and documentation
+                    process using Redmine, contributing to system reliability and
+                    stable institutional operations
                   </Trans>
                 </li>
               </ul>
@@ -346,6 +511,9 @@ const Resume: FC = memo(() => {
             <Trans>Certifications</Trans>
           </h2>
           <ul className="list-disc pl-5">
+            <li>
+              <Trans>Google Cloud Certified – Professional Cloud Architect</Trans>
+            </li>
             <li>
               <Trans>Google Cloud Certified – Associate Cloud Engineer</Trans>
             </li>
