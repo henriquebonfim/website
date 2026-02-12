@@ -82,9 +82,9 @@ jobs:
             echo "tag=${{ github.ref_name }}" >> $GITHUB_OUTPUT
             echo "name=${{ github.ref_name }}" >> $GITHUB_OUTPUT
           else
-            TAG="release-$(date +'%Y%m%d-%H%M%S')"
+            TAG="release-$(date -u +'%Y%m%d-%H%M%S')"
             echo "tag=$TAG" >> $GITHUB_OUTPUT
-            echo "name=Release $(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+            echo "name=Release $(date -u +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
           fi
 
       - name: Create or update GitHub Release
