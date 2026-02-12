@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Step 1 - Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 1
 
@@ -35,19 +35,16 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Step 3 - Install Dependencies
-        run: bun install
-
-      - name: Step 4 - Lint
-        run: bun run lint
-
-      - name: Step 5 - Audit dependencies
+      - name: Step 3 - Audit
         run: bun audit
 
-      - name: Step 6 - Compile Translations
-        run: bun run translate:pipeline
+      - name: Step 4 - Install Dependencies
+        run: bun install
 
-      - name: Step 7 - Build & Deploy to Firebase Hosting Preview (Pull Request)
+      - name: Step 5 - Lint
+        run: bun run lint
+
+      - name: Step 6 - Build & Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -74,10 +71,10 @@ jobs:
     if: startsWith(github.ref, 'refs/tags/')
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Create or update GitHub Release for tag
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.20.0
         with:
           tag: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
@@ -85,6 +82,7 @@ jobs:
             Release ${{ github.ref_name }}
 
             Built from commit ${{ github.sha }}.
+          allowUpdates: true
           draft: false
           prerelease: false
           token: ${{ secrets.GITHUB_TOKEN }}

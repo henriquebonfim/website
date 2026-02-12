@@ -23,3 +23,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# i18n compiled files (only keep .po source files)
+src/shared/i18n/locales/*.js
+src/shared/i18n/locales/*.ts

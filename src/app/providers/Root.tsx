@@ -54,11 +54,14 @@ export const RootProvider: FC<{ children: ReactNode }> = ({ children }) => {
 
   useEffect(() => {
     (async () => {
-      await dynamicLoadMessages(locale).then(() => {
+      try {
+        await dynamicLoadMessages(locale);
         document.documentElement.setAttribute(LANG_ATTRIBUTE, locale);
-        i18n.activate(locale);
+      } catch (error) {
+        console.error("Failed to load locale:", locale, error);
+      } finally {
         setLoading(false);
-      });
+      }
     })();
   }, [locale]);
 
