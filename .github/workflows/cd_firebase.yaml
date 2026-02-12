@@ -93,7 +93,7 @@ jobs:
           tag: ${{ steps.release_tag.outputs.tag }}
           name: ${{ steps.release_tag.outputs.name }}
           body: |
-            Deployed to production from ${{ github.ref_name }}
+            Deployed to production with release tag ${{ steps.release_tag.outputs.tag }} (from ${{ github.ref_name }}).
 
             Built from commit ${{ github.sha }}.
           allowUpdates: true
