@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "i18n:extract": "lingui extract",
+    "i18n:extract": "lingui extract --clean",
     "i18n:compile": "lingui compile",
     "translate:pipeline": "bun run i18n:extract && bun run i18n:compile"
   },

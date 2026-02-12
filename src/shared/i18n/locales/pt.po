@@ -77,14 +77,6 @@ msgstr "Aplicação"
 msgid "Apr"
 msgstr "Abr"
 
-#: src/pages/home/contents/timeline.tsx:600
-#~ msgid "Architected a B2B (MCP alike) solution integrating generative AI with legacy microservices (NDA project). Delivered enterprise-grade uptime and stability."
-#~ msgstr "Arquitetou uma solução B2B (MCP similar) integrando IA generativa com microservices legados (projeto NDA). Forneceu tempo de atividade empresarial e estabilidade."
-
-#: src/pages/home/contents/resume.tsx:173
-#~ msgid "Architected a B2B solution (MCP alike) integrating generative AI with legacy microservices (NDA project)."
-#~ msgstr "Arquitetou uma solução B2B (MCP) que integra IA generativa com microservices legados (projeto NDA)."
-
 #: src/pages/home/contents/projects.tsx:99
 msgid "ArduEVE IoT automation system interface"
 msgstr "Interface do sistema de automação IoT ArduEVE"
@@ -92,10 +84,6 @@ msgstr "Interface do sistema de automação IoT ArduEVE"
 #: src/pages/home/contents/resume.tsx:415
 msgid "Assisted in developing administrative dashboards to improve process visibility and tracking"
 msgstr "Auxiliou no desenvolvimento de painéis administrativos para melhorar a visibilidade e o rastreamento de processos"
-
-#: src/pages/home/contents/about.tsx:270
-#~ msgid "At Meu Financiamento Solar, I contributed to the entire software development lifecycle of the country's largest solar credit acquisition platform, helping to increase engagement by 300% after launch. In 2023, I was selected for AWS re/Start, an intensive cloud immersion program that earned me my first AWS certificate. The following year, I participated in Google Cloud - Get Certified, earning my Associate Cloud Engineer certification."
-#~ msgstr "Em Meu Financiamento Solar, eu contribuí para todo o ciclo de vida de desenvolvimento de software da maior plataforma de aquisição de crédito solar do país, ajudando a aumentar o engajamento em 300% após o lançamento. Em 2023, fui selecionado para o AWS re/Start, um programa intensivo de imersão em nuvem que me valeu meu primeiro certificado AWS. No ano seguinte, participei do Google Cloud - Get Certified, ganhando minha certificação de Engenheiro de Nuvem Associado."
 
 #: src/pages/home/contents/about.tsx:271
 msgid "At Meu Financiamento Solar, I worked on one of Brazil's largest solar financing platforms with 30,000+ active users, supporting loan origination, KYC, and financial operations prior to acquisition by BV Bank. I led the partial migration of critical KYC workflows from Ruby on Rails to Next.js, improving throughput by 22%, and designed executive dashboards that accelerated data-driven decisions by 53%. In 2023, I was selected for AWS re/Start, an intensive cloud immersion program that earned me my first AWS certificate. The following year, I participated in Google Cloud - Get Certified, earning my Associate Cloud Engineer certification, and in 2026 I became a Google Professional Cloud Architect."
@@ -155,21 +143,9 @@ msgstr "Construiu um bot em Python + Next.js aproveitando modelos de IA/LLM para
 msgid "Built a soapbox car from scraps and spent countless hours on LAN matches of Counter-Strike: 1.6 and Condition Zero. This playful creativity planted the seed for an engineering mindset."
 msgstr "Construi um carrinho de rolimã com sucata e passei horas em partidas LAN de Counter-Strike 1.6 e Condition Zero. Essa criatividade lúdica plantou a semente de uma mentalidade de engenheiro."
 
-#: src/pages/home/contents/resume.tsx:272
-#~ msgid "Built admin interfaces, refined documentation, and improved bug tracking."
-#~ msgstr "Interfaces de administração construídas, documentação refinada e rastreamento de bugs aprimorados."
-
-#: src/pages/home/contents/resume.tsx:137
-#~ msgid "Built AI-driven chatbot and ensure seamless integration of AI technologies"
-#~ msgstr "Chatbot baseado em IA construído e garantir a integração perfeita de tecnologias de IA"
-
 #: src/pages/home/contents/resume.tsx:485
 msgid "Built JavaScript/Bootstrap solutions and generated technical documentation."
 msgstr "Soluções de JavaScript/Bootstrap construídas e documentação técnica gerada."
-
-#: src/pages/home/contents/resume.tsx:179
-#~ msgid "Built REST APIs with Nest.js/PostgreSQL, ensured 99.98% uptime."
-#~ msgstr "Desenvolvi APIs REST com Nest.js/PostgreSQL, garantindo 99,98% de disponibilidade."
 
 #: src/pages/home/contents/projects.tsx:134
 msgid "Canivete Perneta app preview"
@@ -288,10 +264,6 @@ msgstr "Contribuiu para documentação técnica, relatórios estruturados de bug
 msgid "Contributed to the backend microservices architecture using Nest.js, Node.js, PostgreSQL, QuestDB, RabbitMQ, and Redis"
 msgstr "Contribuiu para a arquitetura de microsserviços backend usando Nest.js, Node.js, PostgreSQL, QuestDB, RabbitMQ e Redis"
 
-#: src/pages/home/contents/resume.tsx:149
-#~ msgid "Contributing to technical documentation, bug reports, and facilitating clearer communication and project alignment."
-#~ msgstr "Contribuindo para documentação técnica, relatórios de erros e facilitando uma comunicação mais clara e o alinhamento do projeto."
-
 #: src/pages/home/contents/projects.tsx:107
 msgid "Crawler Mercado Libre interface"
 msgstr "Interface do Crawler Mercado Livre"
@@ -305,10 +277,6 @@ msgstr "Infância Criativa"
 #: src/pages/home/contents/resume.tsx:498
 msgid "Dec"
 msgstr "Dez"
-
-#: src/pages/home/contents/timeline.tsx:642
-#~ msgid "Delivered an AI-driven chatbot, integrated with AI models, APIs and third-party services into existing infrastructures. Contributed to technical documentation, bug reports, communication and project alignment."
-#~ msgstr "Forneceu um chatbot orientado por IA, integrado com modelos de IA, APIs e serviços de terceiros em infraestruturas existentes. Contribuiu para documentação técnica, relatórios de erros, comunicação e alinhamento do projeto."
 
 #: src/pages/home/contents/resume.tsx:151
 msgid "Deployed and scaled the system on Google Compute VMs with autoscaling, enabling reliable execution of Monte Carlo simulations under variable workloads"
@@ -341,10 +309,6 @@ msgstr "Desenvolveu e entregou novas funcionalidades usando TypeScript, Node.js,
 #: src/pages/home/contents/timeline.tsx:234
 msgid "Developed dashboards and admin tools with JavaScript and Bootstrap. Improved user experience and honed frontend-backend collaboration."
 msgstr "Desenvolvi dashboards e ferramentas administrativas com JavaScript e Bootstrap. Melhorei a experiência do usuário e aprimorei a colaboração frontend-backend."
-
-#: src/pages/home/contents/resume.tsx:219
-#~ msgid "Developed dashboards using React and Chart.js."
-#~ msgstr "Desenvolvi dashboards usando React e Chart.js."
 
 #: src/pages/home/contents/resume.tsx:530
 msgid "Developing Secure Software – Linux Foundation"
@@ -632,10 +596,6 @@ msgid "I was never the best student in the class but a turning point came at a y
 msgstr "Nunca fui o melhor aluno da turma, mas um ponto de virada aconteceu quando ainda era jovem: participei do programa de educação para o trabalho patrocinado pela Coca-Cola FEMSA. Esse curso mudou minha vida, definiu um objetivo claro e plantou sementes importantes na minha mente."
 
 #: src/pages/home/contents/about.tsx:256
-#~ msgid "I went on to work for companies like Portal Solar and Meu Financiamento Solar, where I truly consolidated my experience as a senior developer. At Portal Solar, I maintained high-traffic applications that served 100,000 photovoltaic installers in Brazil."
-#~ msgstr "Depois, trabalhei em empresas como Portal Solar e Meu Financiamento Solar, onde realmente consolidei minha experiência como desenvolvedor sênior. No Portal Solar, mantive aplicações de alto tráfego que atendiam 100 mil instaladores fotovoltaicos no Brasil."
-
-#: src/pages/home/contents/about.tsx:256
 msgid "I went on to work for companies like Portal Solar and Meu Financiamento Solar, where I truly consolidated my experience as a senior developer. At Portal Solar, I maintained high-traffic web and mobile applications that served 100,000+ photovoltaic installers across Brazil, improving application response time by 40% through optimization."
 msgstr "Passei a trabalhar em empresas como Portal Solar e Meu Financiamento Solar, onde realmente consolidei minha experiência como desenvolvedor sênior. No Portal Solar, mantive aplicações web e mobile de alto tráfego que atendiam mais de 100.000 instaladores fotovoltaicos em todo o Brasil, melhorando o tempo de resposta da aplicação em 40% através de otimizações."
 
@@ -663,10 +623,6 @@ msgstr "Implementou padrões RAG (geração aumentada por recuperação) para co
 msgid "Improved data-fetching efficiency by optimizing GraphQL resolvers and reducing unnecessary database calls"
 msgstr "Melhorou a eficiência de busca de dados otimizando resolvers GraphQL e reduzindo chamadas desnecessárias ao banco de dados"
 
-#: src/pages/home/contents/resume.tsx:143
-#~ msgid "Integrated AI models, APIs, and third-party services into existing infrastructures"
-#~ msgstr "Modelos integrados de IA, APIs e serviços de terceiros em infraestruturas existentes"
-
 #: src/pages/home/contents/projects.tsx:100
 #: src/pages/home/contents/projects.tsx:117
 msgid "IoT"
@@ -683,10 +639,6 @@ msgstr "Foi lá que tive meu primeiro contato com a lógica de programação e e
 #: src/pages/home/contents/resume.tsx:436
 msgid "Jan"
 msgstr "Jan"
-
-#: src/pages/home/contents/resume.tsx:167
-#~ msgid "Jul"
-#~ msgstr "Jul"
 
 #: src/pages/home/contents/resume.tsx:479
 msgid "Jun"
@@ -719,17 +671,9 @@ msgstr "Alternador de Idioma"
 msgid "Languages"
 msgstr "Idiomas"
 
-#: src/pages/home/contents/resume.tsx:208
-#~ msgid "Launched solar credit platform with 300% engagement growth."
-#~ msgstr "Lancei plataforma de crédito solar com crescimento de engajamento de 300%."
-
 #: src/pages/home/contents/resume.tsx:111
 msgid "Leadership, Problem-solving, Project Management, Critical Thinking, Communication"
 msgstr "Liderança, Resolução de Problemas, Gestão de Projetos, Pensamento crítico, Comunicação"
-
-#: src/pages/home/contents/timeline.tsx:478
-#~ msgid "Led development for Brazil’s largest solar credit platform. Improved OAuth2 security, scaled KYC systems, and mentored junior devs."
-#~ msgstr "Liderei o desenvolvimento da maior plataforma de crédito solar do Brasil. Melhorei a segurança do OAuth2, escalei sistemas KYC e mentorei desenvolvedores juniores."
 
 #: src/pages/home/contents/resume.tsx:268
 msgid "Led the partial migration of critical KYC workflows from a Ruby on Rails monolith to Next.js (SSR), improving throughput by 22%, enhancing performance, and increasing front-end security controls"
@@ -759,18 +703,6 @@ msgstr "LLM"
 #: src/pages/home/contents/resume.tsx:343
 msgid "Maintained and evolved a high-traffic web and mobile ecosystem, improving overall application response time by 40% through backend query optimization, caching strategies, and improved error handling"
 msgstr "Manteve e evoluiu um ecossistema web e mobile de alto tráfego, melhorando o tempo de resposta geral da aplicação em 40% através de otimização de consultas backend, estratégias de cache e tratamento aprimorado de erros"
-
-#: src/pages/home/contents/resume.tsx:266
-#~ msgid "Maintained Java AGETIC system with optimized PostgreSQL queries."
-#~ msgstr "Mantive sistema Java AGETIC com queries PostgreSQL otimizadas."
-
-#: src/pages/home/contents/resume.tsx:240
-#~ msgid "Maintained Node.js and React apps for 100K+ users."
-#~ msgstr "Mantive aplicações Node.js e React para mais de 100 mil usuários."
-
-#: src/pages/home/contents/timeline.tsx:436
-#~ msgid "Maintained production Node.js and React applications serving 100K+ users. Refactored CRM code and implemented Agile best practices."
-#~ msgstr "Mantive aplicações Node.js e React em produção para mais de 100 mil usuários. Refatorei código de CRM e implementei práticas ágeis."
 
 #: src/pages/home/contents/resume.tsx:392
 #: src/pages/home/contents/resume.tsx:396
@@ -808,10 +740,6 @@ msgstr "App companheiro móvel para caminhoneiros desenvolvido na HackathonCCR. 
 msgid "Mobile-controlled door access system built with NodeJS microservices, MongoDB, and Arduino integration."
 msgstr "Sistema de controle de acesso a portas via mobile construído com microsserviços em NodeJS, MongoDB e integração com Arduino."
 
-#: src/pages/home/contents/resume.tsx:213
-#~ msgid "Modernized KYC stack and optimized OAuth2 and SQL performance."
-#~ msgstr "Modernizei a stack de KYC e otimizei o desempenho do OAuth2 e SQL."
-
 #: src/pages/home/contents/about.tsx:351
 msgid "Music"
 msgstr "Música"
@@ -835,10 +763,6 @@ msgstr "Out"
 #: src/pages/home/contents/projects.tsx:53
 msgid "Ollama LLM Server"
 msgstr "Servidor Ollama LLM"
-
-#: src/pages/home/contents/timeline.tsx:315
-#~ msgid "Optimized a Java-based monolith, reduced PostgreSQL storage usage, and achieved 100% test coverage. Also built user-friendly admin interfaces."
-#~ msgstr "Otimizei um monólito em Java, reduzi o uso de armazenamento do PostgreSQL e alcancei 100% de cobertura de testes. Também construí interfaces administrativas amigáveis."
 
 #: src/pages/home/contents/resume.tsx:311
 msgid "Participated in cross-functional discussions with C-level stakeholders, aligning technical delivery with strategic goals"
@@ -909,18 +833,6 @@ msgstr "Python"
 #: src/pages/home/contents/contact.tsx:103
 msgid "Reach out to me via WhatsApp, Telegram, LinkedIn."
 msgstr "Entre em contato pelo WhatsApp, Telegram ou LinkedIn."
-
-#: src/pages/home/contents/resume.tsx:245
-#~ msgid "Refactored CRM modules, cut API latency by 40%."
-#~ msgstr "Refatorei módulos do CRM, reduzindo a latência da API em 40%."
-
-#: src/pages/home/contents/resume.tsx:296
-#~ msgid "Resolved 100+ backend/UI issues in SIGPROJ system, developed new modules and improved documentation."
-#~ msgstr "Resolveu mais de 100 problemas de infraestrutura/UI no sistema SIGPROJ, desenvolveu novos módulos e melhorou a documentação."
-
-#: src/pages/home/contents/timeline.tsx:274
-#~ msgid "Resolved over 150 backend and UI issues and contributed to JavaScript/PHP systems. Helped stabilize key platforms and documented changes."
-#~ msgstr "Resolvi mais de 150 problemas de backend e UI e contribuí para sistemas em JavaScript/PHP. Ajudei a estabilizar plataformas importantes e documentei as mudanças."
 
 #: src/pages/home/contents/resume.tsx:21
 #: src/pages/home/ui/section.tsx:22
@@ -1036,10 +948,6 @@ msgstr "Interface do projeto tick3r"
 msgid "Timeline"
 msgstr "Linha do Tempo"
 
-#: src/pages/home/contents/about.tsx:295
-#~ msgid "Today I'm specializing in full-stack development, collaborating with clients around the world. I have delivered scalable solutions in microservices, serverless and event-driven architectures for startups, solar energy, fintech, B2B and more. Recently, I architected a B2B solution integrating generative AI with legacy microservices, designed robust REST APIs with 99.98% uptime and built secure distributed systems using Redis and RabbitMQ."
-#~ msgstr "Hoje me especializo em desenvolvimento full-stack, colaborando com clientes do mundo todo. Entreguei soluções escaláveis em microsserviços, arquiteturas serverless e orientadas a eventos para startups, energia solar, fintech, B2B e outros. Recentemente, arquitetei uma solução B2B integrando IA generativa com microsserviços legados, desenvolvi APIs REST robustas com 99,98% de disponibilidade e construí sistemas distribuídos seguros usando Redis e RabbitMQ."
-
 #: src/pages/home/contents/about.tsx:301
 msgid "Today I'm specializing in full-stack development, collaborating with clients around the world. I have delivered scalable solutions in microservices, serverless and event-driven architectures for startups, solar energy, fintech, B2B and more. Recently, I developed a stock analysis bot combining cloud infrastructure, AI models, and Monte Carlo simulations on Google Compute VMs. I also designed a KYC microservice with AI integration using Nest.js, PostgreSQL, RabbitMQ, and integrated GPT-4 and Claude APIs for personalized recommendations."
 msgstr "Hoje me especializo em desenvolvimento full-stack, colaborando com clientes do mundo todo. Entreguei soluções escaláveis em microsserviços, arquiteturas serverless e orientadas a eventos para startups, energia solar, fintech, B2B e outros. Recentemente, desenvolvi um bot de análise de ações combinando infraestrutura em nuvem, modelos de IA e simulações Monte Carlo em VMs do Google Compute. Também projetei um microsserviço de KYC com integração de IA usando Nest.js, PostgreSQL, RabbitMQ e integrei as APIs GPT-4 e Claude para recomendações personalizadas."
@@ -1074,10 +982,6 @@ msgstr "Início da Universidade"
 msgid "Upwork – Senior Software Engineer"
 msgstr "Upwork – Engenheiro de Software Sênior"
 
-#: src/pages/home/contents/resume.tsx:185
-#~ msgid "Used Redis/RabbitMQ for distributed microservices."
-#~ msgstr "Utilizei Redis/RabbitMQ para microsserviços distribuídos."
-
 #: src/pages/home/contents/projects.tsx:29
 #: src/pages/home/contents/projects.tsx:72
 msgid "Video"
@@ -1087,10 +991,6 @@ msgstr "Vídeo"
 #: src/widgets/certifications.tsx:47
 msgid "View all {0} certifications →"
 msgstr "Ver todas as {0} certificações →"
-
-#: src/widgets/certifications.tsx:47
-#~ msgid "View all {count} certifications →"
-#~ msgstr "Ver todas as {count} certificações →"
 
 #: src/widgets/certifications.tsx:45
 msgid "View all certifications on Credly"
