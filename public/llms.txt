@@ -1,24 +1,70 @@
-# Henrique Bonfim - Personal Website
+# Henrique Bonfim - Senior Software Engineer
 
-## Project Overview
-This is the personal portfolio and resume website of Henrique Bonfim, a Senior Software Engineer with 10+ years of experience in full-stack development, microservices, and AI/LLM integrations.
-The website serves as a digital business card, showcasing projects, skills, and professional history.
+> Personal portfolio and professional website
+> Contact: henriquebonfim@proton.me
+> Location: Campo Grande, MS, Brazil
+> Website: https://henriquebonfim.web.app
 
-## Architecture & Tech Stack
-- **Framework**: React 19 (Vite 6)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS 4, DaisyUI 5, Shadcn/UI (Radix Primitives)
+## About Henrique Bonfim
+Senior Software Engineer with 8+ years of experience specializing in backend development with Python and TypeScript on Node.js. Proven expertise in microservices, serverless, and event-driven architectures. Demonstrated success across startups, fintech, solar energy, and B2B sectors. Skilled in system design and AI integration.
+
+## Certifications
+- AWS Certified Cloud Practitioner (2023)
+- Google Cloud Certified Associate Cloud Engineer (2024)
+- Google Cloud Certified Professional Cloud Architect (2026)
+- Scrum Foundation Professional Certification (SFPC)
+- AWS re/Start Graduate
+
+## Technical Skills
+- **Languages**: TypeScript, Python, JavaScript, Java, PHP
+- **Backend**: Node.js, Nest.js, Express, FastAPI, Ruby on Rails
+- **Frontend**: React, Next.js, Angular, Vue.js
+- **Databases**: PostgreSQL, MySQL, MongoDB, Redis, QuestDB
+- **Cloud**: AWS, Google Cloud Platform (GCP), Firebase
+- **DevOps**: Docker, Kubernetes, CI/CD, Terraform
+- **AI/ML**: GPT-4, Claude, LangChain, TensorFlow, IBM Watson
+- **Message Queues**: RabbitMQ, Redis Pub/Sub
+- **Architecture**: Microservices, Serverless, Event-Driven, REST APIs
+
+## Key Projects
+- **AI-Powered Stock Analysis Bot** - Python, Next.js, GPT-4, Monte Carlo simulations
+- **KYC Microservice** - Nest.js, PostgreSQL, RabbitMQ, GPT-4/Claude integration
+- **IoT Automation System (ArduEVE)** - Node.js, Vue.js, MongoDB, Arduino, Docker Swarm
+- **Blockchain Legal Contracts (Mideal)** - Node.js, Angular, Google Cloud, Top 50 Megahack v2 2020
+- **Food Donation Platform (Roça Eats)** - Node.js, Angular, AWS, Hackatrouble SP 2020 Winner
+- **Observability Stack** - OpenTelemetry, Prometheus, Loki, Tempo, Grafana, Traefik
+- **Ollama LLM Server** - Scalable local LLM deployment with API interface
+- **UltraDL** - High-performance video downloader (Python backend)
+
+## Education
+Federal University of Mato Grosso do Sul (UFMS)
+Bachelor's in Information Systems (2015-2019)
+
+## Languages
+- Portuguese (Native)
+- English (Fluent)
+- Spanish (Basic)
+
+## Social Links
+- GitHub: https://github.com/henriquebonfim
+- LinkedIn: https://linkedin.com/in/henriquebonfim
+- GitLab: https://gitlab.com/hpbonfim
+- DockerHub: https://hub.docker.com/u/hpbonfim
+- YouTube: https://www.youtube.com/@henrique_bonfim
+- Credly: https://www.credly.com/users/henrique-bonfim
+
+## Website Technical Stack
+- **Framework**: React 19 with Vite 7
+- **Language**: TypeScript 5
+- **Styling**: Tailwind CSS 4, DaisyUI 5
 - **Runtime**: Bun
-- **I18n**: LinguiJS (English, Portuguese, Spanish)
-- **Features**: PWA (Progressive Web App), SEO Optimized (JSON-LD, Sitemap), Dark/Light Mode
+- **I18n**: LinguiJS (en, pt, es)
+- **Features**: PWA, SEO optimized, Dark/Light mode
+- **Performance**: WebP images, Brotli compression, lazy loading
+- **Accessibility**: WCAG compliant, semantic HTML, ARIA labels
 
-## Content Structure
-- **/**: Home page - Introduction and summary.
-- **/projects**: Portfolio of developed projects.
-- **/resume**: Professional experience and skills.
-- **/blog**: Technical articles (Planned).
-
-## Key Capabilities
-- **Responsive Design**: Mobile-first approach.
-- **Performance**: Optimized images (WebP), Gzip/Brotli compression.
-- **Accessibility**: Semantic HTML, ARIA labels.
+## Contact Information
+- Email: henriquebonfim@proton.me
+- WhatsApp: +55 48 99685-5477
+- Telegram: @henriquebonfim
+- Resume: https://henriquebonfim.web.app/#resume

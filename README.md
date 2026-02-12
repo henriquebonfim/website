@@ -241,7 +241,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Website: [henriquebonfim.web.app](https://henriquebonfim.web.app)
 - GitHub: [@henriquebonfim](https://github.com/henriquebonfim)
 - LinkedIn: [@henriquebonfim](https://www.linkedin.com/in/henriquebonfim)
-- YouTube: [@TV-HB](https://www.youtube.com/@TV-HB)
+- YouTube: [@henrique_bonfim](https://www.youtube.com/@henrique_bonfim)
 
 ## 🙏 Acknowledgments
 
