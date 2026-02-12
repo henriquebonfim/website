@@ -67,6 +67,8 @@ jobs:
   update_release:
     name: Create or Update GitHub Release
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     needs: build_and_deploy
     if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     steps:
