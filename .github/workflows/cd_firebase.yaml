@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - master
+    tags:
+      - "v*"
   pull_request:
     branches:
       - master
@@ -42,7 +44,10 @@ jobs:
       - name: Step 5 - Audit dependencies
         run: bun audit
 
-      - name: Step 6 - Build & Deploy to Firebase Hosting Preview (Pull Request)
+      - name: Step 6 - Compile Translations
+        run: bun run translate:pipeline
+
+      - name: Step 7 - Build & Deploy to Firebase Hosting Preview (Pull Request)
         if: ${{ github.event_name == 'pull_request' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -52,7 +57,7 @@ jobs:
           expires: ${{ vars.FIREBASE_EXPIRES }}
           entryPoint: ./
 
-      - name: Step 7 - Build & Deploy to Firebase Hosting Production (Push)
+      - name: Step 8 - Build & Deploy to Firebase Hosting Production (Push)
         if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
@@ -61,3 +66,25 @@ jobs:
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           channelId: ${{ vars.FIREBASE_CHANNEL_ID }}
           entryPoint: ./
+
+  update_release:
+    name: Create or Update GitHub Release (tags)
+    runs-on: ubuntu-latest
+    needs: build_and_deploy
+    if: startsWith(github.ref, 'refs/tags/')
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create or update GitHub Release for tag
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          body: |
+            Release ${{ github.ref_name }}
+
+            Built from commit ${{ github.sha }}.
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
