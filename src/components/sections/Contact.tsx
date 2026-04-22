@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Github, Linkedin, Mail } from 'lucide-react';
 
 const links = [
   {
@@ -26,7 +26,7 @@ export const Contact = () => {
   return (
     <section id="contact" className="relative py-24 md:py-32">
       <div className="container max-w-5xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-4">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">
           // contact
         </p>
         <motion.h2

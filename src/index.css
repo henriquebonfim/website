@@ -3,72 +3,73 @@
 @plugin "tailwindcss-animate";
 @plugin "@tailwindcss/typography";
 
-/* Midnight Indigo — terminal × Apple × Awwwards */
+/* VS Code Dark+ inspired — editor grays × azure accents */
 @layer base {
   :root {
     /* Core palette */
-    --background: 240 50% 4%; /* #0a0a1a */
-    --foreground: 230 30% 92%;
+    --background: 0 0% 12%; /* editor background #1e1e1e */
+    --foreground: 0 0% 83%; /* default text #d4d4d4 */
 
-    --card: 233 48% 11%; /* slightly above #141432 */
-    --card-foreground: 230 30% 94%;
+    --card: 240 2% 15%;
+    --card-foreground: 0 0% 85%;
 
-    --popover: 233 50% 8%;
-    --popover-foreground: 230 30% 94%;
+    --popover: 240 2% 18%;
+    --popover-foreground: 0 0% 86%;
 
-    --primary: 243 75% 59%; /* #4f46e5 electric indigo */
-    --primary-foreground: 240 50% 6%;
-    --primary-glow: 243 90% 70%;
+    --primary: 204 100% 40%; /* Azure #007acc */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 199 100% 65%;
+    --comment-highlight: 104 73% 71%; /* #9CEB7F */
 
-    --secondary: 235 45% 16%;
-    --secondary-foreground: 230 30% 92%;
+    --secondary: 240 2% 19%;
+    --secondary-foreground: 0 0% 82%;
 
-    --muted: 234 30% 14%;
-    --muted-foreground: 230 15% 65%;
+    --muted: 0 0% 24%;
+    --muted-foreground: 220 5% 65%;
 
-    --accent: 243 75% 59%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 209 51% 31%;
+    --accent-foreground: 0 0% 93%;
 
-    --destructive: 0 75% 60%;
+    --destructive: 0 86% 62%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 240 40% 18%; /* near #1e1e5a */
-    --input: 240 40% 18%;
-    --ring: 243 90% 70%;
+    --border: 0 0% 24%;
+    --input: 0 0% 24%;
+    --ring: 199 100% 65%;
 
     --radius: 1rem;
 
     /* Terminal traffic lights */
-    --term-red: 0 75% 60%;
-    --term-yellow: 42 95% 60%;
-    --term-green: 142 70% 50%;
+    --term-red: 0 86% 62%;
+    --term-yellow: 55 51% 76%;
+    --term-green: 129 46% 67%;
 
     /* Effects */
     --gradient-aurora:
-      radial-gradient(60% 80% at 20% 10%, hsl(243 80% 30% / 0.45), transparent 60%),
-      radial-gradient(50% 70% at 90% 20%, hsl(280 70% 40% / 0.35), transparent 60%),
-      radial-gradient(40% 60% at 50% 100%, hsl(200 80% 40% / 0.3), transparent 60%);
+      radial-gradient(58% 78% at 16% 8%, hsl(210 80% 20% / 0.32), transparent 60%),
+      radial-gradient(52% 70% at 88% 16%, hsl(199 90% 18% / 0.24), transparent 60%),
+      radial-gradient(40% 58% at 50% 100%, hsl(220 30% 14% / 0.32), transparent 60%);
     --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
-    --shadow-elegant: 0 30px 80px -20px hsl(243 90% 50% / 0.35);
+    --shadow-elegant: 0 30px 80px -20px hsl(204 100% 40% / 0.3);
     --shadow-glow: 0 0 60px hsl(var(--primary-glow) / 0.35);
-    --shadow-window: 0 25px 60px -15px hsl(240 80% 2% / 0.7), 0 0 0 1px hsl(var(--border));
+    --shadow-window: 0 25px 60px -15px hsl(220 35% 3% / 0.75), 0 0 0 1px hsl(var(--border));
 
     --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
 
     /* Sidebar (unused but kept) */
-    --sidebar-background: 240 50% 4%;
-    --sidebar-foreground: 230 30% 92%;
-    --sidebar-primary: 243 75% 59%;
+    --sidebar-background: 0 0% 12%;
+    --sidebar-foreground: 0 0% 83%;
+    --sidebar-primary: 204 100% 40%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 235 45% 16%;
-    --sidebar-accent-foreground: 230 30% 92%;
-    --sidebar-border: 240 40% 18%;
-    --sidebar-ring: 243 90% 70%;
+    --sidebar-accent: 240 2% 19%;
+    --sidebar-accent-foreground: 0 0% 82%;
+    --sidebar-border: 0 0% 24%;
+    --sidebar-ring: 199 100% 65%;
   }
 
   .dark {
-    --background: 240 50% 4%;
-    --foreground: 230 30% 92%;
+    --background: 0 0% 12%;
+    --foreground: 0 0% 83%;
   }
 }
 
@@ -140,6 +141,10 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+  }
+
+  .comment-highlight {
+    color: hsl(var(--comment-highlight));
   }
 }
 

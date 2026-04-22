@@ -1,6 +1,6 @@
+import { projects } from '@/data/projects';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
-import { projects } from '@/data/projects';
 
 export const Projects = () => {
   return (
@@ -8,7 +8,7 @@ export const Projects = () => {
       <div className="container">
         <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-3">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-3">
               // projects
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight">

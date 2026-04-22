@@ -1,7 +1,7 @@
-import { useMemo, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Award } from 'lucide-react';
 import { certifications, type Certification } from '@/data/certifications';
+import { AnimatePresence, motion } from 'framer-motion';
+import { Award } from 'lucide-react';
+import { useMemo, useState } from 'react';
 
 const categories: ('All' | Certification['category'])[] = [
   'All',
@@ -26,7 +26,7 @@ export const Certifications = () => {
     <section id="certifications" className="relative py-24 md:py-32">
       <div className="container">
         <div className="mb-10">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-3">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-3">
             // certifications
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight">

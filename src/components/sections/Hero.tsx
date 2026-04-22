@@ -1,9 +1,9 @@
-import { motion, useMotionValue, useSpring, useTransform, useReducedMotion } from 'framer-motion';
+import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
+import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect } from 'react';
+import { AlienLogo } from '../AlienLogo';
 import { TerminalWindow } from '../TerminalWindow';
 import { Typewriter } from '../Typewriter';
-import { AlienLogo } from '../AlienLogo';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 
 export const Hero = () => {
   const reduce = useReducedMotion();
@@ -38,10 +38,11 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2, duration: 0.6 }}
-              className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-6"
+              className="font-mono text-xs uppercase tracking-[0.2em]  mb-6"
             >
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-term-green mr-2 align-middle animate-pulse" />
-              online · transmitting from earth
+              <span className="comment-highlight">online</span> ·{' '}
+              <span className="text-secondary-content">transmitting from earth...</span>
             </motion.p>
 
             <motion.h1

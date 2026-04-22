@@ -26,7 +26,7 @@ export const About = () => {
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
           <div className="lg:col-span-4 lg:sticky lg:top-28 lg:self-start">
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-4">
+            <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">
               // about
             </p>
             <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight">
@@ -50,7 +50,7 @@ export const About = () => {
                 transition={{ duration: 0.7, delay: i * 0.05, ease: [0.22, 1, 0.36, 1] }}
               >
                 <TerminalWindow title={`chapter_0${i + 1}.md`}>
-                  <p className="font-mono text-xs text-primary-glow mb-2">{c.title}</p>
+                  <p className="font-mono text-xs comment-highlight mb-2">{c.title}</p>
                   <p className="font-sans text-base leading-relaxed text-foreground/90">{c.body}</p>
                 </TerminalWindow>
               </motion.div>

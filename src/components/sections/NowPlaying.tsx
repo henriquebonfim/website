@@ -15,7 +15,7 @@ export const NowPlaying = () => {
   return (
     <section id="now-playing" className="relative py-24 md:py-32">
       <div className="container max-w-4xl">
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-3">
+        <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-3">
           // now playing
         </p>
         <h2 className="font-display text-4xl md:text-5xl font-bold tracking-tight mb-8">

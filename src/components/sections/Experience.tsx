@@ -8,7 +8,7 @@ export const Experience = () => {
     <section id="experience" className="relative py-24 md:py-32">
       <div className="container">
         <div className="max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] text-primary-glow mb-4">
+          <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">
             // $ cat ./experience.log
           </p>
           <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95]">
