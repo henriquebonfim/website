@@ -24,7 +24,7 @@ const links = [
 
 export const Contact = () => {
   return (
-    <section id="contact" className="relative py-24 md:py-32">
+    <section id="contact" className="relative py-24 md:py-32 contact-scene">
       <div className="container max-w-5xl">
         <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">
           // contact

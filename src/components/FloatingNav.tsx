@@ -44,10 +44,10 @@ export const FloatingNav = () => {
       className="fixed left-1/2 top-4 z-50 -translate-x-1/2"
       aria-label="Primary"
     >
-      <div className="flex items-center gap-1 rounded-full border border-border bg-card/70 px-2 py-1.5 backdrop-blur-xl shadow-(--shadow-window)">
+      <div className="flex items-center content-center gap-1 rounded-full border border-border bg-card/70 px-2 m-auto backdrop-blur-xl shadow-(--shadow-window)">
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="relative flex items-center overflow-visible rounded-full px-2 py-1 transition-colors hover:bg-secondary/60 sm:h-10 sm:w-14 sm:justify-center"
+          className="relative flex items-center overflow-visible rounded-full px-2 py-1 transition-colors hover:bg-secondary/60 sm:h-10 sm:w-14 sm:justify-center cursor-crosshair"
           aria-label="Home"
         >
           <span className="font-mono text-[10px] font-semibold tracking-[0.18em] text-primary-glow sm:hidden">

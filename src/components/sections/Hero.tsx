@@ -30,7 +30,8 @@ export const Hero = () => {
 
   return (
     <section id="hero" className="relative isolate overflow-hidden pt-32 pb-24 md:pt-40 md:pb-32">
-      <div className="absolute inset-0 -z-10 grid-bg" aria-hidden />
+      <div className="absolute inset-0 -z-20 hero-scene" aria-hidden />
+      <div className="absolute inset-0 -z-10 " aria-hidden />
       <div className="container">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-center">
           <div className="lg:col-span-7">

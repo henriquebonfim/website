@@ -3,7 +3,7 @@ import { HeadLogo } from './HeadLogo';
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <footer className="relative border-t border-border mt-12">
+    <footer className="relative border-t border-border mt-12 footer-scene">
       <div className="container py-10 flex flex-col sm:flex-row items-center justify-between gap-4">
         <div className="flex items-center gap-3">
           <HeadLogo size={48} animated={false} chase />

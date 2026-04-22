@@ -5,7 +5,7 @@ import { TerminalWindow } from '../TerminalWindow';
 
 export const Experience = () => {
   return (
-    <section id="experience" className="relative py-24 md:py-32">
+    <section id="experience" className="relative py-24 md:py-32 experience-scene">
       <div className="container">
         <div className="max-w-3xl">
           <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">

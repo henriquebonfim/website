@@ -23,7 +23,7 @@ export const Certifications = () => {
   );
 
   return (
-    <section id="certifications" className="relative py-24 md:py-32">
+    <section id="certifications" className="relative py-24 md:py-32 certifications-scene">
       <div className="container">
         <div className="mb-10">
           <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-3">

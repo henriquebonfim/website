@@ -4,7 +4,7 @@ import { ExternalLink, Github } from 'lucide-react';
 
 export const Projects = () => {
   return (
-    <section id="projects" className="relative py-24 md:py-32">
+    <section id="projects" className="relative py-24 md:py-32 projects-scene">
       <div className="container">
         <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
           <div>
