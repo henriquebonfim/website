@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+@config '../tailwind.config.ts';
+@plugin "tailwindcss-animate";
+@plugin "@tailwindcss/typography";
+
+/* Midnight Indigo — terminal × Apple × Awwwards */
+@layer base {
+  :root {
+    /* Core palette */
+    --background: 240 50% 4%; /* #0a0a1a */
+    --foreground: 230 30% 92%;
+
+    --card: 233 48% 11%; /* slightly above #141432 */
+    --card-foreground: 230 30% 94%;
+
+    --popover: 233 50% 8%;
+    --popover-foreground: 230 30% 94%;
+
+    --primary: 243 75% 59%; /* #4f46e5 electric indigo */
+    --primary-foreground: 240 50% 6%;
+    --primary-glow: 243 90% 70%;
+
+    --secondary: 235 45% 16%;
+    --secondary-foreground: 230 30% 92%;
+
+    --muted: 234 30% 14%;
+    --muted-foreground: 230 15% 65%;
+
+    --accent: 243 75% 59%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 75% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 40% 18%; /* near #1e1e5a */
+    --input: 240 40% 18%;
+    --ring: 243 90% 70%;
+
+    --radius: 1rem;
+
+    /* Terminal traffic lights */
+    --term-red: 0 75% 60%;
+    --term-yellow: 42 95% 60%;
+    --term-green: 142 70% 50%;
+
+    /* Effects */
+    --gradient-aurora:
+      radial-gradient(60% 80% at 20% 10%, hsl(243 80% 30% / 0.45), transparent 60%),
+      radial-gradient(50% 70% at 90% 20%, hsl(280 70% 40% / 0.35), transparent 60%),
+      radial-gradient(40% 60% at 50% 100%, hsl(200 80% 40% / 0.3), transparent 60%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --shadow-elegant: 0 30px 80px -20px hsl(243 90% 50% / 0.35);
+    --shadow-glow: 0 0 60px hsl(var(--primary-glow) / 0.35);
+    --shadow-window: 0 25px 60px -15px hsl(240 80% 2% / 0.7), 0 0 0 1px hsl(var(--border));
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Sidebar (unused but kept) */
+    --sidebar-background: 240 50% 4%;
+    --sidebar-foreground: 230 30% 92%;
+    --sidebar-primary: 243 75% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 235 45% 16%;
+    --sidebar-accent-foreground: 230 30% 92%;
+    --sidebar-border: 240 40% 18%;
+    --sidebar-ring: 243 90% 70%;
+  }
+
+  .dark {
+    --background: 240 50% 4%;
+    --foreground: 230 30% 92%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: var(--gradient-aurora);
+    background-attachment: fixed;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.4);
+    color: hsl(var(--foreground));
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--background));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 8px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--primary) / 0.6);
+  }
+}
+
+@layer components {
+  .terminal-window {
+    @apply rounded-2xl border border-border bg-card/70 backdrop-blur-xl;
+    box-shadow: var(--shadow-window);
+  }
+
+  .terminal-bar {
+    @apply flex items-center gap-2 px-4 py-3 border-b border-border;
+  }
+
+  .traffic-dot {
+    @apply h-3 w-3 rounded-full;
+  }
+
+  .glow-ring {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.5) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.5) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+
+  .text-gradient {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

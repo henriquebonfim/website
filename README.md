@@ -24,21 +24,25 @@ A modern, high-performance portfolio website built with cutting-edge web technol
 ## 🛠️ Tech Stack
 
 ### Core
+
 - **React 19.2** - Latest React with concurrent features
 - **TypeScript 5.9** - Type-safe development
 - **Vite 7.3** - Next-generation frontend tooling
 
 ### Styling
+
 - **Tailwind CSS 4.1** - Utility-first CSS framework
 - **DaisyUI 5.5** - Tailwind CSS component library
 - **Tailwind Typography** - Beautiful typographic defaults
 - **Lucide React** - Modern icon library
 
 ### Internationalization
+
 - **Lingui 5.9** - Modern i18n framework for React
 - Support for: English, Spanish, Portuguese
 
 ### Build & Optimization
+
 - **Image Optimizer** - Automatic image optimization
 - **Compression** - Gzip/Brotli compression
 - **PWA Plugin** - Progressive web app generation
@@ -48,6 +52,7 @@ A modern, high-performance portfolio website built with cutting-edge web technol
 - **Terser** - JavaScript minification
 
 ### Code Quality
+
 - **ESLint 9** - Code linting with latest standards
 - **TypeScript ESLint** - TypeScript-specific linting rules
 
@@ -96,12 +101,14 @@ website/
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/henriquebonfim/website.git
    cd website
    ```
 
 2. **Install dependencies**
+
    ```bash
    bun install
    # or
@@ -109,6 +116,7 @@ website/
    ```
 
 3. **Start development server**
+
    ```bash
    bun run dev
    # or
@@ -120,15 +128,15 @@ website/
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start development server on port 8080 |
-| `bun run build` | Build for production |
-| `bun run preview` | Preview production build locally |
-| `bun run lint` | Run ESLint |
-| `bun run i18n:extract` | Extract translation strings |
-| `bun run i18n:compile` | Compile translations |
-| `bun run translate:pipeline` | Extract and compile translations |
+| Command                      | Description                           |
+| ---------------------------- | ------------------------------------- |
+| `bun run dev`                | Start development server on port 8080 |
+| `bun run build`              | Build for production                  |
+| `bun run preview`            | Preview production build locally      |
+| `bun run lint`               | Run ESLint                            |
+| `bun run i18n:extract`       | Extract translation strings           |
+| `bun run i18n:compile`       | Compile translations                  |
+| `bun run translate:pipeline` | Extract and compile translations      |
 
 ## 🌍 Internationalization
 
@@ -141,6 +149,7 @@ The project supports multiple languages out of the box:
 ### Adding Translations
 
 1. Extract translatable strings:
+
    ```bash
    bun run i18n:extract
    ```
@@ -153,6 +162,7 @@ The project supports multiple languages out of the box:
    ```
 
 Or run the full pipeline:
+
 ```bash
 bun run translate:pipeline
 ```
@@ -166,6 +176,7 @@ bun run build
 ```
 
 The optimized build will be generated in the `dist/` directory with:
+
 - Code splitting and lazy loading
 - Minified and compressed assets
 - Optimized images
@@ -181,6 +192,7 @@ firebase deploy
 ## ⚙️ Configuration
 
 ### Vite Configuration
+
 - Custom aliases: `@` and `#` point to `./src`
 - Port: `8080`
 - Image optimization with Sharp
@@ -188,11 +200,13 @@ firebase deploy
 - Code splitting for React and UI libraries
 
 ### Tailwind Configuration
+
 - Custom theme extensions in [tailwind.config.ts](tailwind.config.ts)
 - DaisyUI component library
 - Typography plugin
 
 ### TypeScript Configuration
+
 - Strict mode enabled
 - Path aliases configured
 - React JSX runtime
@@ -200,21 +214,25 @@ firebase deploy
 ## 🎯 Key Features Explained
 
 ### Progressive Web App
+
 The site works offline and can be installed on devices thanks to the PWA plugin and service workers.
 
 ### Performance Optimization
+
 - **Image Optimization**: Automatic compression and format conversion
 - **Code Splitting**: Separate chunks for vendor libraries
 - **Lazy Loading**: Components loaded on demand
 - **Compression**: Gzip and Brotli compression
 
 ### SEO Features
+
 - Structured data (JSON-LD)
 - Meta tags for social sharing
 - Automatic sitemap generation
 - Semantic HTML structure
 
 ### Widget Integrations
+
 - **Spotify**: Display currently playing or recent tracks
 - **NASA APOD**: Show Astronomy Picture of the Day
 - **YouTube**: Embed latest videos
@@ -238,6 +256,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Henrique Bonfim**
+
 - Website: [henriquebonfim.web.app](https://henriquebonfim.web.app)
 - GitHub: [@henriquebonfim](https://github.com/henriquebonfim)
 - LinkedIn: [@henriquebonfim](https://www.linkedin.com/in/henriquebonfim)
@@ -254,8 +273,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-  **⭐ If you find this project useful, please consider giving it a star!**
+**⭐ If you find this project useful, please consider giving it a star!**
 
-  Made with ❤️ by Henrique Bonfim
+Made with ❤️ by Henrique Bonfim
 
 </div>
