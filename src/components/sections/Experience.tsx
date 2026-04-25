@@ -1,25 +1,81 @@
+import { SectionAlienCaption } from '@/components/SectionAlienCaption';
 import { achievements, experiences } from '@/data/experience';
 import { motion } from 'framer-motion';
-import { Briefcase } from 'lucide-react';
+import { ArrowUpRight, Briefcase } from 'lucide-react';
+import { useMemo } from 'react';
 import { TerminalWindow } from '../TerminalWindow';
 
+const getUniqueSortedValues = (values: string[]) =>
+  Array.from(new Set(values)).sort((left, right) => left.localeCompare(right));
+
+const formatMonthToDate = (value: string) => {
+  const [month, year] = value.trim().split('/');
+
+  if (!month || !year) {
+    return value;
+  }
+
+  return `${year}-${month.padStart(2, '0')}-01`;
+};
+
 export const Experience = () => {
+  const workExperienceTags = useMemo(
+    () => getUniqueSortedValues(experiences.flatMap((experience) => experience.tags)),
+    []
+  );
+
+  // const workExperienceTagCount = (tag: string) =>
+  //   experiences.filter((experience) => experience.tags.includes(tag)).length;
+
   return (
-    <section id="experience" className="relative py-24 md:py-32 experience-scene">
+    <section
+      id="experience"
+      aria-labelledby="experience-heading"
+      className="relative py-24 md:py-32 experience-scene"
+    >
       <div className="container">
         <div className="max-w-3xl">
-          <p className="font-mono text-xs uppercase tracking-[0.2em] comment-highlight mb-4">
-            // $ cat ./experience.log
-          </p>
-          <h2 className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95]">
+          <SectionAlienCaption label="$ cat ./experience.log" className="mb-3" />
+          <h2
+            id="experience-heading"
+            className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] uppercase"
+          >
             A decade of shipping
             <br />
             <span className="text-gradient">calm systems.</span>
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-xl">
-            Selected roles where I built platforms, mentored engineers, and moved metrics that
-            mattered.
+          <p className="mt-6 text-muted-foreground max-w-xl inline-block">
+            Selected roles where I turned business needs into products, platforms, and measurable
+            results that mattered.
+            <span className="inline-block  ">
+              <a
+                href="https://linkedin.com/in/henriquebonfim"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center gap-2 rounded-full   px-5 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
+              >
+                ./linkedin
+                <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground" />
+              </a>
+            </span>
           </p>
+
+          <div className="mt-10">
+            <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
+              Work experience tags
+            </p>
+            <div className="flex flex-wrap gap-2">
+              {workExperienceTags.map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-3.5 py-1.5 font-mono text-xs text-muted-foreground"
+                >
+                  <span>{tag}</span>
+                  {/* <span className="text-[10px] opacity-70">{workExperienceTagCount(tag)}</span> */}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
 
         {/* Achievements grid */}
@@ -47,10 +103,10 @@ export const Experience = () => {
         {/* Timeline */}
         <div className="mt-16 relative">
           <div
-            className="absolute left-4 md:left-6 top-2 bottom-2 w-px bg-gradient-to-b from-primary/60 via-primary/20 to-transparent"
+            className="absolute left-4 md:left-6 top-2 bottom-2 w-px bg-linear-to-b from-primary/60 via-primary/20 to-transparent"
             aria-hidden
           />
-          <ul className="space-y-8">
+          <ol className="space-y-8 list-none">
             {experiences.map((exp, i) => (
               <motion.li
                 key={`${exp.company}-${exp.period}`}
@@ -73,7 +129,17 @@ export const Experience = () => {
                       </h3>
                     </div>
                     <span className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-                      {exp.period}
+                      {(() => {
+                        const [startRaw, endRaw] = exp.period.split(' — ');
+
+                        return (
+                          <>
+                            <time dateTime={formatMonthToDate(startRaw ?? '')}>{startRaw}</time>
+                            {' — '}
+                            <time dateTime={formatMonthToDate(endRaw ?? '')}>{endRaw}</time>
+                          </>
+                        );
+                      })()}
                     </span>
                   </div>
                   <p className="font-mono text-[10px] uppercase tracking-wider text-primary-glow mb-3">
@@ -87,41 +153,43 @@ export const Experience = () => {
                       </li>
                     ))}
                   </ul>
-                  {exp.stack && (
-                    <div className="mt-4 flex flex-wrap gap-1.5">
-                      {exp.stack.map((s) => (
-                        <span
-                          key={s}
-                          className="rounded-full border border-border bg-secondary/40 px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
-                        >
-                          {s}
-                        </span>
-                      ))}
+                  <div className="mt-4 space-y-3">
+                    <div>
+                      <p className="mb-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                        Tags
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {exp.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-border px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  )}
+
+                    <div>
+                      <p className="mb-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
+                        Stack
+                      </p>
+                      <div className="flex flex-wrap gap-1.5">
+                        {exp.stack.map((s) => (
+                          <span
+                            key={s}
+                            className="rounded-full border border-border bg-secondary/40 px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
+                          >
+                            {s}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
                 </TerminalWindow>
               </motion.li>
             ))}
-          </ul>
-        </div>
-
-        <div className="mt-12 flex flex-wrap items-center gap-3">
-          <a
-            href="/henrique-bonfim-resume.pdf"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 font-mono text-sm font-medium text-primary-foreground hover:bg-primary-glow transition-colors glow-ring"
-          >
-            <span>$ download ./resume.pdf</span>
-          </a>
-          <a
-            href="https://linkedin.com/in/henriquebonfim"
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
-          >
-            <span>./full_history.linkedin</span>
-          </a>
+          </ol>
         </div>
       </div>
     </section>

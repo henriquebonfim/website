@@ -4,7 +4,8 @@ export type Experience = {
   type: string;
   period: string;
   highlights: string[];
-  stack?: string[];
+  tags: string[];
+  stack: string[];
 };
 
 export const experiences: Experience[] = [
@@ -14,11 +15,31 @@ export const experiences: Experience[] = [
     type: 'part-time · contract',
     period: '06/2024 — 01/2025',
     highlights: [
-      'Built a stock-analysis bot (NDA) combining cloud infra, AI models, and Monte Carlo simulations for automated portfolio insights.',
-      'Shipped an AI chatbot MVP (Python + Next.js) with context-aware responses, deflecting routine support tickets.',
-      'Automated data entry & reporting workflows — reduced manual work by 66%.',
+      'Developed a stock analysis bot for personal advisors under NDA, combining cloud infrastructure, AI models, and Monte Carlo simulations for automated portfolio insights to integrate with their existing systems.',
+      'Built a Python bot leveraging AI/LLM models to interpret market data and generate context-aware recommendations for advisors.',
+      'Deployed and scaled the system on Google Compute VMs with autoscaling, enabling reliable execution of Monte Carlo simulations under variable workloads.',
+      'Implemented RAG (retrieval-augmented generation) patterns to combine historical data with AI-generated insights, improving report accuracy and decision-making support.',
+      'Collaborated closely with the client to translate financial requirements into automated workflows, integrating AI outputs with actionable portfolio guidance.',
     ],
-    stack: ['Python', 'Next.js', 'GPT-4', 'Claude', 'AWS'],
+    tags: [
+      'RAG (Retrieval-Augmented Generation)',
+      'AI Agents',
+      'Chatbot',
+      'Data Analysis',
+      'ELT (Extract, Load, Transform)',
+      'Third Party API Integration',
+      'Web3',
+      'Distributed Systems',
+    ],
+    stack: [
+      'Python',
+      'FastAPI',
+      'Google Cloud',
+      'LangChain',
+      'OpenAI API',
+      'Vertex AI',
+      'Ethers.js',
+    ],
   },
   {
     company: 'Workana',
@@ -26,11 +47,23 @@ export const experiences: Experience[] = [
     type: 'part-time',
     period: '12/2023 — 05/2024',
     highlights: [
-      'Designed a data-pipeline microservice with AI integration, validating user data via 3rd-party APIs over async messaging.',
-      'Distributed runtime on Kubernetes with RabbitMQ + Redis for back-pressure and resilience.',
-      'Integrated GPT-4, Claude, and private APIs for faster, more accurate processing.',
+      'Short contract to design and implement a dedicated KYC data pipeline microservice with AI integration, validating user data through third-party APIs and communicating results to other system components via asynchronous messaging.',
+      'Helped integrate with the FIX protocol for real-time communication with external providers.',
+      'Implemented event-driven flows using RabbitMQ to handle transaction processing and internal service communication.',
+      'Collaborated on integrating OpenAI and Anthropic APIs to support a recommendation layer that generated personalized suggestions based on user profile and behavioral data.',
+      'Participated in sprint planning, architecture discussions, and code reviews in a Kanban-based workflow.',
     ],
-    stack: ['Kubernetes', 'RabbitMQ', 'Redis', 'GPT-4', 'Claude'],
+    tags: [
+      'KYC (Know Your Customer)',
+      'Event-Driven',
+      'AI/LLM',
+      'ELT (Extract, Load, Transform)',
+      'Third Party API Integration',
+      'Data Analysis',
+      'Data Visualization',
+      'Distributed Systems',
+    ],
+    stack: ['Nest.js', 'PostgreSQL', 'RabbitMQ', 'OpenAI API', 'Anthropic API', 'TypeScript'],
   },
   {
     company: 'Meu Financiamento Solar',
@@ -38,12 +71,45 @@ export const experiences: Experience[] = [
     type: 'full-time',
     period: '08/2021 — 04/2023',
     highlights: [
-      'Built custom dashboards (React, Chart.js, Rails, Node, PostgreSQL) for omnichannel, ops, and stakeholder teams — 53% faster decisions.',
-      'Migrated KYC workflows from Rails to Next.js with risk/compliance/data — throughput +22%.',
-      'Mentored new hires through onboarding and code reviews.',
-      'Aligned roadmap with BV Bank cross-functionally — supported the acquisition of the platform.',
+      'Worked on one of Brazil’s largest solar financing platforms (30,000+ active users), supporting loan origination, KYC, and financial operations prior to acquisition by BV Bank.',
+      'Contributed to scaling and stabilizing a distributed financing platform with 99.9% availability and zero downtime, supporting loan origination, KYC validation, and credit workflows.',
+      'Designed and developed executive and operational dashboards using React, Chart.js, Node.js, Ruby on Rails, and PostgreSQL, accelerating data-driven decisions by 53%.',
+      'Led the partial migration of critical KYC workflows from a Ruby on Rails monolith to Next.js (SSR), improving throughput by 22%, enhancing performance, and increasing front-end security controls.',
+      'Collaborated closely with risk, compliance, and data teams to ensure regulatory alignment (LGPD) and strengthen fraud-prevention mechanisms.',
+      'Helped implement structured CI/CD practices and deployment improvements to increase release reliability and reduce rollback frequency.',
+      'Participated in strategic technical discussions during the acquisition process, aligning system architecture and delivery timelines with BV Bank stakeholders.',
+      'Mentored new engineers through onboarding, architecture walkthroughs, and code reviews, promoting clean code standards and security best practices.',
+      'Temporarily assumed technical leadership responsibilities, facilitating cross-functional alignment and guiding sprint execution.',
+      'Participated in cross-functional discussions with C-level stakeholders, aligning technical delivery with strategic goals.',
     ],
-    stack: ['React', 'Next.js', 'Rails', 'Node.js', 'PostgreSQL'],
+    tags: [
+      'FinTech',
+      'Compliance',
+      'KYC (Know Your Customer)',
+      'Technical Leadership',
+      'Web3',
+      'Event-Driven',
+      'ELT (Extract, Load, Transform)',
+      'DevOps',
+      'Data Visualization',
+      'Data Analysis',
+      'Distributed Systems',
+    ],
+    stack: [
+      'React',
+      'Next.js',
+      'Ruby on Rails',
+      'PostgreSQL',
+      'AWS',
+      'RabbitMQ',
+      'Docker',
+      'Kubernetes',
+      'TypeScript',
+      'Python',
+      'Node.js',
+      'Java',
+      'React Native',
+    ],
   },
 ];
 

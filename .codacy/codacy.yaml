@@ -1,2 +1,4 @@
 tools:
     - opengrep@1.17.0
+pengrep@1.17.0
+    - trivy@0.69.3

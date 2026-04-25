@@ -8,12 +8,11 @@ const items = [
   { id: 'experience', label: 'Work' },
   { id: 'projects', label: 'Projects' },
   { id: 'certifications', label: 'Certs' },
-  { id: 'now-playing', label: 'Playing' },
   { id: 'contact', label: 'Contact' },
 ];
 
 export const FloatingNav = () => {
-  const [active, setActive] = useState('about');
+  const [active, setActive] = useState<'home' | (typeof items)[number]['id']>('home');
   const reduce = useReducedMotion();
 
   useEffect(() => {
@@ -25,11 +24,25 @@ export const FloatingNav = () => {
       },
       { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
     );
+
+    const syncHome = () => {
+      if (window.scrollY < 120) {
+        setActive('home');
+      }
+    };
+
+    syncHome();
+    window.addEventListener('scroll', syncHome, { passive: true });
+
     items.forEach((i) => {
       const el = document.getElementById(i.id);
       if (el) obs.observe(el);
     });
-    return () => obs.disconnect();
+
+    return () => {
+      window.removeEventListener('scroll', syncHome);
+      obs.disconnect();
+    };
   }, []);
 
   const scrollTo = (id: string) => {
@@ -40,22 +53,33 @@ export const FloatingNav = () => {
     <motion.nav
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      transition={reduce ? undefined : { delay: 0.6, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       className="fixed left-1/2 top-4 z-50 -translate-x-1/2"
       aria-label="Primary"
     >
-      <div className="flex items-center content-center gap-1 rounded-full border border-border bg-card/70 px-2 m-auto backdrop-blur-xl shadow-(--shadow-window)">
+      <div className="flex items-center content-center gap-1 rounded-full border border-border bg-card/70  m-auto backdrop-blur-xl shadow-(--shadow-window)">
         <button
+          type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="relative flex items-center overflow-visible rounded-full px-2 py-1 transition-colors hover:bg-secondary/60 sm:h-10 sm:w-14 sm:justify-center cursor-crosshair"
           aria-label="Home"
+          aria-pressed={active === 'home'}
+          className={cn(
+            'group relative hidden h-10 w-10 items-center justify-center overflow-visible rounded-full transition-all sm:flex',
+            active === 'home' ? 'text-foreground' : 'text-muted-foreground hover:text-foreground'
+          )}
         >
-          <span className="font-mono text-[10px] font-semibold tracking-[0.18em] text-primary-glow sm:hidden">
-            HB
-          </span>
+          {active === 'home' && (
+            <motion.span
+              layoutId="home-glow"
+              className="absolute inset-0 rounded-full bg-blue-500/12 ring-1 ring-blue-400/45 shadow-[0_0_26px_rgba(59,130,246,0.55)]"
+              transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+            />
+          )}
 
-          <span className="absolute -top-3 left-1/2 hidden -translate-x-1/2 sm:block">
-            <HeadLogo size={72} chase animated />
+          <span className="absolute inset-0 rounded-full opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-hover:bg-blue-500/8" />
+
+          <span className="absolute -top-5 left-1/2 hidden -translate-x-1/2 sm:block">
+            <HeadLogo size={72} chase />
           </span>
         </button>
         <div className="mx-1 hidden sm:block h-5 w-px bg-border" />

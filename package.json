@@ -13,6 +13,7 @@
     "test:watch": "vitest",
     "format": "prettier . --write",
     "format:check": "prettier . --check",
+    "script:extract-certs": "node scripts/extract-credly-certifications.mjs",
     "knip": "knip",
     "tree": "tree -a -L 4 -I 'node_modules|dist|build|coverage|.git|.wrangler|.vite|playwright-report|.agent|.codacy|.husky|.react-router|*.txt|.github|tasks|docs|*.md' /home/dev/projects/henrique-blog > tree.txt"
   },

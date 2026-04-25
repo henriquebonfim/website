@@ -1,7 +1,7 @@
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { useEffect } from 'react';
-import { AlienLogo } from '../AlienLogo';
+import { HeadLogo } from '../HeadLogo';
 import { TerminalWindow } from '../TerminalWindow';
 import { Typewriter } from '../Typewriter';
 
@@ -34,7 +34,7 @@ export const Hero = () => {
       <div className="absolute inset-0 -z-10 " aria-hidden />
       <div className="container">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-center">
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 m-auto">
             <motion.p
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -50,13 +50,13 @@ export const Hero = () => {
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.35, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[0.95] tracking-tight"
+              className="font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-[0.95] tracking-tight"
             >
               Henrique
               <br />
-              <span className="text-gradient">Bonfim</span>
+              <span className="text-gradient font-bold">Bonfim</span>
               <span
-                className="inline-block w-3 h-[0.85em] align-baseline ml-2 bg-primary-glow animate-blink"
+                className="inline-block w-3 h-[0.85em] align-baseline ml-2 bg-primary-glow  animate-blink"
                 aria-hidden
               />
             </motion.h1>
@@ -77,20 +77,7 @@ export const Hero = () => {
               transition={{ delay: 0.7, duration: 0.7 }}
               className="mt-8 flex flex-wrap items-center gap-3"
             >
-              <a
-                href="#projects"
-                className="group inline-flex items-center gap-2 rounded-full bg-primary px-5 py-3 font-mono text-sm font-medium text-primary-foreground hover:bg-primary-glow transition-colors glow-ring"
-              >
-                <span>$ ls ./projects</span>
-                <ArrowDown className="h-4 w-4 transition-transform group-hover:translate-y-0.5" />
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-3 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
-              >
-                <span>./contact.sh</span>
-              </a>
-              <div className="ml-1 flex items-center gap-1">
+              <div className="  flex items-center gap-1">
                 {[
                   { Icon: Github, href: 'https://github.com/henriquebonfim', label: 'GitHub' },
                   {
@@ -98,7 +85,7 @@ export const Hero = () => {
                     href: 'https://linkedin.com/in/henriquebonfim',
                     label: 'LinkedIn',
                   },
-                  { Icon: Mail, href: 'mailto:hello@henriquebonfim.com', label: 'Email' },
+                  { Icon: Mail, href: 'mailto:dev.unsorted585@passinbox.com', label: 'Email' },
                 ].map(({ Icon, href, label }) => (
                   <a
                     key={label}
@@ -106,9 +93,9 @@ export const Hero = () => {
                     target="_blank"
                     rel="noreferrer"
                     aria-label={label}
-                    className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/60 transition-colors"
+                    className="inline-flex h-13 w-13 items-center justify-center rounded-full border border-primary/60 text-muted-foreground hover:text-primary hover:border-primary/60 transition-colors glow-ring"
                   >
-                    <Icon className="h-4 w-4" />
+                    <Icon className="h-6 w-6" />
                   </a>
                 ))}
               </div>
@@ -119,28 +106,33 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 24, scale: 0.96 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ delay: 0.5, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-5 perspective-[1200px]"
+            className="m-auto lg:col-span-5 perspective-distant"
           >
             <motion.div
               style={{ rotateX: rotX, rotateY: rotY, transformStyle: 'preserve-3d' }}
               className="relative"
             >
-              <motion.div style={{ x: tx, y: ty }} className="absolute -top-8 -right-4 z-10">
-                <AlienLogo size={84} />
+              <motion.div
+                style={{ x: rotX, y: rotY }}
+                className="absolute bottom-32 -right-13 z-10 border border-primary/50 rounded-full   bg-card/80 backdrop-blur-md shadow-lg hidden xl:block"
+              >
+                <HeadLogo size={250} className="-m-10 -mt-0" />
               </motion.div>
-              <TerminalWindow title="hbonfim@earth: ~">
+              <TerminalWindow title="henrique@user: ~" className="w-[400px] h-[350px]">
                 <Typewriter
                   startDelay={900}
                   lines={[
                     '$ whoami',
-                    'henrique_bonfim',
+                    'henrique_bonfim · Brazilian',
                     '',
                     '$ cat ./role.txt',
                     'Senior Software Engineer',
                     'Platform · Observability · AI',
                     '',
                     '$ uptime',
-                    'earth · 12y in tech · still curious',
+                    '12y in tech · still curious',
+                    '',
+                    '$ echo "let\'s build something quiet, that scales loud."',
                   ]}
                 />
               </TerminalWindow>

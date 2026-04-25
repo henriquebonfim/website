@@ -39,11 +39,11 @@
 
     --radius: 1rem;
 
-    /* Terminal traffic lights */
-    --term-red: 0 86% 62%;
-    --term-yellow: 55 51% 76%;
-    --term-green: 129 46% 67%;
+    /* Terminal Buttons */
 
+    --term-red: 4 100% 67%;
+    --term-yellow: 45 100% 59%;
+    --term-green: 134 61% 50%;
     /* Effects */
     --gradient-aurora:
       radial-gradient(58% 78% at 16% 8%, hsl(210 80% 20% / 0.32), transparent 60%),
@@ -86,6 +86,12 @@
     scroll-behavior: smooth;
   }
 
+  button,
+  a,
+  html {
+    cursor: none !important;
+  }
+
   body {
     @apply bg-background text-foreground font-sans antialiased;
     background-color: hsl(var(--background));
@@ -118,15 +124,18 @@
   .hero-scene {
     background-image:
       radial-gradient(
-        140% 95% at 50% 0%,
+        140% 95% at 50% 150%,
         hsl(var(--background) / 0.08) 0%,
         hsl(var(--background) / 0.35) 62%,
         hsl(var(--background) / 0.72) 100%
       ),
       var(--background-scene);
-    background-size: auto, cover;
+    background-size: cover, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+    background-attachment: scroll, scroll;
+  }
+  .about-scene {
   }
 
   .footer-scene {
@@ -147,6 +156,7 @@
     background-size: auto, object-fit;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
   }
 
   .projects-scene {
@@ -157,6 +167,7 @@
     background-size: auto, cover;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
   }
 
   .experience-scene {
@@ -166,6 +177,8 @@
     background-size: auto, object-fit;
     background-position: center, center;
     background-repeat: no-repeat, no-repeat;
+
+    background-attachment: fixed, fixed;
   }
 
   .terminal-window {
