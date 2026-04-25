@@ -1,26 +1,26 @@
 import { SectionAlienCaption } from '@/components/SectionAlienCaption';
 import { motion } from 'framer-motion';
-import { ArrowUpRight, Box, FileDown, Github, Instagram, Linkedin, Mail } from 'lucide-react';
+import { ArrowUpRight, Box, Camera, FileDown, GitBranch, Link } from 'lucide-react';
 
 const links = [
   {
     label: 'GitHub',
     value: '@henriquebonfim',
     href: 'https://github.com/henriquebonfim',
-    Icon: Github,
+    Icon: GitBranch,
   },
 
   {
     label: 'LinkedIn',
     value: '@henriquebonfim',
     href: 'https://linkedin.com/in/henriquebonfim',
-    Icon: Linkedin,
+    Icon: Link,
   },
   {
     label: 'Instagram',
     value: '@hpbonfim',
     href: 'https://www.instagram.com/hpbonfim/',
-    Icon: Instagram,
+    Icon: Camera,
   },
   {
     label: 'Docker Hub',
@@ -31,7 +31,7 @@ const links = [
   {
     label: 'Curriculum Vitae',
     value: 'Download PDF',
-    href: '/henrique-bonfim-resume.pdf',
+    href: '/assets/static/henrique-bonfim-resume.pdf',
     Icon: FileDown,
   },
 ];

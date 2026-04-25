@@ -32,7 +32,6 @@ A modern, high-performance portfolio website built with cutting-edge web technol
 ### Styling
 
 - **Tailwind CSS 4.1** - Utility-first CSS framework
-- **DaisyUI 5.5** - Tailwind CSS component library
 - **Tailwind Typography** - Beautiful typographic defaults
 - **Lucide React** - Modern icon library
 

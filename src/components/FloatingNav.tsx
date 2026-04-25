@@ -57,7 +57,7 @@ export const FloatingNav = () => {
       className="fixed left-1/2 top-4 z-50 -translate-x-1/2"
       aria-label="Primary"
     >
-      <div className="flex items-center content-center gap-1 rounded-full border border-border bg-card/70  m-auto backdrop-blur-xl shadow-(--shadow-window)">
+      <div className="flex items-center content-center gap-1 rounded-full border border-border bg-card/70  m-auto backdrop-blur-xl shadow-(--shadow-window) sm:px-1">
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
@@ -71,7 +71,7 @@ export const FloatingNav = () => {
           {active === 'home' && (
             <motion.span
               layoutId="home-glow"
-              className="absolute inset-0 rounded-full bg-blue-500/12 ring-1 ring-blue-400/45 shadow-[0_0_26px_rgba(59,130,246,0.55)]"
+              className="absolute inset-0 rounded-full bg-blue-500/12 ring-1 ring-blue-400/60 shadow-[0_0_26px_rgba(59,130,246,0.55)]"
               transition={{ type: 'spring', stiffness: 380, damping: 32 }}
             />
           )}

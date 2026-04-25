@@ -1,5 +1,5 @@
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
-import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
+import { ArrowDown, GitBranch, Link, Mail } from 'lucide-react';
 import { useEffect } from 'react';
 import { HeadLogo } from '../HeadLogo';
 import { TerminalWindow } from '../TerminalWindow';
@@ -79,9 +79,9 @@ export const Hero = () => {
             >
               <div className="  flex items-center gap-1">
                 {[
-                  { Icon: Github, href: 'https://github.com/henriquebonfim', label: 'GitHub' },
+                  { Icon: GitBranch, href: 'https://github.com/henriquebonfim', label: 'GitHub' },
                   {
-                    Icon: Linkedin,
+                    Icon: Link,
                     href: 'https://linkedin.com/in/henriquebonfim',
                     label: 'LinkedIn',
                   },

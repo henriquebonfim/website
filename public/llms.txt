@@ -56,7 +56,7 @@ Bachelor's in Information Systems (2015-2019)
 ## Website Technical Stack
 - **Framework**: React 19 with Vite 7
 - **Language**: TypeScript 5
-- **Styling**: Tailwind CSS 4, DaisyUI 5
+- **Styling**: Tailwind CSS 4
 - **Runtime**: Bun
 - **I18n**: LinguiJS (en, pt, es)
 - **Features**: PWA, SEO optimized, Dark/Light mode

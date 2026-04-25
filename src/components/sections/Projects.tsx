@@ -1,7 +1,7 @@
 import { SectionAlienCaption } from '@/components/SectionAlienCaption';
 import { projects } from '@/data/projects';
 import { AnimatePresence, motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink, GitBranch } from 'lucide-react';
 import { useMemo, useState } from 'react';
 
 type ProjectFilter = 'All' | string;
@@ -223,7 +223,7 @@ export const Projects = () => {
                           rel="noreferrer"
                           className="inline-flex items-center gap-1.5 font-mono text-xs text-muted-foreground hover:text-foreground transition-colors"
                         >
-                          <Github className="h-3.5 w-3.5" /> repo
+                          <GitBranch className="h-3.5 w-3.5" /> repo
                         </a>
                       )}
                       {p.url && (
