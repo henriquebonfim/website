@@ -11,7 +11,7 @@ import Sitemap from 'vite-plugin-sitemap';
 import { version } from './package.json';
 const buildVersion = 'v' + version;
 
-export default defineConfig(({ mode }) => ({
+export default defineConfig(() => ({
   server: {
     host: '::',
     port: 8080,
@@ -53,9 +53,9 @@ export default defineConfig(({ mode }) => ({
     lingui(),
     tailwindcss(),
     react({
-      babel: {
-        plugins: ['macros'],
-      },
+      // babel: {
+      //   plugins: ['macros'],
+      // },
       jsxRuntime: 'automatic',
     }),
     ViteImageOptimizer(),
@@ -72,7 +72,7 @@ export default defineConfig(({ mode }) => ({
       registerType: 'autoUpdate',
       injectRegister: 'auto',
       workbox: {
-        cacheId: `henrique-bonfim-${buildVersion}`,
+        cacheId: `henriquebonfim-${buildVersion}`,
         globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2}'],
         maximumFileSizeToCacheInBytes: 3000000,
         runtimeCaching: [
@@ -145,37 +145,37 @@ export default defineConfig(({ mode }) => ({
       manifest: {
         name: 'Henrique Bonfim',
         short_name: 'Henrique',
-        description: `${buildVersion} - Personal website of Henrique Bonfim`,
-        theme_color: '#3f3f3f',
-        background_color: '#3f3f3f',
+        description: `Senior Software Engineer - ${buildVersion}`,
+        theme_color: '#1A1A1A',
+        background_color: '#1A1A1A',
         display: 'standalone',
         orientation: 'portrait',
         scope: '/',
         start_url: '/',
         icons: [
           {
-            src: 'icon-72x72.png',
+            src: 'assets/icons/icon-72x72.png',
             sizes: '72x72',
             type: 'image/png',
             purpose: 'any',
           },
           {
-            src: 'icon-96x96.png',
+            src: 'assets/icons/icon-96x96.png',
             sizes: '96x96',
             type: 'image/png',
           },
           {
-            src: 'icon-144x144.png',
+            src: 'assets/icons/icon-144x144.png',
             sizes: '144x144',
             type: 'image/png',
           },
           {
-            src: 'icon-192x192.png',
+            src: 'assets/icons/icon-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'icon-512x512.png',
+            src: 'assets/icons/icon-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',

@@ -1,4 +1,4 @@
-import { HeadLogo } from '@/components/HeadLogo';
+import { HeadLogo } from '@/shared/ui/HeadLogo';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 

@@ -1,13 +1,13 @@
-import { AnimatedCursor } from '@/components/AnimatedCursor';
-import { FloatingNav } from '@/components/FloatingNav';
-import { Footer } from '@/components/Footer';
-import { SeoStructuredData } from '@/components/SeoStructuredData';
-import { About } from '@/components/sections/About';
-import { Certifications } from '@/components/sections/Certifications';
-import { Contact } from '@/components/sections/Contact';
-import { Experience } from '@/components/sections/Experience';
-import { Hero } from '@/components/sections/Hero';
-import { Projects } from '@/components/sections/Projects';
+import { AnimatedCursor } from '@/shared/ui';
+import { SeoStructuredData } from '@/shared/seo';
+import { FloatingNav } from '@/widgets/navbar';
+import { Footer } from '@/widgets/footer';
+import { About } from '@/widgets/about';
+import { Certifications } from '@/widgets/certifications';
+import { Contact } from '@/widgets/contact';
+import { Experience } from '@/widgets/experience';
+import { Hero } from '@/widgets/hero';
+import { Projects } from '@/widgets/projects';
 
 const Index = () => {
   return (
