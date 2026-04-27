@@ -1,5 +1,5 @@
-import { SectionAlienCaption } from '@/shared/ui';
 import { projects } from '@/entities/project';
+import { SectionAlienCaption } from '@/shared/ui';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink, GitBranch } from 'lucide-react';
 import { useMemo, useState } from 'react';
@@ -113,13 +113,13 @@ export const Projects = () => {
               Project Stacks
             </p>
             <div className="flex flex-wrap gap-2">
-              {['All', ...projectStacks].map((stack) => {
+              {['All', ...projectStacks].map((stack, i) => {
                 const active = activeTag === stack;
                 const count = stack === 'All' ? projects.length : projectStackCount(stack);
 
                 return (
                   <button
-                    key={stack}
+                    key={i + stack}
                     type="button"
                     aria-pressed={active}
                     onClick={() => setActiveTag(stack)}
@@ -143,7 +143,7 @@ export const Projects = () => {
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((p, i) => (
                 <motion.article
-                  key={p.name}
+                  key={i + p.name}
                   layout
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -187,9 +187,9 @@ export const Projects = () => {
                           Tags
                         </p>
                         <div className="flex flex-wrap gap-1.5">
-                          {p.tags.map((t) => (
+                          {p.tags.map((t, i) => (
                             <span
-                              key={t}
+                              key={i + t}
                               className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-border text-muted-foreground"
                             >
                               {t}
@@ -203,9 +203,9 @@ export const Projects = () => {
                           Stack
                         </p>
                         <div className="flex flex-wrap gap-1.5">
-                          {p.stack.map((s) => (
+                          {p.stack.map((s, i) => (
                             <span
-                              key={s}
+                              key={i + s}
                               className="font-mono text-[10px] px-2 py-0.5 rounded-full border border-primary/20 bg-primary/10 text-foreground/85"
                             >
                               {s}

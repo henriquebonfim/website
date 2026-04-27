@@ -1,4 +1,5 @@
-import { lingui } from '@lingui/vite-plugin';
+import { lingui, linguiTransformerBabelPreset } from '@lingui/vite-plugin';
+import babel from '@rolldown/plugin-babel';
 import tailwindcss from '@tailwindcss/vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -7,7 +8,6 @@ import viteCompression from 'vite-plugin-compression';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import { VitePWA } from 'vite-plugin-pwa';
 import Sitemap from 'vite-plugin-sitemap';
-
 import { version } from './package.json';
 const buildVersion = 'v' + version;
 
@@ -50,14 +50,12 @@ export default defineConfig(() => ({
     target: 'es2022',
   },
   plugins: [
+    react(),
     lingui(),
-    tailwindcss(),
-    react({
-      // babel: {
-      //   plugins: ['macros'],
-      // },
-      jsxRuntime: 'automatic',
+    babel({
+      presets: [linguiTransformerBabelPreset()],
     }),
+    tailwindcss(),
     ViteImageOptimizer(),
     viteCompression({
       algorithm: 'brotliCompress',

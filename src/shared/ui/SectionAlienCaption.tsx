@@ -68,7 +68,7 @@ export const SectionAlienCaption = ({
     }
 
     const elapsed = (time - loopStartRef.current) / 1000;
-    const orbitPhase = elapsed * -1.05;
+    const orbitPhase = elapsed * 1.05;
     const ramp = Math.min(1, elapsed / 0.55);
     const smoothRamp = ramp * ramp * (3 - 2 * ramp);
 

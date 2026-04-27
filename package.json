@@ -17,25 +17,29 @@
     "prepare": "husky",
     "lint-staged": "lint-staged",
     "knip": "knip --tsConfig tsconfig.app.json",
-    "tree": "tree -a -L 4 -I 'node_modules|dist|build|coverage|.git|.wrangler|.vite|playwright-report|.agent|.codacy|.husky|.react-router|*.txt|.github|tasks|docs|*.md' /home/dev/projects/henrique-blog > tree.txt"
+    "tree": "tree -a -L 4 -I 'node_modules|dist|build|coverage|.git|.wrangler|.vite|playwright-report|.agent|.codacy|.husky|.react-router|*.txt|.github|tasks|docs|*.md' /home/dev/projects/henrique-blog > tree.txt",
+    "lingui:extract": "lingui extract",
+    "lingui:compile": "lingui compile"
   },
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",
-    "tailwind-merge": "^3.5.0",
-    "tailwindcss-animate": "^1.0.7",
     "lucide-react": "^1.11.0",
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
-    "react-router-dom": "^7.14.2"
+    "react-router-dom": "^7.14.2",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@lingui/babel-plugin-lingui-macro": "^6.0.0",
     "@lingui/cli": "^6.0.0",
     "@lingui/core": "^6.0.0",
     "@lingui/format-po": "^6.0.0",
     "@lingui/react": "^6.0.0",
     "@lingui/vite-plugin": "^6.0.0",
+    "@rolldown/plugin-babel": "^0.2.3",
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.2.4",
     "@types/node": "^25.6.0",

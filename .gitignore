@@ -32,3 +32,4 @@ src/shared/i18n/locales/*.ts
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
 old_src
+*.tsbuildinfo

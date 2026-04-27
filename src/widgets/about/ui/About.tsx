@@ -1,3 +1,4 @@
+import codingImg from '@/assets/coding.webp';
 import { SectionAlienCaption, TerminalWindow } from '@/shared/ui';
 import { motion } from 'framer-motion';
 
@@ -42,9 +43,9 @@ export const About = () => {
 
             <figure className="mt-8 flex-col max-w-2/4 hidden lg:flex">
               <img
-                src="./myself_coding.webp"
+                src={codingImg}
                 alt="Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
-                className="rounded-t-lg border border-muted-foreground/20 "
+                className="rounded-t-lg border border-muted-foreground/20"
               />
               <blockquote className="border-l-2 rounded-b-2xl border-b-2 border-muted-foreground/20 text-sm  p-4 italic text-muted-foreground">
                 - I build platforms that brings calm, simplicity, and reliability, so product teams

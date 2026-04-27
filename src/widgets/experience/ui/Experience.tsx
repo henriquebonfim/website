@@ -1,5 +1,8 @@
+import { experiences } from '@/entities/experience';
 import { SectionAlienCaption, TerminalWindow } from '@/shared/ui';
-import { achievements, experiences } from '@/entities/experience';
+import { msg, t } from '@lingui/core/macro';
+import { Trans } from '@lingui/react/macro';
+import { useLingui } from '@lingui/react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Briefcase } from 'lucide-react';
 import { useMemo } from 'react';
@@ -17,14 +20,50 @@ const formatMonthToDate = (value: string) => {
   return `${year}-${month.padStart(2, '0')}-01`;
 };
 
+// This is a hack to make Lingui extract the strings from the models
+// without having macros in the models themselves.
+// We "re-declare" them here with msg macro.
+// Actually, a better way is to use i18n._(msg`string`) in the component if we know the strings.
+// But since they are dynamic, we might need a better strategy if we want extraction.
+// FOR NOW: I will just use i18n._() and assume they are in the PO file (I'll keep them there).
+
 export const Experience = () => {
+  const { i18n } = useLingui();
+
+  const achievements = useMemo(
+    () => [
+      {
+        metric: '30k+',
+        label: i18n._(t`users scaled`),
+        detail: i18n._(
+          t`Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank.`
+        ),
+      },
+      {
+        metric: '66%',
+        label: i18n._(t`manual work removed`),
+        detail: i18n._(t`Automated data entry & reporting pipelines for client teams.`),
+      },
+      {
+        metric: '53%',
+        label: i18n._(t`faster decisions`),
+        detail: i18n._(
+          t`Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams.`
+        ),
+      },
+      {
+        metric: '10y',
+        label: i18n._(t`shipping in production`),
+        detail: i18n._(t`Full-stack & backend across microservices, event-driven systems, and AI.`),
+      },
+    ],
+    [i18n]
+  );
+
   const workExperienceTags = useMemo(
     () => getUniqueSortedValues(experiences.flatMap((experience) => experience.tags)),
     []
   );
-
-  // const workExperienceTagCount = (tag: string) =>
-  //   experiences.filter((experience) => experience.tags.includes(tag)).length;
 
   return (
     <section
@@ -39,29 +78,33 @@ export const Experience = () => {
             id="experience-heading"
             className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] uppercase"
           >
-            A decade of shipping
-            <br />
-            <span className="text-gradient">calm systems.</span>
+            <Trans>
+              A decade of shipping
+              <br />
+              <span className="text-gradient">calm systems.</span>
+            </Trans>
           </h2>
-          <p className="mt-6 text-muted-foreground max-w-xl inline-block">
-            Selected roles where I turned business needs into products, platforms, and measurable
-            results that mattered.
-            <span className="inline-block  ">
+          <div className="mt-6 text-muted-foreground max-w-xl inline-block">
+            <Trans>
+              Selected roles where I turned business needs into products, platforms, and measurable
+              results that mattered.
+            </Trans>
+            <span className="inline-block">
               <a
                 href="https://linkedin.com/in/henriquebonfim"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full   px-5 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
+                className="inline-flex items-center gap-2 rounded-full px-5 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
               >
                 ./linkedin
                 <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground" />
               </a>
             </span>
-          </p>
+          </div>
 
           <div className="mt-10">
             <p className="mb-3 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Work experience tags
+              <Trans>Work experience tags</Trans>
             </p>
             <div className="flex flex-wrap gap-2">
               {workExperienceTags.map((tag) => (
@@ -70,7 +113,6 @@ export const Experience = () => {
                   className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-3.5 py-1.5 font-mono text-xs text-muted-foreground"
                 >
                   <span>{tag}</span>
-                  {/* <span className="text-[10px] opacity-70">{workExperienceTagCount(tag)}</span> */}
                 </span>
               ))}
             </div>
@@ -123,7 +165,7 @@ export const Experience = () => {
                     <div className="flex items-center gap-2">
                       <Briefcase className="h-3.5 w-3.5 text-primary-glow" />
                       <h3 className="font-display text-lg md:text-xl font-bold">
-                        {exp.role}{' '}
+                        {i18n._(exp.role)}{' '}
                         <span className="text-muted-foreground font-normal">@ {exp.company}</span>
                       </h3>
                     </div>
@@ -142,20 +184,20 @@ export const Experience = () => {
                     </span>
                   </div>
                   <p className="font-mono text-[10px] uppercase tracking-wider text-primary-glow mb-3">
-                    {exp.type}
+                    {i18n._(exp.type)}
                   </p>
                   <ul className="space-y-2">
                     {exp.highlights.map((h) => (
                       <li key={h} className="flex gap-2 text-sm leading-relaxed text-foreground/90">
                         <span className="text-primary-glow font-mono shrink-0">▸</span>
-                        <span>{h}</span>
+                        <span>{i18n._(h)}</span>
                       </li>
                     ))}
                   </ul>
                   <div className="mt-4 space-y-3">
                     <div>
                       <p className="mb-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-                        Tags
+                        <Trans>Tags</Trans>
                       </p>
                       <div className="flex flex-wrap gap-1.5">
                         {exp.tags.map((tag) => (
@@ -171,13 +213,13 @@ export const Experience = () => {
 
                     <div>
                       <p className="mb-2 font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-                        Stack
+                        <Trans>Stack</Trans>
                       </p>
                       <div className="flex flex-wrap gap-1.5">
                         {exp.stack.map((s) => (
                           <span
                             key={s}
-                            className="rounded-full border border-border bg-secondary/40 px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
+                            className="rounded-full border border-border px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
                           >
                             {s}
                           </span>

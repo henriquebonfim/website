@@ -3,10 +3,10 @@ import { formatter } from '@lingui/format-po';
 
 export default defineConfig({
   sourceLocale: 'en',
-  locales: ['en', 'pt', 'es'],
+  locales: ['en', 'pt-BR', 'es'],
   catalogs: [
     {
-      path: '<rootDir>/src/shared/i18n/locales/{locale}',
+      path: 'src/shared/i18n/locales/{locale}',
       include: ['src'],
     },
   ],

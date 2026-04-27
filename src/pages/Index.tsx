@@ -1,4 +1,4 @@
-import { AnimatedCursor } from '@/shared/ui';
+import { AnimatedCursor, LanguageSwitcher } from '@/shared/ui';
 import { SeoStructuredData } from '@/shared/seo';
 import { FloatingNav } from '@/widgets/navbar';
 import { Footer } from '@/widgets/footer';
@@ -20,6 +20,7 @@ const Index = () => {
       </a>
       <SeoStructuredData />
       <AnimatedCursor />
+      <LanguageSwitcher />
       <header>
         <FloatingNav />
       </header>
