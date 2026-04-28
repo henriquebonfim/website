@@ -1,8 +1,8 @@
 import { experiences } from '@/entities/experience';
 import { SectionAlienCaption, TerminalWindow } from '@/shared/ui';
-import { msg, t } from '@lingui/core/macro';
-import { Trans } from '@lingui/react/macro';
+import { t } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
+import { Trans } from '@lingui/react/macro';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Briefcase } from 'lucide-react';
 import { useMemo } from 'react';
@@ -20,13 +20,6 @@ const formatMonthToDate = (value: string) => {
   return `${year}-${month.padStart(2, '0')}-01`;
 };
 
-// This is a hack to make Lingui extract the strings from the models
-// without having macros in the models themselves.
-// We "re-declare" them here with msg macro.
-// Actually, a better way is to use i18n._(msg`string`) in the component if we know the strings.
-// But since they are dynamic, we might need a better strategy if we want extraction.
-// FOR NOW: I will just use i18n._() and assume they are in the PO file (I'll keep them there).
-
 export const Experience = () => {
   const { i18n } = useLingui();
 
@@ -36,25 +29,31 @@ export const Experience = () => {
         metric: '30k+',
         label: i18n._(t`users scaled`),
         detail: i18n._(
-          t`Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank.`
+          t`Helped a fintech scale from zero to 30k+ users while navigating the technical mess of a fast-growing startup, leading to a successful bank acquisition.`
         ),
       },
       {
-        metric: '66%',
+        metric: '+20 hrs/wk',
         label: i18n._(t`manual work removed`),
-        detail: i18n._(t`Automated data entry & reporting pipelines for client teams.`),
+        detail: i18n._(
+          t`Automated data entry and reporting for teams that were drowning in spreadsheets and manual processes... giving them back 20+ hours every week by leveraging ELT techniques to streamline their workflow and reduce human errors.`
+        ),
       },
       {
         metric: '53%',
         label: i18n._(t`faster decisions`),
         detail: i18n._(
-          t`Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams.`
+          t`Built concise observability dashboards that surface the signals teams actually use, helping product decisions happen about 50% faster during incidents.
+`
         ),
       },
       {
         metric: '10y',
         label: i18n._(t`shipping in production`),
-        detail: i18n._(t`Full-stack & backend across microservices, event-driven systems, and AI.`),
+        detail: i18n._(
+          t`A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience.
+          I prefer small, testable fixes that stop the pain, not clever one-offs that add more complexity. I've learned that simple code beats clever one every single time.`
+        ),
       },
     ],
     [i18n]
@@ -79,9 +78,9 @@ export const Experience = () => {
             className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] uppercase"
           >
             <Trans>
-              A decade of shipping
+              10 years of turning chaos
               <br />
-              <span className="text-gradient">calm systems.</span>
+              into <span className="text-gradient">calm systems.</span>
             </Trans>
           </h2>
           <div className="mt-6 text-muted-foreground max-w-xl inline-block">

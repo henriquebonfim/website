@@ -14,21 +14,19 @@ export const Hero = () => {
   const sy = useSpring(my, { stiffness: 60, damping: 18 });
   const rotX = useTransform(sy, [-200, 200], [8, -8]);
   const rotY = useTransform(sx, [-200, 200], [-8, 8]);
-  const tx = useTransform(sx, [-200, 200], [-12, 12]);
-  const ty = useTransform(sy, [-200, 200], [-12, 12]);
 
   const terminalLines = [
-    i18n._(msg`$ whoami`),
-    i18n._(msg`henrique_bonfim · Brazilian`),
-    '',
-    i18n._(msg`$ cat ./focus.txt`),
-    i18n._(msg`Backend & Platform Engineering`),
-    i18n._(msg`High-traffic systems · Reliability`),
-    '',
-    i18n._(msg`$ uptime`),
-    i18n._(msg`12y in tech · still curious`),
-    '',
-    i18n._(msg`$ echo "let's build systems that just work."`),
+    i18n._(msg`$ whoami --name --nationality`),
+    i18n._(msg`Henrique Bonfim · Brazilian`),
+    '\n ',
+    i18n._(msg`$ whoami --profession --focus`),
+    i18n._(msg`Software Architect | Software Engineer`),
+    i18n._(msg`Backend | Distributed Systems | Web3 | AI`),
+    '\n ',
+    i18n._(msg`$ whoami --summary`),
+    i18n._(msg`12y in tech tidying up the messy parts...`),
+    i18n._(msg`Still curious and learning every day.`),
+    i18n._(msg`Let's build systems that just work."`),
   ];
 
   useEffect(() => {
@@ -88,8 +86,9 @@ export const Hero = () => {
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-muted-foreground"
             >
               <Trans>
-                I build backend systems that don't fall apart when traffic spikes. Focused on
-                reliability, observability, and the calm that comes from well-engineered code.
+                I build backend systems that don't fall apart when traffic spikes. I tidy up the
+                messy parts — caches, retries, and monitoring — so teams can ship without
+                firefighting. Want your platform to behave? Say hello.
               </Trans>
             </motion.p>
 

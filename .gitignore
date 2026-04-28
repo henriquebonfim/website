@@ -33,3 +33,4 @@ src/shared/i18n/locales/*.ts
 .github/instructions/codacy.instructions.md
 old_src
 *.tsbuildinfo
+.planning

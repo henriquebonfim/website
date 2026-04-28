@@ -14,36 +14,82 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ cat ./role.txt"
-msgstr "$ cat ./role.txt"
+#~ msgid "$ cat ./focus.txt"
+#~ msgstr ""
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ echo \"let's build something quiet, that scales loud.\""
-msgstr "$ echo \"vamos construir algo silencioso, que escala alto.\""
+#~ msgid "$ cat ./role.txt"
+#~ msgstr "$ cat ./role.txt"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ uptime"
-msgstr "$ uptime"
+#~ msgid "$ echo \"let's build something quiet, that scales loud.\""
+#~ msgstr "$ echo \"vamos construir algo silencioso, que escala alto.\""
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ whoami"
-msgstr "$ whoami"
+#~ msgid "$ echo \"let's build systems that just work.\""
+#~ msgstr ""
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "12y in tech · still curious"
-msgstr "12 anos em tech · ainda curioso"
+#~ msgid "$ uptime"
+#~ msgstr "$ uptime"
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "$ whoami"
+#~ msgstr "$ whoami"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ whoami --name --nationality"
+msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ whoami --profession --focus"
+msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ whoami --summary"
+msgstr ""
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "A decade of shipping<0/><1>calm systems.</1>"
-msgstr "Uma década entregando<0/><1>sistemas calmos.</1>"
+msgid "10 years of turning chaos<0/>into <1>calm systems.</1>"
+msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "12y in tech · still curious"
+#~ msgstr "12 anos em tech · ainda curioso"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "12y in tech tidying up the messy parts..."
+msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "A decade of shipping<0/><1>calm systems.</1>"
+#~ msgstr "Uma década entregando<0/><1>sistemas calmos.</1>"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid ""
+"A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience.\n"
+"          I prefer small, testable fixes that stop the pain, not clever one-offs that add more complexity. I've learned that simple code beats clever one every single time."
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+msgid "A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter."
+msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "A decade spent in the trenches of microservices and AI, learning that simple code beats clever code every single time."
+#~ msgstr ""
 
 #: src/widgets/about/ui/About.tsx
 msgid "A quiet operator<0/>in a noisy industry."
 msgstr "Um operador silencioso<0/>em uma indústria barulhenta."
 
 #: src/widgets/projects/ui/Projects.tsx
-msgid "A selection of open-source and internal projects that showcase my focus on building calm, reliable platforms that empower teams and scale with confidence."
-msgstr "Uma seleção de projetos de código aberto e internos que mostram meu foco na construção de plataformas calmas e confiáveis que capacitam equipes e escalam com confiança."
+msgid "A selection of open-source and internal projects that show things I built to solve real problems, with notes on why some of them were hard."
+msgstr ""
+
+#: src/widgets/projects/ui/Projects.tsx
+#~ msgid "A selection of open-source and internal projects that showcase my focus on building calm, reliable platforms that empower teams and scale with confidence."
+#~ msgstr "Uma seleção de projetos de código aberto e internos que mostram meu foco na construção de plataformas calmas e confiáveis que capacitam equipes e escalam com confiança."
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "About"
@@ -54,20 +100,56 @@ msgstr "Sobre"
 #~ msgstr "arquivado"
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Automated data entry & reporting pipelines for client teams."
-msgstr "Pipelines automatizados de entrada de dados e relatórios para equipes de clientes."
+#~ msgid "Automated data entry & reporting pipelines for client teams."
+#~ msgstr "Pipelines automatizados de entrada de dados e relatórios para equipes de clientes."
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Automated data entry and reporting for teams that were drowning in spreadsheets and manual processes... giving them back 20+ hours every week by leveraging ELT techniques to streamline their workflow and reduce human errors."
+msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "Automated data entry and reporting for teams that were drowning in spreadsheets, giving them back 20+ hours every week."
+#~ msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid ""
+#~ "Automated recurring reporting and billing ETL so teams regained ~20 hours per week and manual errors fell roughly 66%.\n"
+#~ ""
+#~ msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "Backend & Platform Engineering"
+#~ msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Backend | Distributed Systems | Web3 | AI"
+msgstr ""
 
 #: src/widgets/about/ui/About.tsx
-msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
-msgstr "Nascido curioso. Desmontei rádios, quebrei instaladores, aprendi remontando. O terminal parecia meu lar antes de eu ter palavras para isso."
+#~ msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
+#~ msgstr "Nascido curioso. Desmontei rádios, quebrei instaladores, aprendi remontando. O terminal parecia meu lar antes de eu ter palavras para isso."
 
 #: src/widgets/about/ui/About.tsx
-msgid "boy becomes engineer"
-msgstr "menino torna-se engenheiro"
+#~ msgid "boy becomes engineer"
+#~ msgstr "menino torna-se engenheiro"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid ""
+"Built concise observability dashboards that surface the signals teams actually use, helping product decisions happen about 50% faster during incidents.\n"
+""
+msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "Built custom observability dashboards that cut decision-making time in half by surfacing the data that actually matters."
+#~ msgstr ""
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
 msgstr "construído com amor · criatividade · ia · ☕"
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "calm in the storm"
+#~ msgstr ""
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "certification issued in"
@@ -90,8 +172,8 @@ msgid "credentials and skills"
 msgstr "credenciais e habilidades"
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
-msgstr "Dashboards personalizados desbloquearam insights em tempo real para equipes omnichannel e stakeholders."
+#~ msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
+#~ msgstr "Dashboards personalizados desbloquearam insights em tempo real para equipes omnichannel e stakeholders."
 
 #: src/pages/NotFound.tsx
 #~ msgid "Error"
@@ -106,36 +188,106 @@ msgid "fresh start"
 msgstr "recomeço"
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Full-stack & backend across microservices, event-driven systems, and AI."
-msgstr "Full-stack e backend em microsserviços, sistemas orientados a eventos e IA."
+#~ msgid "Full-stack & backend across microservices, event-driven systems, and AI."
+#~ msgstr "Full-stack e backend em microsserviços, sistemas orientados a eventos e IA."
 
 #: src/widgets/about/ui/About.tsx
 msgid "growth in chaos"
 msgstr "crescimento no caos"
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
-msgstr "Ajudei a expandir a fintech fotovoltaica líder do Brasil para mais de 30.000 usuários, apoiando a aquisição pelo Banco BV."
+#~ msgid ""
+#~ "Helped a fintech grow from ~5k to 30k users in six months by rebuilding the caching layer and improving capacity planning; latency went from ~800ms to ~200ms and error rates dropped about 66%.\n"
+#~ ""
+#~ msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Helped a fintech scale from zero to 30k+ users while navigating the technical mess of a fast-growing startup, leading to a successful bank acquisition."
+msgstr ""
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
+#~ msgstr "Ajudei a expandir a fintech fotovoltaica líder do Brasil para mais de 30.000 usuários, apoiando a aquisição pelo Banco BV."
 
 #: src/pages/NotFound.tsx
 #~ msgid "Henrique Bonfim"
 #~ msgstr "Henrique Bonfim"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "henrique_bonfim · Brazilian"
-msgstr "henrique_bonfim · Brasileiro"
+msgid "Henrique Bonfim · Brazilian"
+msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "henrique_bonfim · Brazilian"
+#~ msgstr "henrique_bonfim · Brasileiro"
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "High-traffic · Reliability · AI"
+#~ msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "High-traffic systems · Reliability"
+#~ msgstr ""
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Home"
 msgstr "Início"
 
 #: src/widgets/about/ui/About.tsx
+#~ msgid "I automate the boring, repeatable parts of platform work so teams spend time on product, not on tickets."
+#~ msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "I build backend systems that don't fall apart when traffic spikes. Focused on reliability, observability, and the calm that comes from well-engineered code."
+#~ msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "I build backend systems that don't fall apart when traffic spikes. I tidy up the messy parts — caches, retries, and monitoring — so teams can ship without firefighting. Want your platform to behave? Say hello."
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
 msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
 msgstr "Eu construo plataformas que trazem calma, simplicidade e confiabilidade, para que as equipes de produto possam se mover rápido, dormir bem e entregar com confiança."
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "I build simple, reliable platforms so product teams can deliver features with less firefighting."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+msgid "I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence."
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "I started by breaking things. Radios, software installers, my parents' patience. Reassembling them was where I learned that everything is just a system waiting to be understood."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "I started by taking things apart — radios, installers, and small projects. Putting them back together taught me how systems fail and how to fix them."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+msgid "I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all."
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "I've managed hundreds of microservices across global regions. Not just scaling them, but building the observability and tooling that lets engineers ship on a Friday afternoon without a hint of fear."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "I've run services for tens of thousands of users and added tooling so engineers can release safely instead of firefighting."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+msgid "keep calm in the storm"
+msgstr ""
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "Let's build"
 msgstr "Vamos construir"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Let's build systems that just work.\""
+msgstr ""
 
 #: src/widgets/projects/ui/Projects.tsx
 #~ msgid "live"
@@ -158,20 +310,24 @@ msgid "Open to software engineering roles, advisory, consulting, freelancing, an
 msgstr "Aberto a funções de engenharia de software, assessoria, consultoria, freelancing e colaborações seletivas."
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Platform · Observability · AI"
-msgstr "Plataforma · Observabilidade · IA"
+#~ msgid "Platform · Observability · AI"
+#~ msgstr "Plataforma · Observabilidade · IA"
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Portfolio and professional website for Henrique Bonfim, a Senior Software Engineer."
 #~ msgstr "Portfólio e site profissional de Henrique Bonfim, um Engenheiro de Software Sênior."
 
 #: src/widgets/about/ui/About.tsx
+#~ msgid "Portrait of Henrique focused at his laptop, the screen's glow on his face."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
 msgid "Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
 msgstr "Retrato de Henrique usando um laptop, com uma expressão focada, em um quarto aconchegante e mal iluminado. O brilho quente da tela ilumina seu rosto, destacando sua dedicação e paixão pela programação."
 
 #: src/widgets/about/ui/About.tsx
-msgid "present & future"
-msgstr "presente e futuro"
+#~ msgid "present & future"
+#~ msgstr "presente e futuro"
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Professional certification"
@@ -198,8 +354,8 @@ msgstr "Projetos"
 #~ msgstr "repo"
 
 #: src/widgets/about/ui/About.tsx
-msgid "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
-msgstr "Escalou plataformas em várias regiões, liderou a observabilidade de centenas de serviços e construiu ferramentas que permitiram às equipes entregar sem medo."
+#~ msgid "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
+#~ msgstr "Escalou plataformas em várias regiões, liderou a observabilidade de centenas de serviços e construiu ferramentas que permitiram às equipes entregar sem medo."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
@@ -209,25 +365,41 @@ msgstr "rolar"
 #~ msgid "Selected projects"
 #~ msgstr "Projetos selecionados"
 
+#: src/widgets/projects/ui/Projects.tsx
+msgid "Selected projects I've built."
+msgstr ""
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
 msgstr "Funções selecionadas onde transformei necessidades de negócios em produtos, plataformas e resultados mensuráveis que importavam."
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Senior Software Engineer"
-msgstr "Senior Software Engineer"
+#~ msgid "Senior Software Engineer"
+#~ msgstr "Senior Software Engineer"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
-msgstr "Senior Software Engineer · Plataforma e IA · Construindo sistemas confiáveis com artesania nativa de terminal e escala planetária."
+#~ msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+#~ msgstr "Senior Software Engineer · Plataforma e IA · Construindo sistemas confiáveis com artesania nativa de terminal e escala planetária."
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture."
 #~ msgstr "Engenheiro de Software Sênior com mais de 10 anos de experiência em desenvolvimento backend, microsserviços, integração de IA e arquitetura em nuvem."
 
 #: src/widgets/about/ui/About.tsx
-msgid "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
-msgstr "Entreguei meu primeiro sistema de produção aos 19 anos. Vivi de sobreaviso, aprendi o que a 'confiabilidade' realmente custa e me apaixonei por sistemas calmos."
+#~ msgid "Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' actually costs in sleep and sanity. I've been chasing calm systems ever since."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' really costs in sleep; I now build for predictable operations."
+#~ msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+msgid "Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations."
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
+#~ msgstr "Entreguei meu primeiro sistema de produção aos 19 anos. Vivi de sobreaviso, aprendi o que a 'confiabilidade' realmente custa e me apaixonei por sistemas calmos."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"
@@ -241,9 +413,13 @@ msgstr "Mostrar habilidades"
 msgid "Skip to content"
 msgstr "Pular para o conteúdo"
 
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Software Architect | Software Engineer"
+msgstr ""
+
 #: src/widgets/projects/ui/Projects.tsx
-msgid "some things I've built..."
-msgstr "algumas coisas que construí..."
+#~ msgid "some things I've built..."
+#~ msgstr "algumas coisas que construí..."
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "something quiet,"
@@ -253,17 +429,39 @@ msgstr "algo silencioso,"
 msgid "Stack"
 msgstr "Stack"
 
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Still curious and learning every day."
+msgstr ""
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "Systems that handle heavy traffic · Reliability · Practical automation"
+#~ msgstr ""
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Tags"
 msgstr "Tags"
+
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid ""
+#~ "Ten years shipping in production — I prefer small, testable fixes that stop the pain, not clever one-offs.\n"
+#~ ""
+#~ msgstr ""
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "that scales loud."
 msgstr "que escala alto."
 
 #: src/widgets/about/ui/About.tsx
-msgid "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
-msgstr "Hoje estou misturando engenharia de plataforma com ferramentas de IA. Sempre aprendendo, sempre construindo, sempre buscando aquele ponto ideal de calma na tempestade."
+msgid "the shift"
+msgstr ""
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+#~ msgstr "Hoje estou misturando engenharia de plataforma com ferramentas de IA. Sempre aprendendo, sempre construindo, sempre buscando aquele ponto ideal de calma na tempestade."
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Today, I'm using AI to automate the boring parts of platform engineering. My goal is still the same: finding that sweet spot of absolute calm in the middle of a high-growth storm."
+#~ msgstr ""
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "transmitting from earth"

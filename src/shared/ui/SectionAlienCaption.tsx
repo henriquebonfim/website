@@ -139,7 +139,9 @@ export const SectionAlienCaption = ({
 
         <p className="relative z-10 flex items-center gap-2 pl-9 font-mono text-xs uppercase tracking-[0.2em] comment-highlight">
           <span>{prefix}</span>
-          <span className="whitespace-nowrap">{label}</span>
+          <span className="whitespace-nowrap">
+            {label.startsWith('$') ? <span className="text-primary">{label}</span> : label}
+          </span>
         </p>
       </span>
     </motion.div>

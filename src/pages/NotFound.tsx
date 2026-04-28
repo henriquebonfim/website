@@ -42,7 +42,7 @@ const NotFound = () => {
           <HeadLogo size={120} />
         </div>
         <h1 className="font-display text-6xl font-bold mb-2 text-gradient">404</h1>
-        <p className="font-mono text-sm text-muted-foreground mb-6">
+        <p className="font-mono text-sm text-primary mb-6">
           $ cd {location.pathname} → <Trans>no such file or directory</Trans>
         </p>
         <a

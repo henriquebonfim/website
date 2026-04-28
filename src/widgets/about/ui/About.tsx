@@ -9,28 +9,28 @@ const chapters = [
     title: (i18n) => i18n._(msg`fresh start`),
     body: (i18n) =>
       i18n._(
-        msg`Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it.`
+        msg`I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all.`
       ),
   },
   {
-    title: (i18n) => i18n._(msg`boy becomes engineer`),
+    title: (i18n) => i18n._(msg`the shift`),
     body: (i18n) =>
       i18n._(
-        msg`Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems.`
+        msg`Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`growth in chaos`),
     body: (i18n) =>
       i18n._(
-        msg`Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear.`
+        msg`I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence.`
       ),
   },
   {
-    title: (i18n) => i18n._(msg`present & future`),
+    title: (i18n) => i18n._(msg`keep calm in the storm`),
     body: (i18n) =>
       i18n._(
-        msg`Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm.`
+        msg`A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter.`
       ),
   },
 ];
