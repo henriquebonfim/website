@@ -9,28 +9,28 @@ const chapters = [
     title: (i18n) => i18n._(msg`fresh start`),
     body: (i18n) =>
       i18n._(
-        msg`Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it.`
+        msg`I started by breaking things. Radios, software installers, my parents' patience. Reassembling them was where I learned that everything is just a system waiting to be understood.`
       ),
   },
   {
-    title: (i18n) => i18n._(msg`boy becomes engineer`),
+    title: (i18n) => i18n._(msg`the shift`),
     body: (i18n) =>
       i18n._(
-        msg`Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems.`
+        msg`Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' actually costs in sleep and sanity. I've been chasing calm systems ever since.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`growth in chaos`),
     body: (i18n) =>
       i18n._(
-        msg`Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear.`
+        msg`I've managed hundreds of microservices across global regions. Not just scaling them, but building the observability and tooling that lets engineers ship on a Friday afternoon without a hint of fear.`
       ),
   },
   {
-    title: (i18n) => i18n._(msg`present & future`),
+    title: (i18n) => i18n._(msg`calm in the storm`),
     body: (i18n) =>
       i18n._(
-        msg`Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm.`
+        msg`Today, I'm using AI to automate the boring parts of platform engineering. My goal is still the same: finding that sweet spot of absolute calm in the middle of a high-growth storm.`
       ),
   },
 ];

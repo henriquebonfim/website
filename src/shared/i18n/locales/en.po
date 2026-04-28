@@ -70,16 +70,20 @@ msgid "Backend & Platform Engineering"
 msgstr "Backend & Platform Engineering"
 
 #: src/widgets/about/ui/About.tsx
-msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
-msgstr "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
+#~ msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
+#~ msgstr "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
 
 #: src/widgets/about/ui/About.tsx
-msgid "boy becomes engineer"
-msgstr "boy becomes engineer"
+#~ msgid "boy becomes engineer"
+#~ msgstr "boy becomes engineer"
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
 msgstr "built with love · creativity · ai · ☕"
+
+#: src/widgets/about/ui/About.tsx
+msgid "calm in the storm"
+msgstr "calm in the storm"
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "certification issued in"
@@ -153,6 +157,14 @@ msgstr "I build backend systems that don't fall apart when traffic spikes. Focus
 msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
 msgstr "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
 
+#: src/widgets/about/ui/About.tsx
+msgid "I started by breaking things. Radios, software installers, my parents' patience. Reassembling them was where I learned that everything is just a system waiting to be understood."
+msgstr "I started by breaking things. Radios, software installers, my parents' patience. Reassembling them was where I learned that everything is just a system waiting to be understood."
+
+#: src/widgets/about/ui/About.tsx
+msgid "I've managed hundreds of microservices across global regions. Not just scaling them, but building the observability and tooling that lets engineers ship on a Friday afternoon without a hint of fear."
+msgstr "I've managed hundreds of microservices across global regions. Not just scaling them, but building the observability and tooling that lets engineers ship on a Friday afternoon without a hint of fear."
+
 #: src/widgets/contact/ui/Contact.tsx
 msgid "Let's build"
 msgstr "Let's build"
@@ -190,8 +202,8 @@ msgid "Portrait of Henrique using a laptop, with a focused expression, in a cozy
 msgstr "Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
 
 #: src/widgets/about/ui/About.tsx
-msgid "present & future"
-msgstr "present & future"
+#~ msgid "present & future"
+#~ msgstr "present & future"
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Professional certification"
@@ -218,8 +230,8 @@ msgstr "Projects"
 #~ msgstr "repo"
 
 #: src/widgets/about/ui/About.tsx
-msgid "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
-msgstr "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
+#~ msgid "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
+#~ msgstr "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
@@ -246,8 +258,12 @@ msgstr "Selected roles where I turned business needs into products, platforms, a
 #~ msgstr "Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture."
 
 #: src/widgets/about/ui/About.tsx
-msgid "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
-msgstr "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
+msgid "Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' actually costs in sleep and sanity. I've been chasing calm systems ever since."
+msgstr "Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' actually costs in sleep and sanity. I've been chasing calm systems ever since."
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
+#~ msgstr "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"
@@ -282,8 +298,16 @@ msgid "that scales loud."
 msgstr "that scales loud."
 
 #: src/widgets/about/ui/About.tsx
-msgid "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
-msgstr "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+msgid "the shift"
+msgstr "the shift"
+
+#: src/widgets/about/ui/About.tsx
+#~ msgid "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+#~ msgstr "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Today, I'm using AI to automate the boring parts of platform engineering. My goal is still the same: finding that sweet spot of absolute calm in the middle of a high-growth storm."
+msgstr "Today, I'm using AI to automate the boring parts of platform engineering. My goal is still the same: finding that sweet spot of absolute calm in the middle of a high-growth storm."
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "transmitting from earth"
