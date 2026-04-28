@@ -72,8 +72,11 @@ export const Projects = () => {
             </h2>
             <p className="mt-6 text-muted-foreground max-w-xl">
               <Trans>
-                A selection of open-source and internal projects that show things I built to solve
-                real problems, with notes on why some of them were hard.
+                Building software is often seen as just writing code, but the real challenge lies in
+                solving unpredictable, real-world problems. I’ve curated this selection of
+                open-source and internal projects to show how I tackle these technical hurdles—from
+                data extraction bottlenecks to real-time scaling. Each project is a result of moving
+                beyond simple implementation to creating resilient solutions that work in the wild.
               </Trans>
             </p>
           </div>

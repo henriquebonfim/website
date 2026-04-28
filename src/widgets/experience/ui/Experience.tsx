@@ -29,30 +29,28 @@ export const Experience = () => {
         metric: '30k+',
         label: i18n._(t`users scaled`),
         detail: i18n._(
-          t`Helped a fintech scale from zero to 30k+ users while navigating the technical mess of a fast-growing startup, leading to a successful bank acquisition.`
+          t`Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank.`
         ),
       },
       {
-        metric: '+20 hrs/wk',
+        metric: '20h/wk',
         label: i18n._(t`manual work removed`),
         detail: i18n._(
-          t`Automated data entry and reporting for teams that were drowning in spreadsheets and manual processes... giving them back 20+ hours every week by leveraging ELT techniques to streamline their workflow and reduce human errors.`
+          t`Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week.`
         ),
       },
       {
         metric: '53%',
         label: i18n._(t`faster decisions`),
         detail: i18n._(
-          t`Built concise observability dashboards that surface the signals teams actually use, helping product decisions happen about 50% faster during incidents.
-`
+          t`Built observability dashboards that reduced incidents by 53% through real-time signals.`
         ),
       },
       {
         metric: '10y',
         label: i18n._(t`shipping in production`),
         detail: i18n._(
-          t`A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience.
-          I prefer small, testable fixes that stop the pain, not clever one-offs that add more complexity. I've learned that simple code beats clever one every single time.`
+          t`A decade building resilient backend, distributed systems, and AI-driven platforms at scale.`
         ),
       },
     ],

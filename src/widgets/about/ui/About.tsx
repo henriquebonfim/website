@@ -9,28 +9,28 @@ const chapters = [
     title: (i18n) => i18n._(msg`fresh start`),
     body: (i18n) =>
       i18n._(
-        msg`I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all.`
+        msg`Growing up surrounded by mechanical things, I started taking everything apart... from radios and toys to building a soapbox car from scratch. This hands-on exploration taught me how things work, avoid failures and how to fix them all!`
       ),
   },
   {
     title: (i18n) => i18n._(msg`the shift`),
     body: (i18n) =>
       i18n._(
-        msg`Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations.`
+        msg`I shipped my first production code at 19, but I quickly realized that 'shipping fast' often came at the cost of stability and personal well-being. Living through high-stakes on-call rotations taught me that reliability isn't just a feature... it's the foundation of a sustainable team. I shifted my focus to building safely and prioritizing predictable operations, resulting in systems that support long-term growth.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`growth in chaos`),
     body: (i18n) =>
       i18n._(
-        msg`I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence.`
+        msg`Maintaining complex systems under high pressure can easily lead to chaotic, short-term fixes that add technical debt. I learned that finding elegant, scaled solutions requires embracing this complexity rather than fighting it. By positioning myself in the 'eye of the storm,' I've been able to design calm, reliable platforms that empower product teams to scale with confidence, even in the most demanding environments.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`keep calm in the storm`),
     body: (i18n) =>
       i18n._(
-        msg`A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter.`
+        msg`After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient.`
       ),
   },
 ];

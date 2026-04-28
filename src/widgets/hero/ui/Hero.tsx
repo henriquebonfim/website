@@ -86,9 +86,8 @@ export const Hero = () => {
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-muted-foreground"
             >
               <Trans>
-                I build backend systems that don't fall apart when traffic spikes. I tidy up the
-                messy parts — caches, retries, and monitoring — so teams can ship without
-                firefighting. Want your platform to behave? Say hello.
+                Senior Software Engineer · Platform & AI · Building reliable systems with
+                terminal-native craft and planetary scale.
               </Trans>
             </motion.p>
 
