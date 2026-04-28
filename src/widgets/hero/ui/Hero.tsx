@@ -21,14 +21,14 @@ export const Hero = () => {
     i18n._(msg`$ whoami`),
     i18n._(msg`henrique_bonfim · Brazilian`),
     '',
-    i18n._(msg`$ cat ./role.txt`),
-    i18n._(msg`Senior Software Engineer`),
-    i18n._(msg`Platform · Observability · AI`),
+    i18n._(msg`$ cat ./focus.txt`),
+    i18n._(msg`Backend & Platform Engineering`),
+    i18n._(msg`High-traffic systems · Reliability`),
     '',
     i18n._(msg`$ uptime`),
     i18n._(msg`12y in tech · still curious`),
     '',
-    i18n._(msg`$ echo "let's build something quiet, that scales loud."`),
+    i18n._(msg`$ echo "let's build systems that just work."`),
   ];
 
   useEffect(() => {
@@ -88,8 +88,8 @@ export const Hero = () => {
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-muted-foreground"
             >
               <Trans>
-                Senior Software Engineer · Platform & AI · Building reliable systems with
-                terminal-native craft and planetary scale.
+                I build backend systems that don't fall apart when traffic spikes. Focused on
+                reliability, observability, and the calm that comes from well-engineered code.
               </Trans>
             </motion.p>
 

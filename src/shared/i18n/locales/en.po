@@ -14,12 +14,20 @@ msgstr ""
 "Plural-Forms: \n"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ cat ./role.txt"
-msgstr "$ cat ./role.txt"
+msgid "$ cat ./focus.txt"
+msgstr "$ cat ./focus.txt"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "$ echo \"let's build something quiet, that scales loud.\""
-msgstr "$ echo \"let's build something quiet, that scales loud.\""
+#~ msgid "$ cat ./role.txt"
+#~ msgstr "$ cat ./role.txt"
+
+#: src/widgets/hero/ui/Hero.tsx
+#~ msgid "$ echo \"let's build something quiet, that scales loud.\""
+#~ msgstr "$ echo \"let's build something quiet, that scales loud.\""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ echo \"let's build systems that just work.\""
+msgstr "$ echo \"let's build systems that just work.\""
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "$ uptime"
@@ -56,6 +64,10 @@ msgstr "About"
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Automated data entry & reporting pipelines for client teams."
 msgstr "Automated data entry & reporting pipelines for client teams."
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Backend & Platform Engineering"
+msgstr "Backend & Platform Engineering"
 
 #: src/widgets/about/ui/About.tsx
 msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
@@ -125,9 +137,17 @@ msgstr "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supp
 msgid "henrique_bonfim · Brazilian"
 msgstr "henrique_bonfim · Brazilian"
 
+#: src/widgets/hero/ui/Hero.tsx
+msgid "High-traffic systems · Reliability"
+msgstr "High-traffic systems · Reliability"
+
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Home"
 msgstr "Home"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "I build backend systems that don't fall apart when traffic spikes. Focused on reliability, observability, and the calm that comes from well-engineered code."
+msgstr "I build backend systems that don't fall apart when traffic spikes. Focused on reliability, observability, and the calm that comes from well-engineered code."
 
 #: src/widgets/about/ui/About.tsx
 msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
@@ -158,8 +178,8 @@ msgid "Open to software engineering roles, advisory, consulting, freelancing, an
 msgstr "Open to software engineering roles, advisory, consulting, freelancing, and selective collaborations."
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Platform · Observability · AI"
-msgstr "Platform · Observability · AI"
+#~ msgid "Platform · Observability · AI"
+#~ msgstr "Platform · Observability · AI"
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Portfolio and professional website for Henrique Bonfim, a Senior Software Engineer."
@@ -214,12 +234,12 @@ msgid "Selected roles where I turned business needs into products, platforms, an
 msgstr "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Senior Software Engineer"
-msgstr "Senior Software Engineer"
+#~ msgid "Senior Software Engineer"
+#~ msgstr "Senior Software Engineer"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
-msgstr "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+#~ msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+#~ msgstr "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
 
 #: src/shared/seo/SeoStructuredData.tsx
 #~ msgid "Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture."
