@@ -68,12 +68,12 @@ export const Projects = () => {
               id="projects-heading"
               className="font-display text-4xl md:text-5xl font-bold tracking-tight uppercase"
             >
-              <Trans>some things I've built...</Trans>
+              <Trans>Selected projects I've built.</Trans>
             </h2>
             <p className="mt-6 text-muted-foreground max-w-xl">
               <Trans>
-                A selection of open-source and internal projects that showcase my focus on building
-                calm, reliable platforms that empower teams and scale with confidence.
+                A selection of open-source and internal projects that show things I built to solve
+                real problems, with notes on why some of them were hard.
               </Trans>
             </p>
           </div>
@@ -175,9 +175,7 @@ export const Projects = () => {
                   </div>
 
                   <div className="p-5 flex flex-col flex-1">
-                    <p className="font-mono text-xs text-primary-glow mb-3 truncate">
-                      $ {p.command}
-                    </p>
+                    <p className="font-mono text-xs text-primary mb-3 truncate">$ {p.command}</p>
                     <h3 className="font-display text-2xl font-bold mb-2 group-hover:text-primary-glow transition-colors">
                       {p.name}
                     </h3>

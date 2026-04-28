@@ -14,7 +14,7 @@ export const projects: Project[] = [
     name: 'Sortudo',
     command: 'open https://sortudo.web.app/',
     description:
-      'Sortudo is an interactive, data-driven application that visualizes the statistical improbability of winning Mega-Sena. It uses ELT to extract information from the official website, run data analysis, review draw history, and generate combinations.',
+      'Sortudo is an interactive, data-driven application that visualizes the statistical improbability of winning Mega-Sena. It uses ELT to extract information from the official website, run data analysis, review draw history, and generate combinations. Getting reliable data was the hardest part — I built extraction logic that allows the user to always have access to the most up-to-date information so the dataset stays fresh.',
     tags: [
       'Data Analysis',
       'Web App',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
     name: 'Omni-Trader Hub',
     command: 'open https://omni-trader.web.app/',
     description:
-      'Omni-Trader Hub is a modern dashboard interface for quantitative traders and algorithmic trading bot managers. The private backend is built in Python with TA-Lib and integrates with Binance and MetaMask wallet workflows.',
+      'Omni-Trader Hub is a modern dashboard interface for quantitative traders and algorithmic trading bot managers. The private backend is built in Python with TA-Lib and integrates with Binance and MetaMask wallet workflows. Integrating with exchange APIs and wallets was unreliable at times; I added reconciliations, retries, and manual fallback paths to reduce failed trades during spikes.',
     tags: [
       'FinTech',
       'Algorithmic Trading',

@@ -9,28 +9,28 @@ const chapters = [
     title: (i18n) => i18n._(msg`fresh start`),
     body: (i18n) =>
       i18n._(
-        msg`I started by breaking things. Radios, software installers, my parents' patience. Reassembling them was where I learned that everything is just a system waiting to be understood.`
+        msg`I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`the shift`),
     body: (i18n) =>
       i18n._(
-        msg`Shipped my first production code at 19 and immediately inherited the pager. Living on-call taught me what 'reliable' actually costs in sleep and sanity. I've been chasing calm systems ever since.`
+        msg`Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations.`
       ),
   },
   {
     title: (i18n) => i18n._(msg`growth in chaos`),
     body: (i18n) =>
       i18n._(
-        msg`I've managed hundreds of microservices across global regions. Not just scaling them, but building the observability and tooling that lets engineers ship on a Friday afternoon without a hint of fear.`
+        msg`I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence.`
       ),
   },
   {
-    title: (i18n) => i18n._(msg`calm in the storm`),
+    title: (i18n) => i18n._(msg`keep calm in the storm`),
     body: (i18n) =>
       i18n._(
-        msg`Today, I'm using AI to automate the boring parts of platform engineering. My goal is still the same: finding that sweet spot of absolute calm in the middle of a high-growth storm.`
+        msg`A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter.`
       ),
   },
 ];

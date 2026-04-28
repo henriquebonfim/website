@@ -11,7 +11,6 @@ interface TypewriterProps {
 export const Typewriter = ({ lines, speed = 28, startDelay = 0, onDone }: TypewriterProps) => {
   const reduce = useReducedMotion();
   const linesKey = lines.join('\n');
-  const [li, setLi] = useState(0);
   const [text, setText] = useState(() => (reduce ? linesKey : ''));
   const [done, setDone] = useState(() => Boolean(reduce));
 
@@ -21,14 +20,12 @@ export const Typewriter = ({ lines, speed = 28, startDelay = 0, onDone }: Typewr
 
     const run = async () => {
       if (reduce) {
-        setLi(lines.length);
         setText(linesKey);
         setDone(true);
         onDone?.();
         return;
       }
 
-      setLi(0);
       setText('');
       setDone(false);
 
@@ -44,7 +41,6 @@ export const Typewriter = ({ lines, speed = 28, startDelay = 0, onDone }: Typewr
         }
         acc += '\n';
         setText(acc);
-        setLi(i + 1);
         await new Promise((r) => (timer = window.setTimeout(r, 180)));
       }
       setDone(true);
@@ -60,11 +56,28 @@ export const Typewriter = ({ lines, speed = 28, startDelay = 0, onDone }: Typewr
   }, [lines, linesKey, onDone, reduce, speed, startDelay]);
 
   return (
-    <pre className="whitespace-pre-wrap break-words text-foreground/90">
-      {text}
+    <div className="whitespace-pre-wrap break-words text-foreground/90 font-mono">
+      {text.split('\n').map((line, idx) => {
+        // Preserve leading whitespace and check for a leading '$'
+        const leading = line.match(/^\s*/)?.[0] ?? '';
+        const trimmed = line.slice(leading.length);
+        const startsWithDollar = trimmed.startsWith('$');
+
+        if (startsWithDollar) {
+          return (
+            <div key={idx}>
+              {leading}
+              <span className="text-primary">{trimmed}</span>
+            </div>
+          );
+        }
+
+        return <div key={idx}>{line}</div>;
+      })}
+
       <span
         className={`inline-block ml-0.5 h-4 w-2 align-[-2px] bg-primary-glow ${done ? 'animate-blink' : 'animate-blink'}`}
       />
-    </pre>
+    </div>
   );
 };
