@@ -1,11 +1,17 @@
 msgid ""
 msgstr ""
-"POT-Creation-Date: 2026-04-28 17:03-0400\n"
+"POT-Creation-Date: 2026-04-28 18:14-0400\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "$ whoami --name --nationality"
@@ -28,44 +34,40 @@ msgid "12y in tech tidying up the messy parts..."
 msgstr "12y in tech tidying up the messy parts..."
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid ""
-"A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience.\n"
-"          I prefer small, testable fixes that stop the pain, not clever one-offs that add more complexity. I've learned that simple code beats clever one every single time."
-msgstr ""
-"A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience.\n"
-"          I prefer small, testable fixes that stop the pain, not clever one-offs that add more complexity. I've learned that simple code beats clever one every single time."
+msgid "A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale."
+msgstr "A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale."
 
-#: src/widgets/about/ui/About.tsx
-msgid "A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter."
-msgstr "A decade spent in the trenches of code... from full-stack to backend, microservices to event-driven systems, and now AI. I've seen it all, built it all, and learned from every experience. Today, I'm using AI to automate the boring parts of platform engineering. This allows me to focus on building the parts that really matter."
+#: src/widgets/experience/ui/Experience.tsx
+#~ msgid "A decade building resilient backend, frontend that users love, distributed systems, and now AI-driven platforms at scale."
+#~ msgstr "A decade building resilient backend, frontend that users love, distributed systems, and now AI-driven platforms at scale."
 
 #: src/widgets/about/ui/About.tsx
 msgid "A quiet operator<0/>in a noisy industry."
 msgstr "A quiet operator<0/>in a noisy industry."
 
-#: src/widgets/projects/ui/Projects.tsx
-msgid "A selection of open-source and internal projects that show things I built to solve real problems, with notes on why some of them were hard."
-msgstr "A selection of open-source and internal projects that show things I built to solve real problems, with notes on why some of them were hard."
-
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "About"
 msgstr "About"
 
+#: src/widgets/about/ui/About.tsx
+msgid "After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient."
+msgstr "After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient."
+
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Automated data entry and reporting for teams that were drowning in spreadsheets and manual processes... giving them back 20+ hours every week by leveraging ELT techniques to streamline their workflow and reduce human errors."
-msgstr "Automated data entry and reporting for teams that were drowning in spreadsheets and manual processes... giving them back 20+ hours every week by leveraging ELT techniques to streamline their workflow and reduce human errors."
+msgid "Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week."
+msgstr "Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Backend | Distributed Systems | Web3 | AI"
 msgstr "Backend | Distributed Systems | Web3 | AI"
 
+#: src/widgets/projects/ui/Projects.tsx
+msgid "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
+msgstr "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
+
 #: src/widgets/experience/ui/Experience.tsx
-msgid ""
-"Built concise observability dashboards that surface the signals teams actually use, helping product decisions happen about 50% faster during incidents.\n"
-""
-msgstr ""
-"Built concise observability dashboards that surface the signals teams actually use, helping product decisions happen about 50% faster during incidents.\n"
-""
+msgid "Built observability dashboards that reduced incidents by 53% through real-time signals."
+msgstr "Built observability dashboards that reduced incidents by 53% through real-time signals."
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
@@ -92,12 +94,12 @@ msgid "fresh start"
 msgstr "fresh start"
 
 #: src/widgets/about/ui/About.tsx
+msgid "Growing up surrounded by mechanical things, I started taking everything apart... from radios and toys to building a soapbox car from scratch. This hands-on exploration taught me how things work, avoid failures and how to fix them all!"
+msgstr "Growing up surrounded by mechanical things, I started taking everything apart... from radios and toys to building a soapbox car from scratch. This hands-on exploration taught me how things work, avoid failures and how to fix them all!"
+
+#: src/widgets/about/ui/About.tsx
 msgid "growth in chaos"
 msgstr "growth in chaos"
-
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Helped a fintech scale from zero to 30k+ users while navigating the technical mess of a fast-growing startup, leading to a successful bank acquisition."
-msgstr "Helped a fintech scale from zero to 30k+ users while navigating the technical mess of a fast-growing startup, leading to a successful bank acquisition."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Henrique Bonfim · Brazilian"
@@ -107,21 +109,13 @@ msgstr "Henrique Bonfim · Brazilian"
 msgid "Home"
 msgstr "Home"
 
-#: src/widgets/hero/ui/Hero.tsx
-msgid "I build backend systems that don't fall apart when traffic spikes. I tidy up the messy parts — caches, retries, and monitoring — so teams can ship without firefighting. Want your platform to behave? Say hello."
-msgstr "I build backend systems that don't fall apart when traffic spikes. I tidy up the messy parts — caches, retries, and monitoring — so teams can ship without firefighting. Want your platform to behave? Say hello."
-
 #: src/widgets/about/ui/About.tsx
 msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
 msgstr "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
 
 #: src/widgets/about/ui/About.tsx
-msgid "I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence."
-msgstr "I learned to embrace complexity and find elegant scaled solutions above the noise of building and maintaining systems under pressure,... I found my sweet spot in the eye of the storm, where I can build calm, reliable platforms that empower teams and scale with confidence."
-
-#: src/widgets/about/ui/About.tsx
-msgid "I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all."
-msgstr "I started by taking things apart... radios, toys, and small projects like a Soapbox car. Doing these things taught me how things work, avoid failures and how to fix them all."
+msgid "I shipped my first production code at 19, but I quickly realized that 'shipping fast' often came at the cost of stability and personal well-being. Living through high-stakes on-call rotations taught me that reliability isn't just a feature... it's the foundation of a sustainable team. I shifted my focus to building safely and prioritizing predictable operations, resulting in systems that support long-term growth."
+msgstr "I shipped my first production code at 19, but I quickly realized that 'shipping fast' often came at the cost of stability and personal well-being. Living through high-stakes on-call rotations taught me that reliability isn't just a feature... it's the foundation of a sustainable team. I shifted my focus to building safely and prioritizing predictable operations, resulting in systems that support long-term growth."
 
 #: src/widgets/about/ui/About.tsx
 msgid "keep calm in the storm"
@@ -132,8 +126,12 @@ msgid "Let's build"
 msgstr "Let's build"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Let's build systems that just work.\""
-msgstr "Let's build systems that just work.\""
+msgid "Let's build systems that just work."
+msgstr "Let's build systems that just work."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Maintaining complex systems under high pressure can easily lead to chaotic, short-term fixes that add technical debt. I learned that finding elegant, scaled solutions requires embracing this complexity rather than fighting it. By positioning myself in the 'eye of the storm,' I've been able to design calm, reliable platforms that empower product teams to scale with confidence, even in the most demanding environments."
+msgstr "Maintaining complex systems under high pressure can easily lead to chaotic, short-term fixes that add technical debt. I learned that finding elegant, scaled solutions requires embracing this complexity rather than fighting it. By positioning myself in the 'eye of the storm,' I've been able to design calm, reliable platforms that empower product teams to scale with confidence, even in the most demanding environments."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "manual work removed"
@@ -167,6 +165,10 @@ msgstr "Project tags"
 msgid "Projects"
 msgstr "Projects"
 
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank."
+msgstr "Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank."
+
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
 msgstr "scroll"
@@ -179,9 +181,9 @@ msgstr "Selected projects I've built."
 msgid "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
 msgstr "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
 
-#: src/widgets/about/ui/About.tsx
-msgid "Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations."
-msgstr "Shipped my first production code at 19 and immediately understand the gravity of the responsibility. Living on-call taught me what 'reliable' really costs in sleep... Now i'm only build safely things that support predictable operations."
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+msgstr "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"

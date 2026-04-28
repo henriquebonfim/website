@@ -50,7 +50,7 @@ export const Experience = () => {
         metric: '10y',
         label: i18n._(t`shipping in production`),
         detail: i18n._(
-          t`A decade building resilient backend, distributed systems, and AI-driven platforms at scale.`
+          t`A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale.`
         ),
       },
     ],

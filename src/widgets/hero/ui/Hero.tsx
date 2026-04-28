@@ -26,7 +26,7 @@ export const Hero = () => {
     i18n._(msg`$ whoami --summary`),
     i18n._(msg`12y in tech tidying up the messy parts...`),
     i18n._(msg`Still curious and learning every day.`),
-    i18n._(msg`Let's build systems that just work."`),
+    i18n._(msg`Let's build systems that just work.`),
   ];
 
   useEffect(() => {
@@ -138,7 +138,7 @@ export const Hero = () => {
               >
                 <HeadLogo size={250} className="-m-10 -mt-0" />
               </motion.div>
-              <TerminalWindow title="henrique@user: ~" className="w-[400px] h-[350px]">
+              <TerminalWindow title="henrique@user: ~" className="min-w-[500px] h-[350px]">
                 <Typewriter startDelay={900} lines={terminalLines} />
               </TerminalWindow>
             </motion.div>
