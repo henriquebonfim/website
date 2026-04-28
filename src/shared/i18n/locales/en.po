@@ -13,34 +13,294 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ cat ./role.txt"
+msgstr "$ cat ./role.txt"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ echo \"let's build something quiet, that scales loud.\""
+msgstr "$ echo \"let's build something quiet, that scales loud.\""
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ uptime"
+msgstr "$ uptime"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "$ whoami"
+msgstr "$ whoami"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "12y in tech · still curious"
+msgstr "12y in tech · still curious"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "A decade of shipping<0/><1>calm systems.</1>"
+msgstr "A decade of shipping<0/><1>calm systems.</1>"
+
+#: src/widgets/about/ui/About.tsx
+msgid "A quiet operator<0/>in a noisy industry."
+msgstr "A quiet operator<0/>in a noisy industry."
+
+#: src/widgets/projects/ui/Projects.tsx
+msgid "A selection of open-source and internal projects that showcase my focus on building calm, reliable platforms that empower teams and scale with confidence."
+msgstr "A selection of open-source and internal projects that showcase my focus on building calm, reliable platforms that empower teams and scale with confidence."
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "About"
+msgstr "About"
+
+#: src/widgets/projects/ui/Projects.tsx
+#~ msgid "archived"
+#~ msgstr "archived"
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Automated data entry & reporting pipelines for client teams."
 msgstr "Automated data entry & reporting pipelines for client teams."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
+msgstr "Born curious. Took apart radios, broke installers, learned by reassembling. The terminal felt like home before I had words for it."
+
+#: src/widgets/about/ui/About.tsx
+msgid "boy becomes engineer"
+msgstr "boy becomes engineer"
+
+#: src/widgets/footer/ui/Footer.tsx
+msgid "built with love · creativity · ai · ☕"
+msgstr "built with love · creativity · ai · ☕"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "certification issued in"
+#~ msgstr "certification issued in"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Certifications"
+#~ msgstr "Certifications"
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "Certs"
+msgstr "Certs"
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "Contact"
+msgstr "Contact"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "credentials and skills"
+msgstr "credentials and skills"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
 msgstr "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
 
+#: src/pages/NotFound.tsx
+#~ msgid "Error"
+#~ msgstr "Error"
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "faster decisions"
 msgstr "faster decisions"
+
+#: src/widgets/about/ui/About.tsx
+msgid "fresh start"
+msgstr "fresh start"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Full-stack & backend across microservices, event-driven systems, and AI."
 msgstr "Full-stack & backend across microservices, event-driven systems, and AI."
 
+#: src/widgets/about/ui/About.tsx
+msgid "growth in chaos"
+msgstr "growth in chaos"
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
 msgstr "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
+
+#: src/pages/NotFound.tsx
+#~ msgid "Henrique Bonfim"
+#~ msgstr "Henrique Bonfim"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "henrique_bonfim · Brazilian"
+msgstr "henrique_bonfim · Brazilian"
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "Home"
+msgstr "Home"
+
+#: src/widgets/about/ui/About.tsx
+msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
+msgstr "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
+
+#: src/widgets/contact/ui/Contact.tsx
+msgid "Let's build"
+msgstr "Let's build"
+
+#: src/widgets/projects/ui/Projects.tsx
+#~ msgid "live"
+#~ msgstr "live"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "manual work removed"
 msgstr "manual work removed"
 
+#: src/pages/NotFound.tsx
+msgid "no such file or directory"
+msgstr "no such file or directory"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "online"
+msgstr "online"
+
+#: src/widgets/contact/ui/Contact.tsx
+msgid "Open to software engineering roles, advisory, consulting, freelancing, and selective collaborations."
+msgstr "Open to software engineering roles, advisory, consulting, freelancing, and selective collaborations."
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Platform · Observability · AI"
+msgstr "Platform · Observability · AI"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Portfolio and professional website for Henrique Bonfim, a Senior Software Engineer."
+#~ msgstr "Portfolio and professional website for Henrique Bonfim, a Senior Software Engineer."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
+msgstr "Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
+
+#: src/widgets/about/ui/About.tsx
+msgid "present & future"
+msgstr "present & future"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Professional certification"
+#~ msgstr "Professional certification"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Professional experience"
+#~ msgstr "Professional experience"
+
+#: src/widgets/projects/ui/Projects.tsx
+msgid "Project Stacks"
+msgstr "Project Stacks"
+
+#: src/widgets/projects/ui/Projects.tsx
+msgid "Project tags"
+msgstr "Project tags"
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "Projects"
+msgstr "Projects"
+
+#: src/widgets/projects/ui/Projects.tsx
+#~ msgid "repo"
+#~ msgstr "repo"
+
+#: src/widgets/about/ui/About.tsx
+msgid "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
+msgstr "Scaled platforms across regions, owned observability for hundreds of services, and built tooling that let teams ship without fear."
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "scroll"
+msgstr "scroll"
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Selected projects"
+#~ msgstr "Selected projects"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
+msgstr "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Senior Software Engineer"
+msgstr "Senior Software Engineer"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+msgstr "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
+
+#: src/shared/seo/SeoStructuredData.tsx
+#~ msgid "Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture."
+#~ msgstr "Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
+msgstr "Shipped my first production system at 19. Lived on-call, learned what 'reliable' actually costs, and fell in love with calm systems."
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"
 msgstr "shipping in production"
 
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Show skills"
+msgstr "Show skills"
+
+#: src/pages/Index.tsx
+msgid "Skip to content"
+msgstr "Skip to content"
+
+#: src/widgets/projects/ui/Projects.tsx
+msgid "some things I've built..."
+msgstr "some things I've built..."
+
+#: src/widgets/contact/ui/Contact.tsx
+msgid "something quiet,"
+msgstr "something quiet,"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Stack"
+msgstr "Stack"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Tags"
+msgstr "Tags"
+
+#: src/widgets/contact/ui/Contact.tsx
+msgid "that scales loud."
+msgstr "that scales loud."
+
+#: src/widgets/about/ui/About.tsx
+msgid "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+msgstr "Today I'm blending platform engineering with AI tooling. Always learning, always building, always aiming for that sweet spot of calm in the storm."
+
+#: src/widgets/footer/ui/Footer.tsx
+msgid "transmitting from earth"
+msgstr "transmitting from earth"
+
+#: src/widgets/hero/ui/Hero.tsx
+msgid "transmitting from earth..."
+msgstr "transmitting from earth..."
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Type category"
+msgstr "Type category"
+
+#: src/pages/NotFound.tsx
+#~ msgid "User attempted to access non-existent route"
+#~ msgstr "User attempted to access non-existent route"
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "users scaled"
 msgstr "users scaled"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Vendor"
+msgstr "Vendor"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Verified across cloud, platform, security, and AI."
+msgstr "Verified across cloud, platform, security, and AI."
+
+#: src/widgets/projects/ui/Projects.tsx
+#~ msgid "wip"
+#~ msgstr "wip"
+
+#: src/widgets/navbar/ui/FloatingNav.tsx
+msgid "Work"
+msgstr "Work"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Work experience tags"
+msgstr "Work experience tags"

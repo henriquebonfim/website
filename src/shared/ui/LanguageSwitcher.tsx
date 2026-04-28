@@ -37,7 +37,7 @@ export const LanguageSwitcher = () => {
             className="h-5 w-5 rounded-sm bg-cover bg-center bg-no-repeat grayscale-[0.2] transition-all group-hover:grayscale-0"
             style={{ backgroundImage: lang.var }}
           />
-          <AnimatePresence initial={false} mode="wait">
+          <AnimatePresence initial={true} mode="wait">
             {i18n.locale === lang.code && (
               <motion.span
                 key={`orbit-${lang.code}`}

@@ -1,4 +1,5 @@
 import { HeadLogo } from '@/shared/ui';
+import { Trans } from '@lingui/react/macro';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
@@ -8,11 +9,11 @@ export const Footer = () => {
         <div className="flex items-center gap-3">
           <HeadLogo size={48} animated chase />
           <p className="font-mono text-xs text-muted-foreground">
-            © {year} Henrique Bonfim · transmitting from earth
+            © {year} Henrique Bonfim · <Trans>transmitting from earth</Trans>
           </p>
         </div>
         <p className="font-mono text-[10px] uppercase tracking-wider text-muted-foreground">
-          built with love · creativity · ai · ☕
+          <Trans>built with love · creativity · ai · ☕</Trans>
         </p>
       </div>
     </footer>

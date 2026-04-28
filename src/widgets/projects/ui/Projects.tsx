@@ -1,5 +1,6 @@
 import { projects } from '@/entities/project';
 import { SectionAlienCaption } from '@/shared/ui';
+import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink, GitBranch } from 'lucide-react';
 import { useMemo, useState } from 'react';
@@ -22,6 +23,7 @@ const projectStackCount = (stack: string) =>
   projects.filter((project) => project.stack.includes(stack)).length;
 
 export const Projects = () => {
+  const { i18n } = useLingui();
   const projectTags = useMemo(
     () =>
       sortValuesByUsage(
@@ -66,11 +68,13 @@ export const Projects = () => {
               id="projects-heading"
               className="font-display text-4xl md:text-5xl font-bold tracking-tight uppercase"
             >
-              some things I've built...
+              <Trans>some things I've built...</Trans>
             </h2>
             <p className="mt-6 text-muted-foreground max-w-xl">
-              A selection of open-source and internal projects that showcase my focus on building
-              calm, reliable platforms that empower teams and scale with confidence.
+              <Trans>
+                A selection of open-source and internal projects that showcase my focus on building
+                calm, reliable platforms that empower teams and scale with confidence.
+              </Trans>
             </p>
           </div>
           <p className="font-mono text-xs text-muted-foreground">
@@ -81,7 +85,7 @@ export const Projects = () => {
         <div className="mb-6 space-y-5">
           <div>
             <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Project tags
+              <Trans>Project tags</Trans>
             </p>
             <div className="flex flex-wrap gap-2">
               {['All', ...projectTags].map((tag, i) => {
@@ -110,7 +114,7 @@ export const Projects = () => {
 
           <div>
             <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-              Project Stacks
+              <Trans>Project Stacks</Trans>
             </p>
             <div className="flex flex-wrap gap-2">
               {['All', ...projectStacks].map((stack, i) => {
@@ -178,7 +182,7 @@ export const Projects = () => {
                       {p.name}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                      {p.description}
+                      {i18n._(p.description)}
                     </p>
 
                     <div className="mt-4 space-y-3">

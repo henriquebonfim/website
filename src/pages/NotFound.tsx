@@ -1,4 +1,5 @@
 import { HeadLogo } from '@/shared/ui/HeadLogo';
+import { Trans } from '@lingui/react/macro';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -42,7 +43,7 @@ const NotFound = () => {
         </div>
         <h1 className="font-display text-6xl font-bold mb-2 text-gradient">404</h1>
         <p className="font-mono text-sm text-muted-foreground mb-6">
-          $ cd {location.pathname} → no such file or directory
+          $ cd {location.pathname} → <Trans>no such file or directory</Trans>
         </p>
         <a
           href="/"

@@ -1,9 +1,12 @@
+import { HeadLogo, TerminalWindow, Typewriter } from '@/shared/ui';
+import { msg } from '@lingui/core/macro';
+import { Trans, useLingui } from '@lingui/react/macro';
 import { motion, useMotionValue, useReducedMotion, useSpring, useTransform } from 'framer-motion';
 import { ArrowDown, GitBranch, Link, Mail } from 'lucide-react';
 import { useEffect } from 'react';
-import { HeadLogo, TerminalWindow, Typewriter } from '@/shared/ui';
 
 export const Hero = () => {
+  const { i18n } = useLingui();
   const reduce = useReducedMotion();
   const mx = useMotionValue(0);
   const my = useMotionValue(0);
@@ -13,6 +16,20 @@ export const Hero = () => {
   const rotY = useTransform(sx, [-200, 200], [-8, 8]);
   const tx = useTransform(sx, [-200, 200], [-12, 12]);
   const ty = useTransform(sy, [-200, 200], [-12, 12]);
+
+  const terminalLines = [
+    i18n._(msg`$ whoami`),
+    i18n._(msg`henrique_bonfim · Brazilian`),
+    '',
+    i18n._(msg`$ cat ./role.txt`),
+    i18n._(msg`Senior Software Engineer`),
+    i18n._(msg`Platform · Observability · AI`),
+    '',
+    i18n._(msg`$ uptime`),
+    i18n._(msg`12y in tech · still curious`),
+    '',
+    i18n._(msg`$ echo "let's build something quiet, that scales loud."`),
+  ];
 
   useEffect(() => {
     if (reduce) return;
@@ -40,8 +57,13 @@ export const Hero = () => {
               className="font-mono text-xs uppercase tracking-[0.2em]  mb-6"
             >
               <span className="inline-block h-1.5 w-1.5 rounded-full bg-term-green mr-2 align-middle animate-pulse" />
-              <span className="comment-highlight">online</span> ·{' '}
-              <span className="text-secondary-content">transmitting from earth...</span>
+              <span className="comment-highlight">
+                <Trans>online</Trans>
+              </span>{' '}
+              ·{' '}
+              <span className="text-secondary-content">
+                <Trans>transmitting from earth...</Trans>
+              </span>
             </motion.p>
 
             <motion.h1
@@ -65,8 +87,10 @@ export const Hero = () => {
               transition={{ delay: 0.55, duration: 0.7 }}
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-muted-foreground"
             >
-              Senior Software Engineer · Platform & AI · Building reliable systems with
-              terminal-native craft and planetary scale.
+              <Trans>
+                Senior Software Engineer · Platform & AI · Building reliable systems with
+                terminal-native craft and planetary scale.
+              </Trans>
             </motion.p>
 
             <motion.div
@@ -117,22 +141,7 @@ export const Hero = () => {
                 <HeadLogo size={250} className="-m-10 -mt-0" />
               </motion.div>
               <TerminalWindow title="henrique@user: ~" className="w-[400px] h-[350px]">
-                <Typewriter
-                  startDelay={900}
-                  lines={[
-                    '$ whoami',
-                    'henrique_bonfim · Brazilian',
-                    '',
-                    '$ cat ./role.txt',
-                    'Senior Software Engineer',
-                    'Platform · Observability · AI',
-                    '',
-                    '$ uptime',
-                    '12y in tech · still curious',
-                    '',
-                    '$ echo "let\'s build something quiet, that scales loud."',
-                  ]}
-                />
+                <Typewriter startDelay={900} lines={terminalLines} />
               </TerminalWindow>
             </motion.div>
           </motion.div>
@@ -148,7 +157,7 @@ export const Hero = () => {
             href="#about"
             className="font-mono text-xs text-muted-foreground hover:text-foreground transition-colors flex flex-col items-center gap-2"
           >
-            scroll
+            <Trans>scroll</Trans>
             <ArrowDown className="h-4 w-4 animate-bounce" />
           </a>
         </motion.div>

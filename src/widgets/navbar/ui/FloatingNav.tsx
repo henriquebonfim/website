@@ -1,17 +1,20 @@
 import { cn } from '@/shared/lib/utils';
+import { HeadLogo } from '@/shared/ui';
+import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react/macro';
 import { motion, useReducedMotion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { HeadLogo } from '@/shared/ui';
 
 const items = [
-  { id: 'about', label: 'About' },
-  { id: 'experience', label: 'Work' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'certifications', label: 'Certs' },
-  { id: 'contact', label: 'Contact' },
+  { id: 'about', label: msg`About` },
+  { id: 'experience', label: msg`Work` },
+  { id: 'projects', label: msg`Projects` },
+  { id: 'certifications', label: msg`Certs` },
+  { id: 'contact', label: msg`Contact` },
 ];
 
 export const FloatingNav = () => {
+  const { i18n } = useLingui();
   const [active, setActive] = useState<'home' | (typeof items)[number]['id']>('home');
   const reduce = useReducedMotion();
 
@@ -61,7 +64,7 @@ export const FloatingNav = () => {
         <button
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          aria-label="Home"
+          aria-label={i18n._(msg`Home`)}
           aria-pressed={active === 'home'}
           className={cn(
             'group relative hidden h-10 w-10 items-center justify-center overflow-visible rounded-full transition-all sm:flex',
@@ -102,7 +105,7 @@ export const FloatingNav = () => {
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
                 )}
-                <span className="relative z-10">{i.label}</span>
+                <span className="relative z-10">{i18n._(i.label)}</span>
               </button>
             </li>
           ))}

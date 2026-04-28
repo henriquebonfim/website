@@ -1,4 +1,5 @@
 import { SectionAlienCaption } from '@/shared/ui';
+import { Trans, useLingui } from '@lingui/react/macro';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Box, Camera, FileDown, GitBranch, Link } from 'lucide-react';
 
@@ -37,6 +38,7 @@ const links = [
 ];
 
 export const Contact = () => {
+  const { i18n } = useLingui();
   return (
     <section
       id="contact"
@@ -53,16 +55,24 @@ export const Contact = () => {
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="font-display text-5xl md:text-7xl font-thin tracking-tight leading-[0.95]"
         >
-          <span className=" text-gradient">Let's build</span>
+          <span className=" text-gradient">
+            <Trans>Let's build</Trans>
+          </span>
           <br />
-          <span className=" underline italic">something quiet,</span>
+          <span className=" underline italic">
+            <Trans>something quiet,</Trans>
+          </span>
           <br />
-          <span className=" text-gradient  font-extrabold">that scales loud.</span>
+          <span className=" text-gradient  font-extrabold">
+            <Trans>that scales loud.</Trans>
+          </span>
         </motion.h2>
 
         <p className="mt-6 max-w-xl text-muted-foreground">
-          Open to software engineering roles, advisory, consulting, freelancing, and selective
-          collaborations.
+          <Trans>
+            Open to software engineering roles, advisory, consulting, freelancing, and selective
+            collaborations.
+          </Trans>
         </p>
 
         <address className="mt-12 not-italic">

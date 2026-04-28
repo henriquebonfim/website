@@ -1,5 +1,6 @@
-import { SectionAlienCaption } from '@/shared/ui';
 import { certifications, type Certification } from '@/entities/certification';
+import { SectionAlienCaption } from '@/shared/ui';
+import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Award, ChevronDown } from 'lucide-react';
 import { useMemo, useState } from 'react';
@@ -15,6 +16,7 @@ const typeCategoryOrder: Certification['typeCategory'][] = [
 ];
 
 export const Certifications = () => {
+  const { i18n } = useLingui();
   const certificationsWithTypeCategory = useMemo(
     () =>
       certifications.map((certification) => ({
@@ -78,16 +80,16 @@ export const Certifications = () => {
             id="certifications-heading"
             className="font-display text-4xl md:text-5xl font-bold tracking-tight uppercase"
           >
-            credentials and skills
+            <Trans>credentials and skills</Trans>
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl">
-            Verified across cloud, platform, security, and AI.
+            <Trans>Verified across cloud, platform, security, and AI.</Trans>
           </p>
         </div>
 
         <div className="mb-6">
           <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-            Type category
+            <Trans>Type category</Trans>
           </p>
           <div className="flex flex-wrap gap-2">
             {typeCategoryOptions.map((typeCategory) => {
@@ -114,7 +116,7 @@ export const Certifications = () => {
                       : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                   }`}
                 >
-                  <span>{typeCategory}</span>
+                  <span>{i18n._(typeCategory)}</span>
                   <span className="text-[10px] opacity-70">{count}</span>
                 </button>
               );
@@ -124,7 +126,7 @@ export const Certifications = () => {
 
         <div className="mb-8">
           <p className="mb-2 font-mono text-[10px] uppercase tracking-[0.2em] text-muted-foreground">
-            Vendor
+            <Trans>Vendor</Trans>
           </p>
           <div className="flex flex-wrap gap-2">
             {vendorOptions.map((vendor) => {
@@ -147,7 +149,7 @@ export const Certifications = () => {
                       : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                   }`}
                 >
-                  <span>{vendor}</span>
+                  <span>{i18n._(vendor)}</span>
                   <span className="text-[10px] opacity-70">{count}</span>
                 </button>
               );
@@ -210,7 +212,9 @@ export const Certifications = () => {
                 {c.skills.length ? (
                   <details className="mt-3 group/details">
                     <summary className="flex cursor-pointer list-none items-center justify-between rounded-lg border border-border/70 bg-secondary/20 px-3 py-2 font-mono text-xs text-muted-foreground transition-colors hover:text-foreground hover:border-border [&::-webkit-details-marker]:hidden">
-                      <span>Show skills</span>
+                      <span>
+                        <Trans>Show skills</Trans>
+                      </span>
                       <ChevronDown className="h-4 w-4 transition-transform group-open/details:rotate-180" />
                     </summary>
                     <div className="mt-3 flex flex-wrap gap-1.5">
