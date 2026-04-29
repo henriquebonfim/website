@@ -1,91 +1,97 @@
-import { lingui } from "@lingui/vite-plugin";
-import tailwindcss from "@tailwindcss/vite";
-import react from "@vitejs/plugin-react";
-import path from "path";
-import { defineConfig } from "vite";
-import viteCompression from "vite-plugin-compression";
-import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-import { VitePWA } from "vite-plugin-pwa";
-import Sitemap from "vite-plugin-sitemap";
+import { lingui, linguiTransformerBabelPreset } from '@lingui/vite-plugin';
+import babel from '@rolldown/plugin-babel';
+import tailwindcss from '@tailwindcss/vite';
+import react from '@vitejs/plugin-react';
+import path from 'path';
+import { defineConfig } from 'vite';
+import viteCompression from 'vite-plugin-compression';
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import { VitePWA } from 'vite-plugin-pwa';
+import { version } from './package.json';
+const buildVersion = 'v' + version;
 
-import { version } from "./package.json";
-const buildVersion = "v" + version;
-
-export default defineConfig(({ mode }) => ({
+export default defineConfig(() => ({
   server: {
-    host: "::",
+    host: '::',
     port: 8080,
   },
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "#": path.resolve(__dirname, "./src"),
+      '@': path.resolve(__dirname, './src'),
     },
   },
+  esbuild: {
+    drop: ['console', 'debugger'],
+  },
   build: {
-    cssCodeSplit: true,
-    chunkSizeWarningLimit: 500,
+    target: 'es2022',
     rollupOptions: {
       output: {
         manualChunks: (id) => {
           if (
-            id.includes("node_modules/react/") ||
-            id.includes("node_modules/react-dom/")
+            id.includes('node_modules/react/') ||
+            id.includes('node_modules/react-dom/') ||
+            id.includes('node_modules/react-router-dom/')
           ) {
-            return "vendor-react";
+            return 'vendor-react';
           }
           if (
-            id.includes("node_modules/tailwindcss/") ||
-            id.includes("node_modules/daisyui/")
+            id.includes('node_modules/framer-motion/') ||
+            id.includes('node_modules/lucide-react/') ||
+            id.includes('node_modules/tailwindcss-animate/')
           ) {
-            return "vendor-ui";
+            return 'vendor-ui';
           }
-          return undefined;
         },
-        entryFileNames: "assets/[name].[hash].js",
-        chunkFileNames: "assets/[name].[hash].js",
-        assetFileNames: "assets/[name].[hash].[ext]",
       },
     },
-    minify: "terser",
-    terserOptions: {
-      compress: {
-        drop_console: true,
-        drop_debugger: true,
-      },
-    },
-    target: "es2022",
   },
   plugins: [
+    react(),
     lingui(),
-    tailwindcss(),
-    react({
-      babel: {
-        plugins: ["macros"],
-      },
-      jsxRuntime: "automatic",
+    babel({
+      presets: [linguiTransformerBabelPreset()],
     }),
-    ViteImageOptimizer(),
+    tailwindcss(),
+    ViteImageOptimizer({
+      svg: {
+        multipass: true,
+        plugins: [
+          {
+            name: 'preset-default',
+            params: {
+              overrides: {
+                cleanupNumericValues: false,
+              },
+            },
+          },
+        ],
+      },
+      png: {
+        quality: 80,
+        palette: true,
+      },
+      webp: {
+        lossless: false,
+        quality: 75,
+      },
+    }),
     viteCompression({
-      algorithm: "brotliCompress",
+      algorithm: 'brotliCompress',
       verbose: false,
       threshold: 512,
     }),
-    Sitemap({
-      hostname: "https://henriquebonfim.web.app",
-      generateRobotsTxt: false,
-    }),
     VitePWA({
-      registerType: "autoUpdate",
-      injectRegister: "auto",
+      registerType: 'autoUpdate',
+      injectRegister: 'auto',
       workbox: {
-        cacheId: `henrique-bonfim-${buildVersion}`,
-        globPatterns: ["**/*.{js,css,html,ico,png,svg,woff2}"],
-        maximumFileSizeToCacheInBytes: 3000000,
+        cacheId: `henriquebonfim-${buildVersion}`,
+        globPatterns: ['**/*.{js,css,html,woff2}'],
+        maximumFileSizeToCacheInBytes: 5000000,
         runtimeCaching: [
           {
             urlPattern: /\.(?:png|jpg|jpeg|svg|webp|avif|ico)$/,
-            handler: "CacheFirst",
+            handler: 'StaleWhileRevalidate',
             options: {
               cacheName: `images-${buildVersion}`,
               expiration: {
@@ -99,7 +105,7 @@ export default defineConfig(({ mode }) => ({
           },
           {
             urlPattern: /\.(?:css)$/,
-            handler: "StaleWhileRevalidate",
+            handler: 'StaleWhileRevalidate',
             options: {
               cacheName: `styles-${buildVersion}`,
               expiration: {
@@ -110,7 +116,7 @@ export default defineConfig(({ mode }) => ({
           },
           {
             urlPattern: /\.(?:woff2?|ttf|eot)$/,
-            handler: "CacheFirst",
+            handler: 'CacheFirst',
             options: {
               cacheName: `fonts-${buildVersion}`,
               expiration: {
@@ -121,7 +127,7 @@ export default defineConfig(({ mode }) => ({
           },
           {
             urlPattern: /\.(?:js)$/,
-            handler: "StaleWhileRevalidate",
+            handler: 'StaleWhileRevalidate',
             options: {
               cacheName: `js-${buildVersion}`,
               expiration: {
@@ -132,7 +138,7 @@ export default defineConfig(({ mode }) => ({
           },
           {
             urlPattern: /\.(?:html)$/,
-            handler: "NetworkFirst",
+            handler: 'NetworkFirst',
             options: {
               cacheName: `html-${buildVersion}`,
               expiration: {
@@ -150,42 +156,59 @@ export default defineConfig(({ mode }) => ({
         enabled: true,
       },
       manifest: {
-        name: "Henrique Bonfim",
-        short_name: "Henrique",
-        description: `${buildVersion} - Personal website of Henrique Bonfim`,
-        theme_color: "#3f3f3f",
-        background_color: "#3f3f3f",
-        display: "standalone",
-        orientation: "portrait",
-        scope: "/",
-        start_url: "/",
+        id: '/',
+        name: 'Henrique Bonfim',
+        short_name: 'Henrique',
+        description: `Senior Software Engineer - ${buildVersion}`,
+        theme_color: '#1A1A1A',
+        background_color: '#1A1A1A',
+        display: 'standalone',
+        orientation: 'portrait',
+        scope: '/',
+        start_url: '/',
         icons: [
           {
-            src: "icon-72x72.png",
-            sizes: "72x72",
-            type: "image/png",
-            purpose: "any",
+            src: '/assets/icons/icon-72x72.png',
+            sizes: '72x72',
+            type: 'image/png',
+            purpose: 'any',
           },
           {
-            src: "icon-96x96.png",
-            sizes: "96x96",
-            type: "image/png",
+            src: '/assets/icons/icon-96x96.png',
+            sizes: '96x96',
+            type: 'image/png',
           },
           {
-            src: "icon-144x144.png",
-            sizes: "144x144",
-            type: "image/png",
+            src: '/assets/icons/icon-144x144.png',
+            sizes: '144x144',
+            type: 'image/png',
           },
           {
-            src: "icon-192x192.png",
-            sizes: "192x192",
-            type: "image/png",
+            src: '/assets/icons/icon-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
           },
           {
-            src: "icon-512x512.png",
-            sizes: "512x512",
-            type: "image/png",
-            purpose: "any maskable",
+            src: '/assets/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'maskable',
+          },
+        ],
+        screenshots: [
+          {
+            src: '/assets/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            form_factor: 'wide',
+            label: 'Desktop View',
+          },
+          {
+            src: '/assets/icons/icon-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            form_factor: 'narrow',
+            label: 'Mobile View',
           },
         ],
       },

@@ -1,0 +1,12 @@
+build
+.react-router
+.wrangler
+coverage
+node_modules
+src/app/services/db/migrations/meta
+tests/e2e/playwright-report
+tests/e2e/test-results
+worker-configuration.d.ts
+*.lock
+*.lockb
+.codacy/

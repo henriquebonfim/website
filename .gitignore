@@ -23,7 +23,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
+.firebase/
+.codacy/
+.env
 # i18n compiled files (only keep .po source files)
 src/shared/i18n/locales/*.js
 src/shared/i18n/locales/*.ts
+
+
+#Ignore vscode AI rules
+.github/instructions/codacy.instructions.md
+old_src
+*.tsbuildinfo
+.planning
