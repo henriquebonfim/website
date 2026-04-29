@@ -34,12 +34,8 @@ msgid "12y in tech tidying up the messy parts..."
 msgstr "12y in tech tidying up the messy parts..."
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale."
-msgstr "A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale."
-
-#: src/widgets/experience/ui/Experience.tsx
-#~ msgid "A decade building resilient backend, frontend that users love, distributed systems, and now AI-driven platforms at scale."
-#~ msgstr "A decade building resilient backend, frontend that users love, distributed systems, and now AI-driven platforms at scale."
+msgid "A decade building resilient backend on event-driven and distributed systems, frontend that users love, and now AI-driven platforms at scale!"
+msgstr "A decade building resilient backend on event-driven and distributed systems, frontend that users love, and now AI-driven platforms at scale!"
 
 #: src/widgets/about/ui/About.tsx
 msgid "A quiet operator<0/>in a noisy industry."
@@ -54,8 +50,8 @@ msgid "After a decade in the trenches, spanning full-stack, distributed systems,
 msgstr "After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient."
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week."
-msgstr "Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week."
+msgid "Automated data entry & reporting pipelines for client teams."
+msgstr "Automated data entry & reporting pipelines for client teams."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Backend | Distributed Systems | Web3 | AI"
@@ -65,13 +61,13 @@ msgstr "Backend | Distributed Systems | Web3 | AI"
 msgid "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
 msgstr "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
 
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Built observability dashboards that reduced incidents by 53% through real-time signals."
-msgstr "Built observability dashboards that reduced incidents by 53% through real-time signals."
-
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
 msgstr "built with love · creativity · ai · ☕"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Certification"
+msgstr "Certification"
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Certs"
@@ -84,6 +80,14 @@ msgstr "Contact"
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "credentials and skills"
 msgstr "credentials and skills"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
+msgstr "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Experience"
+msgstr "Experience"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "faster decisions"
@@ -100,6 +104,10 @@ msgstr "Growing up surrounded by mechanical things, I started taking everything 
 #: src/widgets/about/ui/About.tsx
 msgid "growth in chaos"
 msgstr "growth in chaos"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
+msgstr "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Henrique Bonfim · Brazilian"
@@ -120,6 +128,10 @@ msgstr "I shipped my first production code at 19, but I quickly realized that 's
 #: src/widgets/about/ui/About.tsx
 msgid "keep calm in the storm"
 msgstr "keep calm in the storm"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Learning"
+msgstr "Learning"
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "Let's build"
@@ -164,10 +176,6 @@ msgstr "Project tags"
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Projects"
 msgstr "Projects"
-
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank."
-msgstr "Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
@@ -240,6 +248,10 @@ msgstr "Type category"
 #: src/widgets/experience/ui/Experience.tsx
 msgid "users scaled"
 msgstr "users scaled"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Validation"
+msgstr "Validation"
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Vendor"

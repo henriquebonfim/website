@@ -8,7 +8,7 @@ type Experience = {
   stack: string[];
 };
 
-export const experiences: Experience[] = [
+export const EXPERIENCES: Experience[] = [
   {
     company: 'Upwork',
     role: 'Senior Software Engineer',
@@ -110,29 +110,5 @@ export const experiences: Experience[] = [
       'Java',
       'React Native',
     ],
-  },
-];
-
-export const achievements = [
-  {
-    metric: '30k+',
-    label: 'users scaled',
-    detail:
-      "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank.",
-  },
-  {
-    metric: '66%',
-    label: 'manual work removed',
-    detail: 'Automated data entry & reporting pipelines for client teams.',
-  },
-  {
-    metric: '53%',
-    label: 'faster decisions',
-    detail: 'Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams.',
-  },
-  {
-    metric: '10y',
-    label: 'shipping in production',
-    detail: 'Full-stack & backend across microservices, event-driven systems, and AI.',
   },
 ];

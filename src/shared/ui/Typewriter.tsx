@@ -75,9 +75,7 @@ export const Typewriter = ({ lines, speed = 28, startDelay = 0, onDone }: Typewr
         return <div key={idx}>{line}</div>;
       })}
 
-      <span
-        className={`inline-block ml-0.5 h-4 w-2 align-[-2px] bg-primary-glow ${done ? 'animate-blink' : 'animate-blink'}`}
-      />
+      <span className="inline-block ml-0.5 h-4 w-2 align-[-2px] bg-primary-glow animate-blink" />
     </div>
   );
 };

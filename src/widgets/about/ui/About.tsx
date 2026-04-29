@@ -1,4 +1,4 @@
-import codingImg from '@/assets/coding.webp';
+import { ASSETS } from '@/shared/constants';
 import { SectionAlienCaption, TerminalWindow } from '@/shared/ui';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
@@ -60,7 +60,7 @@ export const About = () => {
 
             <figure className="mt-8 flex-col max-w-2/4 hidden lg:flex">
               <img
-                src={codingImg}
+                src={ASSETS.codingWebp}
                 alt={i18n._(
                   msg`Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding.`
                 )}

@@ -1,8 +1,9 @@
-import { certifications } from '@/entities/certification';
-import { experiences } from '@/entities/experience';
-import { projects } from '@/entities/project';
+import { CERTIFICATIONS } from '@/entities/certification';
+import { EXPERIENCES } from '@/entities/experience';
+import { PROJECTS } from '@/entities/project';
+import { ASSETS, CONTACT, SITE_CONFIG, SOCIAL_LINKS } from '@/shared/constants';
 
-const siteUrl = 'https://henriquebonfim.web.app';
+const siteUrl = SITE_CONFIG.url;
 const personId = `${siteUrl}/#person`;
 const orgId = `${siteUrl}/#organization`;
 const websiteId = `${siteUrl}/#website`;
@@ -30,20 +31,19 @@ const graph = [
   {
     '@type': 'Person',
     '@id': personId,
-    name: 'Henrique Bonfim',
+    name: SITE_CONFIG.name,
     url: siteUrl,
-    image: `${siteUrl}/assets/layout/background_3.webp`,
-    email: 'henriquebonfim@proton.me',
-    jobTitle: 'Senior Software Engineer',
-    description:
-      'Senior Software Engineer with 10+ years of experience in backend development, microservices, AI integration, and cloud architecture.',
+    image: `${siteUrl + ASSETS.background3}`,
+    email: CONTACT.email,
+    jobTitle: SITE_CONFIG.title,
+    description: SITE_CONFIG.description,
     sameAs: [
-      'https://github.com/henriquebonfim',
-      'https://www.linkedin.com/in/henriquebonfim',
-      'https://www.youtube.com/@henrique_bonfim',
-      'https://gitlab.com/hpbonfim',
-      'https://hub.docker.com/u/hpbonfim',
-      'https://www.credly.com/users/henrique-bonfim',
+      SOCIAL_LINKS.github,
+      SOCIAL_LINKS.linkedin,
+      SOCIAL_LINKS.youtube,
+      SOCIAL_LINKS.gitlab,
+      SOCIAL_LINKS.dockerhub,
+      SOCIAL_LINKS.credly,
     ],
     knowsAbout: [
       'Python',
@@ -71,10 +71,9 @@ const graph = [
     '@type': 'WebSite',
     '@id': websiteId,
     url: siteUrl,
-    name: 'Henrique Bonfim',
-    description:
-      'Portfolio and professional website for Henrique Bonfim, a Senior Software Engineer.',
-    inLanguage: 'en',
+    name: SITE_CONFIG.name,
+    description: SITE_CONFIG.description,
+    inLanguage: SITE_CONFIG.locale,
     publisher: { '@id': personId },
   },
   {
@@ -84,17 +83,17 @@ const graph = [
     url: siteUrl,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteUrl}/assets/layout/logo.webp`,
+      url: `${siteUrl + ASSETS.headLogo}`,
     },
     member: { '@id': personId },
-    sameAs: ['https://github.com/henriquebonfim', 'https://www.linkedin.com/in/henriquebonfim'],
+    sameAs: [SOCIAL_LINKS.github, SOCIAL_LINKS.linkedin],
   },
   {
     '@type': 'ItemList',
     name: 'Professional experience',
     itemListOrder: 'https://schema.org/ItemListOrderDescending',
-    numberOfItems: experiences.length,
-    itemListElement: experiences.map((experience, index) => {
+    numberOfItems: EXPERIENCES.length,
+    itemListElement: EXPERIENCES.map((experience, index) => {
       const { startDate, endDate } = parsePeriod(experience.period);
 
       return {
@@ -118,8 +117,8 @@ const graph = [
     '@type': 'ItemList',
     name: 'Selected projects',
     itemListOrder: 'https://schema.org/ItemListOrderDescending',
-    numberOfItems: projects.length,
-    itemListElement: projects.map((project, index) => ({
+    numberOfItems: PROJECTS.length,
+    itemListElement: PROJECTS.map((project, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       item: {
@@ -137,8 +136,8 @@ const graph = [
     '@type': 'ItemList',
     '@id': `${siteUrl}/#certifications`,
     name: 'Certifications',
-    numberOfItems: certifications.length,
-    itemListElement: certifications.map((certification, index) => ({
+    numberOfItems: CERTIFICATIONS.length,
+    itemListElement: CERTIFICATIONS.map((certification, index) => ({
       '@type': 'ListItem',
       position: index + 1,
       item: {

@@ -1,4 +1,4 @@
-import headLogo from '@/assets/head-logo.png';
+import { ASSETS } from '@/shared/constants';
 import { cn } from '@/shared/lib/utils';
 import { motion, useMotionValue, useReducedMotion, useSpring } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
@@ -26,13 +26,27 @@ export const HeadLogo = ({
   const sx = useSpring(x, { stiffness: 220, damping: 18, mass: 0.4 });
   const sy = useSpring(y, { stiffness: 220, damping: 18, mass: 0.4 });
 
+  const bounds = useRef<{ left: number; top: number; width: number; height: number } | null>(null);
+
+  const handleMouseEnter = () => {
+    setHovering(true);
+    if (ref.current) {
+      const { left, top, width, height } = ref.current.getBoundingClientRect();
+      bounds.current = { left, top, width, height };
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setHovering(false);
+    bounds.current = null;
+  };
+
   useEffect(() => {
     if (!chase || reduce || !hovering) return;
     const maxOffset = Math.max(12, size * 0.45);
     const handler = (e: MouseEvent) => {
-      const el = ref.current;
-      if (!el) return;
-      const r = el.getBoundingClientRect();
+      const r = bounds.current;
+      if (!r) return;
       const cx = r.left + r.width / 2;
       const cy = r.top + r.height / 2;
       const dx = e.clientX - cx;
@@ -57,8 +71,8 @@ export const HeadLogo = ({
   return (
     <motion.div
       ref={ref}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       animate={
         animated && !reduce
           ? { y: [0, -10, 0], x: [0, 1, 0, -1, 0], rotate: [0, -2, 0, 2, 0], scale: 1, opacity: 1 }
@@ -74,7 +88,7 @@ export const HeadLogo = ({
       data-cursor="hover"
     >
       <motion.img
-        src={headLogo}
+        src={ASSETS.headLogo}
         alt="Henrique Bonfim portrait"
         width={size}
         height={size}

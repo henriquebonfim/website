@@ -1,3 +1,5 @@
+import { SOCIAL_LINKS } from '@/shared/constants';
+
 type Project = {
   name: string;
   command: string;
@@ -9,7 +11,7 @@ type Project = {
   status?: 'live' | 'archived' | 'wip';
 };
 
-export const projects: Project[] = [
+export const PROJECTS: Project[] = [
   {
     name: 'Sortudo',
     command: 'open https://sortudo.web.app/',
@@ -24,7 +26,7 @@ export const projects: Project[] = [
     ],
     stack: ['TypeScript', 'Node.js', 'React', 'Vite', 'Vitest', 'Tailwind CSS', 'Firebase'],
     url: 'https://sortudo.web.app/',
-    repo: 'https://github.com/henriquebonfim/sortudo',
+    repo: SOCIAL_LINKS.github + 'sortudo',
     status: 'live',
   },
   {
@@ -34,7 +36,7 @@ export const projects: Project[] = [
       'Extracting high-quality frames from videos for analysis is often a tedious task requiring heavy software. This barrier slows down creative and technical workflows. I developed a lightweight browser-based tool using Web Workers and modern APIs for client-side processing. This simplified the process, enabling users to extract precise frames directly in the browser with 0% server overhead.',
     tags: ['Video Processing', 'Web App', 'Browser APIs', 'Web Workers'],
     stack: ['TypeScript', 'Node.js', 'React', 'Vite', 'Vitest', 'Tailwind CSS', 'Firebase'],
-    repo: 'https://github.com/henriquebonfim/tick3r',
+    repo: SOCIAL_LINKS.github + 'tick3r',
     url: 'https://tick3r.web.app/',
     status: 'live',
   },
@@ -45,7 +47,7 @@ export const projects: Project[] = [
       'Monitoring complex microservices requires a robust observability setup, but manual configuration of multiple tools is error-prone. Inconsistent monitoring leads to slower incident response times. I engineered a production-ready Docker Compose template with automated HTTPS and integrated OpenTelemetry. This reduced the setup time for a full-stack observability suite from hours to under 5 minutes.',
     tags: ['DevOps'],
     stack: ['OpenTelemetry', 'Prometheus', 'Grafana'],
-    repo: 'https://github.com/henriquebonfim/o11y-stack-template',
+    repo: SOCIAL_LINKS.github + 'o11y-stack-template',
     status: 'archived',
   },
   {
@@ -81,7 +83,7 @@ export const projects: Project[] = [
       'OpenRouter API',
     ],
     url: 'https://omni-trader.web.app/',
-    repo: 'https://github.com/henriquebonfim/omni-trader-hub/',
+    repo: SOCIAL_LINKS.github + 'omni-trader-hub/',
     status: 'live',
   },
   {
@@ -107,7 +109,7 @@ export const projects: Project[] = [
       'Vitest',
       'Tailwind CSS',
     ],
-    repo: 'https://github.com/henriquebonfim/ai-translation-tools/',
+    repo: SOCIAL_LINKS.github + 'ai-translation-tools/',
     status: 'wip',
   },
   {
@@ -117,7 +119,7 @@ export const projects: Project[] = [
       'Generative AI for video requires massive compute resources that local environments often cannot provide. This limits the ability for researchers to experiment with high-end models like CogVideoX. I optimized a generation pipeline specifically for Kaggle Kernels to leverage cloud GPUs. This achieved 3x faster inference times compared to standard setups, enabling rapid experimentation with text-to-video generation.',
     tags: ['Generative AI', 'Model Inference', 'Transformers', 'Diffusers', 'LLM'],
     stack: ['Python'],
-    repo: 'https://www.kaggle.com/code/henriquebonfim/text-to-video-cogvideox-2b',
+    repo: SOCIAL_LINKS.kaggle + 'text-to-video-cogvideox-2b',
     status: 'live',
   },
   {
@@ -127,7 +129,7 @@ export const projects: Project[] = [
       'Self-hosting large language models involves complex API configurations that are difficult to scale. Without a standardized interface, integrating AI into existing apps is slow and cumbersome. I implemented a scalable Ollama-based server with a clean FastAPI wrapper. This created a deployment-ready template that allowed for the seamless integration of local LLMs into production-ready architectures.',
     tags: ['LLM', 'Chatbot', 'Generative AI', 'Model Inference', 'Rest API'],
     stack: ['Ollama', 'Python', 'FastAPI', 'Grok'],
-    repo: 'https://www.kaggle.com/code/henriquebonfim/ollama-llm-server',
+    repo: SOCIAL_LINKS.kaggle + 'ollama-llm-server',
     status: 'live',
   },
   {
@@ -149,7 +151,7 @@ export const projects: Project[] = [
       'Tailwind CSS',
       'Docker',
     ],
-    repo: 'https://github.com/henriquebonfim/ai-chat',
+    repo: SOCIAL_LINKS.github + 'ai-chat',
     status: 'archived',
   },
   {
@@ -169,7 +171,7 @@ export const projects: Project[] = [
       'Vitest',
       'Tailwind CSS',
     ],
-    repo: 'https://github.com/henriquebonfim/ultra-dl',
+    repo: SOCIAL_LINKS.github + 'ultra-dl',
     status: 'live',
   },
   {
@@ -189,7 +191,7 @@ export const projects: Project[] = [
       'Python',
       'Jinja2',
     ],
-    repo: 'https://github.com/henriquebonfim/premium-blogger',
+    repo: SOCIAL_LINKS.github + 'premium-blogger',
     status: 'archived',
   },
   {
@@ -199,7 +201,7 @@ export const projects: Project[] = [
       'Rural farmers often have surplus food that goes to waste while charities struggle to find consistent supplies. This gap leads to massive food waste in regions with high food insecurity. I developed an award-winning platform connecting farmers with charities based on UN Sustainable Development Goals. Recognized at Hackatrouble SP 2020, the platform provided a scalable solution to reduce regional food waste by optimizing the supply chain.',
     tags: ['FoodTech', 'Hackathon', 'Web App', 'Social Impact'],
     stack: ['Node.js', 'TypeScript', 'Angular', 'AWS', 'Express.js', 'Docker'],
-    repo: 'https://github.com/henriquebonfim/roca-eats',
+    repo: SOCIAL_LINKS.github + 'roca-eats',
     status: 'archived',
   },
   {
@@ -209,7 +211,7 @@ export const projects: Project[] = [
       'Managing building automation manually is inefficient and lacks centralized visibility. Traditional IoT setups were often fragmented and difficult to manage at scale. I engineered a microservices-based IoT system using Node.js and MongoDB to control hardware via Arduino. This successfully automated lighting and access control, providing a unified dashboard that improved energy efficiency and site security.',
     tags: ['IoT', 'Web App'],
     stack: ['Vue.js', 'Node.js', 'MongoDB', 'Arduino', 'Express.js', 'Docker', 'AWS'],
-    repo: 'https://github.com/hpbonfim/ArduEVE',
+    repo: SOCIAL_LINKS.gitlab + 'ArduEVE',
     status: 'archived',
   },
   {
@@ -219,7 +221,7 @@ export const projects: Project[] = [
       'E-commerce pricing strategy requires constant market monitoring, but manual comparison is impossible across thousands of listings. Lack of data leads to uncompetitive pricing and lost sales. I built a robust scraping tool in Node.js to extract and structure product data automatically. This automated the gathering process, enabling real-time market analysis and data-driven pricing strategies.',
     tags: ['Web Scraping', 'Data Analysis', 'Rest API', 'E-commerce'],
     stack: ['Node.js', 'Express.js', 'Docker'],
-    repo: 'https://github.com/henriquebonfim/Crawler-Mercado-Livre',
+    repo: SOCIAL_LINKS.github + 'Crawler-Mercado-Livre',
     status: 'archived',
   },
   {
@@ -229,7 +231,7 @@ export const projects: Project[] = [
       "Controlling pet access to specific areas of a home is difficult when owners are away. Proprietary hardware solutions were often expensive and lacked mobile flexibility. I built a microservices system connecting a Vue.js mobile app to Arduino-controlled doors. This provided a cost-effective, remote-controlled access system that gave owners full control over their pets' movements from anywhere.",
     tags: ['IoT', 'Web App'],
     stack: ['Node.js', 'MongoDB', 'Arduino', 'Express.js', 'Vue.js', 'Docker'],
-    repo: 'https://github.com/hpbonfim/pet-porta-app',
+    repo: SOCIAL_LINKS.github + 'pet-porta-app',
     status: 'archived',
   },
   {
@@ -239,7 +241,7 @@ export const projects: Project[] = [
       'Traditional legal contract management is slow, paper-heavy, and prone to human error. Small businesses lack the budget for high-end automated legal tools. I developed a blockchain-based platform for contract automation using Node.js and Google Cloud. Ranked in the Top 50 at Megahack v2 2020, it provided a secure and accessible way for businesses to automate legal workflows.',
     tags: ['Blockchain', 'LegalTech', 'Contract Automation', 'Web App', 'Hackathon'],
     stack: ['Node.js', 'Angular', 'Google Cloud Platform', 'Express.js', 'Twilio'],
-    repo: 'https://github.com/hpbonfim/MegaHack-v2-2020-Projeto-Mideal',
+    repo: SOCIAL_LINKS.github + 'MegaHack-v2-2020-Projeto-Mideal',
     status: 'archived',
   },
   {
@@ -249,7 +251,7 @@ export const projects: Project[] = [
       'Truck drivers face unpredictable routes and difficulty finding safe, reliable rest stops during long hauls. Inefficient routing increases fuel consumption and contributes to driver fatigue. I developed a React Native companion app featuring route optimization and a real-time facility finder. Recognized at HackathonCCR, the tool improved logistical efficiency and driver safety by streamlining long-distance travel.',
     tags: ['Logistics', 'Hackathon', 'Mobile App'],
     stack: ['React Native', 'Node.js', 'Expo', 'TypeScript'],
-    repo: 'https://github.com/hpbonfim/HackathonCCR',
+    repo: SOCIAL_LINKS.github + 'HackathonCCR',
     status: 'archived',
   },
   {
@@ -259,7 +261,7 @@ export const projects: Project[] = [
       'In many underserved regions, access to educational resources is severely limited by poor internet connectivity. Students are unable to access interactive learning tools or share digital resources effectively. I built an IBM Watson-powered platform for mobile network sharing and interactive learning. This created a scalable educational tool that bridged the digital divide, allowing students to learn and collaborate regardless of their connectivity.',
     tags: ['EduTech', 'Generative AI', 'Hackathon', 'Rest API'],
     stack: ['Node.js', 'Express.js', 'IBM Watson', 'IBM Cloud Foundry', 'TypeScript'],
-    repo: 'https://github.com/henriquebonfim/Hackathon-IBM-CallForCode-Project_EduDoa',
+    repo: SOCIAL_LINKS.github + 'Hackathon-IBM-CallForCode-Project_EduDoa',
     status: 'archived',
   },
 ];

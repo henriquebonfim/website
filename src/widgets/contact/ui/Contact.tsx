@@ -1,5 +1,6 @@
+import { ASSETS, SOCIAL_LINKS } from '@/shared/constants';
 import { SectionAlienCaption } from '@/shared/ui';
-import { Trans, useLingui } from '@lingui/react/macro';
+import { Trans } from '@lingui/react/macro';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, Box, Camera, FileDown, GitBranch, Link } from 'lucide-react';
 
@@ -7,38 +8,37 @@ const links = [
   {
     label: 'GitHub',
     value: '@henriquebonfim',
-    href: 'https://github.com/henriquebonfim',
+    href: SOCIAL_LINKS.github,
     Icon: GitBranch,
   },
 
   {
     label: 'LinkedIn',
     value: '@henriquebonfim',
-    href: 'https://linkedin.com/in/henriquebonfim',
+    href: SOCIAL_LINKS.linkedin,
     Icon: Link,
   },
   {
     label: 'Instagram',
     value: '@hpbonfim',
-    href: 'https://www.instagram.com/hpbonfim/',
+    href: SOCIAL_LINKS.instagram,
     Icon: Camera,
   },
   {
     label: 'Docker Hub',
     value: '@hpbonfim',
-    href: 'https://hub.docker.com/u/hpbonfim',
+    href: SOCIAL_LINKS.dockerhub,
     Icon: Box,
   },
   {
     label: 'Curriculum Vitae',
     value: 'Download PDF',
-    href: '/assets/static/henrique-bonfim-resume.pdf',
+    href: ASSETS.resume,
     Icon: FileDown,
   },
 ];
 
 export const Contact = () => {
-  const { i18n } = useLingui();
   return (
     <section
       id="contact"

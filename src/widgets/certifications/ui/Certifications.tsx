@@ -1,5 +1,6 @@
-import { certifications, type Certification } from '@/entities/certification';
+import { CERTIFICATIONS, type Certification } from '@/entities/certification';
 import { SectionAlienCaption } from '@/shared/ui';
+import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Award, ChevronDown } from 'lucide-react';
@@ -8,18 +9,24 @@ import { useMemo, useState } from 'react';
 type TypeCategoryFilter = 'All' | Certification['typeCategory'];
 type VendorFilter = 'All' | string;
 
-const typeCategoryOrder: Certification['typeCategory'][] = [
-  'Certification',
-  'Experience',
-  'Learning',
-  'Validation',
-];
-
 export const Certifications = () => {
   const { i18n } = useLingui();
+  const typeCategoryOrder: Certification['typeCategory'][] = [
+    'Certification',
+    'Experience',
+    'Learning',
+    'Validation',
+  ];
+  const typeCategoryLabels: Record<Certification['typeCategory'], string> = {
+    Certification: i18n._(msg`Certification`),
+    Experience: i18n._(msg`Experience`),
+    Learning: i18n._(msg`Learning`),
+    Validation: i18n._(msg`Validation`),
+  };
+
   const certificationsWithTypeCategory = useMemo(
     () =>
-      certifications.map((certification) => ({
+      CERTIFICATIONS.map((certification) => ({
         ...certification,
         typeCategory: certification.typeCategory,
       })),
@@ -33,7 +40,15 @@ export const Certifications = () => {
       )
     );
 
-    return ['All', ...availableTypeCategories] as TypeCategoryFilter[];
+    const output = [
+      { label: 'All', value: 'All' },
+      ...availableTypeCategories.map((typeCategory) => ({
+        label: typeCategoryLabels[typeCategory],
+        value: typeCategory,
+      })),
+    ];
+
+    return output;
   }, [certificationsWithTypeCategory]);
 
   const [typeCategoryFilter, setTypeCategoryFilter] = useState<TypeCategoryFilter>(
@@ -92,7 +107,7 @@ export const Certifications = () => {
             <Trans>Type category</Trans>
           </p>
           <div className="flex flex-wrap gap-2">
-            {typeCategoryOptions.map((typeCategory) => {
+            {typeCategoryOptions.map(({ label, value: typeCategory }) => {
               const active = typeCategoryFilter === typeCategory;
               const count =
                 typeCategory === 'All'
@@ -116,7 +131,7 @@ export const Certifications = () => {
                       : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                   }`}
                 >
-                  <span>{i18n._(typeCategory)}</span>
+                  <span>{label}</span>
                   <span className="text-[10px] opacity-70">{count}</span>
                 </button>
               );
@@ -149,7 +164,7 @@ export const Certifications = () => {
                       : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                   }`}
                 >
-                  <span>{i18n._(vendor)}</span>
+                  <span>{vendor}</span>
                   <span className="text-[10px] opacity-70">{count}</span>
                 </button>
               );

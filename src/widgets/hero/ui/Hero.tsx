@@ -1,3 +1,4 @@
+import { CONTACT, SOCIAL_LINKS } from '@/shared/constants';
 import { HeadLogo, TerminalWindow, Typewriter } from '@/shared/ui';
 import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
@@ -99,13 +100,13 @@ export const Hero = () => {
             >
               <div className="  flex items-center gap-1">
                 {[
-                  { Icon: GitBranch, href: 'https://github.com/henriquebonfim', label: 'GitHub' },
+                  { Icon: GitBranch, href: SOCIAL_LINKS.github, label: 'GitHub' },
                   {
                     Icon: Link,
-                    href: 'https://linkedin.com/in/henriquebonfim',
+                    href: SOCIAL_LINKS.linkedin,
                     label: 'LinkedIn',
                   },
-                  { Icon: Mail, href: 'mailto:dev.unsorted585@passinbox.com', label: 'Email' },
+                  { Icon: Mail, href: `mailto:${CONTACT.email}`, label: 'Email' },
                 ].map(({ Icon, href, label }) => (
                   <a
                     key={label}

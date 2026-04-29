@@ -1,14 +1,26 @@
-import { AnimatedCursor, LanguageSwitcher } from '@/shared/ui';
 import { SeoStructuredData } from '@/shared/seo';
-import { Trans } from '@lingui/react/macro';
-import { FloatingNav } from '@/widgets/navbar';
-import { Footer } from '@/widgets/footer';
-import { About } from '@/widgets/about';
-import { Certifications } from '@/widgets/certifications';
-import { Contact } from '@/widgets/contact';
-import { Experience } from '@/widgets/experience';
+import { AnimatedCursor, LanguageSwitcher } from '@/shared/ui';
 import { Hero } from '@/widgets/hero';
-import { Projects } from '@/widgets/projects';
+import { FloatingNav } from '@/widgets/navbar';
+import { Trans } from '@lingui/react/macro';
+import { Suspense, lazy } from 'react';
+
+const About = lazy(() => import('@/widgets/about').then((module) => ({ default: module.About })));
+const Experience = lazy(() =>
+  import('@/widgets/experience').then((module) => ({ default: module.Experience }))
+);
+const Projects = lazy(() =>
+  import('@/widgets/projects').then((module) => ({ default: module.Projects }))
+);
+const Certifications = lazy(() =>
+  import('@/widgets/certifications').then((module) => ({ default: module.Certifications }))
+);
+const Contact = lazy(() =>
+  import('@/widgets/contact').then((module) => ({ default: module.Contact }))
+);
+const Footer = lazy(() =>
+  import('@/widgets/footer').then((module) => ({ default: module.Footer }))
+);
 
 const Index = () => {
   return (
@@ -27,13 +39,17 @@ const Index = () => {
       </header>
       <main id="content" tabIndex={-1}>
         <Hero />
-        <About />
-        <Experience />
-        <Projects />
-        <Certifications />
-        <Contact />
+        <Suspense fallback={<div className="h-screen w-full flex items-center justify-center" />}>
+          <About />
+          <Experience />
+          <Projects />
+          <Certifications />
+          <Contact />
+        </Suspense>
       </main>
-      <Footer />
+      <Suspense fallback={null}>
+        <Footer />
+      </Suspense>
     </div>
   );
 };

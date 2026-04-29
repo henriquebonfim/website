@@ -1,6 +1,7 @@
-import { experiences } from '@/entities/experience';
+import { EXPERIENCES } from '@/entities/experience';
+import { SOCIAL_LINKS } from '@/shared/constants';
 import { SectionAlienCaption, TerminalWindow } from '@/shared/ui';
-import { t } from '@lingui/core/macro';
+import { msg } from '@lingui/core/macro';
 import { useLingui } from '@lingui/react';
 import { Trans } from '@lingui/react/macro';
 import { motion } from 'framer-motion';
@@ -27,30 +28,28 @@ export const Experience = () => {
     () => [
       {
         metric: '30k+',
-        label: i18n._(t`users scaled`),
+        label: i18n._(msg`users scaled`),
         detail: i18n._(
-          t`Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank.`
+          msg`Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank.`
         ),
       },
       {
-        metric: '20h/wk',
-        label: i18n._(t`manual work removed`),
-        detail: i18n._(
-          t`Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week.`
-        ),
+        metric: '66%',
+        label: i18n._(msg`manual work removed`),
+        detail: i18n._(msg`Automated data entry & reporting pipelines for client teams.`),
       },
       {
         metric: '53%',
-        label: i18n._(t`faster decisions`),
+        label: i18n._(msg`faster decisions`),
         detail: i18n._(
-          t`Built observability dashboards that reduced incidents by 53% through real-time signals.`
+          msg`Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams.`
         ),
       },
       {
         metric: '10y',
-        label: i18n._(t`shipping in production`),
+        label: i18n._(msg`shipping in production`),
         detail: i18n._(
-          t`A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale.`
+          msg`A decade building resilient backend on event-driven and distributed systems, frontend that users love, and now AI-driven platforms at scale!`
         ),
       },
     ],
@@ -58,7 +57,7 @@ export const Experience = () => {
   );
 
   const workExperienceTags = useMemo(
-    () => getUniqueSortedValues(experiences.flatMap((experience) => experience.tags)),
+    () => getUniqueSortedValues(EXPERIENCES.flatMap((experience) => experience.tags)),
     []
   );
 
@@ -70,7 +69,7 @@ export const Experience = () => {
     >
       <div className="container">
         <div className="max-w-3xl">
-          <SectionAlienCaption label="$ cat ./experience.log" className="mb-3" />
+          <SectionAlienCaption label="$ echo experience.log" className="mb-3" />
           <h2
             id="experience-heading"
             className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] uppercase"
@@ -88,7 +87,7 @@ export const Experience = () => {
             </Trans>
             <span className="inline-block">
               <a
-                href="https://linkedin.com/in/henriquebonfim"
+                href={SOCIAL_LINKS.linkedin}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 rounded-full px-5 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
@@ -145,7 +144,7 @@ export const Experience = () => {
             aria-hidden
           />
           <ol className="space-y-8 list-none">
-            {experiences.map((exp, i) => (
+            {EXPERIENCES.map((exp, i) => (
               <motion.li
                 key={`${exp.company}-${exp.period}`}
                 initial={{ opacity: 0, x: 24 }}

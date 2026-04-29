@@ -34,8 +34,8 @@ msgid "12y in tech tidying up the messy parts..."
 msgstr "12 anos em tech organizando a bagunça..."
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "A decade building resilient backend on distributed systems, frontend that users love, and now AI-driven platforms at scale."
-msgstr "Uma década construindo backend em sistemas distribuídos, frontend que usuários amam e agora plataformas orientadas por IA em escala."
+msgid "A decade building resilient backend on event-driven and distributed systems, frontend that users love, and now AI-driven platforms at scale!"
+msgstr "Uma década construindo backends resilientes em sistemas distribuídos e orientados a eventos, frontends que os usuários amam e, agora, plataformas baseadas em IA em escala!"
 
 #: src/widgets/about/ui/About.tsx
 msgid "A quiet operator<0/>in a noisy industry."
@@ -50,8 +50,8 @@ msgid "After a decade in the trenches, spanning full-stack, distributed systems,
 msgstr "Após uma década nas trincheiras, passando por full-stack, sistemas distribuídos e agora IA. Vi como é fácil o ruído técnico ofuscar o real valor de negócio. Hoje, uso IA para automatizar as partes repetitivas e 'chatas' da engenharia de plataforma que tradicionalmente consumiam 40% do tempo de desenvolvimento. Essa automação liberou meu foco para decisões de arquitetura de alto impacto, me permitindo construir sistemas que não são apenas funcionais, mas verdadeiramente resilientes."
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "Automated ELT pipelines, eliminating 20+ hours of manual reporting work every week."
-msgstr "Pipelines ELT automatizados, eliminando mais de 20 horas semanais de trabalho manual com relatórios."
+msgid "Automated data entry & reporting pipelines for client teams."
+msgstr "Automação de pipelines de entrada de dados e relatórios para equipes de clientes."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Backend | Distributed Systems | Web3 | AI"
@@ -61,13 +61,13 @@ msgstr "Backend | Sistemas Distribuídos | Web3 | IA"
 msgid "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
 msgstr "Construir software muitas vezes é visto apenas como escrever código, mas o verdadeiro desafio está em resolver problemas imprevisíveis do mundo real. Selecionei estes projetos open-source e internos para mostrar como lido com esses obstáculos técnicos — de gargalos na extração de dados ao escalonamento em tempo real. Cada projeto é resultado de ir além da implementação simples para criar soluções resilientes que funcionam na prática."
 
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Built observability dashboards that reduced incidents by 53% through real-time signals."
-msgstr "Criei dashboards de observabilidade que reduziram incidentes em 53% através de sinais em tempo real."
-
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
 msgstr "feito com amor · criatividade · IA · ☕"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Certification"
+msgstr "Certificação"
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Certs"
@@ -80,6 +80,14 @@ msgstr "Contato"
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "credentials and skills"
 msgstr "credenciais e skills"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
+msgstr "Dashboards personalizados liberaram insights em tempo real para equipes omnichannel e stakeholders."
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Experience"
+msgstr "Experiência"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "faster decisions"
@@ -96,6 +104,10 @@ msgstr "Crescendo cercado por coisas mecânicas, comecei a desmontar tudo... de 
 #: src/widgets/about/ui/About.tsx
 msgid "growth in chaos"
 msgstr "crescimento no caos"
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
+msgstr "Ajudei a escalar a fintech de energia fotovoltaica líder do Brasil para mais de 30.000 usuários, apoiando a aquisição pelo Banco BV."
 
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Henrique Bonfim · Brazilian"
@@ -117,6 +129,10 @@ msgstr "Fiz meu primeiro deploy em produção aos 19 anos, mas logo percebi que 
 msgid "keep calm in the storm"
 msgstr "mantenha a calma na tempestade"
 
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Learning"
+msgstr "Aprendizado"
+
 #: src/widgets/contact/ui/Contact.tsx
 msgid "Let's build"
 msgstr "Vamos construir"
@@ -131,7 +147,7 @@ msgstr "Manter sistemas complexos sob alta pressão pode facilmente levar a corr
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "manual work removed"
-msgstr "trabalho manual eliminado"
+msgstr "eliminação de trabalho manual"
 
 #: src/pages/NotFound.tsx
 msgid "no such file or directory"
@@ -161,10 +177,6 @@ msgstr "Tags do projeto"
 msgid "Projects"
 msgstr "Projetos"
 
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Scaled fintech infrastructure to 30k+ users, supporting its acquisition by BV Bank."
-msgstr "Infraestrutura de fintech escalada para mais de 30 mil usuários, apoiando sua aquisição pelo Banco BV."
-
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
 msgstr "rolar"
@@ -183,7 +195,7 @@ msgstr "Senior Software Engineer · Platform & AI · Construindo sistemas confi�
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"
-msgstr "entregando em produção"
+msgstr "entregas em produção"
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Show skills"
@@ -235,7 +247,11 @@ msgstr "Categoria"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "users scaled"
-msgstr "usuários escalados"
+msgstr "crescimento de usuários"
+
+#: src/widgets/certifications/ui/Certifications.tsx
+msgid "Validation"
+msgstr "Validação"
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Vendor"

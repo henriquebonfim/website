@@ -5,6 +5,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 import './styles/index.css';
+import('@/shared/lib/firebase');
 
 const savedLocale = localStorage.getItem('locale');
 const initialLocale = savedLocale && savedLocale in locales ? savedLocale : defaultLocale;

@@ -11,7 +11,7 @@ export type Certification = {
   imageUrl?: string;
   badgeUrl?: string;
 };
-export const certifications: Certification[] = [
+export const CERTIFICATIONS: Certification[] = [
   {
     id: '8ef12665-1a5f-4c24-81ab-426d4a5ac6d5',
     name: 'Professional Cloud Architect Certification',

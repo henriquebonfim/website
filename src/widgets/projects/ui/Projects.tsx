@@ -1,4 +1,4 @@
-import { projects } from '@/entities/project';
+import { PROJECTS } from '@/entities/project';
 import { SectionAlienCaption } from '@/shared/ui';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -17,17 +17,17 @@ const sortValuesByUsage = (values: string[], getCount: (value: string) => number
   });
 
 const projectTagCount = (tag: string) =>
-  projects.filter((project) => project.tags.includes(tag)).length;
+  PROJECTS.filter((project) => project.tags.includes(tag)).length;
 
 const projectStackCount = (stack: string) =>
-  projects.filter((project) => project.stack.includes(stack)).length;
+  PROJECTS.filter((project) => project.stack.includes(stack)).length;
 
 export const Projects = () => {
   const { i18n } = useLingui();
   const projectTags = useMemo(
     () =>
       sortValuesByUsage(
-        projects.flatMap((project) => project.tags),
+        PROJECTS.flatMap((project) => project.tags),
         projectTagCount
       ),
     []
@@ -36,7 +36,7 @@ export const Projects = () => {
   const projectStacks = useMemo(
     () =>
       sortValuesByUsage(
-        projects.flatMap((project) => project.stack),
+        PROJECTS.flatMap((project) => project.stack),
         projectStackCount
       ),
     []
@@ -47,8 +47,8 @@ export const Projects = () => {
   const filteredProjects = useMemo(
     () =>
       activeTag === 'All'
-        ? projects
-        : projects.filter(
+        ? PROJECTS
+        : PROJECTS.filter(
             (project) => project.tags.includes(activeTag) || project.stack.includes(activeTag)
           ),
     [activeTag]
@@ -81,7 +81,7 @@ export const Projects = () => {
             </p>
           </div>
           <p className="font-mono text-xs text-muted-foreground">
-            $ ls ~/projects · {filteredProjects.length} / {projects.length} entries
+            $ ls ~/projects · {filteredProjects.length} / {PROJECTS.length} entries
           </p>
         </div>
 
@@ -93,7 +93,7 @@ export const Projects = () => {
             <div className="flex flex-wrap gap-2">
               {['All', ...projectTags].map((tag, i) => {
                 const active = activeTag === tag;
-                const count = tag === 'All' ? projects.length : projectTagCount(tag);
+                const count = tag === 'All' ? PROJECTS.length : projectTagCount(tag);
 
                 return (
                   <button
@@ -122,7 +122,7 @@ export const Projects = () => {
             <div className="flex flex-wrap gap-2">
               {['All', ...projectStacks].map((stack, i) => {
                 const active = activeTag === stack;
-                const count = stack === 'All' ? projects.length : projectStackCount(stack);
+                const count = stack === 'All' ? PROJECTS.length : projectStackCount(stack);
 
                 return (
                   <button

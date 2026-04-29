@@ -1,4 +1,4 @@
-import alienLogo from '@/assets/alien-logo.png';
+import { ASSETS } from '@/shared/constants';
 import { cn } from '@/shared/lib/utils';
 import { motion, useAnimationFrame, useMotionValue, useReducedMotion } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState } from 'react';
@@ -124,7 +124,7 @@ export const SectionAlienCaption = ({
               style={{ width: alienSize, height: alienSize }}
             >
               <img
-                src={alienLogo}
+                src={ASSETS.alienLogo}
                 alt="Henrique Bonfim alien logo"
                 width={alienSize}
                 height={alienSize}
@@ -139,9 +139,7 @@ export const SectionAlienCaption = ({
 
         <p className="relative z-10 flex items-center gap-2 pl-9 font-mono text-xs uppercase tracking-[0.2em] comment-highlight">
           <span>{prefix}</span>
-          <span className="whitespace-nowrap">
-            {label.startsWith('$') ? <span className="text-primary">{label}</span> : label}
-          </span>
+          <span className="whitespace-nowrap">{label}</span>
         </p>
       </span>
     </motion.div>
