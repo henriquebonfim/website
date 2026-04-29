@@ -1,0 +1,1 @@
+export { SeoStructuredData } from './SeoStructuredData';

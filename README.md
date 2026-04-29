@@ -1,261 +1,112 @@
-# 🚀 Henrique Bonfim - Portfolio Website
+# 🚀 Henrique Bonfim - Portfolio & Personal Website
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-blue.svg)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-19.2-61DAFB.svg)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-7.3-646CFF.svg)](https://vitejs.dev/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.1-38B2AC.svg)](https://tailwindcss.com/)
+<div align="center">
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB.svg)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8.x-646CFF.svg)](https://vitejs.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.2-38B2AC.svg)](https://tailwindcss.com/)
+[![Firebase](https://img.shields.io/badge/Firebase-Hosting-FFCA28.svg)](https://firebase.google.com/)
+[![Bun](https://img.shields.io/badge/Bun-Package_Manager-fbf0df.svg)](https://bun.sh/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-A modern, high-performance portfolio website built with cutting-edge web technologies. Features a clean, responsive design with internationalization support, progressive web app capabilities, and optimized for SEO and performance.
+</div>
+
+A modern, high-performance portfolio website built with cutting-edge web technologies. Features a clean, responsive design tailored to showcase professional experience, projects, and certifications.
 
 ## ✨ Features
 
-- 🎨 **Modern UI/UX** - Built with React 19, Tailwind CSS 4, and DaisyUI components
-- 🌍 **Internationalization** - Multi-language support (English, Spanish, Portuguese) using Lingui
-- 📱 **Progressive Web App** - Offline support with service workers and PWA capabilities
-- ⚡ **Lightning Fast** - Powered by Vite with optimized builds and code splitting
-- 🔍 **SEO Optimized** - Structured data, meta tags, and sitemap generation
-- 🎯 **Type Safe** - Full TypeScript implementation
-- 🌗 **Responsive Design** - Mobile-first approach with adaptive layouts
-- 🎪 **Interactive Widgets** - Spotify integration, NASA APOD, YouTube feed, and more
-- 🔒 **Secure** - Content sanitization with DOMPurify
-- 📊 **Firebase Hosting** - Deployed on Google's global CDN
+- 🎨 **Modern UI/UX** - Fluid animations using `framer-motion` and styled with Tailwind CSS 4.
+- 🌍 **Internationalization (i18n)** - Multi-language support (🇺🇸 English, 🇪🇸 Spanish, 🇧🇷 Portuguese) natively compiled via **LinguiJS** for zero-runtime overhead.
+- 📱 **Progressive Web App (PWA)** - Fully installable with offline support, rich install UI, and Service Workers configured via Workbox.
+- ⚡ **Lightning Fast** - Powered by Vite and Bun, strictly locked dependencies, optimized code splitting, and aggressive caching.
+- 🔍 **SEO & Analytics** - Comprehensive Knowledge Graph JSON-LD schema integration, canonical URLs, semantic HTML, and Firebase Analytics tracking (UTM).
+- 🏗️ **Feature-Sliced Design (FSD)** - Highly scalable frontend architecture separating concerns into `app`, `pages`, `widgets`, `features`, `entities`, and `shared`.
+- 🔄 **Fully Automated CI/CD** - GitHub Actions workflow with preview channels for PRs and automated production deployments to Firebase Hosting.
 
 ## 🛠️ Tech Stack
 
-### Core
-- **React 19.2** - Latest React with concurrent features
-- **TypeScript 5.9** - Type-safe development
-- **Vite 7.3** - Next-generation frontend tooling
+- **Core:** React 19.2, TypeScript, React Router 7
+- **Styling:** Tailwind CSS 4.2, Tailwind Merge, CLSX
+- **Animations:** Framer Motion 12
+- **i18n:** LinguiJS 6
+- **Tooling:** Bun, Vite 8, ESLint 10, Prettier, Knip
+- **Infrastructure:** Firebase (Hosting, Analytics), GitHub Actions
 
-### Styling
-- **Tailwind CSS 4.1** - Utility-first CSS framework
-- **DaisyUI 5.5** - Tailwind CSS component library
-- **Tailwind Typography** - Beautiful typographic defaults
-- **Lucide React** - Modern icon library
+## 📁 Architecture
 
-### Internationalization
-- **Lingui 5.9** - Modern i18n framework for React
-- Support for: English, Spanish, Portuguese
+This project follows the **Feature-Sliced Design (FSD)** methodology:
 
-### Build & Optimization
-- **Image Optimizer** - Automatic image optimization
-- **Compression** - Gzip/Brotli compression
-- **PWA Plugin** - Progressive web app generation
-- **Sitemap Plugin** - Automatic sitemap generation
-- **Sharp** - High-performance image processing
-- **SVGO** - SVG optimization
-- **Terser** - JavaScript minification
-
-### Code Quality
-- **ESLint 9** - Code linting with latest standards
-- **TypeScript ESLint** - TypeScript-specific linting rules
-
-## 📁 Project Structure
-
-```
-website/
-├── src/
-│   ├── app/                    # Application core
-│   │   ├── contexts/          # React contexts
-│   │   ├── layout/            # Layout components (header, footer)
-│   │   └── providers/         # App providers
-│   ├── pages/                 # Page components
-│   │   └── home/              # Home page sections
-│   │       ├── contents/      # Content sections (about, projects, etc.)
-│   │       └── ui/            # Page-specific UI components
-│   ├── shared/                # Shared resources
-│   │   ├── constants/         # App constants
-│   │   ├── hooks/             # Custom React hooks
-│   │   ├── i18n/              # Internationalization files
-│   │   ├── types/             # TypeScript types
-│   │   ├── ui/                # Shared UI components
-│   │   └── utils/             # Utility functions
-│   └── widgets/               # Interactive widgets
-│       ├── certifications.tsx # Professional certifications
-│       ├── nasa.tsx           # NASA APOD integration
-│       ├── spotify.tsx        # Spotify integration
-│       ├── terminal.tsx       # Interactive terminal
-│       └── youtube.tsx        # YouTube feed
-├── public/                    # Static assets
-│   ├── assets/               # Images, photos, layouts
-│   ├── llms.txt              # LLM-friendly site info
-│   └── robots.txt            # Search engine directives
-└── dev-dist/                 # Service worker files
-
+```text
+src/
+├── app/          # Global setup, providers, global styles, and entry points
+├── pages/        # Route components (e.g., Home, NotFound)
+├── widgets/      # Standalone UI blocks (e.g., Hero, Experience, Projects)
+├── entities/     # Business entities and models (e.g., Project types, Certifications)
+└── shared/       # Reusable components, UI library, i18n, SEO, utilities
 ```
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- **Node.js** >= 18.x
-- **Bun** (recommended) or **npm/yarn/pnpm**
-- **Git**
+- **Bun** (Required for the locked dependency tree and fast scripts)
+- **Node.js** >= 20.x
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/henriquebonfim/website.git
    cd website
    ```
 
 2. **Install dependencies**
+
    ```bash
    bun install
-   # or
-   npm install
    ```
 
-3. **Start development server**
+3. **Start the development server**
    ```bash
-   bun run dev
-   # or
-   npm run dev
+   bun dev
    ```
-
-4. **Open your browser**
-   Navigate to `http://localhost:8080`
+   Navigate to `http://localhost:5173` (or the port provided by Vite).
 
 ## 📜 Available Scripts
 
-| Command | Description |
-|---------|-------------|
-| `bun run dev` | Start development server on port 8080 |
-| `bun run build` | Build for production |
-| `bun run preview` | Preview production build locally |
-| `bun run lint` | Run ESLint |
-| `bun run i18n:extract` | Extract translation strings |
-| `bun run i18n:compile` | Compile translations |
-| `bun run translate:pipeline` | Extract and compile translations |
+| Command                  | Description                                              |
+| ------------------------ | -------------------------------------------------------- |
+| `bun dev`                | Start the local Vite development server                  |
+| `bun run build`          | Build the application for production                     |
+| `bun run preview`        | Serve the production build locally                       |
+| `bun run lint`           | Run ESLint across the codebase                           |
+| `bun run format`         | Run Prettier to format files                             |
+| `bun run knip`           | Run Knip to find unused files, dependencies, and exports |
+| `bun run i18n:extract`   | Extract strings from source code into Lingui catalogs    |
+| `bun run lingui:compile` | Compile `.po` translation catalogs into optimized JS     |
 
-## 🌍 Internationalization
+## 🌍 Managing Translations
 
-The project supports multiple languages out of the box:
+To add or update translations:
 
-- 🇺🇸 English (en)
-- 🇪🇸 Spanish (es)
-- 🇧🇷 Portuguese (pt)
+1. Add your new strings to the code using Lingui macros (e.g., `<Trans>Hello</Trans>`).
+2. Run `bun run i18n:extract` to update the `.po` files inside `src/shared/i18n/locales/`.
+3. Fill in the missing translations in the `.po` files.
+4. Run `bun run lingui:compile` to generate the compiled catalogs.
 
-### Adding Translations
+## 🏗️ Deployment
 
-1. Extract translatable strings:
-   ```bash
-   bun run i18n:extract
-   ```
+The project is configured for seamless deployment to **Firebase Hosting** using GitHub Actions (`cd_firebase.yaml`).
 
-2. Edit `.po` files in `src/shared/i18n/locales/`
+- **Pull Requests:** Automatically trigger a build and deploy a temporary Preview Channel.
+- **Pushes to `master`:** Automatically trigger a production build and deploy to the live channel, tagging a GitHub Release based on the commit history.
 
-3. Compile translations:
-   ```bash
-   bun run i18n:compile
-   ```
-
-Or run the full pipeline:
-```bash
-bun run translate:pipeline
-```
-
-## 🏗️ Build & Deployment
-
-### Production Build
-
-```bash
-bun run build
-```
-
-The optimized build will be generated in the `dist/` directory with:
-- Code splitting and lazy loading
-- Minified and compressed assets
-- Optimized images
-- Service worker for offline support
-- Generated sitemap
-
-### Deploy to Firebase
-
-```bash
-firebase deploy
-```
-
-## ⚙️ Configuration
-
-### Vite Configuration
-- Custom aliases: `@` and `#` point to `./src`
-- Port: `8080`
-- Image optimization with Sharp
-- PWA with workbox
-- Code splitting for React and UI libraries
-
-### Tailwind Configuration
-- Custom theme extensions in [tailwind.config.ts](tailwind.config.ts)
-- DaisyUI component library
-- Typography plugin
-
-### TypeScript Configuration
-- Strict mode enabled
-- Path aliases configured
-- React JSX runtime
-
-## 🎯 Key Features Explained
-
-### Progressive Web App
-The site works offline and can be installed on devices thanks to the PWA plugin and service workers.
-
-### Performance Optimization
-- **Image Optimization**: Automatic compression and format conversion
-- **Code Splitting**: Separate chunks for vendor libraries
-- **Lazy Loading**: Components loaded on demand
-- **Compression**: Gzip and Brotli compression
-
-### SEO Features
-- Structured data (JSON-LD)
-- Meta tags for social sharing
-- Automatic sitemap generation
-- Semantic HTML structure
-
-### Widget Integrations
-- **Spotify**: Display currently playing or recent tracks
-- **NASA APOD**: Show Astronomy Picture of the Day
-- **YouTube**: Embed latest videos
-- **Terminal**: Interactive terminal component
-- **Certifications**: Professional certifications showcase
-
-## 🤝 Contributing
-
-Contributions are welcome! Feel free to:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👤 Author
-
-**Henrique Bonfim**
-- Website: [henriquebonfim.web.app](https://henriquebonfim.web.app)
-- GitHub: [@henriquebonfim](https://github.com/henriquebonfim)
-- LinkedIn: [@henriquebonfim](https://www.linkedin.com/in/henriquebonfim)
-- YouTube: [@henrique_bonfim](https://www.youtube.com/@henrique_bonfim)
-
-## 🙏 Acknowledgments
-
-- React team for the amazing framework
-- Vite team for the blazing-fast build tool
-- Tailwind CSS team for the utility-first CSS framework
-- All open-source contributors
+Make sure your repository has the correct `VITE_FIREBASE_*` secrets configured to enable Analytics in production.
 
 ---
 
 <div align="center">
-
-  **⭐ If you find this project useful, please consider giving it a star!**
-
-  Made with ❤️ by Henrique Bonfim
-
+Made with ❤️ by Henrique Bonfim
 </div>
