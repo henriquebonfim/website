@@ -15,40 +15,43 @@ const items = [
 
 export const FloatingNav = () => {
   const { i18n } = useLingui();
-  const [active, setActive] = useState<'home' | (typeof items)[number]['id']>('home');
+  const [active, setActive] = useState<'home' | (typeof items)[number]['id']>(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const hash = window.location.hash.slice(1);
+      if (items.some((i) => i.id === hash)) return hash;
+    }
+    return 'home';
+  });
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id);
-        });
-      },
-      { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
-    );
-
-    const syncHome = () => {
+    const handleScroll = () => {
       if (window.scrollY < 120) {
         setActive('home');
+        return;
+      }
+
+      for (const item of items) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          // Check if the top of the section is near the upper third of the screen
+          if (rect.top <= window.innerHeight * 0.4 && rect.bottom > window.innerHeight * 0.2) {
+            setActive(item.id);
+          }
+        }
       }
     };
 
-    syncHome();
-    window.addEventListener('scroll', syncHome, { passive: true });
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    items.forEach((i) => {
-      const el = document.getElementById(i.id);
-      if (el) obs.observe(el);
-    });
-
-    return () => {
-      window.removeEventListener('scroll', syncHome);
-      obs.disconnect();
-    };
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const scrollTo = (id: string) => {
+    setActive(id);
+    window.history.pushState(null, '', `#${id}`);
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
