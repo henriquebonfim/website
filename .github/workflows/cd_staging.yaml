@@ -1,13 +1,9 @@
 name: Deploy to Staging (Preview)
 
 on:
-  push:
-    branches:
-      - staging
   pull_request:
     branches:
-      - master
-      - production
+      - staging
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
