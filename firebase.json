@@ -1,10 +1,7 @@
 {
   "hosting": {
-    "source": ".",
+    "public": "dist",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "frameworksBackend": {
-      "region": "us-central1"
-    },
     "site": "henriquebonfim",
     "headers": [
       {
@@ -15,6 +12,12 @@
             "value": "public, max-age=31536000, immutable"
           }
         ]
+      }
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
       }
     ]
   }
