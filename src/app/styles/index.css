@@ -14,18 +14,18 @@
     --card-foreground: 0 0% 85%;
 
     --popover: 240 2% 18%;
-    --popover-foreground: 0 0% 86%;
+    --popover-foreground: 0 0% 90%;
 
-    --primary: 204 100% 40%; /* Azure #007acc */
+    --primary: 204 100% 50%; /* Lighter azure to pass 4.5:1 contrast on black */
     --primary-foreground: 0 0% 100%;
     --primary-glow: 199 100% 65%;
-    --comment-highlight: 104 73% 71%; /* #9CEB7F */
+    --comment-highlight: 104 73% 75%; /* Lighter green */
 
     --secondary: 240 2% 19%;
-    --secondary-foreground: 0 0% 82%;
+    --secondary-foreground: 0 0% 90%; /* Lighter */
 
     --muted: 0 0% 24%;
-    --muted-foreground: 220 5% 65%;
+    --muted-foreground: 220 5% 75%; /* Lighter gray to pass 4.5:1 contrast on dark grays */
 
     --accent: 209 51% 31%;
     --accent-foreground: 0 0% 93%;

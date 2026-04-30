@@ -50,12 +50,23 @@ jobs:
           VITE_FIREBASE_MEASUREMENT_ID: ${{ secrets.VITE_FIREBASE_MEASUREMENT_ID }}
 
       - name: Deploy to Firebase Hosting Production
+        id: deploy_production
         uses: FirebaseExtended/action-hosting-deploy@v0.10.0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
           projectId: ${{ vars.FIREBASE_PROJECT_ID }}
           channelId: live
+
+      - name: Output Deployment URL
+        run: |
+          echo "🚀 Deployment successfully created!"
+          echo "🌐 Production URL: ${{ steps.deploy_production.outputs.details_url }}"
+          echo "🔗 All URLs: ${{ steps.deploy_production.outputs.urls }}"
+
+          # Add to GitHub Actions Job Summary
+          echo "### 🚀 Production Deployment Successful" >> $GITHUB_STEP_SUMMARY
+          echo "**Production URL:** [${{ steps.deploy_production.outputs.details_url }}](${{ steps.deploy_production.outputs.details_url }})" >> $GITHUB_STEP_SUMMARY
 
   update_release:
     name: Update GitHub Release
