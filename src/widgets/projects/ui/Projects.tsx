@@ -3,7 +3,7 @@ import { SectionAlienCaption } from '@/shared/ui';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink, GitBranch } from 'lucide-react';
-import { useMemo, useState } from 'react';
+import { useCallback, useMemo, useState } from 'react';
 
 type ProjectFilter = 'All' | string;
 
@@ -16,30 +16,45 @@ const sortValuesByUsage = (values: string[], getCount: (value: string) => number
     return countDifference !== 0 ? countDifference : left.localeCompare(right);
   });
 
-const projectTagCount = (tag: string) =>
-  PROJECTS.filter((project) => project.tags.includes(tag)).length;
-
-const projectStackCount = (stack: string) =>
-  PROJECTS.filter((project) => project.stack.includes(stack)).length;
-
 export const Projects = () => {
   const { i18n } = useLingui();
+
+  const translatedProjects = useMemo(
+    () =>
+      PROJECTS.map((p) => ({
+        ...p,
+        description: typeof p.description === 'string' ? p.description : i18n._(p.description),
+        tags: p.tags.map((t) => (typeof t === 'string' ? t : i18n._(t))),
+      })),
+    [i18n]
+  );
+
+  const projectTagCount = useCallback(
+    (tag: string) => translatedProjects.filter((project) => project.tags.includes(tag)).length,
+    [translatedProjects]
+  );
+
+  const projectStackCount = useCallback(
+    (stack: string) => translatedProjects.filter((project) => project.stack.includes(stack)).length,
+    [translatedProjects]
+  );
+
   const projectTags = useMemo(
     () =>
       sortValuesByUsage(
-        PROJECTS.flatMap((project) => project.tags),
+        translatedProjects.flatMap((project) => project.tags),
         projectTagCount
       ),
-    []
+    [translatedProjects, projectTagCount]
   );
 
   const projectStacks = useMemo(
     () =>
       sortValuesByUsage(
-        PROJECTS.flatMap((project) => project.stack),
+        translatedProjects.flatMap((project) => project.stack),
         projectStackCount
       ),
-    []
+    [translatedProjects, projectStackCount]
   );
 
   const [activeTag, setActiveTag] = useState<ProjectFilter>('All');
@@ -47,11 +62,11 @@ export const Projects = () => {
   const filteredProjects = useMemo(
     () =>
       activeTag === 'All'
-        ? PROJECTS
-        : PROJECTS.filter(
+        ? translatedProjects
+        : translatedProjects.filter(
             (project) => project.tags.includes(activeTag) || project.stack.includes(activeTag)
           ),
-    [activeTag]
+    [activeTag, translatedProjects]
   );
 
   return (
@@ -81,7 +96,7 @@ export const Projects = () => {
             </p>
           </div>
           <p className="font-mono text-xs text-muted-foreground">
-            $ ls ~/projects · {filteredProjects.length} / {PROJECTS.length} entries
+            $ ls ~/projects · {filteredProjects.length} / {translatedProjects.length} entries
           </p>
         </div>
 
@@ -93,7 +108,7 @@ export const Projects = () => {
             <div className="flex flex-wrap gap-2">
               {['All', ...projectTags].map((tag, i) => {
                 const active = activeTag === tag;
-                const count = tag === 'All' ? PROJECTS.length : projectTagCount(tag);
+                const count = tag === 'All' ? translatedProjects.length : projectTagCount(tag);
 
                 return (
                   <button
@@ -122,7 +137,8 @@ export const Projects = () => {
             <div className="flex flex-wrap gap-2">
               {['All', ...projectStacks].map((stack, i) => {
                 const active = activeTag === stack;
-                const count = stack === 'All' ? PROJECTS.length : projectStackCount(stack);
+                const count =
+                  stack === 'All' ? translatedProjects.length : projectStackCount(stack);
 
                 return (
                   <button
@@ -183,7 +199,7 @@ export const Projects = () => {
                       {p.name}
                     </h3>
                     <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                      {i18n._(p.description)}
+                      {p.description}
                     </p>
 
                     <div className="mt-4 space-y-3">

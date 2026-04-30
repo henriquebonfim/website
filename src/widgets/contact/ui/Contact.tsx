@@ -70,8 +70,9 @@ export const Contact = () => {
 
         <p className="mt-6 max-w-xl text-muted-foreground">
           <Trans>
-            Open to software engineering roles, advisory, consulting, freelancing, and selective
-            collaborations.
+            I'm open to new projects and collaborations. Whether you're looking for a Staff/Senior
+            Full-Stack or Backend Engineer, an advisor, a consultant, or a freelancer to help bring
+            your ideas to life, I'd love to hear about it.
           </Trans>
         </p>
 

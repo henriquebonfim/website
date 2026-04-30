@@ -57,8 +57,11 @@ export const Experience = () => {
   );
 
   const workExperienceTags = useMemo(
-    () => getUniqueSortedValues(EXPERIENCES.flatMap((experience) => experience.tags)),
-    []
+    () =>
+      getUniqueSortedValues(
+        EXPERIENCES.flatMap((experience) => experience.tags.map((tag) => i18n._(tag)))
+      ),
+    [i18n]
   );
 
   return (
@@ -75,27 +78,26 @@ export const Experience = () => {
             className="font-display text-4xl md:text-6xl font-bold tracking-tight leading-[0.95] uppercase"
           >
             <Trans>
-              10 years of turning chaos
+              10+ years of <br />
+              <span className="text-gradient underline">turning chaos</span>
               <br />
               into <span className="text-gradient">calm systems.</span>
             </Trans>
           </h2>
-          <div className="mt-6 text-muted-foreground max-w-xl inline-block">
+          <div className="mt-6 text-muted-foreground max-w-xl  ">
+            <a
+              href={SOCIAL_LINKS.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-full  mx-1 px-2 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors hover:text-primary "
+            >
+              ./linkedin
+              <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
+            </a>
             <Trans>
-              Selected roles where I turned business needs into products, platforms, and measurable
-              results that mattered.
+              I turned business needs into products, platforms, and measurable results that
+              mattered.
             </Trans>
-            <span className="inline-block">
-              <a
-                href={SOCIAL_LINKS.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full px-5 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors"
-              >
-                ./linkedin
-                <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-foreground" />
-              </a>
-            </span>
           </div>
 
           <div className="mt-10">
@@ -184,7 +186,10 @@ export const Experience = () => {
                   </p>
                   <ul className="space-y-2">
                     {exp.highlights.map((h) => (
-                      <li key={h} className="flex gap-2 text-sm leading-relaxed text-foreground/90">
+                      <li
+                        key={h.id}
+                        className="flex gap-2 text-sm leading-relaxed text-foreground/90"
+                      >
                         <span className="text-primary-glow font-mono shrink-0">▸</span>
                         <span>{i18n._(h)}</span>
                       </li>
@@ -198,10 +203,10 @@ export const Experience = () => {
                       <div className="flex flex-wrap gap-1.5">
                         {exp.tags.map((tag) => (
                           <span
-                            key={tag}
+                            key={tag.id}
                             className="rounded-full border border-border px-2.5 py-0.5 font-mono text-[10px] text-muted-foreground"
                           >
-                            {tag}
+                            {i18n._(tag)}
                           </span>
                         ))}
                       </div>

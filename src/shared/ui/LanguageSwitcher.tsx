@@ -1,7 +1,8 @@
-import { loadCatalog, locales } from '@/shared/i18n/lingui';
+import { locales } from '@/shared/i18n/lingui';
 import { cn } from '@/shared/lib/utils';
 import { useLingui } from '@lingui/react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const languages: { code: keyof typeof locales; label: string; var: string }[] = [
   { code: 'en', label: 'EN', var: 'var(--i18n-en-logo)' },
@@ -11,15 +12,16 @@ const languages: { code: keyof typeof locales; label: string; var: string }[] = 
 
 export const LanguageSwitcher = () => {
   const { i18n } = useLingui();
+  const navigate = useNavigate();
   const reduceMotion = useReducedMotion() ?? false;
 
-  const handleLanguageChange = async (code: keyof typeof locales) => {
-    await loadCatalog(code);
+  const handleLanguageChange = (code: keyof typeof locales) => {
     localStorage.setItem('locale', code);
+    navigate(`/${code}`);
   };
 
   return (
-    <div className="fixed right-4 top-6 z-50 flex flex-col gap-3 sm:right-8 sm:top-8">
+    <div className="fixed right-2 top-10 z-50 flex flex-col gap-3 sm:right-3 sm:top-3">
       {languages.map((lang, i) => (
         <motion.button
           key={lang.code}

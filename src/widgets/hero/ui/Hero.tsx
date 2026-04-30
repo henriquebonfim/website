@@ -25,7 +25,7 @@ export const Hero = () => {
     i18n._(msg`Backend | Distributed Systems | Web3 | AI`),
     '\n ',
     i18n._(msg`$ whoami --summary`),
-    i18n._(msg`12y in tech tidying up the messy parts...`),
+    i18n._(msg`12y of engineered resilience and planetary-scale infrastructure.`),
     i18n._(msg`Still curious and learning every day.`),
     i18n._(msg`Let's build systems that just work.`),
   ];
@@ -87,8 +87,10 @@ export const Hero = () => {
               className="mt-6 max-w-xl font-mono text-sm md:text-base text-muted-foreground"
             >
               <Trans>
-                Senior Software Engineer · Platform & AI · Building reliable systems with
-                terminal-native craft and planetary scale.
+                Senior Software Engineer · Building reliable distributed systems with
+                planetary-scale thinking. Specialized in microservices, observability, and
+                terminal-native craft. 10+ years of experience delivering high-impact solutions and
+                now exploring the AI space.
               </Trans>
             </motion.p>
 

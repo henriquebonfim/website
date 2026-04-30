@@ -37,19 +37,32 @@ export const FloatingNav = () => {
     syncHome();
     window.addEventListener('scroll', syncHome, { passive: true });
 
-    items.forEach((i) => {
-      const el = document.getElementById(i.id);
-      if (el) obs.observe(el);
-    });
+    // Re-check for elements to handle lazy loading
+    const observeElements = () => {
+      items.forEach((i) => {
+        const el = document.getElementById(i.id);
+        if (el) obs.observe(el);
+      });
+    };
+
+    observeElements();
+    // Second check after a short delay for lazy components
+    const timer = setTimeout(observeElements, 1000);
 
     return () => {
       window.removeEventListener('scroll', syncHome);
+      clearTimeout(timer);
       obs.disconnect();
     };
-  }, []);
+  }, [i18n.locale]);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Update hash without triggering a full reload
+      window.history.pushState(null, '', `#${id}`);
+    }
   };
 
   return (
