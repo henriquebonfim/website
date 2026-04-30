@@ -15,54 +15,44 @@ const items = [
 
 export const FloatingNav = () => {
   const { i18n } = useLingui();
-  const [active, setActive] = useState<'home' | (typeof items)[number]['id']>('home');
+  const [active, setActive] = useState<'home' | (typeof items)[number]['id']>(() => {
+    if (typeof window !== 'undefined' && window.location.hash) {
+      const hash = window.location.hash.slice(1);
+      if (items.some((i) => i.id === hash)) return hash;
+    }
+    return 'home';
+  });
   const reduce = useReducedMotion();
 
   useEffect(() => {
-    const obs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((e) => {
-          if (e.isIntersecting) setActive(e.target.id);
-        });
-      },
-      { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
-    );
-
-    const syncHome = () => {
+    const handleScroll = () => {
       if (window.scrollY < 120) {
         setActive('home');
+        return;
+      }
+
+      for (const item of items) {
+        const el = document.getElementById(item.id);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          // Check if the top of the section is near the upper third of the screen
+          if (rect.top <= window.innerHeight * 0.4 && rect.bottom > window.innerHeight * 0.2) {
+            setActive(item.id);
+          }
+        }
       }
     };
 
-    syncHome();
-    window.addEventListener('scroll', syncHome, { passive: true });
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
 
-    // Re-check for elements to handle lazy loading
-    const observeElements = () => {
-      items.forEach((i) => {
-        const el = document.getElementById(i.id);
-        if (el) obs.observe(el);
-      });
-    };
-
-    observeElements();
-    // Second check after a short delay for lazy components
-    const timer = setTimeout(observeElements, 1000);
-
-    return () => {
-      window.removeEventListener('scroll', syncHome);
-      clearTimeout(timer);
-      obs.disconnect();
-    };
-  }, [i18n.locale]);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollTo = (id: string) => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      // Update hash without triggering a full reload
-      window.history.pushState(null, '', `#${id}`);
-    }
+    setActive(id);
+    window.history.pushState(null, '', `#${id}`);
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   return (

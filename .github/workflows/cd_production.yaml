@@ -1,4 +1,4 @@
-name: Deploy to Production (live)
+name: Deploy to Production (Live)
 
 on:
   push:
