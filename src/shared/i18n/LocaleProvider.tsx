@@ -1,10 +1,10 @@
-import { useEffect, useState, type ReactNode } from 'react';
-import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import { SITE_CONFIG } from '@/shared/constants';
 import { i18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
 import { I18nProvider } from '@lingui/react';
+import { useEffect, useState, type ReactNode } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { defaultLocale, loadCatalog, locales } from './lingui';
-import { SITE_CONFIG } from '@/shared/constants';
 
 interface LocaleProviderProps {
   children: ReactNode;
@@ -22,15 +22,20 @@ export const LocaleProvider = ({ children }: LocaleProviderProps) => {
     const fallbackLocale = storedLocale && storedLocale in locales ? storedLocale : defaultLocale;
     const currentLocale = lang && lang in locales ? lang : fallbackLocale;
 
-    // 1. Redirect ONLY if no locale in URL
-    if (!lang) {
+    // 1. Redirect ONLY if no locale in URL or invalid locale
+    if (!lang || !(lang in locales)) {
       navigate(`/${currentLocale}${location.search}${location.hash}`, { replace: true });
       return;
     }
 
     // 2. Load catalog and activate
     const init = async () => {
-      setIsReady(false);
+      // Only set loading state if we're actually changing locales
+      const isDifferentLocale = i18n.locale !== currentLocale;
+      if (isDifferentLocale) {
+        setIsReady(false);
+      }
+
       await loadCatalog(currentLocale);
 
       if (isCancelled) return;
@@ -49,7 +54,10 @@ export const LocaleProvider = ({ children }: LocaleProviderProps) => {
     return () => {
       isCancelled = true;
     };
-  }, [lang, navigate, location.search, location.hash]);
+    // We intentionally exclude location.search and location.hash from dependencies
+    // to avoid re-triggering catalog loading and UI blanking on every hash change.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lang, navigate]);
 
   if (!isReady) return null; // Or a sleek loading spinner
 

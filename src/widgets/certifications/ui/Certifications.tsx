@@ -18,6 +18,7 @@ const typeCategoryOrder: Certification['typeCategory'][] = [
 
 export const Certifications = () => {
   const { i18n } = useLingui();
+  const locale = i18n.locale;
 
   const typeCategoryLabels: Record<Certification['typeCategory'], string> = useMemo(
     () => ({
@@ -26,7 +27,8 @@ export const Certifications = () => {
       Learning: i18n._(msg`Learning`),
       Validation: i18n._(msg`Validation`),
     }),
-    [i18n]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [i18n, locale]
   );
 
   const certificationsWithTypeCategory = useMemo(
@@ -45,7 +47,7 @@ export const Certifications = () => {
       )
     );
 
-    const output = [
+    const output: { label: string; value: TypeCategoryFilter }[] = [
       { label: i18n._(msg`All`), value: 'All' },
       ...availableTypeCategories.map((typeCategory) => ({
         label: typeCategoryLabels[typeCategory],
@@ -54,7 +56,8 @@ export const Certifications = () => {
     ];
 
     return output;
-  }, [certificationsWithTypeCategory, typeCategoryLabels, i18n]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [certificationsWithTypeCategory, typeCategoryLabels, i18n, locale]);
 
   const [typeCategoryFilter, setTypeCategoryFilter] = useState<TypeCategoryFilter>(
     typeCategoryOrder[0]
@@ -76,16 +79,19 @@ export const Certifications = () => {
       new Set(typeCategoryFiltered.map((certification) => certification.issuer))
     ).sort((left, right) => left.localeCompare(right));
 
-    const allLabel = i18n._(msg`All`);
-    return [allLabel, ...vendors] as VendorFilter[];
-  }, [typeCategoryFiltered, i18n]);
+    return [
+      { label: i18n._(msg`All`), value: 'All' },
+      ...vendors.map((v) => ({ label: v, value: v })),
+    ];
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [typeCategoryFiltered, i18n, locale]);
 
   const filtered = useMemo(
     () =>
-      vendorFilter === 'All' || vendorFilter === i18n._(msg`All`)
+      vendorFilter === 'All'
         ? typeCategoryFiltered
         : typeCategoryFiltered.filter((certification) => certification.issuer === vendorFilter),
-    [typeCategoryFiltered, vendorFilter, i18n]
+    [typeCategoryFiltered, vendorFilter]
   );
 
   return (
@@ -150,7 +156,7 @@ export const Certifications = () => {
             <Trans>Vendor</Trans>
           </p>
           <div className="flex flex-wrap gap-2">
-            {vendorOptions.map((vendor) => {
+            {vendorOptions.map(({ label, value: vendor }) => {
               const active = vendorFilter === vendor;
               const count =
                 vendor === 'All'
@@ -170,7 +176,7 @@ export const Certifications = () => {
                       : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                   }`}
                 >
-                  <span>{vendor}</span>
+                  <span>{label}</span>
                   <span className="text-[10px] opacity-70">{count}</span>
                 </button>
               );

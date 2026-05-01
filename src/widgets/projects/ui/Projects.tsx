@@ -20,6 +20,7 @@ const sortValuesByUsage = (values: string[], getCount: (value: string) => number
 
 export const Projects = () => {
   const { i18n } = useLingui();
+  const locale = i18n.locale;
 
   const translatedProjects = useMemo(
     () =>
@@ -28,7 +29,8 @@ export const Projects = () => {
         description: typeof p.description === 'string' ? p.description : i18n._(p.description),
         tags: p.tags.map((t) => (typeof t === 'string' ? t : i18n._(t))),
       })),
-    [i18n]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [i18n, locale]
   );
 
   const projectTagCount = useCallback(

@@ -2,7 +2,7 @@ import { locales } from '@/shared/i18n/lingui';
 import { cn } from '@/shared/lib/utils';
 import { useLingui } from '@lingui/react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const languages: { code: keyof typeof locales; label: string; var: string }[] = [
   { code: 'en', label: 'EN', var: 'var(--i18n-en-logo)' },
@@ -12,12 +12,13 @@ const languages: { code: keyof typeof locales; label: string; var: string }[] = 
 
 export const LanguageSwitcher = () => {
   const { i18n } = useLingui();
+  const location = useLocation();
   const navigate = useNavigate();
   const reduceMotion = useReducedMotion() ?? false;
 
   const handleLanguageChange = (code: keyof typeof locales) => {
     localStorage.setItem('locale', code);
-    navigate(`/${code}`);
+    navigate(`/${code}${location.search}${location.hash}`);
   };
 
   return (

@@ -23,6 +23,7 @@ const formatMonthToDate = (value: string) => {
 
 export const Experience = () => {
   const { i18n } = useLingui();
+  const locale = i18n.locale;
 
   const achievements = useMemo(
     () => [
@@ -53,7 +54,8 @@ export const Experience = () => {
         ),
       },
     ],
-    [i18n]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [i18n, locale]
   );
 
   const workExperienceTags = useMemo(
@@ -61,7 +63,8 @@ export const Experience = () => {
       getUniqueSortedValues(
         EXPERIENCES.flatMap((experience) => experience.tags.map((tag) => i18n._(tag)))
       ),
-    [i18n]
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [i18n, locale]
   );
 
   return (
