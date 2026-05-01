@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 
 const chapters = [
   {
-    title: (i18n) => i18n._(msg`fresh start`),
+    title: (i18n) => i18n._(msg`origins`),
     body: (i18n) =>
       i18n._(
-        msg`Growing up surrounded by mechanical things, I started taking everything apart... from radios and toys to building a soapbox car from scratch. This hands-on exploration taught me how things work, avoid failures and how to fix them all!`
+        msg`I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break.`
       ),
   },
   {
@@ -30,7 +30,7 @@ const chapters = [
     title: (i18n) => i18n._(msg`keep calm in the storm`),
     body: (i18n) =>
       i18n._(
-        msg`After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient.`
+        msg`After a decade in the trenches, spanning full-stack development to distributed systems, I've observed how technical noise often obscures business value. I now focus on high-impact architectural decisions, allowing me to build systems that are not just reliable and maintainable, but also enhanced with AI.`
       ),
   },
 ];
@@ -69,8 +69,8 @@ export const About = () => {
               <blockquote className="border-l-2 rounded-b-2xl border-b-2 border-muted-foreground/20 text-sm  p-4 italic text-muted-foreground">
                 -{' '}
                 <Trans>
-                  I build platforms that brings calm, simplicity, and reliability, so product teams
-                  can move fast, sleep well, and ship with confidence.
+                  I build systems that bring calm, simplicity, and reliability, enabling teams to
+                  move fast, sleep well, and ship with confidence.
                 </Trans>
               </blockquote>
             </figure>
