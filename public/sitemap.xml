@@ -1,9 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English -->
   <url>
-    <loc>https://henriquebonfim.web.app/</loc>
-    <lastmod>2026-04-29T00:00:00+00:00</lastmod>
+    <loc>https://henriquebonfim.web.app/en</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://henriquebonfim.web.app/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://henriquebonfim.web.app/pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://henriquebonfim.web.app/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://henriquebonfim.web.app/en"/>
+    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <!-- Portuguese -->
+  <url>
+    <loc>https://henriquebonfim.web.app/pt-BR</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://henriquebonfim.web.app/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://henriquebonfim.web.app/pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://henriquebonfim.web.app/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://henriquebonfim.web.app/en"/>
+    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Spanish -->
+  <url>
+    <loc>https://henriquebonfim.web.app/es</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://henriquebonfim.web.app/en"/>
+    <xhtml:link rel="alternate" hreflang="pt-BR" href="https://henriquebonfim.web.app/pt-BR"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://henriquebonfim.web.app/es"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://henriquebonfim.web.app/en"/>
+    <lastmod>2026-04-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

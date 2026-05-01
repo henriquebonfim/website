@@ -26,12 +26,12 @@ msgid "$ whoami --summary"
 msgstr "$ whoami --summary"
 
 #: src/widgets/experience/ui/Experience.tsx
-msgid "10 years of turning chaos<0/>into <1>calm systems.</1>"
-msgstr "10 años transformando el caos<0/>en <1>sistemas tranquilos.</1>"
+msgid "10+ years of <0/><1>turning chaos</1><2/>into <3>calm systems.</3>"
+msgstr "Más de 10 años <0/><1>transformando el caos</1><2/>en <3>sistemas tranquilos.</3>"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "12y in tech tidying up the messy parts..."
-msgstr "12 años en tech ordenando el desorden..."
+msgid "12y of engineered resilience and planetary-scale infrastructure."
+msgstr "12 años de resiliencia diseñada e infraestructura a escala planetaria."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "A decade building resilient backend on event-driven and distributed systems, frontend that users love, and now AI-driven platforms at scale!"
@@ -46,8 +46,21 @@ msgid "About"
 msgstr "Acerca de"
 
 #: src/widgets/about/ui/About.tsx
-msgid "After a decade in the trenches, spanning full-stack, distributed systems, and now AI. I've seen how easily technical noise can drown out real business value. I now leverage AI to automate the repetitive, 'boring' parts of platform engineering that traditionally consumed 40% of development time. This automation has freed up my focus for high-impact architectural decisions, allowing me to build systems that are not just functional, but truly resilient."
-msgstr "Después de una década en las trincheras, abarcando full-stack, sistemas distribuidos y ahora IA. He visto lo fácil que el ruido técnico puede opacar el verdadero valor de negocio. Hoy, aprovecho la IA para automatizar las partes repetitivas y 'aburridas' de la ingeniería de plataforma que tradicionalmente consumían el 40% del tiempo de desarrollo. Esta automatización liberó mi enfoque para decisiones de arquitectura de alto impacto, permitiéndome construir sistemas que no solo son funcionales, sino verdaderamente resilientes."
+msgid "After a decade in the trenches, spanning full-stack development to distributed systems, I've observed how technical noise often obscures business value. I now focus on high-impact architectural decisions, allowing me to build systems that are not just reliable and maintainable, but also enhanced with AI."
+msgstr "Después de una década en las trincheras —desde el desarrollo full-stack hasta los sistemas distribuidos— he observado cómo el ruido técnico a menudo oculta el valor de negocio. Ahora me enfoco en decisiones de arquitectura de alto impacto, lo que me permite construir sistemas que no solo son confiables y mantenibles, sino que también están potenciados por IA."
+
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "AI Agents"
+msgstr "Agentes de IA"
+
+#: src/entities/experience/model/experience.ts
+msgid "AI/LLM"
+msgstr "IA/LLM"
+
+#: src/entities/project/model/projects.ts
+msgid "Algorithmic Trading"
+msgstr "Trading Algorítmico"
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Automated data entry & reporting pipelines for client teams."
@@ -57,9 +70,25 @@ msgstr "Automatización de pipelines de entrada de datos e informes para equipos
 msgid "Backend | Distributed Systems | Web3 | AI"
 msgstr "Backend | Sistemas Distribuidos | Web3 | IA"
 
+#: src/entities/project/model/projects.ts
+msgid "Blockchain"
+msgstr "Blockchain"
+
+#: src/entities/project/model/projects.ts
+msgid "Blog Platform"
+msgstr "Plataforma de Blog"
+
+#: src/entities/project/model/projects.ts
+msgid "Browser APIs"
+msgstr "APIs de Navegador"
+
 #: src/widgets/projects/ui/Projects.tsx
 msgid "Building software is often seen as just writing code, but the real challenge lies in solving unpredictable, real-world problems. I’ve curated this selection of open-source and internal projects to show how I tackle these technical hurdles—from data extraction bottlenecks to real-time scaling. Each project is a result of moving beyond simple implementation to creating resilient solutions that work in the wild."
 msgstr "Construir software a menudo se ve como solo escribir código, pero el verdadero desafío radica en resolver problemas impredecibles del mundo real. He seleccionado estos proyectos open-source e internos para mostrar cómo abordo estos obstáculos técnicos: desde cuellos de botella en la extracción de datos hasta escalado en tiempo real. Cada proyecto es resultado de ir más allá de la implementación simple para crear soluciones resilientes que funcionan en la práctica."
+
+#: src/entities/experience/model/experience.ts
+msgid "Built a Python bot leveraging AI/LLM models to interpret market data and generate context-aware recommendations for advisors."
+msgstr "Desarrolló un bot en Python que utiliza modelos de IA/LLM para interpretar datos de mercado y generar recomendaciones contextualizadas para asesores."
 
 #: src/widgets/footer/ui/Footer.tsx
 msgid "built with love · creativity · ai · ☕"
@@ -73,9 +102,42 @@ msgstr "Certificación"
 msgid "Certs"
 msgstr "Certificaciones"
 
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "Chatbot"
+msgstr "Chatbot"
+
+#: src/entities/experience/model/experience.ts
+msgid "Collaborated closely with risk, compliance, and data teams to ensure regulatory alignment (LGPD) and strengthen fraud-prevention mechanisms."
+msgstr "Colaboró estrechamente con los equipos de riesgo, cumplimiento y datos para garantizar la alineación regulatoria (LGPD) y fortalecer los mecanismos de prevención de fraude."
+
+#: src/entities/experience/model/experience.ts
+msgid "Collaborated closely with the client to translate financial requirements into automated workflows, integrating AI outputs with actionable portfolio guidance."
+msgstr "Colaboró activamente con el cliente para traducir los requisitos financieros en flujos de trabajo automatizados, integrando los resultados de la IA con orientaciones de cartera procesables."
+
+#: src/entities/experience/model/experience.ts
+msgid "Collaborated on integrating OpenAI and Anthropic APIs to support a recommendation layer that generated personalized suggestions based on user profile and behavioral data."
+msgstr "Colaboró en la integración de las API de OpenAI y Anthropic para respaldar una capa de recomendación que generaba sugerencias personalizadas basadas en el perfil del usuario y en los datos de comportamiento."
+
+#: src/entities/experience/model/experience.ts
+msgid "Compliance"
+msgstr "Cumplimiento Normativo"
+
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Contact"
 msgstr "Contacto"
+
+#: src/entities/project/model/projects.ts
+msgid "Contract Automation"
+msgstr "Automatización de Contratos"
+
+#: src/entities/experience/model/experience.ts
+msgid "Contributed to scaling and stabilizing a distributed financing platform with 99.9% availability and zero downtime, supporting loan origination, KYC validation, and credit workflows."
+msgstr "Contribuyó a escalar y estabilizar una plataforma distribuida de financiamiento con un 99.9% de disponibilidad y cero tiempo de inactividad, respaldando la originación de préstamos, validación de KYC y flujos de crédito."
+
+#: src/entities/project/model/projects.ts
+msgid "Controlling pet access to specific areas of a home is difficult when owners are away. Proprietary hardware solutions were often expensive and lacked mobile flexibility. I built a microservices system connecting a Vue.js mobile app to Arduino-controlled doors. This provided a cost-effective, remote-controlled access system that gave owners full control over their pets' movements from anywhere."
+msgstr "Controlar el acceso de mascotas a áreas específicas de la casa es difícil cuando los dueños no están. Las soluciones de hardware propietario solían ser costosas y carecían de flexibilidad móvil. Creé un sistema de microservicios que conecta una app móvil Vue.js con puertas controladas por Arduino. Esto brindó un sistema de acceso remoto rentable que dio a los dueños el control total sobre los movimientos de sus mascotas desde cualquier lugar."
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "credentials and skills"
@@ -85,53 +147,193 @@ msgstr "credenciales y habilidades"
 msgid "Custom dashboards unlocked real-time insight for omnichannel and stakeholder teams."
 msgstr "Dashboards personalizados permitieron obtener insights en tiempo real para equipos omnicanal y stakeholders."
 
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "Data Analysis"
+msgstr "Análisis de Datos"
+
+#: src/entities/experience/model/experience.ts
+msgid "Data Visualization"
+msgstr "Visualización de Datos"
+
+#: src/entities/experience/model/experience.ts
+msgid "Deployed and scaled the system on Google Compute VMs with autoscaling, enabling reliable execution of Monte Carlo simulations under variable workloads."
+msgstr "Implementó y escaló el sistema en máquinas virtuales de Google Compute con autoescalado, lo que permitió la ejecución confiable de simulaciones de Monte Carlo bajo cargas de trabajo variables."
+
+#: src/entities/experience/model/experience.ts
+msgid "Designed and developed executive and operational dashboards using React, Chart.js, Node.js, Ruby on Rails, and PostgreSQL, accelerating data-driven decisions by 53%."
+msgstr "Diseñó y desarrolló paneles ejecutivos y operativos utilizando React, Chart.js, Node.js, Ruby on Rails y PostgreSQL, acelerando las decisiones basadas en datos en un 53%."
+
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "DevOps"
+msgstr "DevOps"
+
+#: src/entities/project/model/projects.ts
+msgid "Diffusers"
+msgstr "Diffusers"
+
+#: src/entities/experience/model/experience.ts
+msgid "Distributed Systems"
+msgstr "Sistemas Distribuidos"
+
+#: src/entities/project/model/projects.ts
+msgid "Downloading and processing web videos is often throttled or blocked when handled by simple scripts. This makes bulk video management slow and unreliable for power users. I developed a Celery-backed Python application that distributes downloading and processing tasks across multiple workers. This improved download reliability by 40% and significantly increased throughput for heavy processing tasks."
+msgstr "La descarga y procesamiento de videos de la web frecuentemente se limita o bloquea cuando se maneja con scripts simples. Esto hace que la administración masiva de videos sea lenta y poco confiable para usuarios avanzados. Desarrollé una aplicación Python con respaldo de Celery que distribuye tareas de descarga y procesamiento en múltiples trabajadores. Esto mejoró la confiabilidad de descarga en un 40% y aumentó sustancialmente el rendimiento para tareas de procesamiento pesado."
+
+#: src/entities/project/model/projects.ts
+msgid "E-commerce"
+msgstr "Comercio Electrónico"
+
+#: src/entities/project/model/projects.ts
+msgid "E-commerce pricing strategy requires constant market monitoring, but manual comparison is impossible across thousands of listings. Lack of data leads to uncompetitive pricing and lost sales. I built a robust scraping tool in Node.js to extract and structure product data automatically. This automated the gathering process, enabling real-time market analysis and data-driven pricing strategies."
+msgstr "La estrategia de precios del comercio electrónico exige monitoreo continuo del mercado, pero la comparación manual es imposible entre miles de listados. La falta de datos genera precios no competitivos y pérdida de ventas. Creé una sólida herramienta de raspado en Node.js para extraer y estructurar automáticamente los datos de los productos. Esto automatizó la recopilación, habilitando el análisis del mercado en tiempo real y estrategias de precios fundamentadas en datos."
+
+#: src/entities/project/model/projects.ts
+msgid "EduTech"
+msgstr "EduTech"
+
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "ELT (Extract, Load, Transform)"
+msgstr "ELT (Extracción, Carga, Transformación)"
+
+#: src/entities/experience/model/experience.ts
+msgid "Engineered an AI-driven quantitative analysis engine for personal advisors under NDA, combining cloud infrastructure, AI models, and Monte Carlo simulations for automated portfolio insights to integrate with their existing systems."
+msgstr "Diseñó un motor de análisis cuantitativo impulsado por IA para asesores personales bajo NDA, combinando infraestructura en la nube, modelos de IA y simulaciones de Monte Carlo para obtener información automatizada de la cartera e integrarla en sus sistemas existentes."
+
+#: src/entities/experience/model/experience.ts
+msgid "Event-Driven"
+msgstr "Orientado a Eventos"
+
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Experience"
 msgstr "Experiencia"
+
+#: src/entities/project/model/projects.ts
+msgid "Extracting high-quality frames from videos for analysis is often a tedious task requiring heavy software. This barrier slows down creative and technical workflows. I developed a lightweight browser-based tool using Web Workers and modern APIs for client-side processing. This simplified the process, enabling users to extract precise frames directly in the browser with 0% server overhead."
+msgstr "Extraer fotogramas de alta calidad de videos para su análisis a menudo es una labor tediosa que precisa de software pesado. Esta barrera frena flujos de trabajo creativos y técnicos. Desarrollé una herramienta liviana de navegador usando Web Workers y APIs modernas para el procesamiento del lado del cliente. Esto simplificó el proceso, permitiendo a los usuarios extraer fotogramas exactos de forma directa en el navegador sin sobrecarga del servidor."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "faster decisions"
 msgstr "decisiones más rápidas"
 
-#: src/widgets/about/ui/About.tsx
-msgid "fresh start"
-msgstr "nuevo comienzo"
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "FinTech"
+msgstr "FinTech"
 
-#: src/widgets/about/ui/About.tsx
-msgid "Growing up surrounded by mechanical things, I started taking everything apart... from radios and toys to building a soapbox car from scratch. This hands-on exploration taught me how things work, avoid failures and how to fix them all!"
-msgstr "Al crecer rodeado de cosas mecánicas, empecé a desarmar todo... desde radios y juguetes hasta construir un auto de carreras de madera desde cero. ¡Esta exploración práctica me enseñó cómo funcionan las cosas, cómo evitar fallos y cómo arreglarlos todos!"
+#: src/entities/project/model/projects.ts
+msgid "FoodTech"
+msgstr "FoodTech"
+
+#: src/entities/experience/model/experience.ts
+msgid "Full Stack Software Engineer"
+msgstr "Ingeniero de Software Full Stack"
+
+#: src/entities/experience/model/experience.ts
+msgid "full-time"
+msgstr "tiempo completo"
+
+#: src/entities/project/model/projects.ts
+msgid "Generative AI"
+msgstr "IA Generativa"
+
+#: src/entities/project/model/projects.ts
+msgid "Generative AI for video requires massive compute resources that local environments often cannot provide. This limits the ability for researchers to experiment with high-end models like CogVideoX. I optimized a generation pipeline specifically for Kaggle Kernels to leverage cloud GPUs. This achieved 3x faster inference times compared to standard setups, enabling rapid experimentation with text-to-video generation."
+msgstr "La inteligencia artificial generativa de video exige enormes recursos computacionales que con frecuencia no están disponibles localmente. Esto restringe la facultad de los investigadores para probar con modelos superiores como CogVideoX. Optimicé un conducto de generación específicamente para Kaggle Kernels para aprovechar GPUs en la nube. Esto logró tiempos de inferencia 3x más ágiles que las configuraciones típicas, permitiendo experimentar aceleradamente con la generación de texto a video."
 
 #: src/widgets/about/ui/About.tsx
 msgid "growth in chaos"
 msgstr "crecimiento en el caos"
 
+#: src/entities/project/model/projects.ts
+msgid "Hackathon"
+msgstr "Hackathon"
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Helped grow Brazil's leading photovoltaic fintech to 30,000+ users, supporting acquisition by BV Bank."
 msgstr "Ayudó a escalar la fintech fotovoltaica líder de Brasil a más de 30,000 usuarios, apoyando la adquisición por parte del Banco BV."
 
+#: src/entities/experience/model/experience.ts
+msgid "Helped implement structured CI/CD practices and deployment improvements to increase release reliability and reduce rollback frequency."
+msgstr "Ayudó a implementar prácticas de CI/CD estructuradas y mejoras de implementación para aumentar la confiabilidad de las versiones y reducir la frecuencia de reversiones."
+
+#: src/entities/experience/model/experience.ts
+msgid "Helped integrate with the FIX protocol for real-time communication with external providers."
+msgstr "Ayudó a integrarse con el protocolo FIX para la comunicación en tiempo real con proveedores externos."
+
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Henrique Bonfim · Brazilian"
 msgstr "Henrique Bonfim · Brasileño"
+
+#: src/shared/i18n/LocaleProvider.tsx
+msgid "Henrique Bonfim | Senior Software Engineer"
+msgstr "Henrique Bonfim | Ingeniero de Software Senior"
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Home"
 msgstr "Inicio"
 
 #: src/widgets/about/ui/About.tsx
-msgid "I build platforms that brings calm, simplicity, and reliability, so product teams can move fast, sleep well, and ship with confidence."
-msgstr "Construyo plataformas que aportan calma, simplicidad y fiabilidad, para que los equipos de producto puedan moverse rápido, dormir bien y hacer deploys con confianza."
+msgid "I build systems that bring calm, simplicity, and reliability, enabling teams to move fast, sleep well, and ship with confidence."
+msgstr "Construyo sistemas que aportan calma, simplicidad y fiabilidad, permitiendo a los equipos moverse rápido, dormir bien y lanzar con confianza."
 
 #: src/widgets/about/ui/About.tsx
 msgid "I shipped my first production code at 19, but I quickly realized that 'shipping fast' often came at the cost of stability and personal well-being. Living through high-stakes on-call rotations taught me that reliability isn't just a feature... it's the foundation of a sustainable team. I shifted my focus to building safely and prioritizing predictable operations, resulting in systems that support long-term growth."
 msgstr "Hice mi primer deploy en producción a los 19 años, mas rapidamente me di cuenta de que 'entregar rápido' a menudo costaba la estabilidad y el bienestar personal. Vivir rotaciones de guardia de alta presión me enseñó que la fiabilidad no es solo una feature... es la base de un equipo sostenible. Cambié mi enfoque hacia construir de manera segura y priorizar operaciones predecibles, lo que resultó en sistemas que soportan el crecimiento a largo plazo."
 
 #: src/widgets/about/ui/About.tsx
+msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
+msgstr "Comencé desarmando todo... desde radios y juguetes hasta construir un auto de madera desde cero. Mi infancia estuvo definida por desarmar cosas. Esta curiosidad me enseñó que la verdadera ingeniería no se trata solo de crear y construir, sino de entender cómo funcionan las cosas y cómo arreglarlas cuando se rompen."
+
+#: src/widgets/experience/ui/Experience.tsx
+msgid "I turned business needs into products, platforms, and measurable results that mattered."
+msgstr "Convierto necesidades empresariales en productos, plataformas y resultados medibles que importan."
+
+#: src/widgets/contact/ui/Contact.tsx
+msgid "I'm open to new projects and collaborations. Whether you're looking for a Staff/Senior Full-Stack or Backend Engineer, an advisor, a consultant, or a freelancer to help bring your ideas to life, I'd love to hear about it."
+msgstr "Estoy abierto a nuevos proyectos y colaboraciones. Ya sea que busques un Ingeniero de Software Full-Stack o Backend Senior/Staff, un asesor, consultor o freelancer para ayudar a dar vida a tus ideas, me encantaría conocer tu proyecto."
+
+#: src/entities/experience/model/experience.ts
+msgid "Implemented event-driven flows using RabbitMQ to handle transaction processing and internal service communication."
+msgstr "Implementó flujos orientados a eventos usando RabbitMQ para el procesamiento de transacciones y la comunicación de servicios internos."
+
+#: src/entities/experience/model/experience.ts
+msgid "Implemented RAG (retrieval-augmented generation) patterns to combine historical data with AI-generated insights, improving report accuracy and decision-making support."
+msgstr "Implementó patrones RAG (generación aumentada por recuperación) para combinar datos históricos con conocimientos generados por IA, mejorando la precisión de los informes y el apoyo a la toma de decisiones."
+
+#: src/entities/project/model/projects.ts
+msgid "In many underserved regions, access to educational resources is severely limited by poor internet connectivity. Students are unable to access interactive learning tools or share digital resources effectively. I built an IBM Watson-powered platform for mobile network sharing and interactive learning. This created a scalable educational tool that bridged the digital divide, allowing students to learn and collaborate regardless of their connectivity."
+msgstr "En múltiples zonas marginalizadas, el acceso a materiales educativos se encuentra muy restringido por la escasez de conexión a internet. Los estudiantes no pueden acceder a herramientas de educación interactiva o compartir elementos digitales efectivamente. Construí una plataforma basada en IBM Watson para la distribución de redes móviles y aprendizaje interactivo. Esto produjo un instrumento educativo escalable que acortó la brecha digital, logrando que los alumnos aprendan y cooperen sin importar su conexión."
+
+#: src/entities/project/model/projects.ts
+msgid "Integrating diverse LLMs into a real-time chat interface often results in high latency and poor user experience. Standard polling methods are too slow for natural conversations. I built a lightweight React chat app using WebSockets for low-latency communication with local model runners. This enabled seamless AI conversations with sub-second response delivery, making local LLMs feel as responsive as cloud-based ones."
+msgstr "La integración de múltiples LLMs en una interfaz de chat en tiempo real a menudo deriva en alta latencia y deficiente experiencia de usuario. Los sistemas comunes de sondeo son bastante demorados para diálogos fluidos. Elaboré una app de chat en React, liviana, apoyada en WebSockets, que logra comunicación de baja latencia con ejecutores de modelos locales. Esto propició conversaciones ininterrumpidas de IA con despachos en tiempos menores a un segundo, brindando a los LLMs locales la celeridad típica de servicios basados en nube."
+
+#: src/entities/project/model/projects.ts
+msgid "IoT"
+msgstr "IoT"
+
+#: src/widgets/about/ui/About.tsx
 msgid "keep calm in the storm"
 msgstr "mantén la calma en la tormenta"
+
+#: src/entities/experience/model/experience.ts
+msgid "KYC (Know Your Customer)"
+msgstr "KYC (Conoce a tu cliente)"
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Learning"
 msgstr "Aprendizaje"
+
+#: src/entities/experience/model/experience.ts
+msgid "Led the partial migration of critical KYC workflows from a Ruby on Rails monolith to Next.js (SSR), improving throughput by 22%, enhancing performance, and increasing front-end security controls."
+msgstr "Lideró la migración parcial de flujos críticos de KYC de un monolito de Ruby on Rails a Next.js (SSR), mejorando la tasa de transferencia en un 22%, el rendimiento y aumentando los controles de seguridad del front-end."
+
+#: src/entities/project/model/projects.ts
+msgid "LegalTech"
+msgstr "LegalTech"
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "Let's build"
@@ -141,13 +343,45 @@ msgstr "Vamos a construir"
 msgid "Let's build systems that just work."
 msgstr "Construyamos sistemas que simplemente funcionan."
 
+#: src/entities/project/model/projects.ts
+msgid "LLM"
+msgstr "LLM"
+
+#: src/entities/project/model/projects.ts
+msgid "Logistics"
+msgstr "Logística"
+
 #: src/widgets/about/ui/About.tsx
 msgid "Maintaining complex systems under high pressure can easily lead to chaotic, short-term fixes that add technical debt. I learned that finding elegant, scaled solutions requires embracing this complexity rather than fighting it. By positioning myself in the 'eye of the storm,' I've been able to design calm, reliable platforms that empower product teams to scale with confidence, even in the most demanding environments."
 msgstr "Mantener sistemas complejos bajo alta presión puede llevar fácilmente a correcciones caóticas a corto plazo que añaden deuda técnica. Aprendi que encontrar soluciones elegantes y escalables requiere abrazar esta complejidad en lugar de luchar contra ella. Al posicionarme en el 'ojo del huracán', he logrado diseñar plataformas tranquilas y fiables que empoderan a los equipos de producto para escalar con confianza, incluso en los entornos más exigentes."
 
+#: src/entities/project/model/projects.ts
+msgid "Managing building automation manually is inefficient and lacks centralized visibility. Traditional IoT setups were often fragmented and difficult to manage at scale. I engineered a microservices-based IoT system using Node.js and MongoDB to control hardware via Arduino. This successfully automated lighting and access control, providing a unified dashboard that improved energy efficiency and site security."
+msgstr "Gestionar las labores de automatización de una edificación, de modo manual, es ineficiente y no posee visibilidad central. Los sistemas convencionales de IoT estaban frecuentemente divididos y eran complejos de administrar masivamente. Ideé un esquema IoT articulado por microservicios usando Node.js y MongoDB a fin de manipular aparatos mediante Arduino. Se alcanzó la exitosa automatización de la iluminación y control de acceso, dotando a la edificación de un panel principal que elevó el ahorro de energía y resguardo de las instalaciones."
+
 #: src/widgets/experience/ui/Experience.tsx
 msgid "manual work removed"
 msgstr "trabajo manual eliminado"
+
+#: src/entities/experience/model/experience.ts
+msgid "Mentored new engineers through onboarding, architecture walkthroughs, and code reviews, promoting clean code standards and security best practices."
+msgstr "Fue mentor de nuevos ingenieros a través de la inducción, recorridos de arquitectura y revisiones de código, promoviendo estándares de código limpio y mejores prácticas de seguridad."
+
+#: src/entities/project/model/projects.ts
+msgid "Mobile App"
+msgstr "App Móvil"
+
+#: src/entities/project/model/projects.ts
+msgid "Model Inference"
+msgstr "Inferencia de Modelo"
+
+#: src/entities/project/model/projects.ts
+msgid "Modern bloggers need fast, SEO-optimized templates, but many existing platforms are too bloated for high performance. Slow load times negatively impact search rankings and user retention. I created a curated collection of templates using Next.js and Jinja2 for highly customizable, static-site generation. This streamlined the deployment of performance-first blogs that achieve near-perfect Lighthouse scores out of the box."
+msgstr "Los blogueros actuales necesitan plantillas veloces y afinadas para SEO, si bien múltiples plataformas actuales son en exceso pesadas para grandes niveles de rendimiento. Los largos tiempos de carga deterioran perjudicialmente la ubicación en resultados de búsqueda y el apego de la audiencia. Creé un acervo seleccionado de plantillas mediante Next.js y Jinja2 destinadas a engendrar sitios estáticos inmensamente adaptables. Este esfuerzo agilizó el despliegue de blogs orientados a la rapidez, originando valoraciones Lighthouse que bordean el puntaje impecable desde el primer momento."
+
+#: src/entities/project/model/projects.ts
+msgid "Monitoring complex microservices requires a robust observability setup, but manual configuration of multiple tools is error-prone. Inconsistent monitoring leads to slower incident response times. I engineered a production-ready Docker Compose template with automated HTTPS and integrated OpenTelemetry. This reduced the setup time for a full-stack observability suite from hours to under 5 minutes."
+msgstr "El monitoreo de microservicios intrincados exige un arreglo enérgico de supervisión, pero regular de forma manual múltiples utilidades es algo proclive a equivocaciones. El análisis inconsistente alarga los períodos de respuesta frente a fallas. Forjé una plantilla Docker Compose adecuada para producción contando con HTTPS automático y OpenTelemetry añadido. Lo descrito aminoró el proceso de configuración en torno a una completa colección de visibilidad (full-stack observability) de múltiples horas a apenas bajo cinco minutos."
 
 #: src/pages/NotFound.tsx
 msgid "no such file or directory"
@@ -157,9 +391,33 @@ msgstr "archivo o directorio no encontrado"
 msgid "online"
 msgstr "en línea"
 
-#: src/widgets/contact/ui/Contact.tsx
-msgid "Open to software engineering roles, advisory, consulting, freelancing, and selective collaborations."
-msgstr "Abierto a roles de ingeniería de software, advisory, consultoría, freelance y colaboraciones selectas."
+#: src/entities/experience/model/experience.ts
+msgid "Orchestrated a dedicated KYC data pipeline microservice with AI integration, validating user data through third-party APIs and leveraging asynchronous messaging to decouple system components."
+msgstr "Orquestó un microservicio dedicado de canalización de datos de KYC con integración de IA, validando los datos de los usuarios a través de API de terceros y aprovechando la mensajería asincrónica para desacoplar los componentes del sistema."
+
+#: src/widgets/about/ui/About.tsx
+msgid "origins"
+msgstr "orígenes"
+
+#: src/entities/experience/model/experience.ts
+msgid "part-time"
+msgstr "medio tiempo"
+
+#: src/entities/experience/model/experience.ts
+msgid "part-time · contract"
+msgstr "medio tiempo · contrato"
+
+#: src/entities/experience/model/experience.ts
+msgid "Participated in cross-functional discussions with C-level stakeholders, aligning technical delivery with strategic goals."
+msgstr "Participó en discusiones interdisciplinarias con directivos ejecutivos (C-level), alineando la entrega técnica con los objetivos estratégicos."
+
+#: src/entities/experience/model/experience.ts
+msgid "Participated in sprint planning, architecture discussions, and code reviews in a Kanban-based workflow."
+msgstr "Participó en la planificación de sprints, discusiones sobre arquitectura y revisiones de código en un flujo de trabajo basado en Kanban."
+
+#: src/entities/experience/model/experience.ts
+msgid "Participated in strategic technical discussions during the acquisition process, aligning system architecture and delivery timelines with BV Bank stakeholders."
+msgstr "Participó en discusiones técnicas estratégicas durante el proceso de adquisición, alineando la arquitectura del sistema y los plazos de entrega con las partes interesadas del Banco BV."
 
 #: src/widgets/about/ui/About.tsx
 msgid "Portrait of Henrique using a laptop, with a focused expression, in a cozy, dimly lit room. The warm glow of the screen illuminates his face, highlighting his dedication and passion for coding."
@@ -177,6 +435,23 @@ msgstr "Tags del proyecto"
 msgid "Projects"
 msgstr "Proyectos"
 
+#: src/entities/project/model/projects.ts
+msgid "Quantitative trading requires 100% uptime and real-time data, but exchange APIs can be unstable during market volatility. These instabilities often lead to failed trades and lost opportunities. I built a dashboard with a Python backend featuring custom reconciliation logic and automated retries. This stabilized the trading workflow and significantly reduced failed orders during high-volume spikes."
+msgstr "El trading cuantitativo exige estabilidad al 100% y datos fidedignos en tiempo vivo; no obstante, las API de exchange pueden oscilar a lo largo de un ciclo de volatilidad. Mencionadas debilidades originan frecuentes operaciones sin éxito o pérdidas de situaciones ventajosas. Confeccioné un panel con servidor Python introduciendo normas diseñadas para conciliación y una mecánica de reiteraciones programadas. Esto equilibró el devenir de la compra y venta, así como mermó decididamente los despachos anulados entretanto cursaban marcados alces de transacciones."
+
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "RAG (Retrieval-Augmented Generation)"
+msgstr "RAG (Generación Aumentada por Recuperación)"
+
+#: src/entities/project/model/projects.ts
+msgid "Rest API"
+msgstr "Rest API"
+
+#: src/entities/project/model/projects.ts
+msgid "Rural farmers often have surplus food that goes to waste while charities struggle to find consistent supplies. This gap leads to massive food waste in regions with high food insecurity. I developed an award-winning platform connecting farmers with charities based on UN Sustainable Development Goals. Recognized at Hackatrouble SP 2020, the platform provided a scalable solution to reduce regional food waste by optimizing the supply chain."
+msgstr "Con regularidad, los agricultores de áreas foráneas padecen una superabundancia de provisiones, perdiéndose sus víveres en el tiempo que las fundaciones benéficas luchan persiguiendo recursos persistentes. Esa falla ocasiona un descomunal extravío de comestibles al interior de zonas asoladas por extrema incertidumbre nutricia. Yo preparé una elogiada aplicación emparejando trabajadores agrícolas con donaciones con basamento en los Objetivos de Desarrollo Sostenible planteados desde las Naciones Unidas. Alabada dentro de la Hackatrouble SP 2020, la estructura facilitó una enmienda elástica y capaz de reducir el desgaste originado en localidades ajustando el circuito de suministro."
+
 #: src/widgets/hero/ui/Hero.tsx
 msgid "scroll"
 msgstr "scroll"
@@ -185,13 +460,17 @@ msgstr "scroll"
 msgid "Selected projects I've built."
 msgstr "Proyectos destacados que he desarrollado."
 
-#: src/widgets/experience/ui/Experience.tsx
-msgid "Selected roles where I turned business needs into products, platforms, and measurable results that mattered."
-msgstr "Roles seleccionados donde transformé necesidades de negocio en productos, plataformas y resultados medibles que importan."
+#: src/entities/project/model/projects.ts
+msgid "Self-hosting large language models involves complex API configurations that are difficult to scale. Without a standardized interface, integrating AI into existing apps is slow and cumbersome. I implemented a scalable Ollama-based server with a clean FastAPI wrapper. This created a deployment-ready template that allowed for the seamless integration of local LLMs into production-ready architectures."
+msgstr "Emplazar masivos modelos basados en lenguaje obliga un tejido rebuscado de articulaciones de API difíciles de magnificar. A falta de una careta normalizada, entrelazar de manera fluida inteligencia artificial en aplicaciones disponibles se convierte en letargo además de enredo. Yo dispuse un soporte dimensionable basado en Ollama integrando al tiempo una capa estructurada apoyada en FastAPI. Como derivado nació una propuesta de plantilla pre-formulada dispuesta para su montaje facilitando la compenetración irreprochable de LLMs confinados sobre las armazones acondicionadas hacia producción."
+
+#: src/entities/experience/model/experience.ts
+msgid "Senior Software Engineer"
+msgstr "Ingeniero de Software Senior"
 
 #: src/widgets/hero/ui/Hero.tsx
-msgid "Senior Software Engineer · Platform & AI · Building reliable systems with terminal-native craft and planetary scale."
-msgstr "Senior Software Engineer · Platform & AI · Construyendo sistemas fiables con un enfoque nativo de terminal y a escala planetaria."
+msgid "Senior Software Engineer · Building reliable distributed systems with planetary-scale thinking. Specialized in microservices, observability, and terminal-native craft. 10+ years of experience delivering high-impact solutions and now exploring the AI space."
+msgstr "Ingeniero de Software Senior · Construyendo sistemas distribuidos fiables con pensamiento a escala planetaria. Especializado en microservicios, observabilidad y artesanía nativa de terminal. Más de 10 años de experiencia entregando soluciones de alto impacto y ahora explorando el espacio de la IA."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "shipping in production"
@@ -205,6 +484,10 @@ msgstr "Mostrar skills"
 msgid "Skip to content"
 msgstr "Saltar al contenido"
 
+#: src/entities/project/model/projects.ts
+msgid "Social Impact"
+msgstr "Impacto Social"
+
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Software Architect | Software Engineer"
 msgstr "Software Architect | Software Engineer"
@@ -217,6 +500,10 @@ msgstr "algo tranquilo,"
 msgid "Stack"
 msgstr "Stack"
 
+#: src/entities/project/model/projects.ts
+msgid "Standard translation services often compromise privacy by sending data to the cloud, which is a dealbreaker for sensitive information. Users need local-first translation without sacrificing modern AI quality. I developed a privacy-focused service with an ELT pipeline supporting local LLMs via LM Studio. This delivered a secure, high-performance translation tool that works entirely within private infrastructure with no external data leakage."
+msgstr "Generalmente, un servicio tradicional de idiomas transgrede los lineamientos atinentes a privacidad transbordando los apuntes al cosmos, convirtiéndose esto en algo inaudito a razón de informaciones confidenciales. Al público le interesan métodos que actúen con primacía de espacio íntimo eximiendo de menoscabar la calidad AI vanguardista. Inventé una plataforma apuntada a discreción resguardada en una matriz ELT sosteniendo LLMs locales apelando a LM Studio. Tales acciones aportaron a gestar una instrumentación resguardada orientada a la equivalencia en idiomas y notable respuesta la cual discurre exclusivamente inserta en conductos autónomos sin escape de informes al exterior."
+
 #: src/widgets/hero/ui/Hero.tsx
 msgid "Still curious and learning every day."
 msgstr "Aún curioso y aprendiendo todos los días."
@@ -224,6 +511,14 @@ msgstr "Aún curioso y aprendiendo todos los días."
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Tags"
 msgstr "Tags"
+
+#: src/entities/experience/model/experience.ts
+msgid "Technical Leadership"
+msgstr "Liderazgo Técnico"
+
+#: src/entities/experience/model/experience.ts
+msgid "Temporarily assumed technical leadership responsibilities, facilitating cross-functional alignment and guiding sprint execution."
+msgstr "Asumió temporalmente responsabilidades de liderazgo técnico, facilitando la alineación interfuncional y guiando la ejecución del sprint."
 
 #: src/widgets/contact/ui/Contact.tsx
 msgid "that scales loud."
@@ -233,6 +528,18 @@ msgstr "que escale fuerte."
 msgid "the shift"
 msgstr "el cambio"
 
+#: src/entities/experience/model/experience.ts
+msgid "Third Party API Integration"
+msgstr "Integración de API de Terceros"
+
+#: src/entities/project/model/projects.ts
+msgid "Traditional legal contract management is slow, paper-heavy, and prone to human error. Small businesses lack the budget for high-end automated legal tools. I developed a blockchain-based platform for contract automation using Node.js and Google Cloud. Ranked in the Top 50 at Megahack v2 2020, it provided a secure and accessible way for businesses to automate legal workflows."
+msgstr "Administrar un convenio jurídico clásico, a grandes trazos, conlleva dilatados periodos de tiempo, vasta cantidad de copias e incontables desatinos humanos. Diversas microempresas adolecen de un presupuesto robusto que responda al coste de instrumentalizaciones jurídicas automatizadas de máxima calidad. Engendré una matriz con sustento derivado de tecnologías blockchain con propósito de automatizar el proceso de las firmas utilizando Node.js y la infraestructura de Google Cloud. Catalogada en el renglón Top 50, perteneciente a la Megahack v2 2020, otorgó una ruta protegida al tiempo de ser comprensible en su fin de que empresas automaticen los trayectos abocados al espectro de leyes."
+
+#: src/entities/project/model/projects.ts
+msgid "Transformers"
+msgstr "Transformers"
+
 #: src/widgets/footer/ui/Footer.tsx
 msgid "transmitting from earth"
 msgstr "transmitindo desde la tierra"
@@ -240,6 +547,10 @@ msgstr "transmitindo desde la tierra"
 #: src/widgets/hero/ui/Hero.tsx
 msgid "transmitting from earth..."
 msgstr "transmitiendo desde la tierra..."
+
+#: src/entities/project/model/projects.ts
+msgid "Truck drivers face unpredictable routes and difficulty finding safe, reliable rest stops during long hauls. Inefficient routing increases fuel consumption and contributes to driver fatigue. I developed a React Native companion app featuring route optimization and a real-time facility finder. Recognized at HackathonCCR, the tool improved logistical efficiency and driver safety by streamlining long-distance travel."
+msgstr "Los chóferes de camiones enfrentan circuitos difíciles de adivinar junto a contratiempos buscando posadas de reposo salvaguardadas durante recorridos extendidos. Las trayectorias inoperantes ascienden el empleo de hidrocarburos, repercutiendo al propio modo al ahogo del maquinista. Programé un aplicativo accesorio utilizando React Native, incorporando una rectificación del camino y con ello la localización actual hacia hospedajes. Ovacionada a través de HackathonCCR, dicha aplicación vigorizó la fluidez de las cargas en el contexto paralelo de blindar a los transportistas acortando la complejidad en desplazamientos de trayecto."
 
 #: src/widgets/certifications/ui/Certifications.tsx
 msgid "Type category"
@@ -261,6 +572,31 @@ msgstr "Proveedor"
 msgid "Verified across cloud, platform, security, and AI."
 msgstr "Verificado en cloud, plataforma, seguridad e IA."
 
+#: src/entities/project/model/projects.ts
+msgid "Video Processing"
+msgstr "Procesamiento de Video"
+
+#: src/entities/project/model/projects.ts
+msgid "Web App"
+msgstr "Aplicación Web"
+
+#: src/entities/project/model/projects.ts
+msgid "Web Scraping"
+msgstr "Web Scraping"
+
+#: src/entities/project/model/projects.ts
+msgid "Web Workers"
+msgstr "Web Workers"
+
+#: src/entities/experience/model/experience.ts
+#: src/entities/project/model/projects.ts
+msgid "Web3"
+msgstr "Web3"
+
+#: src/entities/project/model/projects.ts
+msgid "While lottery outcomes are statistically improbable, visualizing the underlying historical data often requires navigating fragmented official sources. I engineered an ELT pipeline to aggregate Mega-Sena results into a structured dataset, running real-time simulations via Web Workers to provide users with empirical statistical clarity without server-side overhead."
+msgstr "Incluso si los desenlaces del sorteo azaroso implican un escaso porcentaje estadístico, lograr percibir en perspectiva toda data histórica frecuentemente necesita orientarse a través de bases oficiales desarticuladas. Inventé el flujo central ELT integrando balances emanados por la Mega-Sena encaminados hacia un marco estructurado de estadísticas, cursando prototipos instantáneos en pleno empleo de Web Workers logrando surtir para beneficio de los usuarios certeza numérica innegable sin saturar gastos operacionales frente al espacio del servidor."
+
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "Work"
 msgstr "Trabajo"
@@ -268,3 +604,7 @@ msgstr "Trabajo"
 #: src/widgets/experience/ui/Experience.tsx
 msgid "Work experience tags"
 msgstr "Tags de experiencia profesional"
+
+#: src/entities/experience/model/experience.ts
+msgid "Worked on one of Brazil’s largest solar financing platforms (30,000+ active users), supporting loan origination, KYC, and financial operations prior to acquisition by BV Bank."
+msgstr "Trabajó en una de las plataformas de financiación solar más grandes de Brasil (más de 30.000 usuarios activos), respaldando la originación de préstamos, el KYC y las operaciones financieras antes de su adquisición por el Banco BV."

@@ -9,20 +9,25 @@ import { useMemo, useState } from 'react';
 type TypeCategoryFilter = 'All' | Certification['typeCategory'];
 type VendorFilter = 'All' | string;
 
+const typeCategoryOrder: Certification['typeCategory'][] = [
+  'Certification',
+  'Experience',
+  'Learning',
+  'Validation',
+];
+
 export const Certifications = () => {
   const { i18n } = useLingui();
-  const typeCategoryOrder: Certification['typeCategory'][] = [
-    'Certification',
-    'Experience',
-    'Learning',
-    'Validation',
-  ];
-  const typeCategoryLabels: Record<Certification['typeCategory'], string> = {
-    Certification: i18n._(msg`Certification`),
-    Experience: i18n._(msg`Experience`),
-    Learning: i18n._(msg`Learning`),
-    Validation: i18n._(msg`Validation`),
-  };
+
+  const typeCategoryLabels: Record<Certification['typeCategory'], string> = useMemo(
+    () => ({
+      Certification: i18n._(msg`Certification`),
+      Experience: i18n._(msg`Experience`),
+      Learning: i18n._(msg`Learning`),
+      Validation: i18n._(msg`Validation`),
+    }),
+    [i18n]
+  );
 
   const certificationsWithTypeCategory = useMemo(
     () =>
@@ -41,7 +46,7 @@ export const Certifications = () => {
     );
 
     const output = [
-      { label: 'All', value: 'All' },
+      { label: i18n._(msg`All`), value: 'All' },
       ...availableTypeCategories.map((typeCategory) => ({
         label: typeCategoryLabels[typeCategory],
         value: typeCategory,
@@ -49,7 +54,7 @@ export const Certifications = () => {
     ];
 
     return output;
-  }, [certificationsWithTypeCategory]);
+  }, [certificationsWithTypeCategory, typeCategoryLabels, i18n]);
 
   const [typeCategoryFilter, setTypeCategoryFilter] = useState<TypeCategoryFilter>(
     typeCategoryOrder[0]
@@ -71,15 +76,16 @@ export const Certifications = () => {
       new Set(typeCategoryFiltered.map((certification) => certification.issuer))
     ).sort((left, right) => left.localeCompare(right));
 
-    return ['All', ...vendors] as VendorFilter[];
-  }, [typeCategoryFiltered]);
+    const allLabel = i18n._(msg`All`);
+    return [allLabel, ...vendors] as VendorFilter[];
+  }, [typeCategoryFiltered, i18n]);
 
   const filtered = useMemo(
     () =>
-      vendorFilter === 'All'
+      vendorFilter === 'All' || vendorFilter === i18n._(msg`All`)
         ? typeCategoryFiltered
         : typeCategoryFiltered.filter((certification) => certification.issuer === vendorFilter),
-    [typeCategoryFiltered, vendorFilter]
+    [typeCategoryFiltered, vendorFilter, i18n]
   );
 
   return (
