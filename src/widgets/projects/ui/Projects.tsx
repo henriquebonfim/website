@@ -1,11 +1,13 @@
 import { PROJECTS } from '@/entities/project';
 import { SectionAlienCaption } from '@/shared/ui';
+import { msg } from '@lingui/core/macro';
 import { Trans, useLingui } from '@lingui/react/macro';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ExternalLink, GitBranch } from 'lucide-react';
 import { useCallback, useMemo, useState } from 'react';
 
-type ProjectFilter = 'All' | string;
+const ALL_FILTER = 'ALL';
+type ProjectFilter = typeof ALL_FILTER | string;
 
 const getUniqueValues = (values: string[]) => Array.from(new Set(values));
 
@@ -57,17 +59,19 @@ export const Projects = () => {
     [translatedProjects, projectStackCount]
   );
 
-  const [activeTag, setActiveTag] = useState<ProjectFilter>('All');
+  const [activeTag, setActiveTag] = useState<ProjectFilter>(ALL_FILTER);
 
   const filteredProjects = useMemo(
     () =>
-      activeTag === 'All'
+      activeTag === ALL_FILTER
         ? translatedProjects
         : translatedProjects.filter(
             (project) => project.tags.includes(activeTag) || project.stack.includes(activeTag)
           ),
     [activeTag, translatedProjects]
   );
+
+  const allLabel = i18n._(msg`All`);
 
   return (
     <section
@@ -106,9 +110,10 @@ export const Projects = () => {
               <Trans>Project tags</Trans>
             </p>
             <div className="flex flex-wrap gap-2">
-              {['All', ...projectTags].map((tag, i) => {
+              {[ALL_FILTER, ...projectTags].map((tag, i) => {
                 const active = activeTag === tag;
-                const count = tag === 'All' ? translatedProjects.length : projectTagCount(tag);
+                const count = tag === ALL_FILTER ? translatedProjects.length : projectTagCount(tag);
+                const label = tag === ALL_FILTER ? allLabel : tag;
 
                 return (
                   <button
@@ -122,7 +127,7 @@ export const Projects = () => {
                         : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                     }`}
                   >
-                    <span>{tag}</span>
+                    <span>{label}</span>
                     <span className="text-[10px] opacity-70">{count}</span>
                   </button>
                 );
@@ -135,10 +140,11 @@ export const Projects = () => {
               <Trans>Project Stacks</Trans>
             </p>
             <div className="flex flex-wrap gap-2">
-              {['All', ...projectStacks].map((stack, i) => {
+              {[ALL_FILTER, ...projectStacks].map((stack, i) => {
                 const active = activeTag === stack;
                 const count =
-                  stack === 'All' ? translatedProjects.length : projectStackCount(stack);
+                  stack === ALL_FILTER ? translatedProjects.length : projectStackCount(stack);
+                const label = stack === ALL_FILTER ? allLabel : stack;
 
                 return (
                   <button
@@ -152,7 +158,7 @@ export const Projects = () => {
                         : 'border-border text-muted-foreground hover:text-foreground hover:border-border'
                     }`}
                   >
-                    <span>{stack}</span>
+                    <span>{label}</span>
                     <span className="text-[10px] opacity-70">{count}</span>
                   </button>
                 );

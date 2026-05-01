@@ -21,7 +21,7 @@ export const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="fixed right-2 top-10 z-50 flex flex-col gap-3 sm:right-3 sm:top-3">
+    <div className="fixed z-50 flex flex-col gap-3 right-3 top-3">
       {languages.map((lang, i) => (
         <motion.button
           key={lang.code}

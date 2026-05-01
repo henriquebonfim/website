@@ -43,7 +43,7 @@ msgstr "Un operador silencioso<0/>en una industria ruidosa."
 
 #: src/widgets/navbar/ui/FloatingNav.tsx
 msgid "About"
-msgstr "Acerca"
+msgstr "Acerca de"
 
 #: src/widgets/about/ui/About.tsx
 msgid "After a decade in the trenches, spanning full-stack development to distributed systems, I've observed how technical noise often obscures business value. I now focus on high-impact architectural decisions, allowing me to build systems that are not just reliable and maintainable, but also enhanced with AI."
@@ -284,7 +284,7 @@ msgid "I shipped my first production code at 19, but I quickly realized that 'sh
 msgstr "Hice mi primer deploy en producción a los 19 años, mas rapidamente me di cuenta de que 'entregar rápido' a menudo costaba la estabilidad y el bienestar personal. Vivir rotaciones de guardia de alta presión me enseñó que la fiabilidad no es solo una feature... es la base de un equipo sostenible. Cambié mi enfoque hacia construir de manera segura y priorizar operaciones predecibles, lo que resultó en sistemas que soportan el crecimiento a largo plazo."
 
 #: src/widgets/about/ui/About.tsx
-msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity teaching me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
+msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
 msgstr "Comencé desarmando todo... desde radios y juguetes hasta construir un auto de madera desde cero. Mi infancia estuvo definida por desarmar cosas. Esta curiosidad me enseñó que la verdadera ingeniería no se trata solo de crear y construir, sino de entender cómo funcionan las cosas y cómo arreglarlas cuando se rompen."
 
 #: src/widgets/experience/ui/Experience.tsx

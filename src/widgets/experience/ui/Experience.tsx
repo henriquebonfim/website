@@ -89,7 +89,7 @@ export const Experience = () => {
               href={SOCIAL_LINKS.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 rounded-full  mx-1 px-2 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors hover:text-primary "
+              className="group inline-flex items-center gap-2 rounded-full  mx-1 px-2 py-1 font-mono text-sm hover:border-primary/60 hover:bg-secondary/50 transition-colors hover:text-primary "
             >
               ./linkedin
               <ArrowUpRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />

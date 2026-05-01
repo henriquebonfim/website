@@ -284,8 +284,8 @@ msgid "I shipped my first production code at 19, but I quickly realized that 'sh
 msgstr "I shipped my first production code at 19, but I quickly realized that 'shipping fast' often came at the cost of stability and personal well-being. Living through high-stakes on-call rotations taught me that reliability isn't just a feature... it's the foundation of a sustainable team. I shifted my focus to building safely and prioritizing predictable operations, resulting in systems that support long-term growth."
 
 #: src/widgets/about/ui/About.tsx
-msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity teaching me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
-msgstr "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity teaching me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
+msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
+msgstr "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
 
 #: src/widgets/experience/ui/Experience.tsx
 msgid "I turned business needs into products, platforms, and measurable results that mattered."

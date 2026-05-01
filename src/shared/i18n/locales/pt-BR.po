@@ -284,7 +284,7 @@ msgid "I shipped my first production code at 19, but I quickly realized that 'sh
 msgstr "Fiz meu primeiro deploy em produção aos 19 anos, mas logo percebi que 'entregar rápido' muitas vezes custava a estabilidade e o bem-estar pessoal. Viver rotações de sobreaviso de alta pressão me ensinou que confiabilidade não é apenas uma feature... é a base de um time sustentável. Mudei meu foco para construir com segurança e priorizar operações previsíveis, resultando em sistemas que suportam crescimento a longo prazo."
 
 #: src/widgets/about/ui/About.tsx
-msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity teaching me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
+msgid "I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break."
 msgstr "Eu comecei desmontando tudo... de rádios e brinquedos a construir um carrinho de rolimã do zero. Minha infância foi definida por desmontar coisas. Essa curiosidade me ensinou que a verdadeira engenharia não é apenas sobre criar e construir, mas entender como as coisas funcionam e como consertá-las quando quebram."
 
 #: src/widgets/experience/ui/Experience.tsx
@@ -317,7 +317,7 @@ msgstr "IoT"
 
 #: src/widgets/about/ui/About.tsx
 msgid "keep calm in the storm"
-msgstr "mantenha a calma entre a tempestade"
+msgstr "mantenha a calma na tempestade"
 
 #: src/entities/experience/model/experience.ts
 msgid "KYC (Know Your Customer)"

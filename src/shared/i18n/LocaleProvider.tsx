@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { i18n } from '@lingui/core';
 import { msg } from '@lingui/core/macro';
@@ -7,7 +7,7 @@ import { defaultLocale, loadCatalog, locales } from './lingui';
 import { SITE_CONFIG } from '@/shared/constants';
 
 interface LocaleProviderProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const LocaleProvider = ({ children }: LocaleProviderProps) => {
@@ -17,17 +17,23 @@ export const LocaleProvider = ({ children }: LocaleProviderProps) => {
   const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
-    const currentLocale = lang && lang in locales ? lang : defaultLocale;
+    let isCancelled = false;
+    const storedLocale = localStorage.getItem('locale');
+    const fallbackLocale = storedLocale && storedLocale in locales ? storedLocale : defaultLocale;
+    const currentLocale = lang && lang in locales ? lang : fallbackLocale;
 
-    // 1. Redirect if no locale in URL
-    if (!lang || !(lang in locales)) {
+    // 1. Redirect ONLY if no locale in URL
+    if (!lang) {
       navigate(`/${currentLocale}${location.search}${location.hash}`, { replace: true });
       return;
     }
 
     // 2. Load catalog and activate
     const init = async () => {
+      setIsReady(false);
       await loadCatalog(currentLocale);
+
+      if (isCancelled) return;
 
       // 3. SEO & UX Side-effects
       document.title = i18n._(msg`Henrique Bonfim | Senior Software Engineer`);
@@ -39,6 +45,10 @@ export const LocaleProvider = ({ children }: LocaleProviderProps) => {
     };
 
     init();
+
+    return () => {
+      isCancelled = true;
+    };
   }, [lang, navigate, location.search, location.hash]);
 
   if (!isReady) return null; // Or a sleek loading spinner

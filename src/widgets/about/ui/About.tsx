@@ -9,7 +9,7 @@ const chapters = [
     title: (i18n) => i18n._(msg`origins`),
     body: (i18n) =>
       i18n._(
-        msg`I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity teaching me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break.`
+        msg`I started taking everything apart... from radios and toys to building a soapbox car from scratch. My childhood was defined by taking things apart. This curiosity taught me that true engineering isn't just about creating and building, but understanding how things work and how to fix them when they break.`
       ),
   },
   {
